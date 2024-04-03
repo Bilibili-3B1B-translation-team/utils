@@ -1,0 +1,14 @@
+{
+  "name": "3b1b-translation-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "match_by_sentence.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saniac",
+  "license": "ISC",
+  "dependencies": {
+    "string-similarity-js": "^2.1.4"
+  }
+}
