@@ -1,0 +1,1251 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1200
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: ENG,Inter Medium,50,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,94,100,0,0,1,3,3,2,15,15,20,1
+Style: CHN,MonyharOS Sans SC Medium,66,&H00FFFFFF,&H0055060A,&H0055060A,&H00000000,-1,0,0,0,98,100,0,0,1,4.5,3,2,15,15,75,1
+Style: Staff,MonyharOS Sans SC Medium,50,&H00FFFFFF,&H0055060A,&H00AE9B5F,&H00000000,0,0,0,0,100,100,0,0,1,3,3,8,10,10,30,1
+Style: comment,MonyharOS Sans SC Medium,35,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,98,100,0,0,1,2,2,2,15,15,75,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.26,Staff,,0,0,0,,{\pos(1300,720)\fad(1500,400)\an8\fs56\3c&H1063A4&}翻译   {\3c&H00AE9B5F&}jurohd \N\N{\3c&H1063A4&}校对   {\3c&H00AE9B5F&}䶭  ZSC  ksyx  鹤翔万里    \N\N{\3c&H1063A4&}时轴   {\3c&HAE9B5F&}鹤翔万里  䶭        {\3c&H1063A4&}后期   {\3c&HAE9B5F&}鹤翔万里
+Dialogue: 0,0:00:00.00,0:00:01.50,ENG,,0,0,0,,This is a Galton Board.
+Dialogue: 0,0:00:00.00,0:00:01.50,CHN,,0,0,0,,这是一个高尔顿钉板
+Dialogue: 0,0:00:02.46,0:00:03.63,ENG,,0,0,0,,Maybe you've seen one before.
+Dialogue: 0,0:00:02.46,0:00:03.63,CHN,,0,0,0,,也许你以前见过
+Dialogue: 0,0:00:03.63,0:00:04.92,ENG,,0,0,0,,It's a popular demonstration
+Dialogue: 0,0:00:03.63,0:00:04.92,CHN,,0,0,0,,它通常用来说明
+Dialogue: 0,0:00:04.98,0:00:08.12,ENG,,0,0,0,,of how even when a single event is chaotic and random,
+Dialogue: 0,0:00:08.12,0:00:10.24,ENG,,0,0,0,,with an effectively unknowable outcome,
+Dialogue: 0,0:00:04.98,0:00:10.24,CHN,,0,0,0,,即使某一单独的事件的结果混乱、随机
+Dialogue: 0,0:00:10.44,0:00:14.26,ENG,,0,0,0,,it's still possible to make precise statements about a large number of events,
+Dialogue: 0,0:00:10.44,0:00:14.26,CHN,,0,0,0,,大量这种事件不同结果的相对比例
+Dialogue: 0,0:00:14.26,0:00:18.36,ENG,,0,0,0,,namely how the relative proportions for many different outcomes are distributed.
+Dialogue: 0,0:00:14.26,0:00:18.36,CHN,,0,0,0,,仍能够被准确描述
+Dialogue: 0,0:00:20.64,0:00:22.66,ENG,,0,0,0,,More specifically, the Galton board illustrates
+Dialogue: 0,0:00:20.64,0:00:22.66,CHN,,0,0,0,,更具体地说  高尔顿板展示了
+Dialogue: 0,0:00:22.66,0:00:25.70,ENG,,0,0,0,,one of the most prominent distributions in all of probability,
+Dialogue: 0,0:00:22.66,0:00:25.70,CHN,,0,0,0,,概率学中一种重要的分布
+Dialogue: 0,0:00:25.70,0:00:29.96,ENG,,0,0,0,,known as the Normal distribution, more colloquially known as a Bell curve,
+Dialogue: 0,0:00:25.70,0:00:29.96,CHN,,0,0,0,,“正态分布” 俗称 “钟形曲线”
+Dialogue: 0,0:00:29.96,0:00:32.26,ENG,,0,0,0,,and also called a Gaussian distribution.
+Dialogue: 0,0:00:29.96,0:00:32.26,CHN,,0,0,0,,也叫做  “高斯分布”
+Dialogue: 0,0:00:32.26,0:00:35.46,ENG,,0,0,0,,There's a very specific function to describe this distribution.
+Dialogue: 0,0:00:32.26,0:00:35.46,CHN,,0,0,0,,有一个非常明确的函数来描述这个分布
+Dialogue: 0,0:00:35.46,0:00:37.16,ENG,,0,0,0,,Very pretty. We'll get into it later.
+Dialogue: 0,0:00:35.46,0:00:37.16,CHN,,0,0,0,,我们稍后会深入讨论这个美妙的式子
+Dialogue: 0,0:00:37.16,0:00:38.92,ENG,,0,0,0,,But right now, I just want to emphasize
+Dialogue: 0,0:00:37.16,0:00:38.92,CHN,,0,0,0,,但现在我想强调的是
+Dialogue: 0,0:00:38.92,0:00:42.50,ENG,,0,0,0,,how the normal distribution is, as the name suggests, very common.
+Dialogue: 0,0:00:38.92,0:00:42.50,CHN,,0,0,0,,为何“正态分布”正是一种常态
+Dialogue: 0,0:00:42.50,0:00:45.18,ENG,,0,0,0,,It shows up in a lot of seemingly unrelated contexts.
+Dialogue: 0,0:00:42.50,0:00:45.18,CHN,,0,0,0,,出现在许多看似无关的场景中
+Dialogue: 0,0:00:45.84,0:00:49.34,ENG,,0,0,0,,If you were to take a large number of people who sit in a similar demographic
+Dialogue: 0,0:00:45.84,0:00:49.34,CHN,,0,0,0,,假如你调查特征相似的一大批人
+Dialogue: 0,0:00:49.34,0:00:53.44,ENG,,0,0,0,,and plot their heights, those heights tend to follow a normal distribution.
+Dialogue: 0,0:00:49.34,0:00:53.44,CHN,,0,0,0,,画出他们的身高分布图  你会发现这往往遵循正态分布
+Dialogue: 0,0:00:53.44,0:00:57.66,ENG,,0,0,0,,If you look at a large swath of very big natural numbers and you ask
+Dialogue: 0,0:00:53.44,0:00:57.66,CHN,,0,0,0,,如果随机抽取一堆非常大的自然数
+Dialogue: 0,0:00:57.66,0:01:01.18,ENG,,0,0,0,,how many distinct prime factors does each one of those numbers have,
+Dialogue: 0,0:00:57.66,0:01:01.18,CHN,,0,0,0,, 记录下它们分别都有多少个不同的质因数
+Dialogue: 0,0:01:01.18,0:01:04.98,ENG,,0,0,0,,the answers will very closely track with a certain normal distribution.
+Dialogue: 0,0:01:01.18,0:01:04.98,CHN,,0,0,0,,你会发现答案非常接近于正态分布
+Dialogue: 0,0:01:04.98,0:01:06.60,ENG,,0,0,0,,Now, our topic for today
+Dialogue: 0,0:01:04.98,0:01:06.60,CHN,,0,0,0,,我们今天的主题
+Dialogue: 0,0:01:06.60,0:01:09.34,ENG,,0,0,0,,is one of the crown jewels in all of probability theory.
+Dialogue: 0,0:01:06.60,0:01:09.34,CHN,,0,0,0,,是概率论的璀璨明珠
+Dialogue: 0,0:01:09.34,0:01:13.92,ENG,,0,0,0,,It's one of the key facts that explains why this distribution is as common as it is,
+Dialogue: 0,0:01:09.34,0:01:13.92,CHN,,0,0,0,,也是正态分布之所以如此普遍的一大原因
+Dialogue: 0,0:01:13.92,0:01:16.24,ENG,,0,0,0,,known as the Central Limit Theorem.
+Dialogue: 0,0:01:13.92,0:01:16.24,CHN,,0,0,0,,它就是中心极限定理
+Dialogue: 0,0:01:16.24,0:01:18.66,ENG,,0,0,0,,This lesson is meant to go back to the basics,
+Dialogue: 0,0:01:16.24,0:01:18.66,CHN,,0,0,0,,这节课的目的是回归基础
+Dialogue: 0,0:01:18.66,0:01:21.78,ENG,,0,0,0,,giving you the fundamentals on what the Central Limit Theorem is saying,
+Dialogue: 0,0:01:18.66,0:01:21.78,CHN,,0,0,0,,用最少的背景知识
+Dialogue: 0,0:01:21.78,0:01:24.72,ENG,,0,0,0,,what normal distributions are, and I want to assume minimal background.
+Dialogue: 0,0:01:21.78,0:01:24.72,CHN,,0,0,0,,介绍中心极限定理以及正态分布的基本内容
+Dialogue: 0,0:01:24.72,0:01:28.08,ENG,,0,0,0,,We're going to go decently deep into it, but after this,
+Dialogue: 0,0:01:24.72,0:01:28.08,CHN,,0,0,0,,我们会讲得挺深  但在此之后
+Dialogue: 0,0:01:28.08,0:01:31.30,ENG,,0,0,0,,I'd still like to go deeper and explain why the theorem is true,
+Dialogue: 0,0:01:28.08,0:01:31.30,CHN,,0,0,0,,我仍然想更进一步解释中心极限定理为何成立
+Dialogue: 0,0:01:31.30,0:01:34.18,ENG,,0,0,0,,why the function underlying the normal distribution
+Dialogue: 0,0:01:31.30,0:01:34.18,CHN,,0,0,0,,为什么描述正态分布的函数
+Dialogue: 0,0:01:34.18,0:01:36.70,ENG,,0,0,0,,has the very specific form that it does,
+Dialogue: 0,0:01:34.18,0:01:36.70,CHN,,0,0,0,,要长成这样子
+Dialogue: 0,0:01:36.70,0:01:39.14,ENG,,0,0,0,,why that formula has a π in it,
+Dialogue: 0,0:01:36.70,0:01:39.14,CHN,,0,0,0,,为什么式子里还有个 π
+Dialogue: 0,0:01:39.14,0:01:43.19,ENG,,0,0,0,,and, most fun, why those last two facts are actually more related
+Dialogue: 0,0:01:39.14,0:01:43.19,CHN,,0,0,0,,而最有趣的是  正态分布的函数与π之间的联系
+Dialogue: 0,0:01:43.19,0:01:45.60,ENG,,0,0,0,,than a lot of traditional explanations would suggest.
+Dialogue: 0,0:01:43.19,0:01:45.60,CHN,,0,0,0,,比很多传统的解释  要来得更紧密
+Dialogue: 0,0:01:46.38,0:01:48.47,ENG,,0,0,0,,That second lesson is also meant to be
+Dialogue: 0,0:01:46.38,0:01:48.47,CHN,,0,0,0,,而这一部分
+Dialogue: 0,0:01:48.47,0:01:51.00,ENG,,0,0,0,,the follow on to the convolutions video that I promised.
+Dialogue: 0,0:01:48.47,0:01:51.00,CHN,,0,0,0,,也是我之前承诺的卷积视频的后续
+Dialogue: 0,0:01:51.00,0:01:53.26,ENG,,0,0,0,,So, there's a lot of interrelated topics here.
+Dialogue: 0,0:01:51.00,0:01:53.26,CHN,,0,0,0,,这里的许多内容都相互关联
+Dialogue: 0,0:01:53.26,0:01:55.18,ENG,,0,0,0,,But right now, back to the fundamentals.
+Dialogue: 0,0:01:53.26,0:01:55.18,CHN,,0,0,0,,但让我们先回到基础内容
+Dialogue: 0,0:01:55.18,0:01:59.28,ENG,,0,0,0,,I'd like to kick things off with an overly simplified model of the Galton board.
+Dialogue: 0,0:01:55.18,0:01:59.28,CHN,,0,0,0,,从这个过度简化的高尔顿板模型开始
+Dialogue: 0,0:02:01.02,0:02:02.63,ENG,,0,0,0,,In this model, we will assume that
+Dialogue: 0,0:02:01.02,0:02:02.63,CHN,,0,0,0,,我们假设
+Dialogue: 0,0:02:02.63,0:02:05.60,ENG,,0,0,0,,each ball falls directly onto a certain central peg
+Dialogue: 0,0:02:02.63,0:02:05.60,CHN,,0,0,0,,这个模型中的球会直接掉在钉子中间
+Dialogue: 0,0:02:05.60,0:02:09.66,ENG,,0,0,0,,and then it has a 50 - 50 probability of bouncing to the left or to the right,
+Dialogue: 0,0:02:05.60,0:02:09.66,CHN,,0,0,0,,然后以相等的概率向左或向右弹
+Dialogue: 0,0:02:09.66,0:02:11.42,ENG,,0,0,0,,and we'll think of each of those outcomes
+Dialogue: 0,0:02:09.66,0:02:11.42,CHN,,0,0,0,,这样一来  这个弹跳的过程
+Dialogue: 0,0:02:11.42,0:02:14.40,ENG,,0,0,0,,as either adding one or subtracting one from its position.
+Dialogue: 0,0:02:11.42,0:02:14.40,CHN,,0,0,0,,也就可以理解为  从当前位置向右加一或向左减一
+Dialogue: 0,0:02:14.40,0:02:18.96,ENG,,0,0,0,,Once one of those is chosen, we make the highly unrealistic assumption that
+Dialogue: 0,0:02:14.40,0:02:18.96,CHN,,0,0,0,,选择了方向之后  我们还要做一个非常不切实际的假设
+Dialogue: 0,0:02:18.96,0:02:23.22,ENG,,0,0,0,,it happens to land dead on in the middle of the peg adjacent below it,
+Dialogue: 0,0:02:18.96,0:02:23.22,CHN,,0,0,0,,那就是它会恰好落在下一层某个钉子的正中间
+Dialogue: 0,0:02:23.22,0:02:25.30,ENG,,0,0,0,,where again, it'll be faced with the same 50 - 50 choice
+Dialogue: 0,0:02:25.30,0:02:27.12,ENG,,0,0,0,,of bouncing to the left or to the right.
+Dialogue: 0,0:02:23.22,0:02:27.12,CHN,,0,0,0,,然后再次面临向左或向右弹跳的选择
+Dialogue: 0,0:02:27.12,0:02:30.64,ENG,,0,0,0,,For the one I'm showing on screen, there are five different rows of pegs.
+Dialogue: 0,0:02:27.12,0:02:30.64,CHN,,0,0,0,,对于画面上这个钉板来说  它有五排不同的钉子
+Dialogue: 0,0:02:30.64,0:02:32.06,ENG,,0,0,0,,So our little hopping ball
+Dialogue: 0,0:02:30.64,0:02:32.06,CHN,,0,0,0,,所以我们的小球
+Dialogue: 0,0:02:32.06,0:02:35.64,ENG,,0,0,0,,makes five different random choices between +1 and -1,
+Dialogue: 0,0:02:32.06,0:02:35.64,CHN,,0,0,0,,要在 +1 和 -1 之间随机选择 5 次
+Dialogue: 0,0:02:35.64,0:02:37.39,ENG,,0,0,0,,and we can think of its final position
+Dialogue: 0,0:02:35.64,0:02:37.39,CHN,,0,0,0,,而它的最终位置
+Dialogue: 0,0:02:37.39,0:02:40.46,ENG,,0,0,0,,as basically being the sum of all of those different numbers.
+Dialogue: 0,0:02:37.39,0:02:40.46,CHN,,0,0,0,,则可以认为是这些加一减一的总和
+Dialogue: 0,0:02:40.46,0:02:42.82,ENG,,0,0,0,,Which in this case happens to be one,
+Dialogue: 0,0:02:40.46,0:02:42.82,CHN,,0,0,0,,画面上这种情况的位置则是 1
+Dialogue: 0,0:02:42.82,0:02:44.94,ENG,,0,0,0,,and we might label all of the different buckets
+Dialogue: 0,0:02:42.82,0:02:44.94,CHN,,0,0,0,,而我们则可以用这些总和
+Dialogue: 0,0:02:44.94,0:02:46.44,ENG,,0,0,0,,with the sum that they represent.
+Dialogue: 0,0:02:44.94,0:02:46.44,CHN,,0,0,0,,来标记小球最终落入的各个桶
+Dialogue: 0,0:02:46.44,0:02:47.65,ENG,,0,0,0,,As we repeat this,
+Dialogue: 0,0:02:46.44,0:02:47.65,CHN,,0,0,0,,我们的重复试验
+Dialogue: 0,0:02:47.65,0:02:51.06,ENG,,0,0,0,,we're looking at different possible sums for those five random numbers.
+Dialogue: 0,0:02:47.65,0:02:51.06,CHN,,0,0,0,,则是这五个随机数的和  取到各个值的概率
+Dialogue: 0,0:02:52.74,0:02:54.94,ENG,,0,0,0,,And for those of you who are inclined to complain
+Dialogue: 0,0:02:52.74,0:02:54.94,CHN,,0,0,0,,或许有人想抱怨
+Dialogue: 0,0:02:54.94,0:02:58.10,ENG,,0,0,0,,that this is a highly unrealistic model for the true Galton board
+Dialogue: 0,0:02:54.94,0:02:58.10,CHN,,0,0,0,,这个模型跟真正的高尔顿板相比太假了
+Dialogue: 0,0:02:58.10,0:03:01.80,ENG,,0,0,0,,let me emphasize - the goal right now is not to accurately model physics,
+Dialogue: 0,0:02:58.10,0:03:01.80,CHN,,0,0,0,,我想说的是  现在我们想做的不是去准确模拟物理现象
+Dialogue: 0,0:03:01.80,0:03:05.76,ENG,,0,0,0,,the goal is to give a simple example to illustrate the central limit theorem,
+Dialogue: 0,0:03:01.80,0:03:05.76,CHN,,0,0,0,,而是找一个简单的例子来说明中心极限定理
+Dialogue: 0,0:03:05.76,0:03:08.48,ENG,,0,0,0,,and for that, idealized though this might be,
+Dialogue: 0,0:03:05.76,0:03:08.48,CHN,,0,0,0,,所以就算它十分理想化
+Dialogue: 0,0:03:08.48,0:03:10.14,ENG,,0,0,0,,it actually gives us a really good example.
+Dialogue: 0,0:03:08.48,0:03:10.14,CHN,,0,0,0,,这仍然是一个很不错的例子
+Dialogue: 0,0:03:10.14,0:03:12.44,ENG,,0,0,0,,If we let many different balls fall,
+Dialogue: 0,0:03:10.14,0:03:12.44,CHN,,0,0,0,,如果掉下来的不止一个球
+Dialogue: 0,0:03:12.44,0:03:14.68,ENG,,0,0,0,,making yet another unrealistic assumption that
+Dialogue: 0,0:03:12.44,0:03:14.68,CHN,,0,0,0,,我们就要再做一个不现实的假设
+Dialogue: 0,0:03:14.68,0:03:17.20,ENG,,0,0,0,,they don't influence each other, as if they're all ghosts,
+Dialogue: 0,0:03:14.68,0:03:17.20,CHN,,0,0,0,,假设它们都是幽灵球  互不影响
+Dialogue: 0,0:03:17.20,0:03:20.02,ENG,,0,0,0,,then the number of balls that fall into each different bucket
+Dialogue: 0,0:03:17.20,0:03:20.02,CHN,,0,0,0,,那么掉进不同桶里的球的数量
+Dialogue: 0,0:03:20.02,0:03:23.46,ENG,,0,0,0,,gives us some loose sense for how likely each one of those buckets is.
+Dialogue: 0,0:03:20.02,0:03:23.46,CHN,,0,0,0,,会大致说明球有多大概率落到每个桶
+Dialogue: 0,0:03:23.46,0:03:25.83,ENG,,0,0,0,,In this example the numbers are simple enough
+Dialogue: 0,0:03:23.46,0:03:25.83,CHN,,0,0,0,,这个例子中的数都不复杂
+Dialogue: 0,0:03:25.83,0:03:27.95,ENG,,0,0,0,,that it's not too hard to explicitly calculate
+Dialogue: 0,0:03:27.95,0:03:27.95,ENG,,0,0,0,,what the probability is for falling into each bucket.
+Dialogue: 0,0:03:25.83,0:03:30.22,CHN,,0,0,0,,所以我们可以轻松计算出球落入各个桶的概率
+Dialogue: 0,0:03:30.22,0:03:31.42,ENG,,0,0,0,,If you do want to think that through,
+Dialogue: 0,0:03:30.22,0:03:31.42,CHN,,0,0,0,,但是如果你想得足够深
+Dialogue: 0,0:03:31.42,0:03:34.02,ENG,,0,0,0,,you'll find it very reminiscent of Pascal's triangle,
+Dialogue: 0,0:03:31.42,0:03:34.02,CHN,,0,0,0,,会发现它让人联想到杨辉三角
+Dialogue: 0,0:03:34.02,0:03:36.07,ENG,,0,0,0,,but the neat thing about our theorem is
+Dialogue: 0,0:03:34.02,0:03:36.07,CHN,,0,0,0,,但我们定理的妙处在于
+Dialogue: 0,0:03:36.07,0:03:38.34,ENG,,0,0,0,,how far it goes beyond the simple examples.
+Dialogue: 0,0:03:36.07,0:03:38.34,CHN,,0,0,0,,它远远不局限于这样简单的例子
+Dialogue: 0,0:03:38.34,0:03:41.64,ENG,,0,0,0,,So, to start off at least, rather than making explicit calculations,
+Dialogue: 0,0:03:38.34,0:03:41.64,CHN,,0,0,0,,所以  一上来我们先不去仔细算
+Dialogue: 0,0:03:41.64,0:03:44.52,ENG,,0,0,0,,let's just simulating things by running a large number of samples
+Dialogue: 0,0:03:41.64,0:03:44.52,CHN,,0,0,0,,而是大量重复地模拟这个过程
+Dialogue: 0,0:03:44.52,0:03:47.54,ENG,,0,0,0,,and letting the total number of results in each different outcome
+Dialogue: 0,0:03:44.52,0:03:47.54,CHN,,0,0,0,,让这个模拟中每个结果出现的次数
+Dialogue: 0,0:03:47.54,0:03:49.64,ENG,,0,0,0,,give us some sense for what that distribution looks like.
+Dialogue: 0,0:03:47.54,0:03:49.64,CHN,,0,0,0,,为我们展示这个分布的大致形状
+Dialogue: 0,0:03:50.36,0:03:52.72,ENG,,0,0,0,,As I said, the one on screen has five rows,
+Dialogue: 0,0:03:50.36,0:03:52.72,CHN,,0,0,0,,就像我之前说的  这个屏幕上有五行钉子
+Dialogue: 0,0:03:52.72,0:03:56.42,ENG,,0,0,0,,so each sum that we're considering includes only five numbers.
+Dialogue: 0,0:03:52.72,0:03:56.42,CHN,,0,0,0,,也就意味着我们考虑的和只由五个数得出
+Dialogue: 0,0:03:56.42,0:03:59.14,ENG,,0,0,0,,The basic idea of the central limit theorem
+Dialogue: 0,0:03:56.42,0:03:59.14,CHN,,0,0,0,,中心极限定理的基本思想是
+Dialogue: 0,0:03:59.14,0:04:01.44,ENG,,0,0,0,,is that if you increase the size of that sum,
+Dialogue: 0,0:03:59.14,0:04:01.44,CHN,,0,0,0,,如果你求更多的数的和
+Dialogue: 0,0:04:01.44,0:04:03.18,ENG,,0,0,0,,for example, here that would mean
+Dialogue: 0,0:04:01.44,0:04:03.18,CHN,,0,0,0,,例如在这个例子里增加钉子的行数
+Dialogue: 0,0:04:03.18,0:04:06.88,ENG,,0,0,0,,increasing the number of rows of pegs for each ball to bounce off
+Dialogue: 0,0:04:03.18,0:04:06.88,CHN,,0,0,0,,让球反弹更多次
+Dialogue: 0,0:04:06.88,0:04:11.26,ENG,,0,0,0,,then the distribution that describes where that sum is going to fall
+Dialogue: 0,0:04:06.88,0:04:11.26,CHN,,0,0,0,,就能使各个总和的概率分布
+Dialogue: 0,0:04:11.26,0:04:13.62,ENG,,0,0,0,,looks more and more like a bell curve.
+Dialogue: 0,0:04:11.26,0:04:13.62,CHN,,0,0,0,,越来越接近一个钟形曲线
+Dialogue: 0,0:04:15.30,0:04:18.48,ENG,,0,0,0,,Here, it's actually worth taking a moment to write down that general idea.
+Dialogue: 0,0:04:15.30,0:04:18.48,CHN,,0,0,0,,我们还是花点时间来写下大致的想法：
+Dialogue: 0,0:04:19.26,0:04:21.89,ENG,,0,0,0,,The setup is that we have a random variable
+Dialogue: 0,0:04:19.26,0:04:21.89,CHN,,0,0,0,,首先我们有一个随机变量
+Dialogue: 0,0:04:21.89,0:04:25.06,ENG,,0,0,0,,and that's basically shorthand for a random process
+Dialogue: 0,0:04:21.89,0:04:25.06,CHN,,0,0,0,,其实就是把一个随机的过程中
+Dialogue: 0,0:04:25.06,0:04:28.38,ENG,,0,0,0,,where each outcome of that process is associated with some number.
+Dialogue: 0,0:04:25.06,0:04:28.38,CHN,,0,0,0,,得到的每个结果都写成一个数
+Dialogue: 0,0:04:28.38,0:04:30.00,ENG,,0,0,0,,We'll call that random number X.
+Dialogue: 0,0:04:28.38,0:04:30.00,CHN,,0,0,0,,我们将这个随机变量称为 X
+Dialogue: 0,0:04:30.00,0:04:32.15,ENG,,0,0,0,,For example, each bounce off the peg
+Dialogue: 0,0:04:30.00,0:04:32.15,CHN,,0,0,0,,例如每次小球的弹跳
+Dialogue: 0,0:04:32.15,0:04:34.56,ENG,,0,0,0,,is a random process modeled with two outcomes.
+Dialogue: 0,0:04:32.15,0:04:34.56,CHN,,0,0,0,,都是一个随机的过程  只有两种结果
+Dialogue: 0,0:04:34.56,0:04:37.80,ENG,,0,0,0,,Those outcomes are associated with the numbers -1 and +1.
+Dialogue: 0,0:04:34.56,0:04:37.80,CHN,,0,0,0,,左和右分别记为 -1 和 +1
+Dialogue: 0,0:04:38.34,0:04:41.32,ENG,,0,0,0,,Another example of a random variable would be rolling a die,
+Dialogue: 0,0:04:38.34,0:04:41.32,CHN,,0,0,0,,另一个随机变量的例子是掷骰子
+Dialogue: 0,0:04:41.32,0:04:45.10,ENG,,0,0,0,,where you have six different outcomes each one associated with a number.
+Dialogue: 0,0:04:41.32,0:04:45.10,CHN,,0,0,0,,总共有六种结果  分别写成 1~6
+Dialogue: 0,0:04:45.10,0:04:49.11,ENG,,0,0,0,,What we're doing is taking multiple different samples of that variable
+Dialogue: 0,0:04:45.10,0:04:49.11,CHN,,0,0,0,,而我们要做的就是对这个随机变量多次取样
+Dialogue: 0,0:04:49.11,0:04:50.56,ENG,,0,0,0,,and adding them all together.
+Dialogue: 0,0:04:49.11,0:04:50.56,CHN,,0,0,0,,最后全部相加
+Dialogue: 0,0:04:50.56,0:04:52.25,ENG,,0,0,0,,On our Galton board, that looks like
+Dialogue: 0,0:04:50.56,0:04:52.25,CHN,,0,0,0,,用高尔顿板的例子来说就是
+Dialogue: 0,0:04:52.25,0:04:54.70,ENG,,0,0,0,,letting the ball bounce off multiple different pegs
+Dialogue: 0,0:04:54.70,0:04:56.16,ENG,,0,0,0,,on its way down to the bottom,
+Dialogue: 0,0:04:52.25,0:04:56.16,CHN,,0,0,0,,让球在一路下落到底的过程中多次被钉子反弹
+Dialogue: 0,0:04:56.60,0:04:58.52,ENG,,0,0,0,,and in the case of a die, you might imagine
+Dialogue: 0,0:04:56.60,0:04:58.52,CHN,,0,0,0,,而在骰子的例子中
+Dialogue: 0,0:04:58.52,0:05:00.90,ENG,,0,0,0,,rolling many different dice and adding up the results.
+Dialogue: 0,0:04:58.52,0:05:00.90,CHN,,0,0,0,,则是掷很多不同的骰子并将点数相加
+Dialogue: 0,0:05:00.90,0:05:03.16,ENG,,0,0,0,,The claim of the central limit theorem
+Dialogue: 0,0:05:00.90,0:05:03.16,CHN,,0,0,0,,中心极限定理说明了
+Dialogue: 0,0:05:03.16,0:05:06.62,ENG,,0,0,0,,is that as you let the size of that sum get bigger and bigger,
+Dialogue: 0,0:05:03.16,0:05:06.62,CHN,,0,0,0,,随着相加的随机变量越来越多
+Dialogue: 0,0:05:06.62,0:05:09.15,ENG,,0,0,0,,then the distribution of that sum,
+Dialogue: 0,0:05:06.62,0:05:09.15,CHN,,0,0,0,,这个总和的分布
+Dialogue: 0,0:05:09.15,0:05:11.66,ENG,,0,0,0,,how likely it is to fall into different possible values,
+Dialogue: 0,0:05:09.15,0:05:11.66,CHN,,0,0,0,,也就是取各种值的概率
+Dialogue: 0,0:05:11.66,0:05:14.06,ENG,,0,0,0,,will look more and more like a bell curve.
+Dialogue: 0,0:05:11.66,0:05:14.06,CHN,,0,0,0,,将越来越接近一个钟形曲线
+Dialogue: 0,0:05:15.28,0:05:17.28,ENG,,0,0,0,,That's it, that is the general idea.
+Dialogue: 0,0:05:15.28,0:05:17.28,CHN,,0,0,0,,而这也是中心极限定理的大致思想
+Dialogue: 0,0:05:17.28,0:05:19.00,ENG,,0,0,0,,Over the course of this lesson,
+Dialogue: 0,0:05:17.28,0:05:19.00,CHN,,0,0,0,,我们这节课的目标
+Dialogue: 0,0:05:19.00,0:05:21.78,ENG,,0,0,0,,our job is to make that statement more quantitative.
+Dialogue: 0,0:05:19.00,0:05:21.78,CHN,,0,0,0,,是去量化这个笼统的描述
+Dialogue: 0,0:05:21.78,0:05:23.33,ENG,,0,0,0,,We're going to put some numbers to it,
+Dialogue: 0,0:05:23.33,0:05:24.66,ENG,,0,0,0,,put some formulas to it,
+Dialogue: 0,0:05:21.78,0:05:24.66,CHN,,0,0,0,,为这个描述添上一些数和式子
+Dialogue: 0,0:05:24.66,0:05:26.52,ENG,,0,0,0,,show how you can use it to make predictions.
+Dialogue: 0,0:05:24.66,0:05:26.52,CHN,,0,0,0,,并展示如何用它进行预测
+Dialogue: 0,0:05:27.36,0:05:29.22,ENG,,0,0,0,,For example, here's the kind of question
+Dialogue: 0,0:05:27.36,0:05:29.22,CHN,,0,0,0,,例如 看完这个视频以后
+Dialogue: 0,0:05:29.22,0:05:32.16,ENG,,0,0,0,,I want you to be able to answer by the end of this video:
+Dialogue: 0,0:05:29.22,0:05:32.16,CHN,,0,0,0,,我希望你能回答像下面这种问题
+Dialogue: 0,0:05:32.16,0:05:36.48,ENG,,0,0,0,,suppose you roll the die 100 times, and you added together the results.
+Dialogue: 0,0:05:32.16,0:05:36.48,CHN,,0,0,0,,假设你准备掷 100 次骰子  并把点数加起来
+Dialogue: 0,0:05:36.48,0:05:38.61,ENG,,0,0,0,,Could you find a range of values
+Dialogue: 0,0:05:36.48,0:05:38.61,CHN,,0,0,0,,请报出一个取值范围
+Dialogue: 0,0:05:38.61,0:05:42.74,ENG,,0,0,0,,such that you're 95% sure that the sum will fall within that range.
+Dialogue: 0,0:05:38.61,0:05:42.74,CHN,,0,0,0,,能够保证有 95% 的把握 总和会落在这个范围内
+Dialogue: 0,0:05:42.74,0:05:43.76,ENG,,0,0,0,,Or maybe I should say,
+Dialogue: 0,0:05:42.74,0:05:43.76,CHN,,0,0,0,,我还应该加上一句
+Dialogue: 0,0:05:43.76,0:05:46.56,ENG,,0,0,0,,find the smallest possible range of values such that this is true.
+Dialogue: 0,0:05:43.76,0:05:46.56,CHN,,0,0,0,,这个要寻找的范围越窄越好
+Dialogue: 0,0:05:47.28,0:05:49.67,ENG,,0,0,0,,The neat thing is, you'll be able to answer this question
+Dialogue: 0,0:05:47.28,0:05:49.67,CHN,,0,0,0,,神奇的是  无论你掷的骰子是否均匀
+Dialogue: 0,0:05:49.67,0:05:52.18,ENG,,0,0,0,,whether it's a fair die or if it's a weighted die.
+Dialogue: 0,0:05:49.67,0:05:52.18,CHN,,0,0,0,,你总能回答这个问题
+Dialogue: 0,0:05:53.52,0:05:54.65,ENG,,0,0,0,,Now, let me say at the top
+Dialogue: 0,0:05:53.52,0:05:54.65,CHN,,0,0,0,,让我把话放在前面
+Dialogue: 0,0:05:54.65,0:05:57.68,ENG,,0,0,0,,that this theorem has three different assumptions that go into it.
+Dialogue: 0,0:05:54.65,0:05:57.68,CHN,,0,0,0,,中心极限定理有三条假设
+Dialogue: 0,0:05:57.68,0:06:00.34,ENG,,0,0,0,,Three things that have to be true before the theorem follows
+Dialogue: 0,0:05:57.68,0:06:00.34,CHN,,0,0,0,,它们是定理成立的前提条件
+Dialogue: 0,0:06:00.34,0:06:03.98,ENG,,0,0,0,,and I'm actually not going to tell you what they are until the very end of the video.
+Dialogue: 0,0:06:00.34,0:06:03.98,CHN,,0,0,0,,不过具体要等到视频的结尾我才会告诉你
+Dialogue: 0,0:06:03.98,0:06:05.66,ENG,,0,0,0,,Instead, I want you to keep your eye out
+Dialogue: 0,0:06:03.98,0:06:05.66,CHN,,0,0,0,,但我希望你看仔细点
+Dialogue: 0,0:06:05.66,0:06:07.74,ENG,,0,0,0,,and see if you can notice and maybe predict
+Dialogue: 0,0:06:05.66,0:06:07.74,CHN,,0,0,0,,看看是否能注意到并猜出
+Dialogue: 0,0:06:07.74,0:06:09.70,ENG,,0,0,0,,what those three assumptions are going to be.
+Dialogue: 0,0:06:07.74,0:06:09.70,CHN,,0,0,0,,这三个假设究竟是什么
+Dialogue: 0,0:06:10.48,0:06:13.82,ENG,,0,0,0,,As a next step to better illustrate just how general this theorem is,
+Dialogue: 0,0:06:10.48,0:06:13.82,CHN,,0,0,0,,为了更好地说明这个定理有多通用
+Dialogue: 0,0:06:13.82,0:06:17.58,ENG,,0,0,0,,I want to run a couple more simulations for you focused on the dice example.
+Dialogue: 0,0:06:13.82,0:06:17.58,CHN,,0,0,0,,我想先多模拟几个掷骰子的例子
+Dialogue: 0,0:06:20.88,0:06:22.95,ENG,,0,0,0,,Usually, if you think of rolling a die,
+Dialogue: 0,0:06:20.88,0:06:22.95,CHN,,0,0,0,,通常  如果你掷一个骰子
+Dialogue: 0,0:06:22.95,0:06:25.54,ENG,,0,0,0,,you think of the six outcomes as being equally probable,
+Dialogue: 0,0:06:22.95,0:06:25.54,CHN,,0,0,0,,你会认为六个结果是等概率的
+Dialogue: 0,0:06:25.54,0:06:27.70,ENG,,0,0,0,,but the theorem actually doesn't care about that.
+Dialogue: 0,0:06:25.54,0:06:27.70,CHN,,0,0,0,,但是定理并不在意这个条件
+Dialogue: 0,0:06:27.70,0:06:29.60,ENG,,0,0,0,,We could start with a weighted die
+Dialogue: 0,0:06:27.70,0:06:29.60,CHN,,0,0,0,,我们可以从一个偏心骰子开始
+Dialogue: 0,0:06:29.60,0:06:32.86,ENG,,0,0,0,,something with a non-trivial distribution across the outcomes
+Dialogue: 0,0:06:29.60,0:06:32.86,CHN,,0,0,0,,它的结果分布并不均匀
+Dialogue: 0,0:06:32.86,0:06:34.66,ENG,,0,0,0,,and the core idea still holds,
+Dialogue: 0,0:06:32.86,0:06:34.66,CHN,,0,0,0,,但定理的核心观点却仍然成立
+Dialogue: 0,0:06:34.66,0:06:37.44,ENG,,0,0,0,,for the simulation what will do is take some distribution,
+Dialogue: 0,0:06:34.66,0:06:37.44,CHN,,0,0,0,,我们可以取一个分布来进行模拟
+Dialogue: 0,0:06:37.44,0:06:40.24,ENG,,0,0,0,,like this one that is skewed towards lower values.
+Dialogue: 0,0:06:37.44,0:06:40.24,CHN,,0,0,0,,例如这个更容易丢出小点数的骰子
+Dialogue: 0,0:06:40.24,0:06:43.80,ENG,,0,0,0,,I'm going to take 10 distinct samples from that distribution,
+Dialogue: 0,0:06:40.24,0:06:43.80,CHN,,0,0,0,,然后我从这个分布中抽十个样本
+Dialogue: 0,0:06:43.80,0:06:47.52,ENG,,0,0,0,,and then I'll record the sum of that sample on the plot, on the bottom.
+Dialogue: 0,0:06:43.80,0:06:47.52,CHN,,0,0,0,,在下面的频率图上记录这些样本的和
+Dialogue: 0,0:06:48.36,0:06:50.78,ENG,,0,0,0,,Then I'm going to do this many many different times.
+Dialogue: 0,0:06:48.36,0:06:50.78,CHN,,0,0,0,,反复进行这个过程
+Dialogue: 0,0:06:50.78,0:06:52.88,ENG,,0,0,0,,Always with the sum of size 10
+Dialogue: 0,0:06:50.78,0:06:52.88,CHN,,0,0,0,,每次抽十个样本
+Dialogue: 0,0:06:52.88,0:06:55.10,ENG,,0,0,0,,but keep track of where those sums ended up
+Dialogue: 0,0:06:52.88,0:06:55.10,CHN,,0,0,0,,把和标记在频率图上
+Dialogue: 0,0:06:55.10,0:06:56.72,ENG,,0,0,0,,to give us a sense of the distribution.
+Dialogue: 0,0:06:55.10,0:06:56.72,CHN,,0,0,0,,让我们对这个和的分布有个直观理解
+Dialogue: 0,0:06:59.46,0:07:02.19,ENG,,0,0,0,,And in fact, let me rescale the y direction
+Dialogue: 0,0:06:59.46,0:07:02.19,CHN,,0,0,0,,事实上 我可以把这个图压扁一点
+Dialogue: 0,0:07:02.19,0:07:04.74,ENG,,0,0,0,,to give us room to run an even larger number of samples,
+Dialogue: 0,0:07:02.19,0:07:04.74,CHN,,0,0,0,,给后面模拟的结果预留空间
+Dialogue: 0,0:07:04.74,0:07:07.44,ENG,,0,0,0,,and I'll let it go all the way up to a couple thousand
+Dialogue: 0,0:07:04.74,0:07:07.44,CHN,,0,0,0,,然后跑个几千轮模拟
+Dialogue: 0,0:07:07.44,0:07:10.82,ENG,,0,0,0,,and as it does, you'll notice that the shape that starts to emerge
+Dialogue: 0,0:07:07.44,0:07:10.82,CHN,,0,0,0,,在这个过程中  你会注意到这个分布的形状开始变化
+Dialogue: 0,0:07:10.82,0:07:12.62,ENG,,0,0,0,,looks like a bell curve.
+Dialogue: 0,0:07:10.82,0:07:12.62,CHN,,0,0,0,,变得越来越像一个钟形曲线
+Dialogue: 0,0:07:12.62,0:07:16.50,ENG,,0,0,0,,Maybe if you squint your eyes you can see it skews a tiny bit to the left,
+Dialogue: 0,0:07:12.62,0:07:16.50,CHN,,0,0,0,,虽然可能你眯起眼睛会发现它有点往左偏
+Dialogue: 0,0:07:16.50,0:07:18.59,ENG,,0,0,0,,but it's neat that something so symmetric
+Dialogue: 0,0:07:16.50,0:07:18.59,CHN,,0,0,0,,可神奇的是如此对称的图像
+Dialogue: 0,0:07:18.59,0:07:21.18,ENG,,0,0,0,,emerged from a starting point that was so asymmetric.
+Dialogue: 0,0:07:18.59,0:07:21.18,CHN,,0,0,0,,居然是用偏心骰子的分布模拟出来的
+Dialogue: 0,0:07:21.18,0:07:24.00,ENG,,0,0,0,,To better illustrate what the central limit theorem is all about,
+Dialogue: 0,0:07:21.18,0:07:24.00,CHN,,0,0,0,,为了更好地解释中心极限定理到底是什么
+Dialogue: 0,0:07:24.00,0:07:26.96,ENG,,0,0,0,,let me run four of these simulations in parallel.
+Dialogue: 0,0:07:24.00,0:07:26.96,CHN,,0,0,0,,让我同时模拟这四个东西
+Dialogue: 0,0:07:26.96,0:07:31.00,ENG,,0,0,0,,Where on the upper left I'm doing it - we're only adding two dice at a time.
+Dialogue: 0,0:07:26.96,0:07:31.00,CHN,,0,0,0,,左上角是两个偏心骰子的点数和
+Dialogue: 0,0:07:31.00,0:07:34.26,ENG,,0,0,0,,On the upper right, we're doing it where we're adding five dice at a time,
+Dialogue: 0,0:07:31.00,0:07:34.26,CHN,,0,0,0,,右上角是一次五个骰子的点数和
+Dialogue: 0,0:07:34.26,0:07:38.22,ENG,,0,0,0,,the lower left is the one that we just saw, adding 10 dice at a time
+Dialogue: 0,0:07:34.26,0:07:38.22,CHN,,0,0,0,,左下角是我们刚刚模拟的十个骰子的点数和
+Dialogue: 0,0:07:38.22,0:07:41.04,ENG,,0,0,0,,and then we'll do another one with a bigger sum, 15 at a time.
+Dialogue: 0,0:07:38.22,0:07:41.04,CHN,,0,0,0,,最后右下角我们搞个大的  模拟 15 个骰子的点数和
+Dialogue: 0,0:07:42.18,0:07:45.04,ENG,,0,0,0,,Notice how on the upper left when we're just adding two dice,
+Dialogue: 0,0:07:42.18,0:07:45.04,CHN,,0,0,0,,注意到在左上角我们只有两个骰子的时候
+Dialogue: 0,0:07:45.04,0:07:48.12,ENG,,0,0,0,,the resulting distribution doesn't really look like a bell curve,
+Dialogue: 0,0:07:45.04,0:07:48.12,CHN,,0,0,0,,点数和的分布看起来并不像钟形曲线
+Dialogue: 0,0:07:48.12,0:07:51.05,ENG,,0,0,0,,it looks a lot more reminiscent of the one we started with -
+Dialogue: 0,0:07:48.12,0:07:51.05,CHN,,0,0,0,,它更像偏心骰子本身
+Dialogue: 0,0:07:51.05,0:07:52.00,ENG,,0,0,0,,skewed towards the left.
+Dialogue: 0,0:07:51.05,0:07:52.00,CHN,,0,0,0,,更容易掷出小点数的那个分布
+Dialogue: 0,0:07:52.68,0:07:55.38,ENG,,0,0,0,,But as we allow for more and more dice in each sum,
+Dialogue: 0,0:07:52.68,0:07:55.38,CHN,,0,0,0,,但是随着我们用的骰子越来越多
+Dialogue: 0,0:07:55.38,0:07:58.69,ENG,,0,0,0,,the resulting shape that comes up in these distributions
+Dialogue: 0,0:07:55.38,0:07:58.69,CHN,,0,0,0,,得到的这个点数和分布的形状
+Dialogue: 0,0:07:58.69,0:07:59.94,ENG,,0,0,0,,looks more and more symmetric.
+Dialogue: 0,0:07:58.69,0:07:59.94,CHN,,0,0,0,,就会越来越对称
+Dialogue: 0,0:07:59.94,0:08:04.50,ENG,,0,0,0,,It has the lump in the middle and fade towards the tail shape of a bell curve.
+Dialogue: 0,0:07:59.94,0:08:04.50,CHN,,0,0,0,,它的形状中间凸起两端逐渐平缓  趋近钟形曲线
+Dialogue: 0,0:08:06.98,0:08:10.62,ENG,,0,0,0,,Let me emphasize again, you can start with any different distribution.
+Dialogue: 0,0:08:06.98,0:08:10.62,CHN,,0,0,0,,要强调的是  这个规律用任意点数分布的骰子都适用
+Dialogue: 0,0:08:10.62,0:08:11.76,ENG,,0,0,0,,Here I'll run it again
+Dialogue: 0,0:08:10.62,0:08:11.76,CHN,,0,0,0,,然后我再模拟一次
+Dialogue: 0,0:08:11.76,0:08:15.10,ENG,,0,0,0,,but where most of the probability is tied up in the numbers 1 and 6
+Dialogue: 0,0:08:11.76,0:08:15.10,CHN,,0,0,0,,但这次骰子十分可能掷出 1 和 6
+Dialogue: 0,0:08:15.10,0:08:17.68,ENG,,0,0,0,,with very low probability for the mid values.
+Dialogue: 0,0:08:15.10,0:08:17.68,CHN,,0,0,0,,几乎不可能掷出中间点数
+Dialogue: 0,0:08:17.68,0:08:22.02,ENG,,0,0,0,,Despite completely changing the distribution for an individual roll of the die,
+Dialogue: 0,0:08:17.68,0:08:22.02,CHN,,0,0,0,,尽管完全改变了骰子点数的概率分布
+Dialogue: 0,0:08:22.02,0:08:24.98,ENG,,0,0,0,,it's still the case that a bell curve shape will emerge
+Dialogue: 0,0:08:22.02,0:08:24.98,CHN,,0,0,0,,当我们记录这些不同总和数值出现的次数时
+Dialogue: 0,0:08:24.98,0:08:26.70,ENG,,0,0,0,,as we consider the different sums.
+Dialogue: 0,0:08:24.98,0:08:26.70,CHN,,0,0,0,,我们仍然观察到钟形曲线形状逐渐形成
+Dialogue: 0,0:08:26.70,0:08:30.14,ENG,,0,0,0,,Illustrating things with a simulation like this is very fun
+Dialogue: 0,0:08:26.70,0:08:30.14,CHN,,0,0,0,,用这样的模拟来解释这个定理非常有趣
+Dialogue: 0,0:08:30.14,0:08:32.64,ENG,,0,0,0,,and it's kind of neat to see order emerge from chaos
+Dialogue: 0,0:08:30.14,0:08:32.64,CHN,,0,0,0,,并且神奇的是  无论一开始多么混乱  最终都归于钟形曲线
+Dialogue: 0,0:08:32.64,0:08:36.16,ENG,,0,0,0,,but it also feels a little imprecise. Like in this case.
+Dialogue: 0,0:08:32.64,0:08:36.16,CHN,,0,0,0,,但它也如现在展示的这样  没有那么精确
+Dialogue: 0,0:08:36.16,0:08:38.90,ENG,,0,0,0,,When I cut off the simulation at 3000 samples,
+Dialogue: 0,0:08:36.16,0:08:38.90,CHN,,0,0,0,,当我只运行三千次模拟的时候
+Dialogue: 0,0:08:38.90,0:08:41.10,ENG,,0,0,0,,even though it kind of looks like a bell curve,
+Dialogue: 0,0:08:38.90,0:08:41.10,CHN,,0,0,0,,尽管能观察到钟形曲线的样子
+Dialogue: 0,0:08:41.10,0:08:43.16,ENG,,0,0,0,,the different buckets seem pretty spiky?
+Dialogue: 0,0:08:41.10,0:08:43.16,CHN,,0,0,0,,但是中间还是有几个峰
+Dialogue: 0,0:08:43.16,0:08:45.82,ENG,,0,0,0,,And you might wonder is it supposed to look that way
+Dialogue: 0,0:08:43.16,0:08:45.82,CHN,,0,0,0,,你可能会想  它究竟是一个必然结果
+Dialogue: 0,0:08:45.82,0:08:48.64,ENG,,0,0,0,,or is that just an artifact of the randomness in the simulation,
+Dialogue: 0,0:08:45.82,0:08:48.64,CHN,,0,0,0,,还是只是众多模拟中的偶然
+Dialogue: 0,0:08:48.64,0:08:51.16,ENG,,0,0,0,,and if it is, how many samples do we need
+Dialogue: 0,0:08:48.64,0:08:51.16,CHN,,0,0,0,,如果是的话  那我们到底需要多少样本
+Dialogue: 0,0:08:51.16,0:08:52.90,ENG,,0,0,0,,before we can be sure that what we're looking at
+Dialogue: 0,0:08:51.16,0:08:52.90,CHN,,0,0,0,,才能确信我们现在看到的图像
+Dialogue: 0,0:08:52.90,0:08:55.20,ENG,,0,0,0,,is representative of the true distribution?
+Dialogue: 0,0:08:52.90,0:08:55.20,CHN,,0,0,0,,能够代表真实分布情况呢
+Dialogue: 0,0:08:59.10,0:09:01.84,ENG,,0,0,0,,Instead moving forward, let's get a little more theoretical
+Dialogue: 0,0:08:59.10,0:09:01.84,CHN,,0,0,0,,在更深入探讨之前  先来了解一些理论知识
+Dialogue: 0,0:09:01.84,0:09:05.60,ENG,,0,0,0,,and show the precise shape that these distributions will take on in the long run.
+Dialogue: 0,0:09:01.84,0:09:05.60,CHN,,0,0,0,,使得我们能精确描述总和分布随着更多骰子加入的变化
+Dialogue: 0,0:09:05.60,0:09:09.94,ENG,,0,0,0,,The easiest case to make this calculation is if we have a uniform distribution,
+Dialogue: 0,0:09:05.60,0:09:09.94,CHN,,0,0,0,,最简单的情况是我们有一个公平的骰子
+Dialogue: 0,0:09:09.94,0:09:13.62,ENG,,0,0,0,,where each possible face of the die has an equal probability, 1/6.
+Dialogue: 0,0:09:09.94,0:09:13.62,CHN,,0,0,0,,它掷出骰子的每一面点数的概率都是 1/6
+Dialogue: 0,0:09:13.62,0:09:15.13,ENG,,0,0,0,,For example, if you then want to know
+Dialogue: 0,0:09:13.62,0:09:15.13,CHN,,0,0,0,,例如  如果你想知道
+Dialogue: 0,0:09:15.13,0:09:17.58,ENG,,0,0,0,,how likely different sums are for a pair of dice,
+Dialogue: 0,0:09:15.13,0:09:17.58,CHN,,0,0,0,,掷一对骰子之后有多大概率点数和是某个数
+Dialogue: 0,0:09:17.58,0:09:19.40,ENG,,0,0,0,,it's essentially a counting game,
+Dialogue: 0,0:09:17.58,0:09:19.40,CHN,,0,0,0,,这就变成了一个计数游戏
+Dialogue: 0,0:09:19.40,0:09:20.50,ENG,,0,0,0,,where you count up
+Dialogue: 0,0:09:19.40,0:09:20.50,CHN,,0,0,0,,因为你可以确切数出
+Dialogue: 0,0:09:20.50,0:09:23.46,ENG,,0,0,0,,how many distinct pairs take on the same sum.
+Dialogue: 0,0:09:20.50,0:09:23.46,CHN,,0,0,0,,有多少对投掷结果  有着相同的点数和
+Dialogue: 0,0:09:23.46,0:09:25.26,ENG,,0,0,0,,Which in the diagram I've drawn,
+Dialogue: 0,0:09:23.46,0:09:25.26,CHN,,0,0,0,,在我画的示意图中
+Dialogue: 0,0:09:25.26,0:09:28.62,ENG,,0,0,0,,you can conveniently think about by going through all of the different diagonals.
+Dialogue: 0,0:09:25.26,0:09:28.62,CHN,,0,0,0,,各个斜线上的点数和都相同
+Dialogue: 0,0:09:31.56,0:09:35.22,ENG,,0,0,0,,Since each such pair has an equal chance of showing up, 1 in 36,
+Dialogue: 0,0:09:31.56,0:09:35.22,CHN,,0,0,0,,并且掷出各对骰子的概率都是 1/36
+Dialogue: 0,0:09:35.22,0:09:37.70,ENG,,0,0,0,,all you have to do is count the sizes of these buckets.
+Dialogue: 0,0:09:35.22,0:09:37.70,CHN,,0,0,0,,你只要数有多少种组合可以得到某个点数和
+Dialogue: 0,0:09:37.70,0:09:42.70,ENG,,0,0,0,,That gives us a definitive shape for the distribution describing a sum of two dice
+Dialogue: 0,0:09:37.70,0:09:42.70,CHN,,0,0,0,,就能够得到准确的点数和概率分布
+Dialogue: 0,0:09:42.70,0:09:45.76,ENG,,0,0,0,,and if we were to play the same game with all possible triplets,
+Dialogue: 0,0:09:42.70,0:09:45.76,CHN,,0,0,0,,如果我们把骰子增加到三个
+Dialogue: 0,0:09:45.76,0:09:48.54,ENG,,0,0,0,,the resulting distribution would look like this.
+Dialogue: 0,0:09:45.76,0:09:48.54,CHN,,0,0,0,,那么我们得到的分布长这样
+Dialogue: 0,0:09:48.54,0:09:51.49,ENG,,0,0,0,,Now, what's more challenging but a lot more interesting is to ask
+Dialogue: 0,0:09:48.54,0:09:51.49,CHN,,0,0,0,,现在更有挑战也更有趣的问题是
+Dialogue: 0,0:09:51.49,0:09:55.34,ENG,,0,0,0,,what happens if we have a non-uniform distribution for that single die.
+Dialogue: 0,0:09:51.49,0:09:55.34,CHN,,0,0,0,,换成偏心骰子以后会发生什么
+Dialogue: 0,0:09:55.34,0:09:58.20,ENG,,0,0,0,,We actually talked all about this in the last video.
+Dialogue: 0,0:09:55.34,0:09:58.20,CHN,,0,0,0,,其实我们在上一个视频中已经讨论过这个问题
+Dialogue: 0,0:09:58.20,0:10:01.22,ENG,,0,0,0,,You do essentially the same thing, you go through all the distinct
+Dialogue: 0,0:09:58.20,0:10:01.22,CHN,,0,0,0,,你只需要做和刚刚相同的事情
+Dialogue: 0,0:10:01.22,0:10:03.88,ENG,,0,0,0,,pairs of dice which add up to the same value.
+Dialogue: 0,0:10:01.22,0:10:03.88,CHN,,0,0,0,,找出相同点数和的不同骰子组合
+Dialogue: 0,0:10:03.88,0:10:06.54,ENG,,0,0,0,,It's just that instead of counting those pairs,
+Dialogue: 0,0:10:03.88,0:10:06.54,CHN,,0,0,0,,只是你不能光数个数
+Dialogue: 0,0:10:06.54,0:10:11.30,ENG,,0,0,0,,for each pair, you multiply the two probabilities of each particular face coming up
+Dialogue: 0,0:10:06.54,0:10:11.30,CHN,,0,0,0,,而是要把每对里两个点数的概率相乘
+Dialogue: 0,0:10:11.30,0:10:12.96,ENG,,0,0,0,,and then you add all those together.
+Dialogue: 0,0:10:11.30,0:10:12.96,CHN,,0,0,0,,然后把所有点数和相同的概率加在一起
+Dialogue: 0,0:10:12.96,0:10:16.86,ENG,,0,0,0,,The computation that does this for all possible sums has a fancy name,
+Dialogue: 0,0:10:12.96,0:10:16.86,CHN,,0,0,0,,这个计算各个点数和概率的过程  其实有个高大上的名字
+Dialogue: 0,0:10:16.86,0:10:18.31,ENG,,0,0,0,,it's called a Convolution
+Dialogue: 0,0:10:16.86,0:10:18.31,CHN,,0,0,0,,叫 卷积
+Dialogue: 0,0:10:18.31,0:10:21.62,ENG,,0,0,0,,but it's essentially just the weighted version of the counting game
+Dialogue: 0,0:10:18.31,0:10:21.62,CHN,,0,0,0,,但本质上它只是带权重的计数游戏
+Dialogue: 0,0:10:21.62,0:10:24.78,ENG,,0,0,0,,that anyone who's played with a pair of dice already finds familiar.
+Dialogue: 0,0:10:21.62,0:10:24.78,CHN,,0,0,0,,刚刚认真听课的同学肯定不会陌生
+Dialogue: 0,0:10:24.78,0:10:28.78,ENG,,0,0,0,,For our purposes, in this lesson, I'll have the computer calculate all that,
+Dialogue: 0,0:10:24.78,0:10:28.78,CHN,,0,0,0,,为了减少不必要的麻烦  这些运算全部由计算机进行
+Dialogue: 0,0:10:28.78,0:10:32.74,ENG,,0,0,0,,simply display the results for you and invite you to observe certain patterns,
+Dialogue: 0,0:10:28.78,0:10:32.74,CHN,,0,0,0,,然后把结果展示给你  指引你发现其中的规律
+Dialogue: 0,0:10:32.74,0:10:34.86,ENG,,0,0,0,,but under the hood, this is what's going on.
+Dialogue: 0,0:10:32.74,0:10:34.86,CHN,,0,0,0,,而刚刚所介绍的这些  则是幕后的运算过程
+Dialogue: 0,0:10:36.72,0:10:39.72,ENG,,0,0,0,,So, just to be crystal clear on what's being represented here,
+Dialogue: 0,0:10:36.72,0:10:39.72,CHN,,0,0,0,,为了让你完全理解这都在干啥
+Dialogue: 0,0:10:39.72,0:10:43.62,ENG,,0,0,0,,if you imagine sampling two different values from that top distribution,
+Dialogue: 0,0:10:39.72,0:10:43.62,CHN,,0,0,0,,假设从最上面的那个单个骰子点数概率的分布图中
+Dialogue: 0,0:10:43.62,0:10:46.68,ENG,,0,0,0,,the one describing a single die and adding them together,
+Dialogue: 0,0:10:43.62,0:10:46.68,CHN,,0,0,0,,取两个点数加在一起
+Dialogue: 0,0:10:46.68,0:10:48.96,ENG,,0,0,0,,then the second distribution I'm drawing
+Dialogue: 0,0:10:46.68,0:10:48.96,CHN,,0,0,0,,那么我下面画的那个分布
+Dialogue: 0,0:10:48.96,0:10:52.38,ENG,,0,0,0,,represents how likely you are to see various different sums.
+Dialogue: 0,0:10:48.96,0:10:52.38,CHN,,0,0,0,,表示相加得到各个点数和的概率
+Dialogue: 0,0:10:52.38,0:10:53.81,ENG,,0,0,0,,Likewise, if you imagine
+Dialogue: 0,0:10:52.38,0:10:53.81,CHN,,0,0,0,,同理  假设从最上面的分布中取三个不同的值
+Dialogue: 0,0:10:53.81,0:10:57.02,ENG,,0,0,0,,sampling three distinct values from that top distribution
+Dialogue: 0,0:10:53.81,0:10:57.02,CHN,,0,0,0,,然后把它们加在一起
+Dialogue: 0,0:10:57.02,0:10:58.18,ENG,,0,0,0,,and adding them together,
+Dialogue: 0,0:10:57.02,0:10:58.18,CHN,,0,0,0,,在这种情况下各个点数和的概率
+Dialogue: 0,0:10:58.18,0:11:02.40,ENG,,0,0,0,,the next plot represents the probabilities for various different sums in that case.
+Dialogue: 0,0:10:58.18,0:11:02.40,CHN,,0,0,0,,则是像最下面这张图展现的一样
+Dialogue: 0,0:11:03.38,0:11:07.36,ENG,,0,0,0,,So, if I compute what the distributions for these sums look like
+Dialogue: 0,0:11:03.38,0:11:07.36,CHN,,0,0,0,,依此类推  如果我像这样计算不同点数和的概率分布
+Dialogue: 0,0:11:07.36,0:11:09.06,ENG,,0,0,0,,for larger and larger sums,
+Dialogue: 0,0:11:07.36,0:11:09.06,CHN,,0,0,0,,当我用的骰子数越来越多时
+Dialogue: 0,0:11:09.06,0:11:12.60,ENG,,0,0,0,,well, you know what I'm going to say, it looks more and more like a bell curve.
+Dialogue: 0,0:11:09.06,0:11:12.60,CHN,,0,0,0,,我猜你已经知道我要说什么了  它会长得越来越像钟形曲线
+Dialogue: 0,0:11:13.20,0:11:16.62,ENG,,0,0,0,,But before we get to that, I want you to make a couple more simple observations.
+Dialogue: 0,0:11:13.20,0:11:16.62,CHN,,0,0,0,,但在我们讨论这个现象之前  我希望你再简单观察一些规律
+Dialogue: 0,0:11:17.40,0:11:20.46,ENG,,0,0,0,,For example, these distributions seem to be wandering to the right,
+Dialogue: 0,0:11:17.40,0:11:20.46,CHN,,0,0,0,,例如  这些分布的图像在不断向右偏移
+Dialogue: 0,0:11:20.46,0:11:24.84,ENG,,0,0,0,,and also they seem to be getting more spread out and a little bit more flat.
+Dialogue: 0,0:11:20.46,0:11:24.84,CHN,,0,0,0,,而且分布得越来越宽  图像也慢慢变扁平
+Dialogue: 0,0:11:24.84,0:11:27.94,ENG,,0,0,0,,You cannot describe the central limit theorem quantitatively
+Dialogue: 0,0:11:24.84,0:11:27.94,CHN,,0,0,0,,如果不考虑上面这两种现象
+Dialogue: 0,0:11:27.94,0:11:29.98,ENG,,0,0,0,,without taking into account both of those effects,
+Dialogue: 0,0:11:27.94,0:11:29.98,CHN,,0,0,0,,你将很难定量描述中心极限定理
+Dialogue: 0,0:11:29.98,0:11:33.50,ENG,,0,0,0,,which in turn requires describing the mean and the standard deviation.
+Dialogue: 0,0:11:29.98,0:11:33.50,CHN,,0,0,0,,而这就要求我们能够描述它们的均值和标准差
+Dialogue: 0,0:11:33.50,0:11:35.52,ENG,,0,0,0,,Maybe you're already familiar with those,
+Dialogue: 0,0:11:33.50,0:11:35.52,CHN,,0,0,0,,或许你已经对这两个概念很熟悉了
+Dialogue: 0,0:11:35.52,0:11:38.70,ENG,,0,0,0,,but I want to make minimal assumptions here and it never hurts to review.
+Dialogue: 0,0:11:35.52,0:11:38.70,CHN,,0,0,0,,不过我不会假设看这个视频的都了解  而且复习一下也无妨
+Dialogue: 0,0:11:38.70,0:11:40.68,ENG,,0,0,0,,So let's quickly go over both of those.
+Dialogue: 0,0:11:38.70,0:11:40.68,CHN,,0,0,0,,那么让我们快速回顾一下这两个概念
+Dialogue: 0,0:11:43.68,0:11:47.28,ENG,,0,0,0,,The mean of a distribution, often denoted with a Greek letter μ,
+Dialogue: 0,0:11:43.68,0:11:47.28,CHN,,0,0,0,,一个分布的均值  通常用希腊字母 μ 表示
+Dialogue: 0,0:11:47.28,0:11:50.78,ENG,,0,0,0,,is a way of capturing the center of mass for that distribution.
+Dialogue: 0,0:11:47.28,0:11:50.78,CHN,,0,0,0,,描述了这个分布的重心
+Dialogue: 0,0:11:50.78,0:11:54.74,ENG,,0,0,0,,It's calculated as the expected value of our random variable,
+Dialogue: 0,0:11:50.78,0:11:54.74,CHN,,0,0,0,,而它的值恰好是随机变量的期望值
+Dialogue: 0,0:11:54.74,0:11:58.38,ENG,,0,0,0,,which is a way of saying you go through all of the different possible outcomes
+Dialogue: 0,0:11:54.74,0:11:58.38,CHN,,0,0,0,,在这里  期望意味着
+Dialogue: 0,0:11:58.38,0:12:02.96,ENG,,0,0,0,,and you multiply the probability of that outcome times the value of the variable.
+Dialogue: 0,0:11:58.38,0:12:02.96,CHN,,0,0,0,,把这个随机变量各个取值乘以对应的概率的结果加起来
+Dialogue: 0,0:12:02.96,0:12:06.54,ENG,,0,0,0,,If higher values are more probable, that weighted sum is going to be bigger,
+Dialogue: 0,0:12:02.96,0:12:06.54,CHN,,0,0,0,,这样一来  如果更可能出现较大的值  这个加权和会更大
+Dialogue: 0,0:12:06.54,0:12:10.08,ENG,,0,0,0,,if lower values are more probable, that weighted time is going to be smaller.
+Dialogue: 0,0:12:06.54,0:12:10.08,CHN,,0,0,0,,反之  如果更可能出现较小的数值  这个加权和也会更小
+Dialogue: 0,0:12:10.62,0:12:12.72,ENG,,0,0,0,,A little more interesting is if you want to measure
+Dialogue: 0,0:12:10.62,0:12:12.72,CHN,,0,0,0,,而测量这个分布的范围有多广
+Dialogue: 0,0:12:12.72,0:12:14.58,ENG,,0,0,0,,how spread out this distribution is,
+Dialogue: 0,0:12:12.72,0:12:14.58,CHN,,0,0,0,,由于许多不同的概念都可以做到
+Dialogue: 0,0:12:14.58,0:12:16.92,ENG,,0,0,0,,because there's multiple different ways you might do it.
+Dialogue: 0,0:12:14.58,0:12:16.92,CHN,,0,0,0,,就显得更有意思了
+Dialogue: 0,0:12:18.72,0:12:20.48,ENG,,0,0,0,,One of them is called the variance.
+Dialogue: 0,0:12:18.72,0:12:20.48,CHN,,0,0,0,,其中一种方法叫做方差
+Dialogue: 0,0:12:20.48,0:12:22.85,ENG,,0,0,0,,The idea there is to look at the difference
+Dialogue: 0,0:12:20.48,0:12:22.85,CHN,,0,0,0,,它是通过先计算
+Dialogue: 0,0:12:22.85,0:12:25.06,ENG,,0,0,0,,between each possible value and the mean,
+Dialogue: 0,0:12:22.85,0:12:25.06,CHN,,0,0,0,,随机变量各个取值与均值之间的差
+Dialogue: 0,0:12:25.06,0:12:28.34,ENG,,0,0,0,,square that difference and ask for its expected value.
+Dialogue: 0,0:12:25.06,0:12:28.34,CHN,,0,0,0,,并取这个差值的平方作为新的随机变量求期望
+Dialogue: 0,0:12:28.34,0:12:31.96,ENG,,0,0,0,,The idea is that whether your value is below or above the mean,
+Dialogue: 0,0:12:28.34,0:12:31.96,CHN,,0,0,0,,这样一来  无论你的随机变量取值是低于还是高于均值
+Dialogue: 0,0:12:31.96,0:12:34.46,ENG,,0,0,0,,when you square that difference you get a positive number
+Dialogue: 0,0:12:31.96,0:12:34.46,CHN,,0,0,0,,当你取这个差值的平方时  你总能得到一个正数
+Dialogue: 0,0:12:34.46,0:12:36.66,ENG,,0,0,0,,and the larger the difference, the bigger that number.
+Dialogue: 0,0:12:34.46,0:12:36.66,CHN,,0,0,0,,而且差值越大  这个数值也越大
+Dialogue: 0,0:12:37.38,0:12:39.24,ENG,,0,0,0,,Squaring it like this turns out to make the math
+Dialogue: 0,0:12:37.38,0:12:39.24,CHN,,0,0,0,,并且取平方的过程使得这个运算
+Dialogue: 0,0:12:39.24,0:12:42.16,ENG,,0,0,0,,much, much nicer than if we did something like an absolute value,
+Dialogue: 0,0:12:39.24,0:12:42.16,CHN,,0,0,0,,比诸如绝对值的其他方法要好得多
+Dialogue: 0,0:12:42.16,0:12:45.36,ENG,,0,0,0,,but the downside is that it's hard to think about this as a distance
+Dialogue: 0,0:12:42.16,0:12:45.36,CHN,,0,0,0,,但缺点是  我们不好把它当作图中的距离
+Dialogue: 0,0:12:45.36,0:12:48.02,ENG,,0,0,0,,in our diagram because the units are off.
+Dialogue: 0,0:12:45.36,0:12:48.02,CHN,,0,0,0,,因为单位不匹配
+Dialogue: 0,0:12:48.02,0:12:50.38,ENG,,0,0,0,,Kind of like the units here are square units
+Dialogue: 0,0:12:48.02,0:12:50.38,CHN,,0,0,0,,这里的单位更像是平方单位
+Dialogue: 0,0:12:50.38,0:12:53.40,ENG,,0,0,0,,whereas a distance in our diagram would be a kind of linear unit.
+Dialogue: 0,0:12:50.38,0:12:53.40,CHN,,0,0,0,,而图中我们想描述的这个差值应该是线性单位的
+Dialogue: 0,0:12:53.40,0:12:57.22,ENG,,0,0,0,,So, another way to measure spread is what's called the standard deviation,
+Dialogue: 0,0:12:53.40,0:12:57.22,CHN,,0,0,0,,因此  另一种测量分布范围宽度的方法就是用标准差
+Dialogue: 0,0:12:57.22,0:12:59.32,ENG,,0,0,0,,which is the square root of this value.
+Dialogue: 0,0:12:57.22,0:12:59.32,CHN,,0,0,0,,其实就是方差的平方根
+Dialogue: 0,0:12:59.32,0:13:03.30,ENG,,0,0,0,,That can be interpreted much more reasonably as a distance on our diagram
+Dialogue: 0,0:12:59.32,0:13:03.30,CHN,,0,0,0,,这样一来  我们可以更合理地把它说成是在图上的“距离”
+Dialogue: 0,0:13:03.30,0:13:06.04,ENG,,0,0,0,,and it's commonly denoted with the Greek letter σ.
+Dialogue: 0,0:13:03.30,0:13:06.04,CHN,,0,0,0,,通常用希腊字母 σ 表示
+Dialogue: 0,0:13:06.04,0:13:09.78,ENG,,0,0,0,,So, you know m for mean, as for standard deviation but both in Greek.
+Dialogue: 0,0:13:06.04,0:13:09.78,CHN,,0,0,0,,也就是  m 表示均值  s 表示标准差  只不过用希腊字母表示
+Dialogue: 0,0:13:11.94,0:13:14.24,ENG,,0,0,0,,Looking back at our sequence of distributions,
+Dialogue: 0,0:13:11.94,0:13:14.24,CHN,,0,0,0,,回顾一下刚刚图中的一系列分布
+Dialogue: 0,0:13:14.24,0:13:16.36,ENG,,0,0,0,,let's talk about the mean and standard deviation.
+Dialogue: 0,0:13:14.24,0:13:16.36,CHN,,0,0,0,,我们可以谈谈均值和标准差
+Dialogue: 0,0:13:16.36,0:13:19.14,ENG,,0,0,0,,If we call the mean of the initial distribution μ,
+Dialogue: 0,0:13:16.36,0:13:19.14,CHN,,0,0,0,,如果我们把最早提到的数值分布的均值称为 μ
+Dialogue: 0,0:13:19.14,0:13:22.28,ENG,,0,0,0,,which for the one Illustrated happens to be 2.24,
+Dialogue: 0,0:13:19.14,0:13:22.28,CHN,,0,0,0,,对于图上所示的这个例子 μ 恰好是 2.24
+Dialogue: 0,0:13:22.28,0:13:23.80,ENG,,0,0,0,,hopefully, it won't be too surprising
+Dialogue: 0,0:13:22.28,0:13:23.80,CHN,,0,0,0,,而要是我告诉你下一个的分布均值是 2μ
+Dialogue: 0,0:13:23.80,0:13:26.74,ENG,,0,0,0,,if I tell you that the mean of the next one is two times μ.
+Dialogue: 0,0:13:23.80,0:13:26.74,CHN,,0,0,0,,你应该不会被惊到吧
+Dialogue: 0,0:13:26.74,0:13:30.32,ENG,,0,0,0,,That is, you roll a pair of dice, you want to know the expected value of the sum,
+Dialogue: 0,0:13:26.74,0:13:30.32,CHN,,0,0,0,,换句话说  当你求一对骰子点数和的期望时
+Dialogue: 0,0:13:30.32,0:13:32.88,ENG,,0,0,0,,it's two times the expected value for a single die.
+Dialogue: 0,0:13:30.32,0:13:32.88,CHN,,0,0,0,,它是单个骰子点数期望值的两倍
+Dialogue: 0,0:13:33.72,0:13:37.82,ENG,,0,0,0,,Similarly, the expected value for our sum of size 3 is 3 times mu
+Dialogue: 0,0:13:33.72,0:13:37.82,CHN,,0,0,0,,而类似的  三个骰子点数和的期望是 3μ
+Dialogue: 0,0:13:37.82,0:13:41.64,ENG,,0,0,0,,and so on and so forth. The mean just marches steadily on to the right,
+Dialogue: 0,0:13:37.82,0:13:41.64,CHN,,0,0,0,,依此类推  每加一个骰子  均值就会向右移动一些
+Dialogue: 0,0:13:41.64,0:13:45.00,ENG,,0,0,0,,which is why our distributions seem to be drifting off in that direction.
+Dialogue: 0,0:13:41.64,0:13:45.00,CHN,,0,0,0,,这就是为什么我们发现分布整体在朝右移动
+Dialogue: 0,0:13:45.00,0:13:47.47,ENG,,0,0,0,,A little more challenging but very important
+Dialogue: 0,0:13:45.00,0:13:47.47,CHN,,0,0,0,,而更有挑战但非常重要的一点是
+Dialogue: 0,0:13:47.47,0:13:50.10,ENG,,0,0,0,,is to describe how the standard deviation changes.
+Dialogue: 0,0:13:47.47,0:13:50.10,CHN,,0,0,0,,描述标准差是怎么变化的
+Dialogue: 0,0:13:50.10,0:13:53.58,ENG,,0,0,0,,The key fact here is that if you have two different random variables,
+Dialogue: 0,0:13:50.10,0:13:53.58,CHN,,0,0,0,,关键点在于  如果你有两个随机变量
+Dialogue: 0,0:13:53.58,0:13:56.18,ENG,,0,0,0,,then the variance for the sum of those variables
+Dialogue: 0,0:13:53.58,0:13:56.18,CHN,,0,0,0,,那么这两个变量之和的方差
+Dialogue: 0,0:13:56.18,0:13:59.60,ENG,,0,0,0,,is the same as just adding together the original two variances.
+Dialogue: 0,0:13:56.18,0:13:59.60,CHN,,0,0,0,,和将原始的两个变量方差相加所得到的值完全相同
+Dialogue: 0,0:13:59.60,0:14:02.12,ENG,,0,0,0,,This is one of those facts that you can just compute
+Dialogue: 0,0:13:59.60,0:14:02.12,CHN,,0,0,0,,在用上了一堆的定义以后
+Dialogue: 0,0:14:02.12,0:14:03.82,ENG,,0,0,0,,when you unpack all the definitions.
+Dialogue: 0,0:14:02.12,0:14:03.82,CHN,,0,0,0,,你可以通过计算来验证这一点
+Dialogue: 0,0:14:03.82,0:14:06.38,ENG,,0,0,0,,There are a couple nice intuitions for why it's true.
+Dialogue: 0,0:14:03.82,0:14:06.38,CHN,,0,0,0,,关于这一点有一些很妙的直观解释
+Dialogue: 0,0:14:06.38,0:14:09.90,ENG,,0,0,0,,My tentative plan is to just actually make a series about probability
+Dialogue: 0,0:14:06.38,0:14:09.90,CHN,,0,0,0,,我暂时的计划是做一个关于概率的系列视频
+Dialogue: 0,0:14:09.90,0:14:13.64,ENG,,0,0,0,,and talk about things like intuition's underlying variants and its cousins there,
+Dialogue: 0,0:14:09.90,0:14:13.64,CHN,,0,0,0,,来直观解释方差及其相关的概念
+Dialogue: 0,0:14:13.64,0:14:16.00,ENG,,0,0,0,,but right now, the main thing I want you to highlight
+Dialogue: 0,0:14:13.64,0:14:16.00,CHN,,0,0,0,,但现在我希望你重点关注的
+Dialogue: 0,0:14:16.00,0:14:20.28,ENG,,0,0,0,,is how it's the variance that adds, it's not the standard deviation that adds.
+Dialogue: 0,0:14:16.00,0:14:20.28,CHN,,0,0,0,,是为什么加的是方差而不是标准差
+Dialogue: 0,0:14:20.28,0:14:21.26,ENG,,0,0,0,,So critically,
+Dialogue: 0,0:14:20.28,0:14:21.26,CHN,,0,0,0,,严格来说
+Dialogue: 0,0:14:21.26,0:14:24.66,ENG,,0,0,0,,if you were to take 'n' different realizations of the same random variable
+Dialogue: 0,0:14:24.66,0:14:26.88,ENG,,0,0,0,,and ask what the sum looks like,
+Dialogue: 0,0:14:21.26,0:14:26.88,CHN,,0,0,0,,如果你想知道同一个随机变量出现 n 次的总和的分布长啥样
+Dialogue: 0,0:14:26.88,0:14:31.60,ENG,,0,0,0,,the variance of that sum is 'n' times the variance of your original variable,
+Dialogue: 0,0:14:26.88,0:14:31.60,CHN,,0,0,0,,那么它的方差会是原始变量方差的 n 倍
+Dialogue: 0,0:14:32.28,0:14:35.22,ENG,,0,0,0,,meaning the standard deviation, the square root of all this,
+Dialogue: 0,0:14:32.28,0:14:35.22,CHN,,0,0,0,,这意味着总和的标准差  也就是方差的平方根
+Dialogue: 0,0:14:35.22,0:14:38.42,ENG,,0,0,0,,is the square root of n times the original standard deviation.
+Dialogue: 0,0:14:35.22,0:14:38.42,CHN,,0,0,0,,是原始变量标准差的根号 n 倍
+Dialogue: 0,0:14:39.12,0:14:41.56,ENG,,0,0,0,,For example, back in our sequence of distributions,
+Dialogue: 0,0:14:39.12,0:14:41.56,CHN,,0,0,0,,例如  回到我们刚刚那张图里的分布
+Dialogue: 0,0:14:41.56,0:14:45.17,ENG,,0,0,0,,if we label the standard deviation of our initial one with σ,
+Dialogue: 0,0:14:41.56,0:14:45.17,CHN,,0,0,0,,如果我们用 σ 来表示单个随机变量分布的标准差
+Dialogue: 0,0:14:45.17,0:14:48.98,ENG,,0,0,0,,then the next standard deviation is going to be the square root of 2 times σ,
+Dialogue: 0,0:14:45.17,0:14:48.98,CHN,,0,0,0,,那么两个骰子点数和标准差将会是 根号 2 倍的 σ
+Dialogue: 0,0:14:48.98,0:14:53.68,ENG,,0,0,0,,and after that, it looks like the square root of 3 times σ and so on and so forth.
+Dialogue: 0,0:14:48.98,0:14:53.68,CHN,,0,0,0,,三个骰子的则是根号 3 倍的 σ  依此类推
+Dialogue: 0,0:14:53.68,0:14:55.84,ENG,,0,0,0,,This like I said is very important.
+Dialogue: 0,0:14:53.68,0:14:55.84,CHN,,0,0,0,,重复一遍  这一点非常重要
+Dialogue: 0,0:14:55.84,0:14:58.94,ENG,,0,0,0,,It means that even though our distributions are getting spread out,
+Dialogue: 0,0:14:55.84,0:14:58.94,CHN,,0,0,0,,因为这意味着尽管我们总和分布得越来越宽
+Dialogue: 0,0:14:58.94,0:15:00.72,ENG,,0,0,0,,they're not spreading out all that quickly.
+Dialogue: 0,0:14:58.94,0:15:00.72,CHN,,0,0,0,,但是它们并没有扩散得那么快
+Dialogue: 0,0:15:00.72,0:15:04.20,ENG,,0,0,0,,They only do so in proportion to the square root of the size of the sum.
+Dialogue: 0,0:15:00.72,0:15:04.20,CHN,,0,0,0,,这个速度正比于参与求和的变量个数的平方根
+Dialogue: 0,0:15:04.20,0:15:08.58,ENG,,0,0,0,,As we prepare to make a more quantitative description of the central limit theorem,
+Dialogue: 0,0:15:04.20,0:15:08.58,CHN,,0,0,0,,在对中心极限定理进行更加定量的描述之前
+Dialogue: 0,0:15:08.58,0:15:10.92,ENG,,0,0,0,,the core intuition I want you to keep in your head
+Dialogue: 0,0:15:08.58,0:15:10.92,CHN,,0,0,0,,我希望你能够关注的一个核心思想是
+Dialogue: 0,0:15:10.92,0:15:14.01,ENG,,0,0,0,,is that we'll basically realign all of these distributions
+Dialogue: 0,0:15:10.92,0:15:14.01,CHN,,0,0,0,,我们可以重新对齐这些分布
+Dialogue: 0,0:15:14.01,0:15:15.92,ENG,,0,0,0,,so that their means line up together
+Dialogue: 0,0:15:14.01,0:15:15.92,CHN,,0,0,0,,使它们的均值在一条线上
+Dialogue: 0,0:15:15.92,0:15:17.48,ENG,,0,0,0,,and then rescale them
+Dialogue: 0,0:15:15.92,0:15:17.48,CHN,,0,0,0,,然后缩放 x 轴
+Dialogue: 0,0:15:17.48,0:15:20.98,ENG,,0,0,0,,so that all of the standard deviations are just going to be equal to one.
+Dialogue: 0,0:15:17.48,0:15:20.98,CHN,,0,0,0,,使它们的标准差都为 1
+Dialogue: 0,0:15:20.98,0:15:22.32,ENG,,0,0,0,,And when we do that,
+Dialogue: 0,0:15:20.98,0:15:22.32,CHN,,0,0,0,,这样做所得到的分布形状
+Dialogue: 0,0:15:22.32,0:15:26.40,ENG,,0,0,0,,the shape that results gets closer and closer to a certain universal shape
+Dialogue: 0,0:15:22.32,0:15:26.40,CHN,,0,0,0,,随着变量数增多趋近于同一个形状
+Dialogue: 0,0:15:26.40,0:15:30.10,ENG,,0,0,0,,described with an elegant little function that will unpack in just a moment.
+Dialogue: 0,0:15:26.40,0:15:30.10,CHN,,0,0,0,,这个形状背后有一个优美的函数  一会就来说
+Dialogue: 0,0:15:30.10,0:15:31.76,ENG,,0,0,0,,And let me say one more time,
+Dialogue: 0,0:15:30.10,0:15:31.76,CHN,,0,0,0,,让我再叨叨一遍
+Dialogue: 0,0:15:31.76,0:15:35.58,ENG,,0,0,0,,the real magic here is how we could have started with any distribution
+Dialogue: 0,0:15:31.76,0:15:35.58,CHN,,0,0,0,,这个定理妙在于无论最初始的点数概率分布如何
+Dialogue: 0,0:15:35.58,0:15:39.16,ENG,,0,0,0,,describing a single roll of the die and if we play the same game,
+Dialogue: 0,0:15:35.58,0:15:39.16,CHN,,0,0,0,,只要保证分布不变  投更多的骰子
+Dialogue: 0,0:15:39.16,0:15:42.48,ENG,,0,0,0,,considering what the distributions for the many different sums look like
+Dialogue: 0,0:15:39.16,0:15:42.48,CHN,,0,0,0,,然后记录点数和的分布并对齐均值
+Dialogue: 0,0:15:42.48,0:15:44.90,ENG,,0,0,0,,and we realign them so that the means line up
+Dialogue: 0,0:15:42.48,0:15:44.90,CHN,,0,0,0,,再缩放 x 轴使的标准差全为 1
+Dialogue: 0,0:15:44.90,0:15:48.06,ENG,,0,0,0,,and we rescale them so that the standard deviations are all one,
+Dialogue: 0,0:15:44.90,0:15:48.06,CHN,,0,0,0,,得到的分布都很接近这个统一的形状
+Dialogue: 0,0:15:48.06,0:15:52.86,ENG,,0,0,0,,we still approach that same universal shape which is kind of mind-boggling.
+Dialogue: 0,0:15:48.06,0:15:52.86,CHN,,0,0,0,,这太颠覆认知了
+Dialogue: 0,0:15:55.02,0:15:57.41,ENG,,0,0,0,,And now my friends is probably as good a time
+Dialogue: 0,0:15:55.02,0:15:57.41,CHN,,0,0,0,,说了这么多
+Dialogue: 0,0:15:57.41,0:16:01.37,ENG,,0,0,0,,as any to finally get into the formula for a normal distribution.
+Dialogue: 0,0:15:57.41,0:16:01.37,CHN,,0,0,0,,终于可以正式聊正态分布的式子了
+Dialogue: 0,0:16:01.37,0:16:02.65,ENG,,0,0,0,,And the way I'd like to do this is to
+Dialogue: 0,0:16:01.37,0:16:02.65,CHN,,0,0,0,,我想要做的就是
+Dialogue: 0,0:16:02.65,0:16:06.20,ENG,,0,0,0,,basically peel back all the layers and build it up one piece at a time.
+Dialogue: 0,0:16:02.65,0:16:06.20,CHN,,0,0,0,,把它全部拆开再一点一点组装起来
+Dialogue: 0,0:16:06.20,0:16:11.14,ENG,,0,0,0,,The function eˣ or anything to the x describes exponential growth.
+Dialogue: 0,0:16:06.20,0:16:11.14,CHN,,0,0,0,,函数 eˣ 或者随便什么的 x 次方  表示指数增长
+Dialogue: 0,0:16:11.14,0:16:15.54,ENG,,0,0,0,,And if you make that exponent negative, which flips around the graph horizontally,
+Dialogue: 0,0:16:11.14,0:16:15.54,CHN,,0,0,0,,如果给指数前面加个负号  就会沿 y 轴函数图像
+Dialogue: 0,0:16:15.54,0:16:18.06,ENG,,0,0,0,,you might think of it as describing exponential decay.
+Dialogue: 0,0:16:15.54,0:16:18.06,CHN,,0,0,0,,可以当成是指数衰减
+Dialogue: 0,0:16:18.06,0:16:20.12,ENG,,0,0,0,,To make this decay in both directions,
+Dialogue: 0,0:16:18.06,0:16:20.12,CHN,,0,0,0,,为了让它在正负方向上都衰减
+Dialogue: 0,0:16:20.12,0:16:23.48,ENG,,0,0,0,,you could do something to make sure the exponent is always negative and growing,
+Dialogue: 0,0:16:20.12,0:16:23.48,CHN,,0,0,0,,我们要确保指数非正  而且越往两边越小
+Dialogue: 0,0:16:20.12,0:16:23.48,comment,,0,0,0,,{\pos(1040, 1050)}*Grant 搞错了（漏了 0）
+Dialogue: 0,0:16:23.48,0:16:25.74,ENG,,0,0,0,,like taking the negative absolute value,
+Dialogue: 0,0:16:23.48,0:16:25.74,CHN,,0,0,0,,例如取绝对值的相反数
+Dialogue: 0,0:16:25.74,0:16:28.94,ENG,,0,0,0,,that would give us this kind of awkward sharp point in the middle,
+Dialogue: 0,0:16:25.74,0:16:28.94,CHN,,0,0,0,,不过这会使中间有个奇怪的刺突
+Dialogue: 0,0:16:28.94,0:16:32.16,ENG,,0,0,0,,but if instead you make that exponent the negative square of x,
+Dialogue: 0,0:16:28.94,0:16:32.16,CHN,,0,0,0,,但如果指数是 -x²
+Dialogue: 0,0:16:32.16,0:16:36.00,ENG,,0,0,0,,you get a smoother version of the same thing, which decays in both directions.
+Dialogue: 0,0:16:32.16,0:16:36.00,CHN,,0,0,0,,不仅同样往两边衰减  还能得到更光滑的函数
+Dialogue: 0,0:16:36.00,0:16:38.34,ENG,,0,0,0,,This gives us the basic bell curve shape.
+Dialogue: 0,0:16:36.00,0:16:38.34,CHN,,0,0,0,,这样就得到了一个钟形曲线
+Dialogue: 0,0:16:38.34,0:16:40.72,ENG,,0,0,0,,Now, if you throw a constant in front of that x
+Dialogue: 0,0:16:38.34,0:16:40.72,CHN,,0,0,0,,接着  如果你在 x 前面乘一个常数
+Dialogue: 0,0:16:40.72,0:16:42.64,ENG,,0,0,0,,and you scale that constant up and down,
+Dialogue: 0,0:16:40.72,0:16:42.64,CHN,,0,0,0,,然后修改这个常数的大小
+Dialogue: 0,0:16:42.64,0:16:45.38,ENG,,0,0,0,,it lets you stretch and squish the graph horizontally
+Dialogue: 0,0:16:42.64,0:16:45.38,CHN,,0,0,0,,就可以在水平方向上伸缩图形
+Dialogue: 0,0:16:45.38,0:16:48.64,ENG,,0,0,0,,allowing you to describe narrow and wider bell curves.
+Dialogue: 0,0:16:45.38,0:16:48.64,CHN,,0,0,0,,随你的意得到窄的或者宽的曲线
+Dialogue: 0,0:16:48.64,0:16:50.81,ENG,,0,0,0,,And a quick thing I'd like to point out here is that
+Dialogue: 0,0:16:48.64,0:16:50.81,CHN,,0,0,0,,稍微插一句
+Dialogue: 0,0:16:50.81,0:16:52.68,ENG,,0,0,0,,based on the rules of exponentiation,
+Dialogue: 0,0:16:50.81,0:16:52.68,CHN,,0,0,0,,根据指数的运算法则
+Dialogue: 0,0:16:52.68,0:16:55.26,ENG,,0,0,0,,as we tweak around that constant c,
+Dialogue: 0,0:16:52.68,0:16:55.26,CHN,,0,0,0,,当我们调整常数 c 时
+Dialogue: 0,0:16:55.26,0:16:59.88,ENG,,0,0,0,,you could also think about it as simply changing the base of the exponentiation.
+Dialogue: 0,0:16:55.26,0:16:59.88,CHN,,0,0,0,,可以看作是改变了这个函数的底数
+Dialogue: 0,0:16:59.88,0:17:03.96,ENG,,0,0,0,,And in that sense, the number e is not really all that special for our formula.
+Dialogue: 0,0:16:59.88,0:17:03.96,CHN,,0,0,0,,照这样说  e 对于这个式子来说并没有什么特殊
+Dialogue: 0,0:17:03.96,0:17:06.84,ENG,,0,0,0,,We could replace it with any other positive constant
+Dialogue: 0,0:17:03.96,0:17:06.84,CHN,,0,0,0,,可以随便拿什么大于 1 的数来做底
+Dialogue: 0,0:17:03.96,0:17:06.84,comment,,0,0,0,,{\pos(1150, 1050)}*Grant 又搞错了（说成了正数）
+Dialogue: 0,0:17:06.84,0:17:10.68,ENG,,0,0,0,,you'll get the same family of curves as we tweak that constant.
+Dialogue: 0,0:17:06.84,0:17:10.68,CHN,,0,0,0,,当我们调整系数 c 时  得到的也是这一族曲线
+Dialogue: 0,0:17:11.26,0:17:15.29,ENG,,0,0,0,,Make it a two, same family of curves, make it a three, same family of curves.
+Dialogue: 0,0:17:11.26,0:17:15.29,CHN,,0,0,0,,底为 2 时  底为 3 时  都是这一族
+Dialogue: 0,0:17:15.30,0:17:19.74,ENG,,0,0,0,,The reason we use e is that it gives that constant a very readable meaning,
+Dialogue: 0,0:17:15.30,0:17:19.74,CHN,,0,0,0,,之所以这里用 e  是因为它给了常数 c 一个明确的意义
+Dialogue: 0,0:17:19.74,0:17:22.82,ENG,,0,0,0,,or rather if we reconfigure things a little bit
+Dialogue: 0,0:17:19.74,0:17:22.82,CHN,,0,0,0,,为了说清楚  我们先稍微改一下指数
+Dialogue: 0,0:17:22.82,0:17:25.75,ENG,,0,0,0,,so that the exponent looks like negative 1/2
+Dialogue: 0,0:17:22.82,0:17:25.75,CHN,,0,0,0,,把 x 除一个常数 σ  平方完再乘 -1/2
+Dialogue: 0,0:17:25.75,0:17:30.18,ENG,,0,0,0,,times x divided by a certain constant, which we'll suggestively call σ, squared,
+Dialogue: 0,0:17:25.75,0:17:30.18,CHN,,0,0,0,,写成 -½(x/σ)²
+Dialogue: 0,0:17:30.18,0:17:33.44,ENG,,0,0,0,,then once we turn this into a probability distribution,
+Dialogue: 0,0:17:30.18,0:17:33.44,CHN,,0,0,0,,这样一来  如果我们把它看成是函数的概率分布
+Dialogue: 0,0:17:33.44,0:17:37.26,ENG,,0,0,0,,that constant σ will be the standard deviation of that distribution,
+Dialogue: 0,0:17:33.44,0:17:37.26,CHN,,0,0,0,,常数 σ 就恰好是分布的标准差
+Dialogue: 0,0:17:37.26,0:17:38.68,ENG,,0,0,0,,and that's very nice.
+Dialogue: 0,0:17:37.26,0:17:38.68,CHN,,0,0,0,,真棒
+Dialogue: 0,0:17:38.68,0:17:41.86,ENG,,0,0,0,,But before we can interpret this as a probability distribution,
+Dialogue: 0,0:17:38.68,0:17:41.86,CHN,,0,0,0,,但要是想说它是一个概率分布
+Dialogue: 0,0:17:41.86,0:17:44.58,ENG,,0,0,0,,we need the area under the curve to be one.
+Dialogue: 0,0:17:41.86,0:17:44.58,CHN,,0,0,0,,我们还需要让曲线和概率分布的含义相匹配
+Dialogue: 0,0:17:44.58,0:17:47.10,ENG,,0,0,0,,And the reason for that is how the curve is interpreted.
+Dialogue: 0,0:17:44.58,0:17:47.10,CHN,,0,0,0,,它和 x 轴夹的面积必须为 1
+Dialogue: 0,0:17:47.10,0:17:50.58,ENG,,0,0,0,,Unlike discrete distributions, when it comes to something continuous,
+Dialogue: 0,0:17:47.10,0:17:50.58,CHN,,0,0,0,,与离散分布不同
+Dialogue: 0,0:17:50.58,0:17:53.54,ENG,,0,0,0,,you don't ask about the probability of a particular point.
+Dialogue: 0,0:17:50.58,0:17:53.54,CHN,,0,0,0,,你不会去管连续分布某一个点的概率
+Dialogue: 0,0:17:53.54,0:17:58.48,ENG,,0,0,0,,Instead, you ask for the probability that a value falls between two different values.
+Dialogue: 0,0:17:53.54,0:17:58.48,CHN,,0,0,0,,而是在意随机值落在两个值之间的概率
+Dialogue: 0,0:17:58.48,0:18:01.74,ENG,,0,0,0,,And what the curve is telling you is that that probability
+Dialogue: 0,0:17:58.48,0:18:01.74,CHN,,0,0,0,,曲线告诉你的则是
+Dialogue: 0,0:18:01.74,0:18:05.58,ENG,,0,0,0,,equals the area under the curve between those two values.
+Dialogue: 0,0:18:01.74,0:18:05.58,CHN,,0,0,0,,这个概率等于两个值中间曲线下的面积
+Dialogue: 0,0:18:05.58,0:18:07.58,ENG,,0,0,0,,There's a whole other video about this.
+Dialogue: 0,0:18:05.58,0:18:07.58,CHN,,0,0,0,,这类函数叫做概率密度函数
+Dialogue: 0,0:18:07.58,0:18:09.60,ENG,,0,0,0,,They're called probability density functions.
+Dialogue: 0,0:18:07.58,0:18:09.60,CHN,,0,0,0,,我有一期视频专门介绍它
+Dialogue: 0,0:18:09.60,0:18:13.24,ENG,,0,0,0,,The main point right now is the area under the entire curve
+Dialogue: 0,0:18:09.60,0:18:13.24,CHN,,0,0,0,,这里的关键是  曲线下的总面积
+Dialogue: 0,0:18:13.24,0:18:17.16,ENG,,0,0,0,,represents the probability that something happens, that some number comes up.
+Dialogue: 0,0:18:13.24,0:18:17.16,CHN,,0,0,0,,代表了所有可能结果的概率总和  也就是 1
+Dialogue: 0,0:18:17.16,0:18:20.70,ENG,,0,0,0,,That should be one, which is why we want the area under this to be one.
+Dialogue: 0,0:18:17.16,0:18:20.70,CHN,,0,0,0,,因此我们才希望曲线下的总面积是 1
+Dialogue: 0,0:18:20.70,0:18:24.46,ENG,,0,0,0,,As it stands with the basic bell curve shape of e to the negative x squared,
+Dialogue: 0,0:18:20.70,0:18:24.46,CHN,,0,0,0,,回到基本的钟形曲线  e 的 -x² 次方
+Dialogue: 0,0:18:24.46,0:18:28.10,ENG,,0,0,0,,the area is not one,  it's actually the square root of π.
+Dialogue: 0,0:18:24.46,0:18:28.10,CHN,,0,0,0,,它下面的面积并不是 1  而是根号 π
+Dialogue: 0,0:18:28.10,0:18:31.72,ENG,,0,0,0,,I know, right?
+Dialogue: 0,0:18:28.10,0:18:31.72,CHN,,0,0,0,,我知道你想说啥
+Dialogue: 0,0:18:28.10,0:18:31.72,ENG,,0,0,0,,What is π doing here?
+Dialogue: 0,0:18:28.10,0:18:31.72,CHN,,0,0,0,,哪来的 π？
+Dialogue: 0,0:18:28.10,0:18:31.72,ENG,,0,0,0,,What does this have to do with circles?
+Dialogue: 0,0:18:28.10,0:18:31.72,CHN,,0,0,0,,哪来的圆？
+Dialogue: 0,0:18:31.72,0:18:35.16,ENG,,0,0,0,,Like I said at the start, I'd love to talk all about that in the next video
+Dialogue: 0,0:18:31.72,0:18:35.16,CHN,,0,0,0,,前面说了  要到下一个视频才能说清楚
+Dialogue: 0,0:18:35.16,0:18:37.98,ENG,,0,0,0,,but if you can spare your excitement for our purposes right now,
+Dialogue: 0,0:18:35.16,0:18:37.98,CHN,,0,0,0,,但先冷静  回归主题
+Dialogue: 0,0:18:37.98,0:18:41.48,ENG,,0,0,0,,all it means is that we should divide this function by the square root of π
+Dialogue: 0,0:18:37.98,0:18:41.48,CHN,,0,0,0,,问题很简单  给整个函数除个根号 π
+Dialogue: 0,0:18:41.48,0:18:43.26,ENG,,0,0,0,,and it gives us the area we want.
+Dialogue: 0,0:18:41.48,0:18:43.26,CHN,,0,0,0,,不就得到想要的面积 1 了吗
+Dialogue: 0,0:18:43.26,0:18:46.94,ENG,,0,0,0,,Throwing back in the constants we had earlier, the 1/2 and the σ,
+Dialogue: 0,0:18:43.26,0:18:46.94,CHN,,0,0,0,,再把之前的 1/2 和 σ 加回来
+Dialogue: 0,0:18:46.94,0:18:49.46,ENG,,0,0,0,,the effect there is to stretch out the graph
+Dialogue: 0,0:18:49.46,0:18:52.12,ENG,,0,0,0,,by a factor of σ times the square root of two.
+Dialogue: 0,0:18:46.94,0:18:52.12,CHN,,0,0,0,,这些小东西把函数图像拉宽了根号 2 倍的 σ 倍
+Dialogue: 0,0:18:52.12,0:18:56.78,ENG,,0,0,0,,So, we also need to divide out by that in order to make sure it has an area of one,
+Dialogue: 0,0:18:52.12,0:18:56.78,CHN,,0,0,0,,所以还得除回去来确保总面积为 1
+Dialogue: 0,0:18:56.78,0:18:59.58,ENG,,0,0,0,,and combining those fractions, the factor out front looks like
+Dialogue: 0,0:18:56.78,0:18:59.58,CHN,,0,0,0,,把它拼回我们的式子
+Dialogue: 0,0:18:59.58,0:19:02.54,ENG,,0,0,0,,1 divided by σ times the square root of 2π.
+Dialogue: 0,0:18:59.58,0:19:02.54,CHN,,0,0,0,,系数就长成了 σ 的根号 2π 倍分之一这样
+Dialogue: 0,0:19:02.54,0:19:05.88,ENG,,0,0,0,,This finally is a valid probability distribution.
+Dialogue: 0,0:19:02.54,0:19:05.88,CHN,,0,0,0,,终于能用了
+Dialogue: 0,0:19:05.88,0:19:10.50,ENG,,0,0,0,,As we tweak that value σ, resulting in narrower and wider curves,
+Dialogue: 0,0:19:05.88,0:19:10.50,CHN,,0,0,0,,当我们改变 σ 时  曲线会变窄变宽
+Dialogue: 0,0:19:10.50,0:19:14.34,ENG,,0,0,0,,that constant in the front always guarantees that the area equals one.
+Dialogue: 0,0:19:10.50,0:19:14.34,CHN,,0,0,0,,而前面的常数确保总面积始终为 1
+Dialogue: 0,0:19:15.82,0:19:18.86,ENG,,0,0,0,,The special case where σ equals one has a specific name,
+Dialogue: 0,0:19:15.82,0:19:18.86,CHN,,0,0,0,,特殊情况是 σ 等于 1 的情况
+Dialogue: 0,0:19:18.86,0:19:21.22,ENG,,0,0,0,,we call it the Standard Normal Distribution
+Dialogue: 0,0:19:18.86,0:19:21.22,CHN,,0,0,0,,我们称之为标准正态分布
+Dialogue: 0,0:19:21.22,0:19:24.60,ENG,,0,0,0,,which plays an especially important role for you and me in this lesson.
+Dialogue: 0,0:19:21.22,0:19:24.60,CHN,,0,0,0,,它是我们这节课的主角
+Dialogue: 0,0:19:24.60,0:19:27.14,ENG,,0,0,0,,And all possible normal distributions
+Dialogue: 0,0:19:24.60,0:19:27.14,CHN,,0,0,0,,所有可能的正态分布
+Dialogue: 0,0:19:27.14,0:19:30.02,ENG,,0,0,0,,are not only parametrized with this value σ
+Dialogue: 0,0:19:27.14,0:19:30.02,CHN,,0,0,0,,参数里不仅有这个标准差 σ
+Dialogue: 0,0:19:30.02,0:19:34.28,ENG,,0,0,0,,but we also subtract off another constant, μ, from the variable x
+Dialogue: 0,0:19:30.02,0:19:34.28,CHN,,0,0,0,,还有一个 x 要减去的参数 μ
+Dialogue: 0,0:19:34.28,0:19:37.42,ENG,,0,0,0,,and this essentially just lets you slide the graph left and right
+Dialogue: 0,0:19:34.28,0:19:37.42,CHN,,0,0,0,,调整 μ 可以左右滑动图像
+Dialogue: 0,0:19:37.42,0:19:40.26,ENG,,0,0,0,,so that you can prescribe the mean of this distribution.
+Dialogue: 0,0:19:37.42,0:19:40.26,CHN,,0,0,0,,也描述了这个分布的均值
+Dialogue: 0,0:19:40.76,0:19:42.62,ENG,,0,0,0,,So, in short, we have two parameters:
+Dialogue: 0,0:19:40.76,0:19:42.62,CHN,,0,0,0,,总结一下  我们有两个参数
+Dialogue: 0,0:19:42.62,0:19:45.54,ENG,,0,0,0,,one describing the mean, one describing the standard deviation
+Dialogue: 0,0:19:42.62,0:19:45.54,CHN,,0,0,0,,μ 描述均值  σ 描述标准差
+Dialogue: 0,0:19:45.54,0:19:49.32,ENG,,0,0,0,,and they're all tied together in this big formula involving an e and a π.
+Dialogue: 0,0:19:45.54,0:19:49.32,CHN,,0,0,0,,它们都通过这个包含 e 和 π 的大公式联系在一起
+Dialogue: 0,0:19:50.10,0:19:52.08,ENG,,0,0,0,,Now that all of that is on the table,
+Dialogue: 0,0:19:50.10,0:19:52.08,CHN,,0,0,0,,现在所有这些都理清楚了
+Dialogue: 0,0:19:52.08,0:19:55.96,ENG,,0,0,0,,let's look back again at the idea of starting with some random variable
+Dialogue: 0,0:19:52.08,0:19:55.96,CHN,,0,0,0,,让我们再从随机变量开始
+Dialogue: 0,0:19:55.96,0:19:59.76,ENG,,0,0,0,,and asking what the distributions for sums of that variable look like.
+Dialogue: 0,0:19:55.96,0:19:59.76,CHN,,0,0,0,,问自己这个变量的总和的分布长什么样
+Dialogue: 0,0:19:59.76,0:20:02.94,ENG,,0,0,0,,As we've already gone over, when you increase the size of that sum,
+Dialogue: 0,0:19:59.76,0:20:02.94,CHN,,0,0,0,,就像刚刚说的一样  随着这个随机变量不断重复
+Dialogue: 0,0:20:02.94,0:20:06.54,ENG,,0,0,0,,the resulting distribution will shift, according to a growing mean
+Dialogue: 0,0:20:02.94,0:20:06.54,CHN,,0,0,0,,总和分布会不断往均值方向移动
+Dialogue: 0,0:20:06.54,0:20:09.98,ENG,,0,0,0,,and it slowly spreads out, according to a growing standard deviation.
+Dialogue: 0,0:20:06.54,0:20:09.98,CHN,,0,0,0,,并且随着标准差的逐渐增大慢慢变宽
+Dialogue: 0,0:20:09.98,0:20:12.06,ENG,,0,0,0,,And putting some actual formulas to it,
+Dialogue: 0,0:20:09.98,0:20:12.06,CHN,,0,0,0,,代入式子来说的话就是
+Dialogue: 0,0:20:12.06,0:20:15.82,ENG,,0,0,0,,if we know the mean of our underlying random variable, and we call it μ,
+Dialogue: 0,0:20:15.82,0:20:18.82,ENG,,0,0,0,,and we also know its standard deviation, and we call it σ,
+Dialogue: 0,0:20:12.06,0:20:18.82,CHN,,0,0,0,,如果假设最开始随机变量的均值是 μ  标准差是 σ 的话
+Dialogue: 0,0:20:18.82,0:20:21.66,ENG,,0,0,0,,then the mean for the sum on the bottom will be
+Dialogue: 0,0:20:18.82,0:20:21.66,CHN,,0,0,0,,那么下面这个总和分布的的均值
+Dialogue: 0,0:20:21.66,0:20:23.72,ENG,,0,0,0,,μ times the size of the sum
+Dialogue: 0,0:20:21.66,0:20:23.72,CHN,,0,0,0,,就会是 μ 乘以随机变量的个数
+Dialogue: 0,0:20:23.72,0:20:27.72,ENG,,0,0,0,,and the standard deviation will be σ times the square root of that size.
+Dialogue: 0,0:20:23.72,0:20:27.72,CHN,,0,0,0,,而标准差也就是 σ 乘以个数的平方根
+Dialogue: 0,0:20:27.72,0:20:31.68,ENG,,0,0,0,,So now, if we want to claim that this looks more and more like a bell curve,
+Dialogue: 0,0:20:27.72,0:20:31.68,CHN,,0,0,0,,现在我们知道钟形曲线只有均值和标准差
+Dialogue: 0,0:20:31.68,0:20:34.96,ENG,,0,0,0,,and a bell curve is only described by two different parameters,
+Dialogue: 0,0:20:31.68,0:20:34.96,CHN,,0,0,0,,如果我们想说分布逐渐趋近钟形曲线的话
+Dialogue: 0,0:20:34.96,0:20:37.78,ENG,,0,0,0,,the mean and the standard deviation, you know what to do.
+Dialogue: 0,0:20:34.96,0:20:37.78,CHN,,0,0,0,,你应该已经知道该干啥了
+Dialogue: 0,0:20:37.78,0:20:40.26,ENG,,0,0,0,,You could plug those two values into the formula
+Dialogue: 0,0:20:37.78,0:20:40.26,CHN,,0,0,0,,只要把参数代入式子
+Dialogue: 0,0:20:40.26,0:20:43.82,ENG,,0,0,0,,and it gives you a highly explicit, albeit kind of complicated,
+Dialogue: 0,0:20:40.26,0:20:43.82,CHN,,0,0,0,,就能得到一个非常精确  但是有点复杂的式子
+Dialogue: 0,0:20:43.82,0:20:46.98,ENG,,0,0,0,,formula for a curve that should closely fit our distribution.
+Dialogue: 0,0:20:43.82,0:20:46.98,CHN,,0,0,0,,而这个式子描述的曲线则应该和我们的分布相拟合
+Dialogue: 0,0:20:48.48,0:20:51.70,ENG,,0,0,0,,But there's another way we can describe it that's a little more elegant
+Dialogue: 0,0:20:48.48,0:20:51.70,CHN,,0,0,0,,此外还有一种方式
+Dialogue: 0,0:20:51.70,0:20:54.78,ENG,,0,0,0,,and lends itself to a very fun visual that we can build up to.
+Dialogue: 0,0:20:51.70,0:20:54.78,CHN,,0,0,0,,不仅描述起来更加优雅  观赏性也很强
+Dialogue: 0,0:20:54.78,0:20:58.72,ENG,,0,0,0,,Instead of focusing on the sum of all of these random variables,
+Dialogue: 0,0:20:54.78,0:20:58.72,CHN,,0,0,0,,现在我们就不要死盯着随机变量的和了
+Dialogue: 0,0:20:58.72,0:21:00.76,ENG,,0,0,0,,let's modify this expression a little bit
+Dialogue: 0,0:20:58.72,0:21:00.76,CHN,,0,0,0,,给这个式子稍微改一改
+Dialogue: 0,0:21:00.76,0:21:04.14,ENG,,0,0,0,,where what we'll do is we'll look at the mean that we expect that sum to take
+Dialogue: 0,0:21:00.76,0:21:04.14,CHN,,0,0,0,,给这个总和减掉它的均值
+Dialogue: 0,0:21:04.14,0:21:08.08,ENG,,0,0,0,,and we subtract it off so that our new expression has a mean of zero,
+Dialogue: 0,0:21:04.14,0:21:08.08,CHN,,0,0,0,,这样它均值就是零了
+Dialogue: 0,0:21:08.08,0:21:11.70,ENG,,0,0,0,,and then we're going to look at the standard deviation we expect of our sum
+Dialogue: 0,0:21:08.08,0:21:11.70,CHN,,0,0,0,,之后以同样的方式处理标准差
+Dialogue: 0,0:21:11.70,0:21:13.48,ENG,,0,0,0,,and divide out by that.
+Dialogue: 0,0:21:11.70,0:21:13.48,CHN,,0,0,0,,用刚刚得到的式子除它的标准差
+Dialogue: 0,0:21:13.48,0:21:15.94,ENG,,0,0,0,,Which basically just rescales the units
+Dialogue: 0,0:21:13.48,0:21:15.94,CHN,,0,0,0,,本质上是给它缩放了一下换了个单位
+Dialogue: 0,0:21:15.94,0:21:19.06,ENG,,0,0,0,,so that the standard deviation of our expression will equal one.
+Dialogue: 0,0:21:15.94,0:21:19.06,CHN,,0,0,0,,这样一来这个式子标准差就是 1 了
+Dialogue: 0,0:21:19.06,0:21:21.82,ENG,,0,0,0,,This might seem like a more complicated expression,
+Dialogue: 0,0:21:19.06,0:21:21.82,CHN,,0,0,0,,虽然看上去变复杂了
+Dialogue: 0,0:21:21.82,0:21:24.12,ENG,,0,0,0,,but it actually has a highly readable meaning.
+Dialogue: 0,0:21:21.82,0:21:24.12,CHN,,0,0,0,,但它的含义更明确了
+Dialogue: 0,0:21:24.12,0:21:25.70,ENG,,0,0,0,,It's essentially saying
+Dialogue: 0,0:21:24.12,0:21:25.70,CHN,,0,0,0,,它实际上是在说
+Dialogue: 0,0:21:25.70,0:21:29.76,ENG,,0,0,0,,'how many standard deviations away from the mean is this sum.'
+Dialogue: 0,0:21:25.70,0:21:29.76,CHN,,0,0,0,,这个总和离均值有多少个标准差
+Dialogue: 0,0:21:30.66,0:21:34.34,ENG,,0,0,0,,For example, this bar here corresponds to a certain value that you might find
+Dialogue: 0,0:21:34.34,0:21:36.72,ENG,,0,0,0,,when you roll 10 dice and you add them all up.
+Dialogue: 0,0:21:30.66,0:21:36.72,CHN,,0,0,0,,例如  这个柱子表示了投十个骰子可能出现的一个点数和
+Dialogue: 0,0:21:36.72,0:21:39.87,ENG,,0,0,0,,And it's position, a little above -1, is telling you that that
+Dialogue: 0,0:21:36.72,0:21:39.87,CHN,,0,0,0,,而它略大于 -1 的位置
+Dialogue: 0,0:21:39.87,0:21:43.86,ENG,,0,0,0,,value is a little bit less than one standard deviation lower than the mean.
+Dialogue: 0,0:21:39.87,0:21:43.86,CHN,,0,0,0,,表示这个点数和比均值小不到一个标准差
+Dialogue: 0,0:21:44.76,0:21:48.66,ENG,,0,0,0,,Also, by the way, in anticipation for the animation I'm trying to build to here,
+Dialogue: 0,0:21:44.76,0:21:48.66,CHN,,0,0,0,,提前说一句  我等下要在这里放的动画
+Dialogue: 0,0:21:48.66,0:21:51.60,ENG,,0,0,0,,the way I'm representing things on that lower plot is that
+Dialogue: 0,0:21:48.66,0:21:51.60,CHN,,0,0,0,,下面的那个图里
+Dialogue: 0,0:21:51.60,0:21:54.32,ENG,,0,0,0,,the area of each one of these bars is telling us
+Dialogue: 0,0:21:54.32,0:21:57.02,ENG,,0,0,0,,the probability of the corresponding value rather than the height.
+Dialogue: 0,0:21:51.60,0:21:57.02,CHN,,0,0,0,,表示概率的是柱子的面积而不是高度
+Dialogue: 0,0:21:57.02,0:22:00.26,ENG,,0,0,0,,You might think of the y-axis as representing not probability
+Dialogue: 0,0:21:57.02,0:22:00.26,CHN,,0,0,0,,也可以说成是
+Dialogue: 0,0:22:00.26,0:22:02.10,ENG,,0,0,0,,but a kind of probability density.
+Dialogue: 0,0:22:00.26,0:22:02.10,CHN,,0,0,0,,y 轴表示的不是概率而是概率密度
+Dialogue: 0,0:22:02.10,0:22:04.03,ENG,,0,0,0,,The reason for this is to set the stage
+Dialogue: 0,0:22:02.10,0:22:04.03,CHN,,0,0,0,,这样可以给后面铺垫
+Dialogue: 0,0:22:04.03,0:22:07.28,ENG,,0,0,0,,so that it aligns with the way we interpret continuous distributions
+Dialogue: 0,0:22:04.03,0:22:07.28,CHN,,0,0,0,,和连续概率分布的图像表示相统一
+Dialogue: 0,0:22:07.28,0:22:10.68,ENG,,0,0,0,,where the probability of falling between a range of values
+Dialogue: 0,0:22:07.28,0:22:10.68,CHN,,0,0,0,,也就是在随机变量取值落在一个区间内的概率
+Dialogue: 0,0:22:10.68,0:22:13.74,ENG,,0,0,0,,is equal to an area under a curve between those values.
+Dialogue: 0,0:22:10.68,0:22:13.74,CHN,,0,0,0,,等于这个区间曲线下的面积
+Dialogue: 0,0:22:13.74,0:22:16.80,ENG,,0,0,0,,In particular, the area of all the bars together is going to be one.
+Dialogue: 0,0:22:13.74,0:22:16.80,CHN,,0,0,0,,特别地  所有柱子的总面积加起来为 1
+Dialogue: 0,0:22:18.24,0:22:21.06,ENG,,0,0,0,,Now, with all of that in place, let's have a little fun.
+Dialogue: 0,0:22:18.24,0:22:21.06,CHN,,0,0,0,,讲了这么多  是时候来点好玩的了
+Dialogue: 0,0:22:21.06,0:22:24.52,ENG,,0,0,0,,Let me start by rolling things back so that the distribution on the bottom
+Dialogue: 0,0:22:21.06,0:22:24.52,CHN,,0,0,0,,让我们往前倒一点
+Dialogue: 0,0:22:24.52,0:22:26.34,ENG,,0,0,0,,represents a relatively small sum,
+Dialogue: 0,0:22:24.52,0:22:26.34,CHN,,0,0,0,,这样一来下面的分布只是少数几次加和
+Dialogue: 0,0:22:26.34,0:22:29.16,ENG,,0,0,0,,like adding together only three such random variables.
+Dialogue: 0,0:22:26.34,0:22:29.16,CHN,,0,0,0,,例如只是三个随机变量的和
+Dialogue: 0,0:22:29.16,0:22:32.44,ENG,,0,0,0,,Notice what happens as I change the distribution we start with.
+Dialogue: 0,0:22:29.16,0:22:32.44,CHN,,0,0,0,,现在如果我换一个初始概率分布
+Dialogue: 0,0:22:32.44,0:22:36.28,ENG,,0,0,0,,As it changes, the distribution on the bottom completely changes its shape.
+Dialogue: 0,0:22:32.44,0:22:36.28,CHN,,0,0,0,,注意下面的分布已经完全变了个样
+Dialogue: 0,0:22:36.28,0:22:38.40,ENG,,0,0,0,,It's very dependent on what we started with.
+Dialogue: 0,0:22:36.28,0:22:38.40,CHN,,0,0,0,,说明它的形状受初始分布影响很大
+Dialogue: 0,0:22:40.38,0:22:44.32,ENG,,0,0,0,,If we let the size of our sum get a little bit bigger, say going up to 10,
+Dialogue: 0,0:22:40.38,0:22:44.32,CHN,,0,0,0,,如果我们增加随机变量的个数  加到十个
+Dialogue: 0,0:22:44.32,0:22:46.62,ENG,,0,0,0,,and as I change the distribution for X,
+Dialogue: 0,0:22:44.32,0:22:46.62,CHN,,0,0,0,,当我改变 X 的分布时
+Dialogue: 0,0:22:46.62,0:22:48.96,ENG,,0,0,0,,it largely stays looking like a bell curve
+Dialogue: 0,0:22:46.62,0:22:48.96,CHN,,0,0,0,,它基本上还像一个钟形曲线
+Dialogue: 0,0:22:48.96,0:22:51.94,ENG,,0,0,0,,but I can find some distributions that get it to change shape.
+Dialogue: 0,0:22:48.96,0:22:51.94,CHN,,0,0,0,,但我可以找到些初始分布  使它改变形状
+Dialogue: 0,0:22:51.94,0:22:54.17,ENG,,0,0,0,,For example, the really lopsided one
+Dialogue: 0,0:22:54.17,0:22:57.12,ENG,,0,0,0,,where almost all the probability is in the numbers 1 or 6
+Dialogue: 0,0:22:51.94,0:22:54.17,CHN,,0,0,0,,例如极大概率出 1 和 6 的非常不平等的分布
+Dialogue: 0,0:22:57.12,0:22:59.42,ENG,,0,0,0,,results in this kind of spiky bell curve.
+Dialogue: 0,0:22:57.12,0:22:59.42,CHN,,0,0,0,,得到一个有很多峰的钟形曲线
+Dialogue: 0,0:22:59.42,0:23:01.34,ENG,,0,0,0,,And if you'll recall, earlier on,
+Dialogue: 0,0:22:59.42,0:23:01.34,CHN,,0,0,0,,如果你还记得的话
+Dialogue: 0,0:23:01.34,0:23:03.76,ENG,,0,0,0,,I actually showed this in the form of a simulation.
+Dialogue: 0,0:23:01.34,0:23:03.76,CHN,,0,0,0,,之前有一个模拟出现过这个情况
+Dialogue: 0,0:23:03.76,0:23:06.22,ENG,,0,0,0,,Though if you're wondering whether that spikiness
+Dialogue: 0,0:23:06.22,0:23:09.76,ENG,,0,0,0,,was an artifact of the randomness or reflected the true distribution,
+Dialogue: 0,0:23:03.76,0:23:09.76,CHN,,0,0,0,,当时问到这些峰是偶然的还是真实的分布
+Dialogue: 0,0:23:09.76,0:23:12.10,ENG,,0,0,0,,turns out it reflects the true distribution.
+Dialogue: 0,0:23:09.76,0:23:12.10,CHN,,0,0,0,,实际上它反映了真实的分布
+Dialogue: 0,0:23:12.10,0:23:16.34,ENG,,0,0,0,,In this case, 10 is not a large enough sum for the central limit theorem to kick in
+Dialogue: 0,0:23:12.10,0:23:16.34,CHN,,0,0,0,,对这个例子来说  十个随机变量不足以满足中心极限定理
+Dialogue: 0,0:23:16.34,0:23:20.70,ENG,,0,0,0,,but if instead I let that sum grow and I consider adding 50 different values,
+Dialogue: 0,0:23:16.34,0:23:20.70,CHN,,0,0,0,,但如果我让这个和增长到比如 50 个随机变量
+Dialogue: 0,0:23:20.70,0:23:22.80,ENG,,0,0,0,,which is actually not that big,
+Dialogue: 0,0:23:20.70,0:23:22.80,CHN,,0,0,0,,实际上也不是很多
+Dialogue: 0,0:23:22.80,0:23:27.40,ENG,,0,0,0,,then no matter how I change the distribution for underlying random variable,
+Dialogue: 0,0:23:22.80,0:23:27.40,CHN,,0,0,0,,但这时候无论我如何改变随机变量的概率分布
+Dialogue: 0,0:23:27.40,0:23:30.86,ENG,,0,0,0,,it has essentially no effect on the shape of the plot on the bottom.
+Dialogue: 0,0:23:27.40,0:23:30.86,CHN,,0,0,0,,它基本上对下面图里的形状没有影响
+Dialogue: 0,0:23:30.86,0:23:32.26,ENG,,0,0,0,,No matter where we start,
+Dialogue: 0,0:23:30.86,0:23:32.26,CHN,,0,0,0,,无论初始分布如何
+Dialogue: 0,0:23:32.26,0:23:36.36,ENG,,0,0,0,,all of the information and nuance for the distribution of X gets washed away
+Dialogue: 0,0:23:32.26,0:23:36.36,CHN,,0,0,0,,随机变量 X 的一切分布细节都会被抹去
+Dialogue: 0,0:23:36.36,0:23:39.00,ENG,,0,0,0,,and we tend towards this single universal shape
+Dialogue: 0,0:23:36.36,0:23:39.00,CHN,,0,0,0,,趋近于这个统一的形状
+Dialogue: 0,0:23:39.00,0:23:43.08,ENG,,0,0,0,,described by a very elegant function for the standard normal distribution
+Dialogue: 0,0:23:39.00,0:23:43.08,CHN,,0,0,0,,即背后有着优雅函数的标准正态分布
+Dialogue: 0,0:23:43.08,0:23:47.64,ENG,,0,0,0,,1 over square root of 2π times e to the negative x squared over 2.
+Dialogue: 0,0:23:43.08,0:23:47.64,CHN,,0,0,0,,*优雅的吟诵*
+Dialogue: 0,0:23:43.08,0:23:47.64,comment,,0,0,0,,{\pos(1180, 1050)}*吟诵的就是上面这个公式
+Dialogue: 0,0:23:47.64,0:23:50.92,ENG,,0,0,0,,This, this right here is what the central limit theorem is all about.
+Dialogue: 0,0:23:47.64,0:23:50.92,CHN,,0,0,0,,这就是中心极限定理的全部内容
+Dialogue: 0,0:23:50.92,0:23:53.71,ENG,,0,0,0,,Almost nothing you can do to this initial distribution
+Dialogue: 0,0:23:50.92,0:23:53.71,CHN,,0,0,0,,你无论对初始分布做什么
+Dialogue: 0,0:23:53.71,0:23:55.44,ENG,,0,0,0,,changes the shape we tend towards.
+Dialogue: 0,0:23:53.71,0:23:55.44,CHN,,0,0,0,,都没法改变它所趋近的形状
+Dialogue: 0,0:23:59.16,0:24:01.72,ENG,,0,0,0,,Now, the more theoretically minded among you
+Dialogue: 0,0:23:59.16,0:24:01.72,CHN,,0,0,0,,现在  如果你陶醉在理论的思想里
+Dialogue: 0,0:24:01.72,0:24:04.58,ENG,,0,0,0,,might still be wondering what is the actual theorem.
+Dialogue: 0,0:24:01.72,0:24:04.58,CHN,,0,0,0,,可能会想到底实际的定理是什么
+Dialogue: 0,0:24:04.58,0:24:06.46,ENG,,0,0,0,,Like, what's the mathematical statement
+Dialogue: 0,0:24:06.46,0:24:08.80,ENG,,0,0,0,,that could be proved or disproved that we're claiming here.
+Dialogue: 0,0:24:04.58,0:24:08.80,CHN,,0,0,0,,就是说  这里我们想证明或推翻的数学表述  是什么
+Dialogue: 0,0:24:08.80,0:24:11.56,ENG,,0,0,0,,If you want a nice formal statement, here's how it might go.
+Dialogue: 0,0:24:08.80,0:24:11.56,CHN,,0,0,0,,那我就来给一个形式化的表述
+Dialogue: 0,0:24:12.06,0:24:13.22,ENG,,0,0,0,,Consider this value
+Dialogue: 0,0:24:13.22,0:24:16.78,ENG,,0,0,0,,where we're summing up N different instantiations of our random variable
+Dialogue: 0,0:24:12.06,0:24:16.78,CHN,,0,0,0,,考虑把 N 个随机变量的实例相加得到的结果
+Dialogue: 0,0:24:16.78,0:24:20.00,ENG,,0,0,0,,but tweaked and tuned so that its mean and standard deviation are one.
+Dialogue: 0,0:24:16.78,0:24:20.00,CHN,,0,0,0,,我们把它进行微调使得均值为 0 并且标准差为 1
+Dialogue: 0,0:24:20.00,0:24:22.02,ENG,,0,0,0,,Again, meaning you can read it as asking
+Dialogue: 0,0:24:20.00,0:24:22.02,CHN,,0,0,0,,这也就等同于
+Dialogue: 0,0:24:22.02,0:24:25.50,ENG,,0,0,0,,how many standard deviations away from the mean is the sum.
+Dialogue: 0,0:24:22.02,0:24:25.50,CHN,,0,0,0,,它距离均值有多少个标准差
+Dialogue: 0,0:24:25.50,0:24:29.86,ENG,,0,0,0,,Then the actual rigorous no jokes this time statement of the central limit theorem
+Dialogue: 0,0:24:25.50,0:24:29.86,CHN,,0,0,0,,那么中心极限定理不开玩笑十分严谨的表述是这样的
+Dialogue: 0,0:24:29.86,0:24:33.06,ENG,,0,0,0,,is that if you consider the probability that this value
+Dialogue: 0,0:24:29.86,0:24:33.06,CHN,,0,0,0,,如果你考虑一个值
+Dialogue: 0,0:24:33.06,0:24:35.70,ENG,,0,0,0,,falls between two given real numbers, a and b,
+Dialogue: 0,0:24:33.06,0:24:35.70,CHN,,0,0,0,,落在两个给定的实数 a 和 b 之间的概率
+Dialogue: 0,0:24:35.70,0:24:38.88,ENG,,0,0,0,,and you consider the limit of that probability
+Dialogue: 0,0:24:35.70,0:24:38.88,CHN,,0,0,0,,从它极限的角度看
+Dialogue: 0,0:24:38.88,0:24:41.28,ENG,,0,0,0,,as the size of your sum goes to infinity,
+Dialogue: 0,0:24:38.88,0:24:41.28,CHN,,0,0,0,,当 N 趋向于无穷大时
+Dialogue: 0,0:24:41.76,0:24:44.40,ENG,,0,0,0,,then that limit is equal to a certain integral
+Dialogue: 0,0:24:41.76,0:24:44.40,CHN,,0,0,0,,这个极限的值等于某个特定的积分
+Dialogue: 0,0:24:44.40,0:24:45.78,ENG,,0,0,0,,which basically describes
+Dialogue: 0,0:24:44.40,0:24:45.78,CHN,,0,0,0,,这个积分基本上就是
+Dialogue: 0,0:24:45.78,0:24:49.74,ENG,,0,0,0,,the area under a standard normal distribution between those two values.
+Dialogue: 0,0:24:45.78,0:24:49.74,CHN,,0,0,0,,标准正态分布曲线下这两个值之间的面积
+Dialogue: 0,0:24:51.24,0:24:54.98,ENG,,0,0,0,,Again, there are three underlying assumptions that I have yet to tell you,
+Dialogue: 0,0:24:51.24,0:24:54.98,CHN,,0,0,0,,再重复一次  有三个基本假设我还没有告诉你们
+Dialogue: 0,0:24:54.98,0:24:57.64,ENG,,0,0,0,,but other than those, in all of its gory detail,
+Dialogue: 0,0:24:54.98,0:24:57.64,CHN,,0,0,0,,除了这些
+Dialogue: 0,0:24:57.64,0:25:00.00,ENG,,0,0,0,,this right here is the central limit theorem.
+Dialogue: 0,0:24:57.64,0:25:00.00,CHN,,0,0,0,,就基本上是中心极限定理的所有细节了
+Dialogue: 0,0:25:04.68,0:25:06.28,ENG,,0,0,0,,All of that is a bit theoretical,
+Dialogue: 0,0:25:04.68,0:25:06.28,CHN,,0,0,0,,这些说起来都挺理论的
+Dialogue: 0,0:25:06.28,0:25:08.34,ENG,,0,0,0,,so it might be helpful to bring things back down to earth
+Dialogue: 0,0:25:06.28,0:25:08.34,CHN,,0,0,0,,可能说人话更方便理解
+Dialogue: 0,0:25:08.34,0:25:11.90,ENG,,0,0,0,,and turn back to the concrete example that I mentioned at the start
+Dialogue: 0,0:25:08.34,0:25:11.90,CHN,,0,0,0,,回到最开始提到的现实中的例子
+Dialogue: 0,0:25:11.90,0:25:14.18,ENG,,0,0,0,,where you imagine rolling a die 100 times,
+Dialogue: 0,0:25:11.90,0:25:14.18,CHN,,0,0,0,,假如掷一个骰子一百次
+Dialogue: 0,0:25:14.18,0:25:16.50,ENG,,0,0,0,,and let's assume it's a fair die for this example,
+Dialogue: 0,0:25:14.18,0:25:16.50,CHN,,0,0,0,,然后把点数和加在一起
+Dialogue: 0,0:25:16.50,0:25:18.38,ENG,,0,0,0,,and you add together the results.
+Dialogue: 0,0:25:16.50,0:25:18.38,CHN,,0,0,0,,假设它是公平的骰子
+Dialogue: 0,0:25:18.38,0:25:21.76,ENG,,0,0,0,,The challenge for you is to find a range of values
+Dialogue: 0,0:25:18.38,0:25:21.76,CHN,,0,0,0,,你现在要找到一个越小越好的范围
+Dialogue: 0,0:25:21.76,0:25:25.86,ENG,,0,0,0,,such that you're 95% sure that the sum will fall within this range.
+Dialogue: 0,0:25:21.76,0:25:25.86,CHN,,0,0,0,,使得你有 95% 的把握保证点数和会落在这个范围内
+Dialogue: 0,0:25:27.06,0:25:28.17,ENG,,0,0,0,,For questions like this,
+Dialogue: 0,0:25:27.06,0:25:28.17,CHN,,0,0,0,,对于这类问题
+Dialogue: 0,0:25:28.17,0:25:30.90,ENG,,0,0,0,,there's a handy rule of thumb about normal distributions
+Dialogue: 0,0:25:28.17,0:25:30.90,CHN,,0,0,0,,正态分布有一个方便的经验法则
+Dialogue: 0,0:25:30.90,0:25:33.30,ENG,,0,0,0,,which is that about 68% of your values
+Dialogue: 0,0:25:30.90,0:25:33.30,CHN,,0,0,0,,即约 68% 的值
+Dialogue: 0,0:25:33.30,0:25:36.06,ENG,,0,0,0,,are going to fall within one standard deviation of the mean.
+Dialogue: 0,0:25:33.30,0:25:36.06,CHN,,0,0,0,,会落在离均值一个标准差之内
+Dialogue: 0,0:25:36.06,0:25:38.74,ENG,,0,0,0,,95% of your values, the thing we care about,
+Dialogue: 0,0:25:36.06,0:25:38.74,CHN,,0,0,0,,95% 的值  刚好我们这里要用到
+Dialogue: 0,0:25:38.74,0:25:40.98,ENG,,0,0,0,,fall within two standard deviations of the mean
+Dialogue: 0,0:25:38.74,0:25:40.98,CHN,,0,0,0,,落在离均值两个标准差之内
+Dialogue: 0,0:25:40.98,0:25:44.54,ENG,,0,0,0,,and a whopping 99.7% of your values
+Dialogue: 0,0:25:40.98,0:25:44.54,CHN,,0,0,0,,而高达 99.7% 的值
+Dialogue: 0,0:25:44.54,0:25:47.04,ENG,,0,0,0,,will fall within three standard deviations of the mean.
+Dialogue: 0,0:25:44.54,0:25:47.04,CHN,,0,0,0,,会落在离均值三个标准差之内
+Dialogue: 0,0:25:47.04,0:25:49.29,ENG,,0,0,0,,It's a rule of thumb that's commonly memorized
+Dialogue: 0,0:25:47.04,0:25:49.29,CHN,,0,0,0,,这是经常接触统计概率的人
+Dialogue: 0,0:25:49.29,0:25:51.66,ENG,,0,0,0,,by people who do a lot of probability and stats.
+Dialogue: 0,0:25:49.29,0:25:51.66,CHN,,0,0,0,,耳熟能详的经验法则
+Dialogue: 0,0:25:52.26,0:25:54.92,ENG,,0,0,0,,Naturally, this gives us what we need for our example
+Dialogue: 0,0:25:52.26,0:25:54.92,CHN,,0,0,0,,而这自然也就给了我们的例子所需的东西
+Dialogue: 0,0:25:54.92,0:25:57.78,ENG,,0,0,0,,and let me go ahead and draw out what this would look like
+Dialogue: 0,0:25:54.92,0:25:57.78,CHN,,0,0,0,,现在让我现在把它实际画出来
+Dialogue: 0,0:25:57.78,0:26:00.70,ENG,,0,0,0,,where I'll show the distribution for a fair die up at the top
+Dialogue: 0,0:25:57.78,0:26:00.70,CHN,,0,0,0,,上面的图展示的是公平骰子的概率分布
+Dialogue: 0,0:26:00.70,0:26:04.32,ENG,,0,0,0,,and the distribution for a sum of 100 such dice on the bottom.
+Dialogue: 0,0:26:00.70,0:26:04.32,CHN,,0,0,0,,底部展示 100 个这样的骰子点数和的分布
+Dialogue: 0,0:26:04.32,0:26:07.26,ENG,,0,0,0,,Which by now as you know looks like a certain normal distribution.
+Dialogue: 0,0:26:04.32,0:26:07.26,CHN,,0,0,0,,现在你知道  这看起来像某个正态分布
+Dialogue: 0,0:26:08.04,0:26:09.69,ENG,,0,0,0,,Step one with a problem like this
+Dialogue: 0,0:26:08.04,0:26:09.69,CHN,,0,0,0,,为了找到这个确切的分布
+Dialogue: 0,0:26:09.69,0:26:12.22,ENG,,0,0,0,,is to find the mean of your initial distribution.
+Dialogue: 0,0:26:09.69,0:26:12.22,CHN,,0,0,0,,第一步是找到初始分布的均值
+Dialogue: 0,0:26:12.22,0:26:17.16,ENG,,0,0,0,,Which in this case will look like 1/6 times 1 plus 1/6 times 2, on and on and on
+Dialogue: 0,0:26:12.22,0:26:17.16,CHN,,0,0,0,,这个例子里就是 1/6 * 1 + 1/6 * 2 + ...
+Dialogue: 0,0:26:17.16,0:26:19.02,ENG,,0,0,0,,and works out to be 3.5.
+Dialogue: 0,0:26:17.16,0:26:19.02,CHN,,0,0,0,,结果是 3.5
+Dialogue: 0,0:26:19.02,0:26:22.92,ENG,,0,0,0,,We also need the standard deviation which requires calculating the variance,
+Dialogue: 0,0:26:19.02,0:26:22.92,CHN,,0,0,0,,我们还需要找到标准差  也就是首先需要计算方差
+Dialogue: 0,0:26:22.92,0:26:23.96,ENG,,0,0,0,,which as you know
+Dialogue: 0,0:26:22.92,0:26:23.96,CHN,,0,0,0,,正如你所知
+Dialogue: 0,0:26:23.96,0:26:27.74,ENG,,0,0,0,,involves adding all the squares of the differences between the values and the means
+Dialogue: 0,0:26:23.96,0:26:27.74,CHN,,0,0,0,,方差是(各个值与均值之差)的平方和
+Dialogue: 0,0:26:27.74,0:26:30.08,ENG,,0,0,0,,and it works out to be 2.92.
+Dialogue: 0,0:26:27.74,0:26:30.08,CHN,,0,0,0,,这里结果是 2.92
+Dialogue: 0,0:26:30.08,0:26:32.46,ENG,,0,0,0,,Square root of that comes out to be 1.71.
+Dialogue: 0,0:26:30.08,0:26:32.46,CHN,,0,0,0,,开平方后得到 1.71
+Dialogue: 0,0:26:33.00,0:26:34.78,ENG,,0,0,0,,Those are the only two numbers we need
+Dialogue: 0,0:26:33.00,0:26:34.78,CHN,,0,0,0,,这就是我们所需要的全部两个数字
+Dialogue: 0,0:26:34.78,0:26:36.50,ENG,,0,0,0,,and I will invite you again to reflect
+Dialogue: 0,0:26:34.78,0:26:36.50,CHN,,0,0,0,,并且我再次请你思考一下
+Dialogue: 0,0:26:36.50,0:26:39.46,ENG,,0,0,0,,on how magical it is that those are the only two numbers that you need
+Dialogue: 0,0:26:36.50,0:26:39.46,CHN,,0,0,0,,这是有多神奇  也就是说只需要这两个数
+Dialogue: 0,0:26:39.46,0:26:41.80,ENG,,0,0,0,,to completely understand the bottom distribution.
+Dialogue: 0,0:26:39.46,0:26:41.80,CHN,,0,0,0,,你就能完全理解确定下面图中的分布
+Dialogue: 0,0:26:41.80,0:26:45.80,ENG,,0,0,0,,Its mean will be 100 times μ, which is 350
+Dialogue: 0,0:26:41.80,0:26:45.80,CHN,,0,0,0,,它的均值将是 100μ  即 350
+Dialogue: 0,0:26:45.80,0:26:50.02,ENG,,0,0,0,,and its standard deviation will be the square root of 100 times σ.
+Dialogue: 0,0:26:45.80,0:26:50.02,CHN,,0,0,0,,它的标准差将是(根号 100)倍的 σ
+Dialogue: 0,0:26:50.02,0:26:52.44,ENG,,0,0,0,,So, 10 times σ, 17.1.
+Dialogue: 0,0:26:50.02,0:26:52.44,CHN,,0,0,0,,也就是 10σ  即 17.1
+Dialogue: 0,0:26:52.44,0:26:54.72,ENG,,0,0,0,,Remembering our handy rule of thumb,
+Dialogue: 0,0:26:52.44,0:26:54.72,CHN,,0,0,0,,回忆一下我们之前的 3σ 原则
+Dialogue: 0,0:26:54.72,0:26:58.28,ENG,,0,0,0,,we're looking for values two standard deviations away from the mean
+Dialogue: 0,0:26:54.72,0:26:58.28,CHN,,0,0,0,,我们的目的就是寻找 距离均值两个标准差的值
+Dialogue: 0,0:26:58.28,0:27:03.52,ENG,,0,0,0,,and when you subtract two σ from the mean, you end up with about 316,
+Dialogue: 0,0:26:58.28,0:27:03.52,CHN,,0,0,0,,这里均值减去 2σ 大概是 316
+Dialogue: 0,0:27:03.52,0:27:07.10,ENG,,0,0,0,,and when you add two σ, you end up with roughly 384.
+Dialogue: 0,0:27:03.52,0:27:07.10,CHN,,0,0,0,,均值加上 2σ 大概是 384
+Dialogue: 0,0:27:07.10,0:27:08.88,ENG,,0,0,0,,And there you go... That gives us the answer.
+Dialogue: 0,0:27:07.10,0:27:08.88,CHN,,0,0,0,,就是这样  答案就是这么简单
+Dialogue: 0,0:27:11.58,0:27:13.62,ENG,,0,0,0,,Okay, I promise to wrap things up shortly,
+Dialogue: 0,0:27:11.58,0:27:13.62,CHN,,0,0,0,,好吧  我保证不拖堂太久  就总结一下
+Dialogue: 0,0:27:13.62,0:27:15.13,ENG,,0,0,0,,but while we're on this example,
+Dialogue: 0,0:27:13.62,0:27:15.13,CHN,,0,0,0,,但在这个例子中
+Dialogue: 0,0:27:15.13,0:27:18.12,ENG,,0,0,0,,there's one - more question that's worth your time to ponder.
+Dialogue: 0,0:27:15.13,0:27:18.12,CHN,,0,0,0,,还有一个问题值得你花时间思考
+Dialogue: 0,0:27:18.12,0:27:21.24,ENG,,0,0,0,,Instead of just asking about the sum of 100 die rolls,
+Dialogue: 0,0:27:18.12,0:27:21.24,CHN,,0,0,0,,现在我不问投 100 次骰子的点数和了
+Dialogue: 0,0:27:21.24,0:27:23.92,ENG,,0,0,0,,let's say I had you divide that number by 100,
+Dialogue: 0,0:27:21.24,0:27:23.92,CHN,,0,0,0,,而是让你将这个数字除以 100
+Dialogue: 0,0:27:23.92,0:27:28.80,ENG,,0,0,0,,which basically means all the numbers in our diagram in the bottom get divided by 100.
+Dialogue: 0,0:27:23.92,0:27:28.80,CHN,,0,0,0,,这也就意味着画面下半部分中的所有数字都要除以 100
+Dialogue: 0,0:27:28.80,0:27:31.44,ENG,,0,0,0,,Take a moment to interpret what this all would be saying then.
+Dialogue: 0,0:27:28.80,0:27:31.44,CHN,,0,0,0,,花点时间考虑一下这意味着什么
+Dialogue: 0,0:27:31.44,0:27:33.45,ENG,,0,0,0,,The expression essentially tells you
+Dialogue: 0,0:27:31.44,0:27:33.45,CHN,,0,0,0,,这个表达式其实是在计算
+Dialogue: 0,0:27:33.45,0:27:36.76,ENG,,0,0,0,,the empirical average for 100 different die rolls
+Dialogue: 0,0:27:33.45,0:27:36.76,CHN,,0,0,0,,掷 100 次骰子实际的平均点数
+Dialogue: 0,0:27:36.76,0:27:39.84,ENG,,0,0,0,,and that interval we found is now telling you
+Dialogue: 0,0:27:36.76,0:27:39.84,CHN,,0,0,0,,并且我们找的那个区间其实是
+Dialogue: 0,0:27:39.84,0:27:44.02,ENG,,0,0,0,,what range you are expecting to see for that empirical average.
+Dialogue: 0,0:27:39.84,0:27:44.02,CHN,,0,0,0,,你预期觉得平均点数会落在的范围
+Dialogue: 0,0:27:44.02,0:27:47.15,ENG,,0,0,0,,In other words, you might expect it to be around 3.5 -
+Dialogue: 0,0:27:44.02,0:27:47.15,CHN,,0,0,0,,换句话说  你可能期望它在 3.5 左右
+Dialogue: 0,0:27:47.15,0:27:48.92,ENG,,0,0,0,,that's the expected value for a die roll,
+Dialogue: 0,0:27:47.15,0:27:48.92,CHN,,0,0,0,,这是一个骰子掷出的期望值
+Dialogue: 0,0:27:48.92,0:27:52.76,ENG,,0,0,0,,but what's much less obvious and what the central limit theorem lets you compute
+Dialogue: 0,0:27:48.92,0:27:52.76,CHN,,0,0,0,,但不那么明显的是  中心极限定理告诉你的是
+Dialogue: 0,0:27:52.76,0:27:56.46,ENG,,0,0,0,,is how close to that expected value you'll reasonably find yourself.
+Dialogue: 0,0:27:52.76,0:27:56.46,CHN,,0,0,0,,合理范围内  你投的点数和期望值之间会差多少
+Dialogue: 0,0:27:57.42,0:28:00.60,ENG,,0,0,0,,In particular, it's worth your time to take a moment mulling over what
+Dialogue: 0,0:27:57.42,0:28:00.60,CHN,,0,0,0,,这时就尤其值得你花点时间去弄清楚
+Dialogue: 0,0:28:00.60,0:28:03.50,ENG,,0,0,0,,the standard deviation for this empirical average is
+Dialogue: 0,0:28:00.60,0:28:03.50,CHN,,0,0,0,,这个实际平均点数的标准差有多大
+Dialogue: 0,0:28:03.50,0:28:07.26,ENG,,0,0,0,,and what happens to it as you look at a bigger and bigger sample of die rolls.
+Dialogue: 0,0:28:03.50,0:28:07.26,CHN,,0,0,0,,以及当你掷越来越多的骰子时 标准差会怎么变
+Dialogue: 0,0:28:12.78,0:28:15.24,ENG,,0,0,0,,Lastly, but probably most importantly,
+Dialogue: 0,0:28:12.78,0:28:15.24,CHN,,0,0,0,,最后  但可能最重要的是
+Dialogue: 0,0:28:15.24,0:28:17.58,ENG,,0,0,0,,let's talk about the assumptions that go into this theorem.
+Dialogue: 0,0:28:15.24,0:28:17.58,CHN,,0,0,0,,让我们谈谈这个定理的假设
+Dialogue: 0,0:28:17.58,0:28:21.03,ENG,,0,0,0,,The first one is that all of these variables that we're adding up
+Dialogue: 0,0:28:17.58,0:28:21.03,CHN,,0,0,0,,第一个是我们相加的所有这些变量
+Dialogue: 0,0:28:21.03,0:28:22.50,ENG,,0,0,0,,are independent from each other.
+Dialogue: 0,0:28:21.03,0:28:22.50,CHN,,0,0,0,,是相互独立的
+Dialogue: 0,0:28:22.50,0:28:26.62,ENG,,0,0,0,,The outcome of one process doesn't influence the outcome of any other process.
+Dialogue: 0,0:28:22.50,0:28:26.62,CHN,,0,0,0,,也就是一个过程的结果不会影响其他任何过程的结果
+Dialogue: 0,0:28:26.62,0:28:31.24,ENG,,0,0,0,,The second is that all of these variables are drawn from the same distribution.
+Dialogue: 0,0:28:26.62,0:28:31.24,CHN,,0,0,0,,第二个是所有这些变量都遵循相同的分布
+Dialogue: 0,0:28:31.24,0:28:34.52,ENG,,0,0,0,,Both of these have been implicitly assumed with our dice example.
+Dialogue: 0,0:28:31.24,0:28:34.52,CHN,,0,0,0,,在我们前面掷骰子的例子中  这两个假设都是隐含的
+Dialogue: 0,0:28:34.52,0:28:36.89,ENG,,0,0,0,,We've been treating the outcome of each die roll
+Dialogue: 0,0:28:34.52,0:28:36.89,CHN,,0,0,0,,我们一直将每次掷骰子的结果
+Dialogue: 0,0:28:36.89,0:28:39.14,ENG,,0,0,0,,as independent from the outcome of all the others
+Dialogue: 0,0:28:36.89,0:28:39.14,CHN,,0,0,0,,视为独立于剩下每次掷骰子的结果
+Dialogue: 0,0:28:39.14,0:28:42.00,ENG,,0,0,0,,and we're assuming that each die follows the same distribution.
+Dialogue: 0,0:28:39.14,0:28:42.00,CHN,,0,0,0,,并假设每个骰子遵循相同的分布
+Dialogue: 0,0:28:42.72,0:28:44.20,ENG,,0,0,0,,Sometimes in the literature you'll see
+Dialogue: 0,0:28:42.72,0:28:44.20,CHN,,0,0,0,,有时在文献中
+Dialogue: 0,0:28:44.20,0:28:47.90,ENG,,0,0,0,,these two assumptions lumped together under the initials i.i.d
+Dialogue: 0,0:28:44.20,0:28:47.90,CHN,,0,0,0,,你会看到这两个假设合在一起  用首字母缩写 i.i.d
+Dialogue: 0,0:28:47.90,0:28:50.24,ENG,,0,0,0,,for Independent and identically distributed.
+Dialogue: 0,0:28:47.90,0:28:50.24,CHN,,0,0,0,,表示 独立同分布
+Dialogue: 0,0:28:50.24,0:28:53.70,ENG,,0,0,0,,One situation where these assumptions are decidedly NOT true
+Dialogue: 0,0:28:50.24,0:28:53.70,CHN,,0,0,0,,一个这些假设明显不成立的情况
+Dialogue: 0,0:28:53.70,0:28:55.32,ENG,,0,0,0,,would be the Galton board.
+Dialogue: 0,0:28:53.70,0:28:55.32,CHN,,0,0,0,,正是高尔顿板
+Dialogue: 0,0:28:55.32,0:28:56.80,ENG,,0,0,0,,I mean, think about it
+Dialogue: 0,0:28:55.32,0:28:56.80,CHN,,0,0,0,,我意思是  你想想看
+Dialogue: 0,0:28:56.80,0:29:00.16,ENG,,0,0,0,,is it the case that the way a ball bounces off of one of the pegs
+Dialogue: 0,0:28:56.80,0:29:00.16,CHN,,0,0,0,,一个球在一个钉子上弹开的方式
+Dialogue: 0,0:29:00.16,0:29:03.46,ENG,,0,0,0,,is independent from how it's going to bounce off the next peg?
+Dialogue: 0,0:29:00.16,0:29:03.46,CHN,,0,0,0,,是否独立于它在下一个钉子上弹开的方式
+Dialogue: 0,0:29:03.46,0:29:04.72,ENG,,0,0,0,,Absolutely not.
+Dialogue: 0,0:29:03.46,0:29:04.72,CHN,,0,0,0,,绝对不是
+Dialogue: 0,0:29:04.72,0:29:05.81,ENG,,0,0,0,,Depending on the last bounce,
+Dialogue: 0,0:29:04.72,0:29:05.81,CHN,,0,0,0,,取决于前一次的弹跳
+Dialogue: 0,0:29:05.81,0:29:08.12,ENG,,0,0,0,,it's coming in with a completely different trajectory.
+Dialogue: 0,0:29:05.81,0:29:08.12,CHN,,0,0,0,,之后它的轨迹也会完全不同
+Dialogue: 0,0:29:08.12,0:29:12.32,ENG,,0,0,0,,And is it the case that the distribution of possible outcomes off of each peg
+Dialogue: 0,0:29:08.12,0:29:12.32,CHN,,0,0,0,,并且  小球在每一个钉子上的弹向分布
+Dialogue: 0,0:29:12.32,0:29:14.98,ENG,,0,0,0,,are the same for each peg that it hits?
+Dialogue: 0,0:29:12.32,0:29:14.98,CHN,,0,0,0,,是否跟之前钉子的都一样？
+Dialogue: 0,0:29:14.98,0:29:16.84,ENG,,0,0,0,,Again, almost certainly not.
+Dialogue: 0,0:29:14.98,0:29:16.84,CHN,,0,0,0,,同样  几乎肯定不是
+Dialogue: 0,0:29:16.84,0:29:18.88,ENG,,0,0,0,,Maybe it hits one peg glancing to the left,
+Dialogue: 0,0:29:16.84,0:29:18.88,CHN,,0,0,0,,也许它在一个钉子上向左斜着击中
+Dialogue: 0,0:29:18.88,0:29:21.74,ENG,,0,0,0,,meaning the outcomes are hugely skewed in that direction
+Dialogue: 0,0:29:18.88,0:29:21.74,CHN,,0,0,0,,这意味着弹跳的方向向左严重偏斜
+Dialogue: 0,0:29:21.74,0:29:23.82,ENG,,0,0,0,,and then hits the next one glancing to the right.
+Dialogue: 0,0:29:21.74,0:29:23.82,CHN,,0,0,0,,然后在下一个钉子上向右斜着击中
+Dialogue: 0,0:29:25.74,0:29:28.86,ENG,,0,0,0,,When I made all those simplifying assumptions in the opening example,
+Dialogue: 0,0:29:25.74,0:29:28.86,CHN,,0,0,0,,在开篇的示例中  我做了所有假设来简化
+Dialogue: 0,0:29:28.86,0:29:31.70,ENG,,0,0,0,,it wasn't just to make this easier to think about.
+Dialogue: 0,0:29:28.86,0:29:31.70,CHN,,0,0,0,,并不仅仅是为了让它更容易思考
+Dialogue: 0,0:29:31.70,0:29:34.34,ENG,,0,0,0,,It's also that those assumptions were necessary
+Dialogue: 0,0:29:31.70,0:29:34.34,CHN,,0,0,0,,这些假设也是必要的
+Dialogue: 0,0:29:34.34,0:29:37.26,ENG,,0,0,0,,for this to actually be an example of the central limit theorem.
+Dialogue: 0,0:29:34.34,0:29:37.26,CHN,,0,0,0,,因为这实际上是中心极限定理的一个要求
+Dialogue: 0,0:29:37.92,0:29:40.98,ENG,,0,0,0,,Nevertheless, it seems to be true that for the real Galton board,
+Dialogue: 0,0:29:37.92,0:29:40.98,CHN,,0,0,0,,尽管如此  在真实的高尔顿板上
+Dialogue: 0,0:29:40.98,0:29:42.78,ENG,,0,0,0,,despite violating both of these,
+Dialogue: 0,0:29:40.98,0:29:42.78,CHN,,0,0,0,,即使违反了这两个假设
+Dialogue: 0,0:29:42.78,0:29:45.66,ENG,,0,0,0,,a normal distribution does kind of come about...
+Dialogue: 0,0:29:42.78,0:29:45.66,CHN,,0,0,0,,正态分布似乎还是会出现……
+Dialogue: 0,0:29:46.32,0:29:49.28,ENG,,0,0,0,,Part of the reason might be that there are generalizations of the theorem
+Dialogue: 0,0:29:46.32,0:29:49.28,CHN,,0,0,0,,部分原因是中心极限定理有更通用的形式
+Dialogue: 0,0:29:49.28,0:29:52.50,ENG,,0,0,0,,beyond the scope of this video that relax these assumptions,
+Dialogue: 0,0:29:49.28,0:29:52.50,CHN,,0,0,0,,可以放宽这些假设
+Dialogue: 0,0:29:52.50,0:29:53.82,ENG,,0,0,0,,especially the second one.
+Dialogue: 0,0:29:52.50,0:29:53.82,CHN,,0,0,0,,尤其是第二个假设
+Dialogue: 0,0:29:54.36,0:29:57.18,ENG,,0,0,0,,But I do want to caution you against the fact that many times,
+Dialogue: 0,0:29:54.36,0:29:57.18,CHN,,0,0,0,,但我确实想提醒你  很多时候
+Dialogue: 0,0:29:57.18,0:30:00.30,ENG,,0,0,0,,people seem to assume that a variable is normally distributed
+Dialogue: 0,0:29:57.18,0:30:00.30,CHN,,0,0,0,,即使没有验证是否满足这些假设
+Dialogue: 0,0:30:00.30,0:30:03.00,ENG,,0,0,0,,even when there's no actual justification to do so.
+Dialogue: 0,0:30:00.30,0:30:03.00,CHN,,0,0,0,,人们似乎也会默认这个变量服从正态分布
+Dialogue: 0,0:30:04.14,0:30:06.28,ENG,,0,0,0,,The third assumption is actually fairly subtle.
+Dialogue: 0,0:30:04.14,0:30:06.28,CHN,,0,0,0,,第三个假设实际上相当微妙
+Dialogue: 0,0:30:06.28,0:30:10.54,ENG,,0,0,0,,It's that the variance we've been computing for these variables is finite.
+Dialogue: 0,0:30:06.28,0:30:10.54,CHN,,0,0,0,,也就是  这些变量的方差要求是有限的
+Dialogue: 0,0:30:10.54,0:30:12.91,ENG,,0,0,0,,This was never an issue for the dice example
+Dialogue: 0,0:30:10.54,0:30:12.91,CHN,,0,0,0,,对于掷骰子的例子来说  这肯定不是问题
+Dialogue: 0,0:30:12.91,0:30:14.98,ENG,,0,0,0,,because there were only six possible outcomes,
+Dialogue: 0,0:30:12.91,0:30:14.98,CHN,,0,0,0,,因为只有六个可能的结果
+Dialogue: 0,0:30:14.98,0:30:18.30,ENG,,0,0,0,,but in certain situations where you have an infinite set of outcomes,
+Dialogue: 0,0:30:14.98,0:30:18.30,CHN,,0,0,0,,但比如当结果的范围是无限的时候
+Dialogue: 0,0:30:18.30,0:30:20.06,ENG,,0,0,0,,when you go to compute the variance,
+Dialogue: 0,0:30:18.30,0:30:20.06,CHN,,0,0,0,,你再去计算方差
+Dialogue: 0,0:30:20.06,0:30:22.84,ENG,,0,0,0,,the sum ends up diverging off to infinity.
+Dialogue: 0,0:30:20.06,0:30:22.84,CHN,,0,0,0,,总和有可能会发散至无穷
+Dialogue: 0,0:30:23.34,0:30:25.96,ENG,,0,0,0,,These can be perfectly valid probability distributions
+Dialogue: 0,0:30:23.34,0:30:25.96,CHN,,0,0,0,,这类概率分布完全可能存在
+Dialogue: 0,0:30:25.96,0:30:27.44,ENG,,0,0,0,,and they do come up in practice
+Dialogue: 0,0:30:25.96,0:30:27.44,CHN,,0,0,0,,在应用中也确实会出现
+Dialogue: 0,0:30:27.44,0:30:28.90,ENG,,0,0,0,,but in those situations
+Dialogue: 0,0:30:27.44,0:30:28.90,CHN,,0,0,0,,但是在这些情况下
+Dialogue: 0,0:30:28.90,0:30:32.38,ENG,,0,0,0,,as you consider, adding many different instantiations of that variable
+Dialogue: 0,0:30:28.90,0:30:32.38,CHN,,0,0,0,,当你把许多这样的随机变量相加
+Dialogue: 0,0:30:32.38,0:30:34.08,ENG,,0,0,0,,and letting that sum approach infinity,
+Dialogue: 0,0:30:32.38,0:30:34.08,CHN,,0,0,0,,并且总和趋近于无穷大时
+Dialogue: 0,0:30:34.08,0:30:36.24,ENG,,0,0,0,,even if the first two assumptions hold,
+Dialogue: 0,0:30:34.08,0:30:36.24,CHN,,0,0,0,,即使前两个假设成立
+Dialogue: 0,0:30:36.24,0:30:39.38,ENG,,0,0,0,,it is very much a possibility that the thing you tender towards
+Dialogue: 0,0:30:36.24,0:30:39.38,CHN,,0,0,0,,很有可能你最终得到的东西
+Dialogue: 0,0:30:39.38,0:30:41.16,ENG,,0,0,0,,is not actually a normal distribution.
+Dialogue: 0,0:30:39.38,0:30:41.16,CHN,,0,0,0,,实际上并不是正态分布
+Dialogue: 0,0:30:42.12,0:30:44.04,ENG,,0,0,0,,If you've understood everything up to this point,
+Dialogue: 0,0:30:42.12,0:30:44.04,CHN,,0,0,0,,如果你理解了到目前为止的所有内容
+Dialogue: 0,0:30:44.04,0:30:45.81,ENG,,0,0,0,,you now have a very strong foundation
+Dialogue: 0,0:30:44.04,0:30:45.81,CHN,,0,0,0,,那么你现在对中心极限定理的本质
+Dialogue: 0,0:30:45.81,0:30:47.82,ENG,,0,0,0,,in what the central limit theorem is all about.
+Dialogue: 0,0:30:45.81,0:30:47.82,CHN,,0,0,0,,已经有了非常扎实的基础
+Dialogue: 0,0:30:47.82,0:30:49.66,ENG,,0,0,0,,And next up, I'd like to explain
+Dialogue: 0,0:30:47.82,0:30:49.66,CHN,,0,0,0,,接下来的视频中  我想解释
+Dialogue: 0,0:30:49.66,0:30:53.14,ENG,,0,0,0,,why it is that this particular function is the thing that we tend towards
+Dialogue: 0,0:30:49.66,0:30:53.14,CHN,,0,0,0,,为什么这个特定的函数是我们想要的东西
+Dialogue: 0,0:30:53.14,0:30:54.74,ENG,,0,0,0,,and why it has a π in it -
+Dialogue: 0,0:30:53.14,0:30:54.74,CHN,,0,0,0,,以及这个公式里面为什么有一个 π
+Dialogue: 0,0:30:54.74,0:30:56.10,ENG,,0,0,0,,what it has to do with circles.
+Dialogue: 0,0:30:54.74,0:30:56.10,CHN,,0,0,0,,这个式子和圆又有什么关系

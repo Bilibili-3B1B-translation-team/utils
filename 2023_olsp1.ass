@@ -1,0 +1,382 @@
+[Script Info]
+Title: This demo tests your understanding of light | Barber pole, part 1
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ENG,Inter Medium,45,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,94,100,0,0,1,2.7,2.7,2,15,15,3,1
+Style: CHN,MonyharOS Sans SC Medium,59,&H00FFFFFF,&H0055060A,&H0055060A,&H00000000,-1,0,0,0,98,100,0,0,1,4.05,2.7,2,15,15,54,1
+Style: Staff,MonyharOS Sans SC Medium,45,&H00FFFFFF,&H0055060A,&H00AE9B5F,&H00000000,0,0,0,0,100,100,0,0,1,2.7,2.7,8,10,10,27,1
+Style: comment,华文中宋,54,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1.8,1.8,2,10,10,9,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:04.78,comment,,0,0,0,,{\fs70\fad(883,480)\pos(1420,140)}糖水\N(0.75g 蔗糖/mL 水）
+Dialogue: 0,0:00:04.78,0:00:07.81,comment,,0,0,0,,{\fs70\fad(420,510)\pos(1674,135)}白光\N（无偏振）
+Dialogue: 0,0:00:07.81,0:00:11.95,comment,,0,0,0,,{\fs70\fad(390,1450)\pos(1600,380)}线偏振片\N（可变角度）
+Dialogue: 0,0:00:11.61,0:00:21.98,comment,,0,0,0,,{\fs70\pos(972,393)\fad(1000,0)}线偏振片
+Dialogue: 0,0:00:29.08,0:00:38.71,comment,,0,0,0,,{\fs70\move(1462,367.778,734,365.556,2220,2887)}线偏振片\N（可变角度）
+Dialogue: 0,0:00:38.81,0:00:43.05,comment,,0,0,0,,{\fs60\K176\bord0\shad0\2c&H1F1F1F&\pos(558,376)}Steve Mould不是讲过了吗？
+Dialogue: 0,0:00:56.48,0:01:04.58,comment,,0,0,0,,{\fs70\pos(1590,231.111)}接下来···
+Dialogue: 0,0:02:22.75,0:02:31.85,comment,,0,0,0,,{\fs70\fad(550,0)\move(1000,340,1000,225,17,517)}注意看照出来的颜色
+Dialogue: 0,0:03:02.51,0:03:03.25,comment,,0,0,0,,{\fs60\fad(223,550)\pos(1014,540)}偏振\N\N\N\N散射\N\N\N\N折射率
+Dialogue: 0,0:03:02.68,0:03:10.85,comment,,0,0,0,,{\fs70\K162\bord0\shad0\2c&H1F1F1F&\pos(1562,444)}首先：大纲
+Dialogue: 0,0:03:18.31,0:03:23.88,comment,,0,0,0,,{\fs70\fad(323,347)\pos(780,104)}问题 0：到底是什么在振荡？
+Dialogue: 0,0:03:39.05,0:03:49.25,comment,,0,0,0,,{\fs70\fad(325,325)\pos(806,104)}问题 1：为什么糖旋转了方向？
+Dialogue: 0,0:04:17.78,0:04:32.15,comment,,0,0,0,,{\fs70\fad(325,325)\pos(546,330)}问题 2：为什么旋转速率取决于频率？
+Dialogue: 0,0:05:24.98,0:05:31.45,comment,,0,0,0,,{\fs70\K53\bord0\shad0\2c&H1F1F1F&\pos(776,228)}这仍是白光
+Dialogue: 0,0:05:31.45,0:05:33.35,comment,,0,0,0,,{\fs70\pos(1182,255)\fad(0,350)}这仍是白光
+Dialogue: 0,0:06:17.41,0:06:22.25,comment,,0,0,0,,{\fs70\pos(1358,184)}注意看照出来的颜色
+Dialogue: 0,0:07:06.98,0:07:13.98,comment,,0,0,0,,{\fs70\fad(350,0)\a1\pos(40,653)}问题 3：\N为什么会看到斜向色带？
+Dialogue: 0,0:07:18.65,0:07:20.55,comment,,0,0,0,,{\fad(350,0)\fs70\pos(1012,191)}这仍是白光
+Dialogue: 0,0:07:26.91,0:07:28.35,comment,,0,0,0,,{\fad(350,0)\fs70\pos(794,240)}这仍是白光
+Dialogue: 0,0:07:42.28,0:07:49.18,comment,,0,0,0,,{\fs70\pos(966,313)}这里没有偏振片！
+Dialogue: 0,0:07:49.28,0:07:57.21,comment,,0,0,0,,{\fs70\fad(350,300)\a1\frx0\fry0\pos(644,148)}问题 3：\N为什么会看到斜向色带？
+Dialogue: 0,0:07:57.58,0:08:13.71,comment,,0,0,0,,{\fs100\u1\pos(1594,133)}余留的问题
+Dialogue: 0,0:07:57.85,0:08:13.71,comment,,0,0,0,,{\a1\fs70\fad(600,0)\pos(448,260)}问题 1：为什么糖旋转了光？
+Dialogue: 0,0:08:03.25,0:08:13.71,comment,,0,0,0,,{\a1\fs70\fad(600,0)\pos(446,516)}问题 2：为什么旋转速率取决于频率？
+Dialogue: 0,0:08:08.68,0:08:13.71,comment,,0,0,0,,{\a1\fs70\fad(600,0)\pos(442,856)}问题 3：为什么会看到斜向色带？
+Dialogue: 0,0:09:06.41,0:09:12.78,comment,,0,0,0,,{\fs70\fad(0,350)\pos(1200,202)}权威解答
+Dialogue: 0,0:09:12.78,0:09:18.08,comment,,0,0,0,,{\fs70\fad(487,0)\pos(1248,942)}基本理解
+Dialogue: 0,0:09:18.08,0:09:18.24,comment,,0,0,0,,
+Dialogue: 0,0:00:00.00,0:00:03.81,ENG,,0,0,0,,The setup here starts with a cylinder full of sugar water basically
+Dialogue: 0,0:00:00.00,0:00:03.81,CHN,,0,0,0,,这个装置基本上先是一个装满糖水的圆柱
+Dialogue: 0,0:00:03.81,0:00:06.52,ENG,,0,0,0,,and we're about to shine some white light into it.
+Dialogue: 0,0:00:03.81,0:00:06.52,CHN,,0,0,0,,我们准备拿白光来照它
+Dialogue: 0,0:00:06.52,0:00:10.68,ENG,,0,0,0,,But before it gets there, it passes through a linearly polarizing filter.
+Dialogue: 0,0:00:06.52,0:00:10.68,CHN,,0,0,0,,但光线到达圆柱之前  要先通过一个线偏振片
+Dialogue: 0,0:00:10.68,0:00:12.47,ENG,,0,0,0,,And what that means basically
+Dialogue: 0,0:00:10.68,0:00:12.47,CHN,,0,0,0,,简单来说就是
+Dialogue: 0,0:00:12.47,0:00:16.34,ENG,,0,0,0,,is that if you look at all of the light waves beyond the point of that filter
+Dialogue: 0,0:00:12.47,0:00:16.34,CHN,,0,0,0,,若观测通过偏振片后的所有光波
+Dialogue: 0,0:00:16.34,0:00:20.41,ENG,,0,0,0,,those waves are only going to be wiggling in one direction, say up and down.
+Dialogue: 0,0:00:16.34,0:00:20.41,CHN,,0,0,0,,会发现那些波都只沿一个方向振荡  比如上下振荡
+Dialogue: 0,0:00:20.74,0:00:24.27,ENG,,0,0,0,,And don't worry, in a few minutes we're going to go into much more detail about
+Dialogue: 0,0:00:20.74,0:00:24.27,CHN,,0,0,0,,别着急  我们很快将会更仔细地探讨
+Dialogue: 0,0:00:24.27,0:00:25.73,ENG,,0,0,0,,what specifically is wiggling
+Dialogue: 0,0:00:24.27,0:00:25.73,CHN,,0,0,0,,具体是什么在振荡
+Dialogue: 0,0:00:25.73,0:00:28.90,ENG,,0,0,0,,and what the significance of that wiggling direction is
+Dialogue: 0,0:00:25.73,0:00:28.90,CHN,,0,0,0,,以及振荡方向为何重要
+Dialogue: 0,0:00:28.90,0:00:30.62,ENG,,0,0,0,,but skipping to the punch line first
+Dialogue: 0,0:00:28.90,0:00:30.62,CHN,,0,0,0,,但我们先跳到重点
+Dialogue: 0,0:00:30.62,0:00:35.27,ENG,,0,0,0,,the demo also includes a second linearly polarizing filter coming out the other end
+Dialogue: 0,0:00:30.62,0:00:35.27,CHN,,0,0,0,,这个装置的另一端还有第二个线偏振片
+Dialogue: 0,0:00:35.27,0:00:38.54,ENG,,0,0,0,,and I want you to predict what we're going to see once we turn the light on.
+Dialogue: 0,0:00:35.27,0:00:38.54,CHN,,0,0,0,,我想请你预测一下  开灯后我们会看到什么
+Dialogue: 0,0:00:38.93,0:00:43.15,ENG,,0,0,0,,Now I suspect some viewers might already have a little bit of a sense for what's going on
+Dialogue: 0,0:00:38.93,0:00:43.15,CHN,,0,0,0,,我猜一些观众也许已经有点头绪了
+Dialogue: 0,0:00:43.15,0:00:46.54,ENG,,0,0,0,,because a few years ago Steve Mould made a really excellent video
+Dialogue: 0,0:00:43.15,0:00:46.54,CHN,,0,0,0,,因为几年前  Steve Mould 做了一期非常棒的视频
+Dialogue: 0,0:00:46.54,0:00:50.49,ENG,,0,0,0,,about this phenomenon of shining polarized light through sugar water.
+Dialogue: 0,0:00:46.54,0:00:50.49,CHN,,0,0,0,,讲的就是偏振光经过糖水的这个现象
+Dialogue: 0,0:00:50.49,0:00:54.49,ENG,,0,0,0,,It was really well done, which is no surprise because everything Steve makes is.
+Dialogue: 0,0:00:50.49,0:00:54.49,CHN,,0,0,0,,视频非常好  毕竟 Steve 出品必属精品
+Dialogue: 0,0:00:54.49,0:00:59.18,ENG,,0,0,0,,But even if you watched that, this is a rich enough phenomenon that there's still more to be explained.
+Dialogue: 0,0:00:54.49,0:00:59.18,CHN,,0,0,0,,但就算你看过那个视频  这个丰富的现象仍有需要解释的地方
+Dialogue: 0,0:00:59.18,0:01:01.48,ENG,,0,0,0,,In fact even if you you made that video
+Dialogue: 0,0:00:59.18,0:01:01.48,CHN,,0,0,0,,甚至就算你本人做了那期视频
+Dialogue: 0,0:01:01.48,0:01:04.49,ENG,,0,0,0,,this is a rich enough phenomenon that there's more to be explained.
+Dialogue: 0,0:01:01.48,0:01:04.49,CHN,,0,0,0,,这个丰富的现象依然有需要解释的地方
+Dialogue: 0,0:01:04.76,0:01:07.04,ENG,,0,0,0,,I'm curious Steve, when you made that video
+Dialogue: 0,0:01:04.76,0:01:07.04,CHN,,0,0,0,,Steve 我很好奇  当你做视频的时候
+Dialogue: 0,0:01:07.04,0:01:10.05,ENG,,0,0,0,,did you happen to get a good view of the side of the glass
+Dialogue: 0,0:01:07.04,0:01:10.05,CHN,,0,0,0,,有没有好好地看圆柱的侧面呢
+Dialogue: 0,0:01:10.05,0:01:13.30,ENG,,0,0,0,,probably when the rest of the lights in the room were off or something like that?
+Dialogue: 0,0:01:10.05,0:01:13.30,CHN,,0,0,0,,例如  关掉房间里其他灯再看  什么的
+Dialogue: 0,0:01:13.80,0:01:17.22,ENG,,0,0,0,,No, no, I didn't think about the side view.
+Dialogue: 0,0:01:13.80,0:01:17.22,CHN,,0,0,0,,{\3c&H005040&}没有  没有  我没想过要看侧边
+Dialogue: 0,0:01:17.66,0:01:20.52,ENG,,0,0,0,,Great, so given the setup that we're looking at now
+Dialogue: 0,0:01:17.66,0:01:20.52,CHN,,0,0,0,,好嘞  那么你看看这一套装置
+Dialogue: 0,0:01:20.52,0:01:23.50,ENG,,0,0,0,,once we turn off the room lights and turn on the lamp
+Dialogue: 0,0:01:20.52,0:01:23.50,CHN,,0,0,0,,等下我们关掉房间灯  打开白灯后
+Dialogue: 0,0:01:23.50,0:01:26.02,ENG,,0,0,0,,I'm curious if you have a prediction for what you might see.
+Dialogue: 0,0:01:23.50,0:01:26.02,CHN,,0,0,0,,我很好奇你能不能预测出看到的情形呢
+Dialogue: 0,0:01:26.52,0:01:30.17,ENG,,0,0,0,,Well, there will be some scattering I suppose
+Dialogue: 0,0:01:26.52,0:01:30.17,CHN,,0,0,0,,{\3c&H005040&}嗯  我猜会有一些散射
+Dialogue: 0,0:01:30.62,0:01:32.15,ENG,,0,0,0,,but then if we're just looking at the tube
+Dialogue: 0,0:01:30.62,0:01:32.15,CHN,,0,0,0,,{\3c&H005040&}但如果只是盯着圆管来看
+Dialogue: 0,0:01:32.77,0:01:37.60,ENG,,0,0,0,,we're not applying any kind of filter to just look into it to the tube.
+Dialogue: 0,0:01:32.77,0:01:37.60,CHN,,0,0,0,,{\3c&H005040&}也不加什么滤光片  直接看圆管的话
+Dialogue: 0,0:01:37.60,0:01:39.95,ENG,,0,0,0,,So I mean my instinct is nothing
+Dialogue: 0,0:01:37.60,0:01:39.95,CHN,,0,0,0,,{\3c&H005040&}我的直觉是  无事发生
+Dialogue: 0,0:01:39.95,0:01:41.78,ENG,,0,0,0,,you know, nothing will happen.
+Dialogue: 0,0:01:39.95,0:01:41.78,CHN,,0,0,0,,{\3c&H005040&}就啥也不会发生
+Dialogue: 0,0:01:41.78,0:01:43.51,ENG,,0,0,0,,That would have been my guess too
+Dialogue: 0,0:01:41.78,0:01:43.51,CHN,,0,0,0,,我当时也是这样猜的
+Dialogue: 0,0:01:43.51,0:01:47.76,ENG,,0,0,0,,but let me just show you what it looks like when we turn off the room lights and we turn on the lamp.
+Dialogue: 0,0:01:43.51,0:01:47.76,CHN,,0,0,0,,不过我直接演示吧  关掉房间灯打开白灯后会如何
+Dialogue: 0,0:01:49.19,0:01:53.76,ENG,,0,0,0,,And then if you turn the initial polarizer you can kind of see those stripes
+Dialogue: 0,0:01:49.19,0:01:53.76,CHN,,0,0,0,,此时转动第一个偏振片  就会看到这些色带
+Dialogue: 0,0:01:53.76,0:01:56.38,ENG,,0,0,0,,those diagonal Stripes seem to walk up the tube.
+Dialogue: 0,0:01:53.76,0:01:56.38,CHN,,0,0,0,,斜向色带似乎会沿着圆管走
+Dialogue: 0,0:01:58.34,0:02:01.35,ENG,,0,0,0,,Oh, wow. 
+Dialogue: 0,0:01:58.34,0:02:01.35,CHN,,0,0,0,,哇
+Dialogue: 0,0:01:58.34,0:02:01.35,ENG,,0,0,0,,But why diagonal?
+Dialogue: 0,0:01:58.34,0:02:01.35,CHN,,0,0,0,,但为什么是斜的呢
+Dialogue: 0,0:01:58.34,0:02:01.35,ENG,,0,0,0,,Exactly, why diagonal?
+Dialogue: 0,0:01:58.34,0:02:01.35,CHN,,0,0,0,,问得好  为什么会斜呢
+Dialogue: 0,0:02:01.35,0:02:04.55,ENG,,0,0,0,,But why anything
+Dialogue: 0,0:02:01.35,0:02:04.55,CHN,,0,0,0,,但为什么啊
+Dialogue: 0,0:02:01.35,0:02:04.55,ENG,,0,0,0,,I mean why anything?
+Dialogue: 0,0:02:01.35,0:02:04.55,CHN,,0,0,0,,为什么会有这一切啊
+Dialogue: 0,0:02:05.02,0:02:07.50,ENG,,0,0,0,,Something about the interaction with sugar water
+Dialogue: 0,0:02:05.02,0:02:07.50,CHN,,0,0,0,,跟糖水发生某种互动后
+Dialogue: 0,0:02:07.50,0:02:10.72,ENG,,0,0,0,,separates the light out into these different bands of color.
+Dialogue: 0,0:02:07.50,0:02:10.72,CHN,,0,0,0,,光被分成了不同的色带
+Dialogue: 0,0:02:11.25,0:02:13.68,ENG,,0,0,0,,but it does so in this really intriguing way
+Dialogue: 0,0:02:11.25,0:02:13.68,CHN,,0,0,0,,而且  规律非常耐人寻味
+Dialogue: 0,0:02:13.68,0:02:18.18,ENG,,0,0,0,,with the colors appear to form these spiral helixes down the tube.
+Dialogue: 0,0:02:13.68,0:02:18.18,CHN,,0,0,0,,颜色沿着圆管  形成了螺旋的形状
+Dialogue: 0,0:02:19.39,0:02:21.77,ENG,,0,0,0,,and the other thing I want to draw your attention to
+Dialogue: 0,0:02:19.39,0:02:21.77,CHN,,0,0,0,,另一个请注意看的点是
+Dialogue: 0,0:02:21.77,0:02:26.12,ENG,,0,0,0,,is the color that's coming out of the tube after it passes through that second filter.
+Dialogue: 0,0:02:21.77,0:02:26.12,CHN,,0,0,0,,通过第二个偏振片后  从圆管出来的色彩
+Dialogue: 0,0:02:26.97,0:02:31.47,ENG,,0,0,0,,As we rotate the first filter, you rotate through a family of distinct hues.
+Dialogue: 0,0:02:26.97,0:02:31.47,CHN,,0,0,0,,不断转动第一个偏振片  就会看到一系列不同的色调
+Dialogue: 0,0:02:32.03,0:02:33.73,ENG,,0,0,0,,And it doesn't have to be the first filter
+Dialogue: 0,0:02:32.03,0:02:33.73,CHN,,0,0,0,,而且不只是第一偏振片
+Dialogue: 0,0:02:33.73,0:02:38.02,ENG,,0,0,0,,if you rotate that second filter you also rotate through these various different colors.
+Dialogue: 0,0:02:33.73,0:02:38.02,CHN,,0,0,0,,当你转动第二偏振片时  也会看到各种颜色
+Dialogue: 0,0:02:38.74,0:02:41.86,ENG,,0,0,0,,That's Quinn by the way, who kindly set up this whole demo
+Dialogue: 0,0:02:38.74,0:02:41.86,CHN,,0,0,0,,另外这是 Quinn  感谢她摆放了这套装置
+Dialogue: 0,0:02:42.23,0:02:46.83,ENG,,0,0,0,,and what I love about this setup is that if you want to really understand what you're looking at
+Dialogue: 0,0:02:42.23,0:02:46.83,CHN,,0,0,0,,我很喜欢这套装置的一点是  要想真正理解眼前所见
+Dialogue: 0,0:02:46.83,0:02:50.40,ENG,,0,0,0,,with that deep to your bones satisfying sense of what's going on
+Dialogue: 0,0:02:46.83,0:02:50.40,CHN,,0,0,0,,要想刻骨铭心地理解这些原理
+Dialogue: 0,0:02:50.70,0:02:56.14,ENG,,0,0,0,,it requires having very solid intuitions for a number of different fundamental concepts about light
+Dialogue: 0,0:02:50.70,0:02:56.14,CHN,,0,0,0,,那你就得对光的许多基本概念  有很扎实的直觉
+Dialogue: 0,0:02:56.14,0:03:00.80,ENG,,0,0,0,,like polarization, how scattering works, and how an index of refraction works.
+Dialogue: 0,0:02:56.14,0:03:00.80,CHN,,0,0,0,,例如  偏振  散射原理  以及折射率原理
+Dialogue: 0,0:03:01.70,0:03:06.64,ENG,,0,0,0,,To kick things off, let me show you the overall structure for the explanation of what's going on here
+Dialogue: 0,0:03:01.70,0:03:06.64,CHN,,0,0,0,,首先  让我展示解释该现象的整体框架
+Dialogue: 0,0:03:06.64,0:03:10.05,ENG,,0,0,0,,and along the way record various questions that we still need to answer.
+Dialogue: 0,0:03:06.64,0:03:10.05,CHN,,0,0,0,,并且一路记下我们仍需回答的各个问题
+Dialogue: 0,0:03:10.93,0:03:14.35,ENG,,0,0,0,,A basic premise to the whole thing is to think about polarized light
+Dialogue: 0,0:03:10.93,0:03:14.35,CHN,,0,0,0,,这一切的基本前提是  将偏振光视为
+Dialogue: 0,0:03:14.35,0:03:18.02,ENG,,0,0,0,,as a propagating wave which is wiggling in just one direction.
+Dialogue: 0,0:03:14.35,0:03:18.02,CHN,,0,0,0,,只沿一个方向振荡的传播波
+Dialogue: 0,0:03:18.40,0:03:22.92,ENG,,0,0,0,,And I suppose question number zero is for us to be clear about what exactly is wiggling.
+Dialogue: 0,0:03:18.40,0:03:22.92,CHN,,0,0,0,,也许第零个问题是  先搞清楚究竟是什么在振荡
+Dialogue: 0,0:03:23.29,0:03:24.58,ENG,,0,0,0,,Postponing that for the moment
+Dialogue: 0,0:03:23.29,0:03:24.58,CHN,,0,0,0,,暂且按下不表
+Dialogue: 0,0:03:24.58,0:03:29.66,ENG,,0,0,0,,we will just say if we think about it as propagating in one direction, say along an x-axis
+Dialogue: 0,0:03:24.58,0:03:29.66,CHN,,0,0,0,,先假设这个波沿着一个方向传播  如 x 轴
+Dialogue: 0,0:03:29.66,0:03:33.27,ENG,,0,0,0,,the wiggling happens perpendicular to that, say in the z-direction.
+Dialogue: 0,0:03:29.66,0:03:33.27,CHN,,0,0,0,,振荡方向与其垂直  假设沿着 z 轴
+Dialogue: 0,0:03:33.80,0:03:36.80,ENG,,0,0,0,,What's going on when it passes through this tube of sugar water
+Dialogue: 0,0:03:33.80,0:03:36.80,CHN,,0,0,0,,偏振光通过这个糖水管后的情况是
+Dialogue: 0,0:03:36.80,0:03:39.42,ENG,,0,0,0,,is that that wiggling direction gets twisted.
+Dialogue: 0,0:03:36.80,0:03:39.42,CHN,,0,0,0,,振荡方向会发生旋转
+Dialogue: 0,0:03:39.76,0:03:42.25,ENG,,0,0,0,,And so the first key question is why?
+Dialogue: 0,0:03:39.76,0:03:42.25,CHN,,0,0,0,,于是第一个关键问题:  这是为什么呢
+Dialogue: 0,0:03:42.25,0:03:45.30,ENG,,0,0,0,,What is it about interaction with sugar that causes this twist?
+Dialogue: 0,0:03:42.25,0:03:45.30,CHN,,0,0,0,,光与糖的相互作用  为何会导致其旋转呢
+Dialogue: 0,0:03:45.53,0:03:48.47,ENG,,0,0,0,,And just so that it's crystal clear what I mean by twisting
+Dialogue: 0,0:03:45.53,0:03:48.47,CHN,,0,0,0,,我解释一下这里的旋转是什么意思
+Dialogue: 0,0:03:48.47,0:03:53.13,ENG,,0,0,0,,if you focus your attention on a single slice perpendicular to the axis of the cylinder
+Dialogue: 0,0:03:48.47,0:03:53.13,CHN,,0,0,0,,注意看垂直于圆柱中心轴的截面
+Dialogue: 0,0:03:53.13,0:03:56.65,ENG,,0,0,0,,and draw a line indicating how the light is wiggling on that slice
+Dialogue: 0,0:03:53.13,0:03:56.65,CHN,,0,0,0,,然后画一条线  表示光在截面上的振荡方向
+Dialogue: 0,0:03:57.04,0:04:00.20,ENG,,0,0,0,,then if you were to move that slice down the cylinder
+Dialogue: 0,0:03:57.04,0:04:00.20,CHN,,0,0,0,,那么随着截面沿圆柱移动
+Dialogue: 0,0:04:00.20,0:04:05.41,ENG,,0,0,0,,the relevant wiggling direction slowly turns about the axis of the cylinder.
+Dialogue: 0,0:04:00.20,0:04:05.41,CHN,,0,0,0,,相应的振荡方向  也会沿着圆柱中心轴缓慢转动
+Dialogue: 0,0:04:05.75,0:04:10.77,ENG,,0,0,0,,Critically, the rate at which it's getting twisted depends on the frequency of the light.
+Dialogue: 0,0:04:05.75,0:04:10.77,CHN,,0,0,0,,关键在于  旋转速率取决于光的频率
+Dialogue: 0,0:04:11.26,0:04:13.42,ENG,,0,0,0,,Higher frequency light, say violet,
+Dialogue: 0,0:04:11.26,0:04:13.42,CHN,,0,0,0,,高频的光  例如紫色光
+Dialogue: 0,0:04:13.42,0:04:17.73,ENG,,0,0,0,,actually gets twisted more quickly than low frequency light like red.
+Dialogue: 0,0:04:13.42,0:04:17.73,CHN,,0,0,0,,比低频的光  例如红色光  要旋转得更快
+Dialogue: 0,0:04:18.14,0:04:20.83,ENG,,0,0,0,,So the second key question we need to answer is:
+Dialogue: 0,0:04:18.14,0:04:20.83,CHN,,0,0,0,,那么要回答的第二个关键问题就是
+Dialogue: 0,0:04:20.83,0:04:24.14,ENG,,0,0,0,,why would that twisting rate depend on the frequency?
+Dialogue: 0,0:04:20.83,0:04:24.14,CHN,,0,0,0,,为什么旋转速率取决于频率呢
+Dialogue: 0,0:04:24.14,0:04:28.15,ENG,,0,0,0,,Whatever explanation we come to for why the twisting happens in the first place
+Dialogue: 0,0:04:24.14,0:04:28.15,CHN,,0,0,0,,我们在第一问中  关于光为什么会旋转的解释
+Dialogue: 0,0:04:28.15,0:04:32.47,ENG,,0,0,0,,it should offer some intuition for where the dependence on frequency would come from.
+Dialogue: 0,0:04:28.15,0:04:32.47,CHN,,0,0,0,,理应能提供一些直觉  说明其跟频率的关系从何而来
+Dialogue: 0,0:04:33.72,0:04:35.75,ENG,,0,0,0,,Let's take a moment to think about what it means
+Dialogue: 0,0:04:33.72,0:04:35.75,CHN,,0,0,0,,仔细时间想想这是什么意思
+Dialogue: 0,0:04:35.75,0:04:38.90,ENG,,0,0,0,,that different colors of light are getting twisted at different rates.
+Dialogue: 0,0:04:35.75,0:04:38.90,CHN,,0,0,0,,不同颜色的光  旋转速率不同
+Dialogue: 0,0:04:39.25,0:04:41.73,ENG,,0,0,0,,In the demo we're shining in white light
+Dialogue: 0,0:04:39.25,0:04:41.73,CHN,,0,0,0,,在演示中我们照射的是白光
+Dialogue: 0,0:04:41.73,0:04:45.83,ENG,,0,0,0,,and white light is not a clean pure sine wave, it's something more complicated
+Dialogue: 0,0:04:41.73,0:04:45.83,CHN,,0,0,0,,而白光不是纯净的正弦波  其要更为复杂
+Dialogue: 0,0:04:45.83,0:04:49.96,ENG,,0,0,0,,and you typically think about it as a combination of many different pure sine waves
+Dialogue: 0,0:04:45.83,0:04:49.96,CHN,,0,0,0,,通常可以将其视为  多个不同正弦波的组合
+Dialogue: 0,0:04:49.96,0:04:52.82,ENG,,0,0,0,,each one corresponding to one of the colors in the rainbow.
+Dialogue: 0,0:04:49.96,0:04:52.82,CHN,,0,0,0,,每一个正弦波  对应彩虹中的一个颜色
+Dialogue: 0,0:04:53.32,0:04:58.32,ENG,,0,0,0,,For this animation I will schematically represent the wiggling direction for each pure frequency
+Dialogue: 0,0:04:53.32,0:04:58.32,CHN,,0,0,0,,在动画中  我把每个单独频率的振荡方向
+Dialogue: 0,0:04:58.32,0:05:00.18,ENG,,0,0,0,,just with a line.
+Dialogue: 0,0:04:58.32,0:05:00.18,CHN,,0,0,0,,抽象地表示为一条线
+Dialogue: 0,0:05:00.18,0:05:04.80,ENG,,0,0,0,,so the key idea is that as all of those different waves propagate down the tube
+Dialogue: 0,0:05:00.18,0:05:04.80,CHN,,0,0,0,,关键思想就是  随着这些不同的波  沿着管子传播
+Dialogue: 0,0:05:04.80,0:05:08.18,ENG,,0,0,0,,with different pure frequencies twisting at different rates
+Dialogue: 0,0:05:04.80,0:05:08.18,CHN,,0,0,0,,不同的纯频率  旋转速率不同
+Dialogue: 0,0:05:08.18,0:05:11.85,ENG,,0,0,0,,purple light twisting the fastest and red light twisting the slowest
+Dialogue: 0,0:05:08.18,0:05:11.85,CHN,,0,0,0,,紫光转得最快  红光转得最慢
+Dialogue: 0,0:05:11.85,0:05:17.26,ENG,,0,0,0,,then the polarization directions for each one of those pure colors gets separated out.
+Dialogue: 0,0:05:11.85,0:05:17.26,CHN,,0,0,0,,那么各个纯色的偏振方向  就会互相区分开来
+Dialogue: 0,0:05:17.26,0:05:19.41,ENG,,0,0,0,,for example by the time you reach the end of the tube
+Dialogue: 0,0:05:17.26,0:05:19.41,CHN,,0,0,0,,例如  到达管子的末端时
+Dialogue: 0,0:05:19.41,0:05:22.12,ENG,,0,0,0,,they all have their own distinct wiggling directions.
+Dialogue: 0,0:05:19.41,0:05:22.12,CHN,,0,0,0,,不同的颜色各有不同的振荡方向
+Comment: 0,0:05:22.12,0:05:22.65,comment,,0,0,0,,【分隔符】
+Dialogue: 0,0:05:22.65,0:05:26.66,ENG,,0,0,0,,But one thing that's important to understand is that this is still white light.
+Dialogue: 0,0:05:22.65,0:05:26.66,CHN,,0,0,0,,但有一点必须明白  这仍然是白光
+Dialogue: 0,0:05:26.66,0:05:30.04,ENG,,0,0,0,,If you were to put your eye at the end of the tube and look towards the lamp
+Dialogue: 0,0:05:26.66,0:05:30.04,CHN,,0,0,0,,如果从管子末端  向着灯光望去
+Dialogue: 0,0:05:30.04,0:05:32.20,ENG,,0,0,0,,it wouldn't look colored in any way
+Dialogue: 0,0:05:30.04,0:05:32.20,CHN,,0,0,0,,看起来不会有任何颜色
+Dialogue: 0,0:05:32.20,0:05:34.77,ENG,,0,0,0,,because even if the wiggling directions are all different
+Dialogue: 0,0:05:32.20,0:05:34.77,CHN,,0,0,0,,因为即使振荡方向各不相同
+Dialogue: 0,0:05:34.77,0:05:38.47,ENG,,0,0,0,,they're still the same amount of each color as there was at the start.
+Dialogue: 0,0:05:34.77,0:05:38.47,CHN,,0,0,0,,每种颜色的光量  仍与开始时一样
+Dialogue: 0,0:05:38.47,0:05:41.17,ENG,,0,0,0,,in order to see any evidence of the separation
+Dialogue: 0,0:05:38.47,0:05:41.17,CHN,,0,0,0,,要看到颜色分离的迹象
+Dialogue: 0,0:05:41.17,0:05:45.77,ENG,,0,0,0,,one thing you could do is pass it all through a second linear polarizing filter,
+Dialogue: 0,0:05:41.17,0:05:45.77,CHN,,0,0,0,,可以做的是  将其通过第二个线偏振片
+Dialogue: 0,0:05:45.77,0:05:47.78,ENG,,0,0,0,,say in the vertical direction.
+Dialogue: 0,0:05:45.77,0:05:47.78,CHN,,0,0,0,,比如放在垂直方向
+Dialogue: 0,0:05:47.78,0:05:52.93,ENG,,0,0,0,,The effect that has is that the amount of light of a given frequency passing through
+Dialogue: 0,0:05:47.78,0:05:52.93,CHN,,0,0,0,,其效果是  特定频率光的通过量
+Dialogue: 0,0:05:52.93,0:05:58.02,ENG,,0,0,0,,is equal to the component of its polarization direction that lines up with the filter.
+Dialogue: 0,0:05:52.93,0:05:58.02,CHN,,0,0,0,,等于其偏振方向  在滤光片方向上的分量
+Dialogue: 0,0:05:58.56,0:06:03.71,ENG,,0,0,0,,So colors which happen to align very closely with that filter pass through almost completely
+Dialogue: 0,0:05:58.56,0:06:03.71,CHN,,0,0,0,,因此  恰好旋转到很接近滤光片方向的光  几乎完全通过
+Dialogue: 0,0:06:03.71,0:06:08.66,ENG,,0,0,0,,whereas colors which end up more perpendicular to the filter pass through only very weakly.
+Dialogue: 0,0:06:03.71,0:06:08.66,CHN,,0,0,0,,而旋转到与滤光片方向近乎垂直的光  几乎不通过
+Dialogue: 0,0:06:10.57,0:06:13.01,ENG,,0,0,0,,So the light coming out the other end of this filter
+Dialogue: 0,0:06:10.57,0:06:13.01,CHN,,0,0,0,,因此  从滤光片另一端射出的光
+Dialogue: 0,0:06:13.01,0:06:16.61,ENG,,0,0,0,,is some imbalanced combination of all of the pure frequencies
+Dialogue: 0,0:06:13.01,0:06:16.61,CHN,,0,0,0,,是所有纯频率光的某种不均匀组合
+Dialogue: 0,0:06:16.61,0:06:21.15,ENG,,0,0,0,,which is why what we see coming out the other end is no longer white but some other color.
+Dialogue: 0,0:06:16.61,0:06:21.15,CHN,,0,0,0,,这就是为什么  另一端射出的光不再是白色  而是其他颜色
+Dialogue: 0,0:06:22.10,0:06:26.73,ENG,,0,0,0,,And notice if we rotate the whole setup, say by twisting the initial polarizing filter
+Dialogue: 0,0:06:22.10,0:06:26.73,CHN,,0,0,0,,注意  如果我们旋转整个装置  比如旋转初始偏振片
+Dialogue: 0,0:06:26.73,0:06:31.05,ENG,,0,0,0,,then that changes the components of each pure frequency that happen to be vertical
+Dialogue: 0,0:06:26.73,0:06:31.05,CHN,,0,0,0,,那这就会改变  每个纯频率光  与滤光片方向垂直的分量
+Dialogue: 0,0:06:31.52,0:06:34.15,ENG,,0,0,0,,resulting in a different balance of all those colors
+Dialogue: 0,0:06:31.52,0:06:34.15,CHN,,0,0,0,,从而导致不同的颜色混合比例
+Dialogue: 0,0:06:34.60,0:06:39.35,ENG,,0,0,0,,which is why rotating the initial filter changes the color you see coming out the other end.
+Dialogue: 0,0:06:34.60,0:06:39.35,CHN,,0,0,0,,这就是为什么  旋转初始偏振片  会改变另一端出射光的颜色
+Dialogue: 0,0:06:39.88,0:06:43.30,ENG,,0,0,0,,And this is something you can do at home by the way, you don't need a very fancy setup.
+Dialogue: 0,0:06:39.88,0:06:43.30,CHN,,0,0,0,,你在家其实就能做这个实验  并不需要多么豪华的配置
+Dialogue: 0,0:06:43.30,0:06:46.02,ENG,,0,0,0,,Start by creating a pretty dense mixture of sugar water
+Dialogue: 0,0:06:43.30,0:06:46.02,CHN,,0,0,0,,首先制备浓稠的糖水
+Dialogue: 0,0:06:46.02,0:06:48.66,ENG,,0,0,0,,and then you'll need to get your hands on some polarizing filters
+Dialogue: 0,0:06:46.02,0:06:48.66,CHN,,0,0,0,,然后准备一些偏振片
+Dialogue: 0,0:06:48.66,0:06:51.79,ENG,,0,0,0,,so that you can pass light first through one of those filters
+Dialogue: 0,0:06:48.66,0:06:51.79,CHN,,0,0,0,,这样就能让光先穿过其中一个偏振片
+Dialogue: 0,0:06:51.79,0:06:55.07,ENG,,0,0,0,,then through the sugar water, and then through a second filter
+Dialogue: 0,0:06:51.79,0:06:55.07,CHN,,0,0,0,,然后穿过糖水  再穿过第二个偏振片
+Dialogue: 0,0:06:55.07,0:06:59.17,ENG,,0,0,0,,and if you look at this whole setup from the top as you rotate one of those filters,
+Dialogue: 0,0:06:55.07,0:06:59.17,CHN,,0,0,0,,从顶部观察整个装置  当你旋转其中一个偏振片时
+Dialogue: 0,0:06:59.17,0:07:00.60,ENG,,0,0,0,,you'll see different colors.
+Dialogue: 0,0:06:59.17,0:07:00.60,CHN,,0,0,0,,就能看到不同的颜色
+Dialogue: 0,0:07:01.74,0:07:03.68,ENG,,0,0,0,,But even if you understand this
+Dialogue: 0,0:07:01.74,0:07:03.68,CHN,,0,0,0,,但即使你明白这一点
+Dialogue: 0,0:07:03.68,0:07:07.24,ENG,,0,0,0,,the thing that really had me scratching my head when Quinn showed me this demo
+Dialogue: 0,0:07:03.68,0:07:07.24,CHN,,0,0,0,,当 Quinn 向我演示时  真正让我摸不着头脑的是
+Dialogue: 0,0:07:07.24,0:07:11.65,ENG,,0,0,0,,was why you would see diagonal stripes when you view the cylinder from the side?
+Dialogue: 0,0:07:07.24,0:07:11.65,CHN,,0,0,0,,为什么从侧面看圆柱  会看到斜向色带
+Dialogue: 0,0:07:12.11,0:07:14.16,ENG,,0,0,0,,I mean, take a moment to think about this.
+Dialogue: 0,0:07:12.11,0:07:14.16,CHN,,0,0,0,,花点时间想想这个问题
+Dialogue: 0,0:07:14.16,0:07:18.15,ENG,,0,0,0,,At any point down the tube, even though all the colors have been rotated differently
+Dialogue: 0,0:07:14.16,0:07:18.15,CHN,,0,0,0,,在管子的任一点  即使所有的颜色都旋转了不同角度
+Dialogue: 0,0:07:18.15,0:07:23.63,ENG,,0,0,0,,again the light at that point is still white, it's still an equal balance of all the different colors.
+Dialogue: 0,0:07:18.15,0:07:23.63,CHN,,0,0,0,,该点处的光仍然是白色的  仍然是所有不同颜色的等量组合
+Dialogue: 0,0:07:23.63,0:07:26.97,ENG,,0,0,0,,If you were to stick your eye inside the tube and look towards the lamp
+Dialogue: 0,0:07:23.63,0:07:26.97,CHN,,0,0,0,,如果你将眼睛伸进管子内  并朝灯光望去
+Dialogue: 0,0:07:26.97,0:07:28.37,ENG,,0,0,0,,you would see white,
+Dialogue: 0,0:07:26.97,0:07:28.37,CHN,,0,0,0,,你会看到白色
+Dialogue: 0,0:07:28.37,0:07:31.41,ENG,,0,0,0,,so why would viewing it from the side change what you see?
+Dialogue: 0,0:07:28.37,0:07:31.41,CHN,,0,0,0,,那为什么从侧面看就会有不同呢
+Dialogue: 0,0:07:32.03,0:07:34.88,ENG,,0,0,0,,The way I've made this animation I've just left a faint shadow
+Dialogue: 0,0:07:32.03,0:07:34.88,CHN,,0,0,0,,我做动画时留下了一个隐约的影像
+Dialogue: 0,0:07:34.88,0:07:38.70,ENG,,0,0,0,,representing the wiggling direction for each color along the way down the tube
+Dialogue: 0,0:07:34.88,0:07:38.70,CHN,,0,0,0,,来表示每种颜色在管内的振荡方向
+Dialogue: 0,0:07:38.70,0:07:42.39,ENG,,0,0,0,,but that's just a cartoon - it's a schematic representation.
+Dialogue: 0,0:07:38.70,0:07:42.39,CHN,,0,0,0,,但这只是个动画  只是个示意图
+Dialogue: 0,0:07:42.39,0:07:46.73,ENG,,0,0,0,,Why is it that the actual way that light interacts with the molecules within the tube
+Dialogue: 0,0:07:42.39,0:07:46.73,CHN,,0,0,0,,实际情况下  为什么光与管内分子的相互作用
+Dialogue: 0,0:07:46.73,0:07:49.28,ENG,,0,0,0,,would discriminate between the colors in any way?
+Dialogue: 0,0:07:46.73,0:07:49.28,CHN,,0,0,0,,会以任何方式分离颜色呢
+Dialogue: 0,0:07:49.28,0:07:51.28,ENG,,0,0,0,,and why would the stripes be diagonal?
+Dialogue: 0,0:07:49.28,0:07:51.28,CHN,,0,0,0,,而且为什么色带是斜向的呢
+Dialogue: 0,0:07:51.28,0:07:54.72,ENG,,0,0,0,,Wouldn't you think the setup should be completely symmetric from top to bottom?
+Dialogue: 0,0:07:51.28,0:07:54.72,CHN,,0,0,0,,这个装置难道不是完全上下对称的吗
+Dialogue: 0,0:07:57.40,0:08:00.04,ENG,,0,0,0,,So these are the main questions we need to answer.
+Dialogue: 0,0:07:57.40,0:08:00.04,CHN,,0,0,0,,这就是我们要回答的几个主要问题
+Dialogue: 0,0:08:00.04,0:08:02.44,ENG,,0,0,0,,Why would sugar cause the light to twist?
+Dialogue: 0,0:08:00.04,0:08:02.44,CHN,,0,0,0,,为什么糖会旋转光
+Dialogue: 0,0:08:02.44,0:08:06.14,ENG,,0,0,0,,Why would the rate at which it twists depend on the frequency of the light?
+Dialogue: 0,0:08:02.44,0:08:06.14,CHN,,0,0,0,,为什么旋转速率取决于光的频率
+Dialogue: 0,0:08:06.14,0:08:09.03,ENG,,0,0,0,,And why, even if you understand both those facts
+Dialogue: 0,0:08:06.14,0:08:09.03,CHN,,0,0,0,,以及为什么  即使你知道这两个的答案
+Dialogue: 0,0:08:09.03,0:08:12.50,ENG,,0,0,0,,would you be seeing different colors appear in these diagonal stripes?
+Dialogue: 0,0:08:09.03,0:08:12.50,CHN,,0,0,0,,为什么会看到不同的颜色  呈现出斜向色带
+Dialogue: 0,0:08:13.75,0:08:18.52,ENG,,0,0,0,,You can answer these questions if you have a handful of key intuitions about optics.
+Dialogue: 0,0:08:13.75,0:08:18.52,CHN,,0,0,0,,如果你对光学有一些关键直觉  就能回答这些问题
+Dialogue: 0,0:08:18.52,0:08:22.22,ENG,,0,0,0,,The first question requires understanding circularly polarized light
+Dialogue: 0,0:08:18.52,0:08:22.22,CHN,,0,0,0,,问题一  要求理解圆偏振光
+Dialogue: 0,0:08:22.22,0:08:26.06,ENG,,0,0,0,,since the key is that sucrose is a chiral molecule
+Dialogue: 0,0:08:22.22,0:08:26.06,CHN,,0,0,0,,因为关键是  蔗糖是一种手性分子
+Dialogue: 0,0:08:26.06,0:08:29.57,ENG,,0,0,0,,which is to say there's a handedness to it, it's different from its mirror image
+Dialogue: 0,0:08:26.06,0:08:29.57,CHN,,0,0,0,,手性的意思是  镜像与自身不同
+Dialogue: 0,0:08:30.07,0:08:32.12,ENG,,0,0,0,,and the slightly different effects that it has
+Dialogue: 0,0:08:32.12,0:08:35.61,ENG,,0,0,0,,on right-handed versus left-handed circularly polarized light
+Dialogue: 0,0:08:30.07,0:08:35.61,CHN,,0,0,0,,以及其对右旋、左旋圆偏振光  略微不同的影响
+Dialogue: 0,0:08:35.61,0:08:37.44,ENG,,0,0,0,,ends up explaining the twist.
+Dialogue: 0,0:08:35.61,0:08:37.44,CHN,,0,0,0,,最终解释了这种旋转
+Dialogue: 0,0:08:38.13,0:08:40.25,ENG,,0,0,0,,The second question requires understanding
+Dialogue: 0,0:08:38.13,0:08:40.25,CHN,,0,0,0,,问题二  要求理解的是
+Dialogue: 0,0:08:40.25,0:08:44.58,ENG,,0,0,0,,why light appears to slow down when it passes through a material.
+Dialogue: 0,0:08:40.25,0:08:44.58,CHN,,0,0,0,,为什么光在穿过物质时  会减速
+Dialogue: 0,0:08:44.58,0:08:48.61,ENG,,0,0,0,,A sufficiently mathematical understanding for where that slowdown comes from
+Dialogue: 0,0:08:44.58,0:08:48.61,CHN,,0,0,0,,先从数学角度充分地理解了光速变慢的原因
+Dialogue: 0,0:08:48.61,0:08:51.12,ENG,,0,0,0,,ultimately explains the color separation here.
+Dialogue: 0,0:08:48.61,0:08:51.12,CHN,,0,0,0,,就能最终解释色彩为何会分离
+Dialogue: 0,0:08:51.50,0:08:55.76,ENG,,0,0,0,,And the third question comes down to the fact that when light scatters off of a material
+Dialogue: 0,0:08:51.50,0:08:55.76,CHN,,0,0,0,,而问题三涉及到这样一个事实  当光从某种物质上散射时
+Dialogue: 0,0:08:55.76,0:08:59.23,ENG,,0,0,0,,it's not like some projectile bouncing in any old direction -
+Dialogue: 0,0:08:55.76,0:08:59.23,CHN,,0,0,0,,它并不像弹丸那样往任意方向上反弹
+Dialogue: 0,0:08:59.23,0:09:03.10,ENG,,0,0,0,,the direction of scattering depends on the direction of polarization,
+Dialogue: 0,0:08:59.23,0:09:03.10,CHN,,0,0,0,,散射方向取决于偏振方向
+Dialogue: 0,0:09:03.10,0:09:04.82,ENG,,0,0,0,,and there's a very good reason for it.
+Dialogue: 0,0:09:03.10,0:09:04.82,CHN,,0,0,0,,这是有充分理由的
+Dialogue: 0,0:09:06.54,0:09:11.98,ENG,,0,0,0,,My aim is for all of these answers to feel less like facts that I'm handing down from on high
+Dialogue: 0,0:09:06.54,0:09:11.98,CHN,,0,0,0,,我的目标是  让所有这些答案不像是从天而降的事实
+Dialogue: 0,0:09:11.98,0:09:17.77,ENG,,0,0,0,,and more like inevitable discoveries emerging from a fundamental understanding for what light actually is.
+Dialogue: 0,0:09:11.98,0:09:17.77,CHN,,0,0,0,,而更像是  从对光的基本理解中  领悟得出的必然发现
+Dialogue: 0,0:09:18.21,0:09:21.47,ENG,,0,0,0,,For that, we will begin by returning to that question number zero:
+Dialogue: 0,0:09:18.21,0:09:21.47,CHN,,0,0,0,,为此  我们得回到问题零
+Dialogue: 0,0:09:21.47,0:09:23.33,ENG,,0,0,0,,What exactly is wiggling?
+Dialogue: 0,0:09:21.47,0:09:23.33,CHN,,0,0,0,,到底是什么在振荡
+Dialogue: 0,0:09:23.71,0:09:25.68,ENG,,0,0,0,,Which is to say, what is light?
+Dialogue: 0,0:09:23.71,0:09:25.68,CHN,,0,0,0,,也就是在问  光是什么
+Dialogue: 0,0:09:26.34,0:09:30.76,ENG,,0,0,0,,If you're curious about how the full explanation unfolds, come join me in the next video.
+Dialogue: 0,0:09:26.34,0:09:30.76,CHN,,0,0,0,,如果你想层层揭开问题的谜团  请随我一同观看下一条视频
+Dialogue: 0,0:09:31.74,0:09:34.47,ENG,,0,0,0,,It's really surprising, I'm really surprised.
+Dialogue: 0,0:09:31.74,0:09:34.47,CHN,,0,0,0,,{\3c&H005040&}真的很令人惊讶  我被惊讶到了
+Dialogue: 0,0:09:34.82,0:09:37.25,ENG,,0,0,0,,You notice it in person as well presumably,
+Dialogue: 0,0:09:34.82,0:09:37.25,CHN,,0,0,0,,{\3c&H005040&}想必用肉眼也能看到吧
+Dialogue: 0,0:09:37.25,0:09:39.11,ENG,,0,0,0,,it's not just something that appears in the camera.
+Dialogue: 0,0:09:37.25,0:09:39.11,CHN,,0,0,0,,{\3c&H005040&}应该不是只能用相机拍的东西
+Dialogue: 0,0:09:39.11,0:09:41.22,ENG,,0,0,0,,It's actually more striking in person I think,
+Dialogue: 0,0:09:39.11,0:09:41.22,CHN,,0,0,0,,{\3c&H430050&}其实用肉眼看更显著
+Dialogue: 0,0:09:41.22,0:09:43.65,ENG,,0,0,0,,just because of like how the color of the camera works
+Dialogue: 0,0:09:41.22,0:09:43.65,CHN,,0,0,0,,{\3c&H430050&}我想这是因为相机处理色彩的方式
+Dialogue: 0,0:09:43.65,0:09:45.18,ENG,,0,0,0,,it's more intense in person.
+Dialogue: 0,0:09:43.65,0:09:45.18,CHN,,0,0,0,,{\3c&H430050&}肉眼看更鲜艳
+Dialogue: 0,0:09:45.18,0:09:49.07,ENG,,0,0,0,,I mean it's for the same reason you can't take a good picture of a rainbow
+Dialogue: 0,0:09:45.18,0:09:49.07,CHN,,0,0,0,,{\3c&H005040&}我想这就和无法拍好彩虹照片的原因是一样的
+Dialogue: 0,0:09:49.07,0:09:53.65,ENG,,0,0,0,,{\fad(0,300)}as if our brains do something to make rainbows more vibrant than they really are.
+Dialogue: 0,0:09:49.07,0:09:53.65,CHN,,0,0,0,,{\3c&H005040&\fad(0,300)}就像我们的大脑做了一些事情  来让彩虹看起来比实际更鲜艳一样

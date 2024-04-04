@@ -94,7 +94,6 @@ Dialogue: 0,0:01:38.96,0:01:41.82,CHN,,0,0,0,,扯远了  在讲这个之前还�
 Dialogue: 0,0:01:41.82,0:01:45.56,ENG,,0,0,0,,In this video, our primary focus is just going to be on the discrete case
 Dialogue: 0,0:01:41.82,0:01:45.56,CHN,,0,0,0,,在这个视频中我们主要关注离散的卷积
 Dialogue: 0,0:01:45.56,0:01:49.40,ENG,,0,0,0,,and in particular building up to a very unexpected but very clever algorithm
-Dialogue: 0,0:01:45.56,0:01:49.40,ENG,,0,0,0,, 
 Dialogue: 0,0:01:49.40,0:01:50.74,ENG,,0,0,0,,for computing these,
 Dialogue: 0,0:01:45.56,0:01:50.74,CHN,,0,0,0,,逐步构建出一种让人拍案叫绝的计算方法
 Dialogue: 0,0:01:50.74,0:01:54.50,ENG,,0,0,0,,and I'll pull out the discussion for the continuous case into a second part.
@@ -142,7 +141,6 @@ Dialogue: 0,0:02:49.16,0:02:52.25,CHN,,0,0,0,,就可以知道  出现某个点�
 Dialogue: 0,0:02:53.10,0:02:55.04,ENG,,0,0,0,,And I'd say, very good, very good.
 Dialogue: 0,0:02:53.10,0:02:55.04,CHN,,0,0,0,,我会说：还不赖
 Dialogue: 0,0:02:55.04,0:02:56.77,ENG,,0,0,0,,But can you think of any other ways
-Dialogue: 0,0:02:55.04,0:02:56.77,ENG,,0,0,0,, 
 Dialogue: 0,0:02:56.77,0:02:59.24,ENG,,0,0,0,,that you might visualize the same question?
 Dialogue: 0,0:02:55.04,0:02:59.24,CHN,,0,0,0,,但你能换一种方式展现这个问题吗
 Dialogue: 0,0:02:59.24,0:03:01.25,ENG,,0,0,0,,Other images that can come to mind,
@@ -188,7 +186,6 @@ Dialogue: 0,0:03:55.42,0:03:58.12,CHN,,0,0,0,,就是骰子的每面向上的概�
 Dialogue: 0,0:03:58.47,0:04:02.10,ENG,,0,0,0,,But what if I told you I have a special set of dice that's not uniform.
 Dialogue: 0,0:03:58.47,0:04:02.10,CHN,,0,0,0,,如果我现在改用非标的骰子
 Dialogue: 0,0:04:02.10,0:04:04.33,ENG,,0,0,0,,Maybe the blue die has its own set of numbers
-Dialogue: 0,0:04:02.10,0:04:04.33,ENG,,0,0,0,, 
 Dialogue: 0,0:04:04.33,0:04:06.93,ENG,,0,0,0,,describing the probabilities for each face coming up
 Dialogue: 0,0:04:02.10,0:04:06.93,CHN,,0,0,0,,用一个数组来描述蓝骰子每面向上的概率
 Dialogue: 0,0:04:06.93,0:04:09.95,ENG,,0,0,0,,and the red die has its own unique distinct set of numbers.
@@ -236,7 +233,6 @@ Dialogue: 0,0:05:07.42,0:05:09.08,CHN,,0,0,0,,我们通过这个过程
 Dialogue: 0,0:05:09.08,0:05:12.42,ENG,,0,0,0,,probabilities for seeing two, three, four, on and on up to 12.
 Dialogue: 0,0:05:09.08,0:05:12.42,CHN,,0,0,0,,生成了点数和为 2 3 4 ... 12 的概率
 Dialogue: 0,0:05:12.42,0:05:15.43,ENG,,0,0,0,,And we got them by mixing together one list of values, A
-Dialogue: 0,0:05:12.42,0:05:15.43,ENG,,0,0,0,, 
 Dialogue: 0,0:05:15.43,0:05:17.43,ENG,,0,0,0,,and another list of values, B.
 Dialogue: 0,0:05:12.42,0:05:17.43,CHN,,0,0,0,,这个过程通过某种运算将 A 和 B 数组的值交汇
 Dialogue: 0,0:05:17.43,0:05:18.63,ENG,,0,0,0,,In the lingo, we'd say
@@ -268,7 +264,6 @@ Dialogue: 0,0:05:50.13,0:05:54.93,CHN,,0,0,0,,A 和 B 的卷积的符号是「*�
 Dialogue: 0,0:05:54.93,0:05:58.05,ENG,,0,0,0,,And the nth element of that list looks like a sum
 Dialogue: 0,0:05:54.93,0:05:58.05,CHN,,0,0,0,,它的第 n 项定义为
 Dialogue: 0,0:05:58.42,0:06:02.30,ENG,,0,0,0,,and that sum goes over all different pairs of indices, i and j,
-Dialogue: 0,0:05:58.42,0:06:02.30,ENG,,0,0,0,, 
 Dialogue: 0,0:06:02.30,0:06:05.17,ENG,,0,0,0,,so that the sum of those indices is equal to N.
 Dialogue: 0,0:05:58.42,0:06:05.17,CHN,,0,0,0,,把下标 i j 之和为 n 的诸元素的乘积累加起来
 Dialogue: 0,0:06:05.17,0:06:06.38,ENG,,0,0,0,,It's kind of a mouthful
@@ -304,7 +299,6 @@ Dialogue: 0,0:06:46.25,0:06:49.33,CHN,,0,0,0,,对齐的就会有 1 和 5、2 和
 Dialogue: 0,0:06:49.33,0:06:50.70,ENG,,0,0,0,,Multiply those pairs,
 Dialogue: 0,0:06:49.33,0:06:50.70,CHN,,0,0,0,,把这两对相乘
 Dialogue: 0,0:06:50.70,0:06:53.24,ENG,,0,0,0,,add them together and that gives us 13.
-Dialogue: 0,0:06:50.70,0:06:53.24,ENG,,0,0,0,, 
 Dialogue: 0,0:06:53.24,0:06:54.86,ENG,,0,0,0,,The next entry in our output.
 Dialogue: 0,0:06:50.70,0:06:54.86,CHN,,0,0,0,,然后把乘积加在一起就得到了下一项 13
 Dialogue: 0,0:06:54.86,0:07:00.04,ENG,,0,0,0,,Slide things over once more and we'll take 1×6+2×5+3×4
@@ -416,7 +410,6 @@ Dialogue: 0,0:09:35.60,0:09:38.75,CHN,,0,0,0,,每个像素都混杂了一部分�
 Dialogue: 0,0:09:38.75,0:09:41.21,ENG,,0,0,0,,which gives us a blurrier version than the original.
 Dialogue: 0,0:09:38.75,0:09:41.21,CHN,,0,0,0,,这就得到了一个比原图更模糊的版本
 Dialogue: 0,0:09:41.82,0:09:43.93,ENG,,0,0,0,,In the lingo, we'd say that the image on the right
-Dialogue: 0,0:09:41.82,0:09:43.93,ENG,,0,0,0,, 
 Dialogue: 0,0:09:43.93,0:09:48.15,ENG,,0,0,0,,is a convolution of our original image with the little grid of values.
 Dialogue: 0,0:09:41.82,0:09:48.15,CHN,,0,0,0,,用术语来说  右图就是原图和小网格的卷积
 Dialogue: 0,0:09:48.15,0:09:49.93,ENG,,0,0,0,,Or more technically, maybe I should say that
@@ -530,7 +523,6 @@ Dialogue: 0,0:12:18.97,0:12:21.72,CHN,,0,0,0,,使得它从上到下变化
 Dialogue: 0,0:12:21.72,0:12:24.41,ENG,,0,0,0,,this will be picking up on all the horizontal edges.
 Dialogue: 0,0:12:21.72,0:12:24.41,CHN,,0,0,0,,那么它就可以判别出图像中的所有横向的边界
 Dialogue: 0,0:12:24.41,0:12:27.16,ENG,,0,0,0,,Which in the case of our little pi creature image,
-Dialogue: 0,0:12:24.41,0:12:27.16,ENG,,0,0,0,, 
 Dialogue: 0,0:12:27.16,0:12:29.49,ENG,,0,0,0,,does result in some pretty demonic eyes.
 Dialogue: 0,0:12:24.41,0:12:29.49,CHN,,0,0,0,,在这个例子中  它把 π 酱的眼睛变得像个大反派
 Dialogue: 0,0:12:30.43,0:12:33.42,ENG,,0,0,0,,This smaller grid, by the way, is often called a kernel.
@@ -554,7 +546,6 @@ Dialogue: 0,0:12:52.73,0:12:55.80,CHN,,0,0,0,,另一个应该提一嘴的事情�
 Dialogue: 0,0:12:55.80,0:12:57.72,ENG,,0,0,0,,For something like the moving average example,
 Dialogue: 0,0:12:55.80,0:12:57.72,CHN,,0,0,0,,对滑动平均之类的情况
 Dialogue: 0,0:12:57.72,0:12:59.54,ENG,,0,0,0,,you might only want to think about the terms
-Dialogue: 0,0:12:57.72,0:12:59.54,ENG,,0,0,0,, 
 Dialogue: 0,0:12:59.54,0:13:02.27,ENG,,0,0,0,,when both of the windows fully align with each other.
 Dialogue: 0,0:12:57.72,0:13:02.27,CHN,,0,0,0,,可能只需要考虑取样窗口完全对应的情况就好了
 Dialogue: 0,0:13:02.27,0:13:04.25,ENG,,0,0,0,,Or in the image processing example,
@@ -880,7 +871,6 @@ Dialogue: 0,0:21:10.48,0:21:11.78,CHN,,0,0,0,,这还挺容易的
 Dialogue: 0,0:21:11.78,0:21:14.63,ENG,,0,0,0,,And then do an inverse fast fourier transform
 Dialogue: 0,0:21:11.78,0:21:14.63,CHN,,0,0,0,,然后做一个快速傅里叶逆变换
 Dialogue: 0,0:21:14.63,0:21:16.78,ENG,,0,0,0,,and what that gives you is the sneaky back door way
-Dialogue: 0,0:21:14.63,0:21:16.78,ENG,,0,0,0,, 
 Dialogue: 0,0:21:16.78,0:21:19.18,ENG,,0,0,0,,to compute the convolution that we were looking for.
 Dialogue: 0,0:21:14.63,0:21:19.18,CHN,,0,0,0,,我们就得到了一个计算卷积的取巧方法
 Dialogue: 0,0:21:19.18,0:21:23.07,ENG,,0,0,0,,But this time, it only involves O(N log N) operations.
@@ -900,7 +890,6 @@ Dialogue: 0,0:21:36.52,0:21:39.18,CHN,,0,0,0,,添加一些概率分布之类的�
 Dialogue: 0,0:21:39.18,0:21:42.35,ENG,,0,0,0,,And I just think that's such a good example of why you should be excited
 Dialogue: 0,0:21:39.18,0:21:42.35,CHN,,0,0,0,,这有力地证明了  一个值得我们兴奋的情形在于
 Dialogue: 0,0:21:42.35,0:21:45.07,ENG,,0,0,0,,when you see some operation or concept in math
-Dialogue: 0,0:21:42.35,0:21:45.07,ENG,,0,0,0,, 
 Dialogue: 0,0:21:45.07,0:21:47.67,ENG,,0,0,0,,show up in a lot of seemingly unrelated areas.
 Dialogue: 0,0:21:42.35,0:21:47.67,CHN,,0,0,0,,看似无关的几个领域  出现了相同的数学运算或概念
 Dialogue: 0,0:21:48.84,0:21:51.61,ENG,,0,0,0,,If you want a little homework, here's something that's fun to think about.

@@ -1,0 +1,484 @@
+[Script Info]
+Title: So why is the "central limit" a normal distribution?
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1200
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ENG,Inter Medium,48,&H00FFFFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,3,2,15,15,3,1
+Style: CHN,MonyharOS Sans SC Medium,66,&H00FFFFFF,&H0055060A,&H0055060A,&H00000000,0,0,0,0,100,100,0,0,1,4.5,3,2,15,15,56,1
+Style: Staff,MonyharOS Sans SC Medium,50,&H00FFFFFF,&H0055060A,&H00AE9B5F,&H00000000,0,0,0,0,100,100,0,0,1,3,3,8,10,10,30,1
+Style: comment,华文中宋,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.35,ENG,,0,0,0,,The basic function underlying a normal distribution, aka a Gaussian,
+Dialogue: 0,0:00:00.00,0:00:04.35,CHN,,0,0,0,,正态分布  又名高斯分布  其函数本质上
+Dialogue: 0,0:00:04.35,0:00:06.45,ENG,,0,0,0,,is e^(-x²).
+Dialogue: 0,0:00:04.35,0:00:06.45,CHN,,0,0,0,,是 e 的 -x² 次方
+Dialogue: 0,0:00:06.45,0:00:08.51,ENG,,0,0,0,,But you might wonder "Why this function?"
+Dialogue: 0,0:00:06.45,0:00:08.51,CHN,,0,0,0,,你是否思忖过  为何是这个函数{\fsp-33}？
+Dialogue: 0,0:00:08.51,0:00:12.57,ENG,,0,0,0,,Of all the expressions we could dream up that give you some symmetric smooth graph
+Dialogue: 0,0:00:12.57,0:00:14.92,ENG,,0,0,0,,with mass concentrated towards the middle,
+Dialogue: 0,0:00:08.51,0:00:14.92,CHN,,0,0,0,,我们能想到很多个  图像对称光滑  质量集中的函数
+Dialogue: 0,0:00:14.92,0:00:18.81,ENG,,0,0,0,,why is it that the theory of probability seems to have a special place in its heart
+Dialogue: 0,0:00:18.81,0:00:20.73,ENG,,0,0,0,,for this particular expression?
+Dialogue: 0,0:00:14.92,0:00:20.73,CHN,,0,0,0,,但为什么  能在概率论的核心占据一席之地的  偏偏是它呢
+Dialogue: 0,0:00:21.37,0:00:24.51,ENG,,0,0,0,,For the last many videos, I've been hinting at an answer to this question
+Dialogue: 0,0:00:21.37,0:00:24.51,CHN,,0,0,0,,在前面好几期视频中  我提示了这一问题的答案
+Dialogue: 0,0:00:24.51,0:00:28.16,ENG,,0,0,0,,and here we'll finally arrive at something like a satisfying answer.
+Dialogue: 0,0:00:24.51,0:00:28.16,CHN,,0,0,0,,现在  我们终于可以得到较为满意的结论了
+Dialogue: 0,0:00:28.16,0:00:29.69,ENG,,0,0,0,,As a quick refresher on where we are -
+Dialogue: 0,0:00:28.16,0:00:29.69,CHN,,0,0,0,,快速复习一下我们的进度
+Dialogue: 0,0:00:29.69,0:00:32.51,ENG,,0,0,0,,a couple videos ago, we talked about the Central Limit Theorem
+Dialogue: 0,0:00:29.69,0:00:32.51,CHN,,0,0,0,,上几期视频我们讨论了中心极限定理
+Dialogue: 0,0:00:32.51,0:00:36.60,ENG,,0,0,0,,which describes how as you add multiple copies of a random variable,
+Dialogue: 0,0:00:32.51,0:00:36.60,CHN,,0,0,0,,描述的是  如果你把多个同类的随机变量相加
+Dialogue: 0,0:00:36.60,0:00:39.40,ENG,,0,0,0,,for example rolling a weighted die many different times
+Dialogue: 0,0:00:36.60,0:00:39.40,CHN,,0,0,0,,比如说  多次摇同一个偏心骰子
+Dialogue: 0,0:00:39.40,0:00:42.12,ENG,,0,0,0,,or letting a ball bounce off of a peg repeatedly,
+Dialogue: 0,0:00:39.40,0:00:42.12,CHN,,0,0,0,,或者是让球在钉板上弹了许多次
+Dialogue: 0,0:00:42.12,0:00:45.00,ENG,,0,0,0,,then the distribution describing that sum
+Dialogue: 0,0:00:45.00,0:00:48.25,ENG,,0,0,0,,tends to look approximately like a normal distribution.
+Dialogue: 0,0:00:42.12,0:00:48.25,CHN,,0,0,0,,那么  描述该分布的和  似乎会趋近于正态分布
+Dialogue: 0,0:00:48.25,0:00:50.06,ENG,,0,0,0,,What the Central Limit Theorem says is
+Dialogue: 0,0:00:48.25,0:00:50.06,CHN,,0,0,0,,中心极限定理说明了
+Dialogue: 0,0:00:50.06,0:00:53.57,ENG,,0,0,0,,as you make that sum bigger and bigger under appropriate conditions,
+Dialogue: 0,0:00:50.06,0:00:53.57,CHN,,0,0,0,,在适当条件下  随着总和越来越大
+Dialogue: 0,0:00:53.57,0:00:56.50,ENG,,0,0,0,,that approximation to a normal becomes better and better.
+Dialogue: 0,0:00:53.57,0:00:56.50,CHN,,0,0,0,,总和  会越来越近似于正态
+Dialogue: 0,0:00:57.15,0:01:00.35,ENG,,0,0,0,,But I never explained why this is actually true,
+Dialogue: 0,0:00:57.15,0:01:00.35,CHN,,0,0,0,,但我没有解释这为何成立
+Dialogue: 0,0:01:00.35,0:01:02.27,ENG,,0,0,0,,we only talked about what it's claiming.
+Dialogue: 0,0:01:00.35,0:01:02.27,CHN,,0,0,0,,我们之前只讨论了它陈述了什么
+Dialogue: 0,0:01:03.29,0:01:04.22,ENG,,0,0,0,,In the last video,
+Dialogue: 0,0:01:03.29,0:01:04.22,CHN,,0,0,0,,上期视频
+Dialogue: 0,0:01:04.22,0:01:08.16,ENG,,0,0,0,,we started talking about the math involved in adding two random variables.
+Dialogue: 0,0:01:04.22,0:01:08.16,CHN,,0,0,0,,我们先讨论了随机变量相加所涉及的数学知识
+Dialogue: 0,0:01:08.16,0:01:11.55,ENG,,0,0,0,,If you have two random variables each following some distribution,
+Dialogue: 0,0:01:08.16,0:01:11.55,CHN,,0,0,0,,如果两个随机变量分别符合某些分布
+Dialogue: 0,0:01:11.55,0:01:15.39,ENG,,0,0,0,,then to find the distribution describing the sum of those variables,
+Dialogue: 0,0:01:11.55,0:01:15.39,CHN,,0,0,0,,你想求出两变量之和的分布
+Dialogue: 0,0:01:15.39,0:01:20.10,ENG,,0,0,0,,you compute something known as a Convolution between the two original functions.
+Dialogue: 0,0:01:15.39,0:01:20.10,CHN,,0,0,0,,就需要计算两函数的“卷积”
+Dialogue: 0,0:01:20.10,0:01:22.56,ENG,,0,0,0,,And we spent a lot of time building up two distinct ways
+Dialogue: 0,0:01:20.10,0:01:22.56,CHN,,0,0,0,,我们花时间构建了两种不同的思路
+Dialogue: 0,0:01:22.56,0:01:26.40,ENG,,0,0,0,,to visualize what this convolution operation really is.
+Dialogue: 0,0:01:22.56,0:01:26.40,CHN,,0,0,0,,来形象地展示  卷积操作究竟是什么
+Dialogue: 0,0:01:26.40,0:01:30.68,ENG,,0,0,0,,Today, our basic job is to work through a particular example which is to ask
+Dialogue: 0,0:01:26.40,0:01:30.68,CHN,,0,0,0,,我们今天要研究一个特定的例子{\fsp-33}：
+Dialogue: 0,0:01:30.68,0:01:34.91,ENG,,0,0,0,,what happens when you add two normally distributed random variables
+Dialogue: 0,0:01:30.68,0:01:34.91,CHN,,0,0,0,,把两个正态分布的随机变量相加  会发生什么
+Dialogue: 0,0:01:34.91,0:01:37.60,ENG,,0,0,0,,which, as you know by now, is the same as asking
+Dialogue: 0,0:01:34.91,0:01:37.60,CHN,,0,0,0,,你已经知道  这个问题等同于
+Dialogue: 0,0:01:37.60,0:01:42.40,ENG,,0,0,0,,what do you get if you compute a convolution between two Gaussian functions.
+Dialogue: 0,0:01:37.60,0:01:42.40,CHN,,0,0,0,,计算两个高斯函数的卷积  会得到什么结果
+Dialogue: 0,0:01:42.40,0:01:45.08,ENG,,0,0,0,,I'd like to share an especially pleasing visual way
+Dialogue: 0,0:01:45.08,0:01:46.88,ENG,,0,0,0,,that you can think about this calculation
+Dialogue: 0,0:01:42.40,0:01:46.88,CHN,,0,0,0,,我想分享一种很棒的直观的方式  来考虑这个计算
+Dialogue: 0,0:01:46.88,0:01:48.77,ENG,,0,0,0,,which hopefully offers some sense of
+Dialogue: 0,0:01:46.88,0:01:48.77,CHN,,0,0,0,,希望能让你从中了解到
+Dialogue: 0,0:01:48.77,0:01:52.70,ENG,,0,0,0,,what makes the e^(-x²) function special in the first place.
+Dialogue: 0,0:01:48.77,0:01:52.70,CHN,,0,0,0,,函数 e 的 -x² 次方的独特之处
+Dialogue: 0,0:01:52.70,0:01:55.52,ENG,,0,0,0,,After we walk through it, we'll talk about how this calculation is
+Dialogue: 0,0:01:55.52,0:01:58.42,ENG,,0,0,0,,one of the steps involved in proving the Central Limit Theorem,
+Dialogue: 0,0:01:52.70,0:01:58.42,CHN,,0,0,0,,之后  我们将讨论  该计算是证明中心极限定理的其中一步
+Dialogue: 0,0:01:58.42,0:02:00.35,ENG,,0,0,0,,it's the step that answers the question of
+Dialogue: 0,0:01:58.42,0:02:00.35,CHN,,0,0,0,,这一步回答的关键问题是
+Dialogue: 0,0:02:00.35,0:02:04.02,ENG,,0,0,0,,why a Gaussian and not something else is the central limit.
+Dialogue: 0,0:02:00.35,0:02:04.02,CHN,,0,0,0,,为何只有高斯分布  才是中心的极限
+Dialogue: 0,0:02:04.02,0:02:05.52,ENG,,0,0,0,,But first, let's dive in.
+Dialogue: 0,0:02:04.02,0:02:05.52,CHN,,0,0,0,,好  我们进入正题
+Dialogue: 0,0:02:06.05,0:02:10.05,CHN,,0,0,0,,{\fad(2000,0)\fs56\3c&H1063A4&}时轴   {\3c&HAE9B5F&}贰鼠\N\N{\3c&H1063A4&}翻译   {\3c&H00AE9B5F&}NetaP495L  瑞达勒  ZSC\N\N{\3c&H1063A4&}校对   {\3c&H00AE9B5F&}博美子  䶭
+Dialogue: 0,0:02:10.07,0:02:14.67,ENG,,0,0,0,,The full formula for a Gaussian is more complicated than just e^(-x²).
+Dialogue: 0,0:02:10.07,0:02:14.67,CHN,,0,0,0,,高斯函数的完整公式比 e 的 -x² 次方复杂很多
+Dialogue: 0,0:02:14.67,0:02:19.47,ENG,,0,0,0,,The exponent is typically written as - 1/2 (x/σ)²,
+Dialogue: 0,0:02:14.67,0:02:19.47,CHN,,0,0,0,,指数通常写为 - 1/2 乘以 (x/σ)²
+Dialogue: 0,0:02:19.47,0:02:22.52,ENG,,0,0,0,,where σ describes the spread of the distribution,
+Dialogue: 0,0:02:19.47,0:02:22.52,CHN,,0,0,0,,其中 σ 描述了分布的分散程度
+Dialogue: 0,0:02:22.52,0:02:24.47,ENG,,0,0,0,,specifically the standard deviation.
+Dialogue: 0,0:02:22.52,0:02:24.47,CHN,,0,0,0,,即标准差
+Dialogue: 0,0:02:24.47,0:02:27.95,ENG,,0,0,0,,All of this needs to be multiplied by a fraction on the front
+Dialogue: 0,0:02:24.47,0:02:27.95,CHN,,0,0,0,,所有这些  需要在前面乘以一个分数
+Dialogue: 0,0:02:27.95,0:02:31.22,ENG,,0,0,0,,which is there to make sure that the area under the curve is 1
+Dialogue: 0,0:02:27.95,0:02:31.22,CHN,,0,0,0,,以确保曲线下的面积为 1
+Dialogue: 0,0:02:31.22,0:02:33.87,ENG,,0,0,0,,making it a valid probability distribution.
+Dialogue: 0,0:02:31.22,0:02:33.87,CHN,,0,0,0,,使其成为有意义的概率分布
+Dialogue: 0,0:02:33.87,0:02:37.65,ENG,,0,0,0,,And if you want to consider distributions that aren't necessarily centred at 0,
+Dialogue: 0,0:02:33.87,0:02:37.65,CHN,,0,0,0,,如果你想考虑那些  中心不一定为 0 的分布
+Dialogue: 0,0:02:37.65,0:02:41.43,ENG,,0,0,0,,you would also throw another parameter, µ into the exponent like this.
+Dialogue: 0,0:02:37.65,0:02:41.43,CHN,,0,0,0,,你还需要在指数中加入另一个参数 µ   如上所示
+Dialogue: 0,0:02:41.43,0:02:45.39,ENG,,0,0,0,,Although for everything we'll be doing here, we just consider centred distributions.
+Dialogue: 0,0:02:41.43,0:02:45.39,CHN,,0,0,0,,不过接下来  我们只考虑以 0 为中心的分布
+Dialogue: 0,0:02:46.23,0:02:48.53,ENG,,0,0,0,,Now, if you look at our central goal for today,
+Dialogue: 0,0:02:46.23,0:02:48.53,CHN,,0,0,0,,不妨想想我们今天的核心目标
+Dialogue: 0,0:02:48.53,0:02:52.56,ENG,,0,0,0,,which is to compute a convolution between two Gaussian functions,
+Dialogue: 0,0:02:48.53,0:02:52.56,CHN,,0,0,0,,要计算两个高斯函数之间的卷积
+Dialogue: 0,0:02:52.56,0:02:56.47,ENG,,0,0,0,,the direct way to do this would be to take the definition of a convolution -
+Dialogue: 0,0:02:52.56,0:02:56.47,CHN,,0,0,0,,最直接的方法就是根据卷积的定义
+Dialogue: 0,0:02:56.47,0:02:59.17,ENG,,0,0,0,,this integral expression we built up the last video
+Dialogue: 0,0:02:56.47,0:02:59.17,CHN,,0,0,0,,即上个视频中构建的积分表达式
+Dialogue: 0,0:02:59.17,0:03:02.14,ENG,,0,0,0,,and then to plug in for each one of the functions involved
+Dialogue: 0,0:03:02.14,0:03:04.08,ENG,,0,0,0,,the formula for a Gaussian.
+Dialogue: 0,0:02:59.17,0:03:04.08,CHN,,0,0,0,,然后把高斯函数  分别带入积分中的两个函数项
+Dialogue: 0,0:03:04.08,0:03:06.50,ENG,,0,0,0,,It's kind of a lot of symbols when you throw it all together
+Dialogue: 0,0:03:04.08,0:03:06.50,CHN,,0,0,0,,把一大堆符号摞在一起属实有点复杂
+Dialogue: 0,0:03:06.50,0:03:10.48,ENG,,0,0,0,,but more than anything working this out is an exercise in completing the square
+Dialogue: 0,0:03:06.50,0:03:10.48,CHN,,0,0,0,,但说白了  这一团计算只是配方法的一道练习题
+Dialogue: 0,0:03:10.48,0:03:11.62,ENG,,0,0,0,,and there's nothing wrong with that.
+Dialogue: 0,0:03:10.48,0:03:11.62,CHN,,0,0,0,,直接计算也没什么毛病
+Dialogue: 0,0:03:11.62,0:03:13.72,ENG,,0,0,0,,That will get you the answer that you want
+Dialogue: 0,0:03:11.62,0:03:13.72,CHN,,0,0,0,,你一样能得到你所期望的答案
+Dialogue: 0,0:03:13.72,0:03:16.60,ENG,,0,0,0,,but of course you know me, I'm a sucker for visual intuition
+Dialogue: 0,0:03:13.72,0:03:16.60,CHN,,0,0,0,,当然了  你也知道我这个人钟情于直观可视化
+Dialogue: 0,0:03:16.60,0:03:17.34,ENG,,0,0,0,,and in this case,
+Dialogue: 0,0:03:17.34,0:03:20.79,ENG,,0,0,0,,there's another way to think about it that I haven't seen written about before
+Dialogue: 0,0:03:16.60,0:03:20.79,CHN,,0,0,0,,这个问题  有另一种有趣思路  我之前没在别处见过
+Dialogue: 0,0:03:20.79,0:03:24.37,ENG,,0,0,0,,that offers a very nice connection to other aspects of this distribution
+Dialogue: 0,0:03:20.79,0:03:24.37,CHN,,0,0,0,,它非常巧妙地联系上了高斯分布的一些细节
+Dialogue: 0,0:03:24.37,0:03:28.05,ENG,,0,0,0,,like the presence of π and certain ways to derive where it comes from.
+Dialogue: 0,0:03:24.37,0:03:28.05,CHN,,0,0,0,,比如 π 的出现  以及推导 π 的一些方法
+Dialogue: 0,0:03:28.05,0:03:29.75,ENG,,0,0,0,,And the way I'd like to do this is by first
+Dialogue: 0,0:03:28.05,0:03:29.75,CHN,,0,0,0,,我打算用一种新颖的方法来解释
+Dialogue: 0,0:03:29.75,0:03:33.39,ENG,,0,0,0,,peeling away all of the constants associated with the actual distribution
+Dialogue: 0,0:03:29.75,0:03:33.39,CHN,,0,0,0,,首先我们将实际分布中的常数  通通丢掉
+Dialogue: 0,0:03:33.39,0:03:38.26,ENG,,0,0,0,,and just showing the computation for the simplified form e^(-x²).
+Dialogue: 0,0:03:33.39,0:03:38.26,CHN,,0,0,0,,计算的过程中只用简化的 e 的 -x² 次方
+Dialogue: 0,0:03:38.26,0:03:40.15,ENG,,0,0,0,,The essence of what we want to compute
+Dialogue: 0,0:03:38.26,0:03:40.15,CHN,,0,0,0,,我们实际想要得到的
+Dialogue: 0,0:03:40.15,0:03:43.76,ENG,,0,0,0,,is what the convolution between two copies of this function looks like.
+Dialogue: 0,0:03:40.15,0:03:43.76,CHN,,0,0,0,,是这函数的两个副本的卷积结果
+Dialogue: 0,0:03:44.59,0:03:46.26,ENG,,0,0,0,,If you remember, in the last video,
+Dialogue: 0,0:03:44.59,0:03:46.26,CHN,,0,0,0,,回想一下  在上个视频中
+Dialogue: 0,0:03:46.26,0:03:49.01,ENG,,0,0,0,,we had two different ways to visualize convolutions
+Dialogue: 0,0:03:46.26,0:03:49.01,CHN,,0,0,0,,我们有两种方法来可视化卷积
+Dialogue: 0,0:03:49.01,0:03:53.11,ENG,,0,0,0,,and the one we'll be using here is the second one involving diagonal slices.
+Dialogue: 0,0:03:49.01,0:03:53.11,CHN,,0,0,0,,而我们在这里要使用的  是涉及对角切片的第二种方法
+Dialogue: 0,0:03:53.11,0:03:55.70,ENG,,0,0,0,,And as a quick reminder of the way that worked,
+Dialogue: 0,0:03:53.11,0:03:55.70,CHN,,0,0,0,,快速复习一下这种方法的流程
+Dialogue: 0,0:03:55.70,0:03:58.01,ENG,,0,0,0,,if you have two different distributions
+Dialogue: 0,0:03:55.70,0:03:58.01,CHN,,0,0,0,,如果你有两个分布
+Dialogue: 0,0:03:58.01,0:04:01.11,ENG,,0,0,0,,that are described by two different functions, f and g,
+Dialogue: 0,0:03:58.01,0:04:01.11,CHN,,0,0,0,,概率密度函数分别为 f 和 g
+Dialogue: 0,0:04:01.11,0:04:04.18,ENG,,0,0,0,,then every possible pair of values that you might get
+Dialogue: 0,0:04:04.18,0:04:06.42,ENG,,0,0,0,,when you sample from these two distributions
+Dialogue: 0,0:04:01.11,0:04:06.42,CHN,,0,0,0,,那么从这两个分布进行采样时  可能得到的每一对的值
+Dialogue: 0,0:04:06.42,0:04:10.17,ENG,,0,0,0,,can be thought of as individual points on the x-y plane.
+Dialogue: 0,0:04:06.42,0:04:10.17,CHN,,0,0,0,,都可以被视为 xy 平面上的一个点
+Dialogue: 0,0:04:10.17,0:04:15.12,ENG,,0,0,0,,And the probability density of landing on one such point, assuming independence,
+Dialogue: 0,0:04:10.17,0:04:15.12,CHN,,0,0,0,,假设两个分布相互独立  落到这一个点附近的概率密度
+Dialogue: 0,0:04:15.12,0:04:17.81,ENG,,0,0,0,,looks like f(x) times g(y).
+Dialogue: 0,0:04:15.12,0:04:17.81,CHN,,0,0,0,,像是 f(x) 乘以 g(y)
+Dialogue: 0,0:04:17.81,0:04:19.20,ENG,,0,0,0,,So what we do is we look at
+Dialogue: 0,0:04:17.81,0:04:19.20,CHN,,0,0,0,,让我们来看一下
+Dialogue: 0,0:04:19.20,0:04:23.57,ENG,,0,0,0,,a graph of that expression as a 2-variable function of x and y
+Dialogue: 0,0:04:19.20,0:04:23.57,CHN,,0,0,0,,这个关于 x 和 y 的二元函数的图像
+Dialogue: 0,0:04:23.57,0:04:27.25,ENG,,0,0,0,,which is a way of showing the distribution of all possible outcomes
+Dialogue: 0,0:04:23.57,0:04:27.25,CHN,,0,0,0,,当我们从两个不同的变量进行采样时
+Dialogue: 0,0:04:27.25,0:04:29.77,ENG,,0,0,0,,when we sample from the two different variables.
+Dialogue: 0,0:04:27.25,0:04:29.77,CHN,,0,0,0,,它能显示所有可能结果的分布
+Dialogue: 0,0:04:30.52,0:04:35.22,ENG,,0,0,0,,To interpret the convolution of f and g evaluated on some input s,
+Dialogue: 0,0:04:30.52,0:04:35.22,CHN,,0,0,0,,要看出 f 和 g 的卷积在某个输入 s 上的几何意义
+Dialogue: 0,0:04:35.22,0:04:36.37,ENG,,0,0,0,,which is a way of saying
+Dialogue: 0,0:04:36.37,0:04:40.95,ENG,,0,0,0,,how likely are you to get a pair of samples that adds up to this sum, s,
+Dialogue: 0,0:04:35.22,0:04:40.95,CHN,,0,0,0,,即  有多大可能得到这样一对样本  使得总和为 s
+Dialogue: 0,0:04:40.95,0:04:46.67,ENG,,0,0,0,,what you do is you look at a slice of this graph over the line x + y = s
+Dialogue: 0,0:04:40.95,0:04:46.67,CHN,,0,0,0,,你应该查看该图像在直线 x + y = s 上的切片
+Dialogue: 0,0:04:46.67,0:04:49.36,ENG,,0,0,0,,and you consider the area under that slice.
+Dialogue: 0,0:04:46.67,0:04:49.36,CHN,,0,0,0,,并考虑该切片下的面积
+Dialogue: 0,0:04:51.22,0:04:56.72,ENG,,0,0,0,,This area is almost but not quite the value of the convolution at s.
+Dialogue: 0,0:04:51.22,0:04:56.72,CHN,,0,0,0,,这个面积差不多但不完全等于在 s 处的卷积值
+Dialogue: 0,0:04:56.72,0:05:00.80,ENG,,0,0,0,,For a mildly technical reason, you need to divide by √2.
+Dialogue: 0,0:04:56.72,0:05:00.80,CHN,,0,0,0,,由于一个略为专业性的原因  还需要除以 √2
+Dialogue: 0,0:05:00.80,0:05:03.57,ENG,,0,0,0,,Still, this area is the key feature to focus on.
+Dialogue: 0,0:05:00.80,0:05:03.57,CHN,,0,0,0,,总之这个面积是需要留意的关键特征
+Dialogue: 0,0:05:03.57,0:05:04.77,ENG,,0,0,0,,You can think of it as a way
+Dialogue: 0,0:05:03.57,0:05:04.77,CHN,,0,0,0,,你可以把它当作
+Dialogue: 0,0:05:04.77,0:05:07.67,ENG,,0,0,0,,to combine together all the probability densities
+Dialogue: 0,0:05:07.67,0:05:11.25,ENG,,0,0,0,,for all of the outcomes corresponding to a given sum.
+Dialogue: 0,0:05:04.77,0:05:11.25,CHN,,0,0,0,,把「一定总和下对应的所有结果」的概率密度组合起来
+Dialogue: 0,0:05:13.55,0:05:19.87,ENG,,0,0,0,,In the specific case where these two functions look like e^(-x²) and e^(-y²),
+Dialogue: 0,0:05:13.55,0:05:19.87,CHN,,0,0,0,,在这个实例中  两函数分别是 e 的 -x² 次方和 -y² 次方
+Dialogue: 0,0:05:19.87,0:05:23.92,ENG,,0,0,0,,the resulting 3D graph has a really nice property that you can exploit.
+Dialogue: 0,0:05:19.87,0:05:23.92,CHN,,0,0,0,,得到的三维图像具有非常好的特性  值得加以利用
+Dialogue: 0,0:05:23.92,0:05:25.71,ENG,,0,0,0,,It's rotationally symmetric.
+Dialogue: 0,0:05:23.92,0:05:25.71,CHN,,0,0,0,,即  旋转对称性
+Dialogue: 0,0:05:27.25,0:05:30.00,ENG,,0,0,0,,You can see this by combining the terms and noticing that
+Dialogue: 0,0:05:27.25,0:05:30.00,CHN,,0,0,0,,合并指数后你能观察到
+Dialogue: 0,0:05:30.00,0:05:32.95,ENG,,0,0,0,,it's entirely a function of x² + y².
+Dialogue: 0,0:05:30.00,0:05:32.95,CHN,,0,0,0,,指数项完全是关于 x² + y² 的函数
+Dialogue: 0,0:05:32.95,0:05:35.74,ENG,,0,0,0,,And this term describes the square of the distance
+Dialogue: 0,0:05:35.74,0:05:39.03,ENG,,0,0,0,,between any point on the xy-plane and the origin.
+Dialogue: 0,0:05:32.95,0:05:39.03,CHN,,0,0,0,,这项描述了「xy 平面上任意一点到原点的距离」的平方
+Dialogue: 0,0:05:39.03,0:05:43.50,ENG,,0,0,0,,So in other words, the expression is purely a function of the distance from the origin.
+Dialogue: 0,0:05:39.03,0:05:43.50,CHN,,0,0,0,,换句话说  这个表达式纯粹是与原点距离有关的函数
+Dialogue: 0,0:05:44.35,0:05:48.27,ENG,,0,0,0,,And by the way, this would not be true for any other distribution.
+Dialogue: 0,0:05:44.35,0:05:48.27,CHN,,0,0,0,,顺便提一下  这个特性不适用于任何其他分布
+Dialogue: 0,0:05:48.27,0:05:51.46,ENG,,0,0,0,,It's a property that uniquely characterizes bell curves.
+Dialogue: 0,0:05:48.27,0:05:51.46,CHN,,0,0,0,,这个特性  还可以唯一刻画出钟形曲线
+Dialogue: 0,0:05:53.14,0:05:55.03,ENG,,0,0,0,,So, for most other pairs of functions,
+Dialogue: 0,0:05:53.14,0:05:55.03,CHN,,0,0,0,,所以对于其他大多数的函数对
+Dialogue: 0,0:05:55.03,0:05:59.31,ENG,,0,0,0,,these diagonal slices will be some complicated shape that's hard to think about
+Dialogue: 0,0:05:55.03,0:05:59.31,CHN,,0,0,0,,这些对角切片将是一些复杂的形状  很难理解
+Dialogue: 0,0:05:59.31,0:06:01.79,ENG,,0,0,0,,and honestly, calculating the area would just amount to
+Dialogue: 0,0:05:59.31,0:06:01.79,CHN,,0,0,0,,老实说  计算曲线下面积  本质上就等同于
+Dialogue: 0,0:06:01.79,0:06:05.65,ENG,,0,0,0,,computing the original integral that defines a convolution in the first place.
+Dialogue: 0,0:06:01.79,0:06:05.65,CHN,,0,0,0,,拿一开始定义卷积的积分  去直接求解
+Dialogue: 0,0:06:05.65,0:06:10.15,ENG,,0,0,0,,So, in most cases, the visual intuition doesn't really buy you anything.
+Dialogue: 0,0:06:05.65,0:06:10.15,CHN,,0,0,0,,因此通常来说  这种直观可视化并没有太大的好处
+Dialogue: 0,0:06:10.15,0:06:14.74,ENG,,0,0,0,,But in the case of bell curves, you can leverage that rotational symmetry.
+Dialogue: 0,0:06:10.15,0:06:14.74,CHN,,0,0,0,,但是对于钟形曲线  你可以巧用这种旋转对称性
+Dialogue: 0,0:06:14.74,0:06:21.15,ENG,,0,0,0,,Here, focus on one of these slices over the line x + y = s for some value of s.
+Dialogue: 0,0:06:14.74,0:06:21.15,CHN,,0,0,0,,这里  固定 s 值  注意直线 x + y = s 的切片
+Dialogue: 0,0:06:21.15,0:06:26.26,ENG,,0,0,0,,And remember, the convolution that we're trying to compute is a function of s.
+Dialogue: 0,0:06:21.15,0:06:26.26,CHN,,0,0,0,,记住  我们要计算的卷积是关于 s 的函数
+Dialogue: 0,0:06:26.26,0:06:31.95,ENG,,0,0,0,,The thing that you want is an expression of s that tells you the area under this slice.
+Dialogue: 0,0:06:26.26,0:06:31.95,CHN,,0,0,0,,你想得到一个关于 s 的表达式  来告诉你该切片的面积
+Dialogue: 0,0:06:31.95,0:06:38.35,ENG,,0,0,0,,Well, if you look at that line, it intersects the x-axis at (s, 0) and the y-axis at (0, s)
+Dialogue: 0,0:06:31.95,0:06:38.35,CHN,,0,0,0,,那条线在 x 轴上的交点是 (s, 0)   在 y 轴上的交点是 (0, s)
+Dialogue: 0,0:06:38.35,0:06:40.21,ENG,,0,0,0,,and a little bit of Pythagoras will show you that
+Dialogue: 0,0:06:38.35,0:06:40.21,CHN,,0,0,0,,运用勾股定理就能算出
+Dialogue: 0,0:06:40.21,0:06:43.20,ENG,,0,0,0,,the straight line distance from the origin to this line
+Dialogue: 0,0:06:40.21,0:06:43.20,CHN,,0,0,0,,原点到这条线的直线距离
+Dialogue: 0,0:06:43.20,0:06:45.65,ENG,,0,0,0,,is s divided by √2.
+Dialogue: 0,0:06:43.20,0:06:45.65,CHN,,0,0,0,,等于 s 除以 √2
+Dialogue: 0,0:06:45.65,0:06:51.67,ENG,,0,0,0,,Now, because of the symmetry, this slice is identical to one that you get rotating 45°
+Dialogue: 0,0:06:45.65,0:06:51.67,CHN,,0,0,0,,而由于对称性  这个切片等同于 45° 角旋转后的切片
+Dialogue: 0,0:06:51.67,0:06:56.66,ENG,,0,0,0,,where you'd find something parallel to the y-axis the same distance away from the origin.
+Dialogue: 0,0:06:51.67,0:06:56.66,CHN,,0,0,0,,这时它与 y 轴平行  与原点的距离同样是 {\fsp16}s{\fs76\fsp10}/{\r}√2
+Dialogue: 0,0:06:57.50,0:07:01.91,ENG,,0,0,0,,The key is that computing this other area of a slice parallel to the y-axis
+Dialogue: 0,0:06:57.50,0:07:01.91,CHN,,0,0,0,,关键是  计算平行于 y 轴的切片的面积
+Dialogue: 0,0:07:01.91,0:07:04.85,ENG,,0,0,0,,is much much easier than slices in other directions
+Dialogue: 0,0:07:01.91,0:07:04.85,CHN,,0,0,0,,比计算其他方向上的切片面积要简单得多
+Dialogue: 0,0:07:04.85,0:07:08.75,ENG,,0,0,0,,because it only involves taking an integral with respect to y.
+Dialogue: 0,0:07:04.85,0:07:08.75,CHN,,0,0,0,,因为只涉及到对 y 进行积分
+Dialogue: 0,0:07:08.75,0:07:11.51,ENG,,0,0,0,,The value of x on the slice is a constant.
+Dialogue: 0,0:07:08.75,0:07:11.51,CHN,,0,0,0,,这个切片上的 x 值是一个常数
+Dialogue: 0,0:07:11.51,0:07:15.22,ENG,,0,0,0,,Specifically, it would be the constant s/√2
+Dialogue: 0,0:07:11.51,0:07:15.22,CHN,,0,0,0,,具体而言  x 都等于 {\fsp16}s{\fs76\fsp10}/{\r}√2
+Dialogue: 0,0:07:15.22,0:07:18.52,ENG,,0,0,0,,So, when you're computing the integral, finding this area,
+Dialogue: 0,0:07:15.22,0:07:18.52,CHN,,0,0,0,,因此当你在通过积分  去求面积时
+Dialogue: 0,0:07:18.52,0:07:23.70,ENG,,0,0,0,,all of this term here behaves like it was just some number and you can factor it out.
+Dialogue: 0,0:07:18.52,0:07:23.70,CHN,,0,0,0,,这一项都只是一个数值  你可以将其提取出来
+Dialogue: 0,0:07:23.70,0:07:25.07,ENG,,0,0,0,,This is the important point -
+Dialogue: 0,0:07:23.70,0:07:25.07,CHN,,0,0,0,,这一点非常重要
+Dialogue: 0,0:07:25.07,0:07:30.58,ENG,,0,0,0,,all of the stuff that's involving s is now entirely separate from the integrated variable.
+Dialogue: 0,0:07:25.07,0:07:30.58,CHN,,0,0,0,,所有和 s 有关的项  现在都与积分变量完全分开了
+Dialogue: 0,0:07:30.58,0:07:32.90,ENG,,0,0,0,,This remaining integral is a little bit tricky.
+Dialogue: 0,0:07:30.58,0:07:32.90,CHN,,0,0,0,,剩余的这个积分有点棘手
+Dialogue: 0,0:07:32.90,0:07:35.53,ENG,,0,0,0,,I did a whole video on it. It's actually quite famous.
+Dialogue: 0,0:07:32.90,0:07:35.53,CHN,,0,0,0,,它其实很出名  我之前有一整期来讲它
+Dialogue: 0,0:07:35.53,0:07:37.11,ENG,,0,0,0,,But you almost don't really care.
+Dialogue: 0,0:07:35.53,0:07:37.11,CHN,,0,0,0,,但你真的不用太在意这个
+Dialogue: 0,0:07:37.11,0:07:39.41,ENG,,0,0,0,,The point is that it's just some number.
+Dialogue: 0,0:07:37.11,0:07:39.41,CHN,,0,0,0,,毕竟答案只是一个常数
+Dialogue: 0,0:07:39.41,0:07:41.78,ENG,,0,0,0,,That number happens to be √π
+Dialogue: 0,0:07:39.41,0:07:41.78,CHN,,0,0,0,,数值恰巧是 {\fs0.001}l{\r}√(pi)
+Dialogue: 0,0:07:41.78,0:07:45.68,ENG,,0,0,0,,but what really matters is that it's something with no dependence on s.
+Dialogue: 0,0:07:41.78,0:07:45.68,CHN,,0,0,0,,真正重要的是  它与 s 的取值无关
+Dialogue: 0,0:07:46.64,0:07:48.75,ENG,,0,0,0,,And essentially, this is our answer.
+Dialogue: 0,0:07:46.64,0:07:48.75,CHN,,0,0,0,,这实际上就是我们的结论
+Dialogue: 0,0:07:48.75,0:07:53.11,ENG,,0,0,0,,We were looking for an expression for the area of these slices as a function of s
+Dialogue: 0,0:07:48.75,0:07:53.11,CHN,,0,0,0,,我们之前在找  以 s 表示切片面积的函数表达式
+Dialogue: 0,0:07:53.11,0:07:54.26,ENG,,0,0,0,,and now we have it.
+Dialogue: 0,0:07:53.11,0:07:54.26,CHN,,0,0,0,,现在已经找到了
+Dialogue: 0,0:07:54.26,0:07:59.19,ENG,,0,0,0,,It looks like e^(-s²/2), scaled by some constant.
+Dialogue: 0,0:07:54.26,0:07:59.19,CHN,,0,0,0,,它看起来像是 e 的 -s²/2 次方乘以某常数
+Dialogue: 0,0:07:59.19,0:08:01.62,ENG,,0,0,0,,In other words, it's also a bell curve,
+Dialogue: 0,0:07:59.19,0:08:01.62,CHN,,0,0,0,,换句话说  这仍是一个钟形曲线
+Dialogue: 0,0:08:01.62,0:08:06.29,ENG,,0,0,0,,another Gaussian just stretched out a little bit because of these 2 in the exponent.
+Dialogue: 0,0:08:01.62,0:08:06.29,CHN,,0,0,0,,只是由于指数中的 2  它被拉伸了一点
+Dialogue: 0,0:08:06.29,0:08:11.15,ENG,,0,0,0,,As I said earlier, the convolution evaluated at s is not quite this area.
+Dialogue: 0,0:08:06.29,0:08:11.15,CHN,,0,0,0,,就像我之前说过的  卷积在 s 处的值并不完全等于这个面积
+Dialogue: 0,0:08:11.15,0:08:14.67,ENG,,0,0,0,,Technically, it's this area divided by √2.
+Dialogue: 0,0:08:11.15,0:08:14.67,CHN,,0,0,0,,严格来说  卷积等于这面积除以 √2
+Dialogue: 0,0:08:14.67,0:08:17.45,ENG,,0,0,0,,We talked about it in the last video but it doesn't really matter
+Dialogue: 0,0:08:14.67,0:08:17.45,CHN,,0,0,0,,我们在上一个视频中提到过  但倒也不重要
+Dialogue: 0,0:08:17.45,0:08:19.47,ENG,,0,0,0,,because it just gets baked into the constant.
+Dialogue: 0,0:08:17.45,0:08:19.47,CHN,,0,0,0,,毕竟归给后面的常数就好
+Dialogue: 0,0:08:19.47,0:08:21.57,ENG,,0,0,0,,What really matters is the conclusion that
+Dialogue: 0,0:08:19.47,0:08:21.57,CHN,,0,0,0,,真正重要的结论是
+Dialogue: 0,0:08:21.57,0:08:26.00,ENG,,0,0,0,,a convolution between two Gaussians is itself another Gaussian.
+Dialogue: 0,0:08:21.57,0:08:26.00,CHN,,0,0,0,,两个高斯函数之间的卷积  本身仍然是一个高斯函数
+Dialogue: 0,0:08:27.92,0:08:31.76,ENG,,0,0,0,,If you were to go back and reintroduce all of the constants for a normal distribution
+Dialogue: 0,0:08:27.92,0:08:31.76,CHN,,0,0,0,,如果你回去重新加上正态分布中的常数
+Dialogue: 0,0:08:31.76,0:08:35.35,ENG,,0,0,0,,with a mean 0 and an arbitrary standard deviation, σ,
+Dialogue: 0,0:08:31.76,0:08:35.35,CHN,,0,0,0,,平均值依然是 0   标准差 σ 可以是任意值
+Dialogue: 0,0:08:35.35,0:08:39.37,ENG,,0,0,0,,essentially identical reasoning will lead to the same √2 factor
+Dialogue: 0,0:08:35.35,0:08:39.37,CHN,,0,0,0,,那么用同样的方法推导  也会得到这个 √2 因子
+Dialogue: 0,0:08:39.37,0:08:41.43,ENG,,0,0,0,,that shows up in the exponent and out front
+Dialogue: 0,0:08:39.37,0:08:41.43,CHN,,0,0,0,,它出现在指数  以及前面的倍数中
+Dialogue: 0,0:08:41.43,0:08:42.93,ENG,,0,0,0,,and it leads to the conclusion that
+Dialogue: 0,0:08:41.43,0:08:42.93,CHN,,0,0,0,,我们由此可以得出结论
+Dialogue: 0,0:08:42.93,0:08:45.47,ENG,,0,0,0,,the convolution between two such normal distributions
+Dialogue: 0,0:08:42.93,0:08:45.47,CHN,,0,0,0,,两个标准差为 σ 的正态分布的卷积
+Dialogue: 0,0:08:45.47,0:08:50.83,ENG,,0,0,0,,is another normal distribution with a standard deviation √2 σ.
+Dialogue: 0,0:08:45.47,0:08:50.83,CHN,,0,0,0,,是另一个正态分布  标准差为 √2σ
+Dialogue: 0,0:08:50.83,0:08:53.14,ENG,,0,0,0,,If you haven't computed a lot of convolutions before,
+Dialogue: 0,0:08:50.83,0:08:53.14,CHN,,0,0,0,,如果你之前没有算过很多卷积的话
+Dialogue: 0,0:08:53.14,0:08:56.21,ENG,,0,0,0,,it's worth emphasizing this is a very special result.
+Dialogue: 0,0:08:53.14,0:08:56.21,CHN,,0,0,0,,那我要强调  这个结论其实是非常特殊的
+Dialogue: 0,0:08:56.21,0:08:59.79,ENG,,0,0,0,,Almost always, you end up with a completely different kind of function.
+Dialogue: 0,0:08:56.21,0:08:59.79,CHN,,0,0,0,,你几乎总是会得到另一个不同的函数
+Dialogue: 0,0:08:59.79,0:09:02.74,ENG,,0,0,0,,But here, there's a sort of stability to the process.
+Dialogue: 0,0:08:59.79,0:09:02.74,CHN,,0,0,0,,但正态分布的卷积具有某种稳定性
+Dialogue: 0,0:09:03.31,0:09:06.47,ENG,,0,0,0,,Also, for those of you who enjoy exercises, I'll leave one up on the screen
+Dialogue: 0,0:09:03.31,0:09:06.47,CHN,,0,0,0,,我还给想练手的观众朋友们  留了一道题目
+Dialogue: 0,0:09:06.47,0:09:09.63,ENG,,0,0,0,,for how you would handle the case of two different standard deviations.
+Dialogue: 0,0:09:06.47,0:09:09.63,CHN,,0,0,0,,看看你如何应对两个标准差不同的情形
+Dialogue: 0,0:09:10.35,0:09:12.91,ENG,,0,0,0,,Still, some of you might be raising your hands and saying,
+Dialogue: 0,0:09:10.35,0:09:12.91,CHN,,0,0,0,,话说回来  有人就要举手说了
+Dialogue: 0,0:09:12.91,0:09:14.34,ENG,,0,0,0,,"What's the big deal?"
+Dialogue: 0,0:09:12.91,0:09:14.34,CHN,,0,0,0,,“这有什么大不了的”
+Dialogue: 0,0:09:14.34,0:09:16.13,ENG,,0,0,0,,I mean, when you first heard the question
+Dialogue: 0,0:09:14.34,0:09:16.13,CHN,,0,0,0,,你看  当你一开始听到这个问题
+Dialogue: 0,0:09:16.13,0:09:19.78,ENG,,0,0,0,,"What do you get when you add two normally distributed random variables?"
+Dialogue: 0,0:09:16.13,0:09:19.78,CHN,,0,0,0,,“两个正态随机变量相加  是什么呢”
+Dialogue: 0,0:09:19.78,0:09:21.29,ENG,,0,0,0,,you probably even guessed that
+Dialogue: 0,0:09:19.78,0:09:21.29,CHN,,0,0,0,,你甚至可以猜到
+Dialogue: 0,0:09:21.29,0:09:24.58,ENG,,0,0,0,,the answer should be another normally distributed variable.
+Dialogue: 0,0:09:21.29,0:09:24.58,CHN,,0,0,0,,答案应该是另一个正态分布的变量
+Dialogue: 0,0:09:24.58,0:09:26.69,ENG,,0,0,0,,After all, what else is it going to be?
+Dialogue: 0,0:09:24.58,0:09:26.69,CHN,,0,0,0,,毕竟  还能有什么其他答案呢
+Dialogue: 0,0:09:26.69,0:09:30.53,ENG,,0,0,0,,Normal distributions are supposedly quite common, so, why not?
+Dialogue: 0,0:09:26.69,0:09:30.53,CHN,,0,0,0,,正态分布都这么普遍了  还能是啥
+Dialogue: 0,0:09:30.53,0:09:33.86,ENG,,0,0,0,,And you could even say that this should follow from the Central Limit Theorem.
+Dialogue: 0,0:09:30.53,0:09:33.86,CHN,,0,0,0,,你甚至会说  得出这个结论的依据是中心极限定理
+Dialogue: 0,0:09:33.86,0:09:35.97,ENG,,0,0,0,,But that would have it all backwards.
+Dialogue: 0,0:09:33.86,0:09:35.97,CHN,,0,0,0,,不过这就本末倒置了
+Dialogue: 0,0:09:35.97,0:09:39.03,ENG,,0,0,0,,First of all, the supposed ubiquity of normal distributions
+Dialogue: 0,0:09:39.03,0:09:40.90,ENG,,0,0,0,,is often a little exaggerated.
+Dialogue: 0,0:09:35.97,0:09:40.90,CHN,,0,0,0,,首先 「正态分布无所不在」这个说法  多少有点夸张
+Dialogue: 0,0:09:40.90,0:09:45.12,ENG,,0,0,0,,But to the extent that they do come up, it is because of the Central Limit Theorem.
+Dialogue: 0,0:09:40.90,0:09:45.12,CHN,,0,0,0,,正态分布的出现  通常是伴随着中心极限定理的
+Dialogue: 0,0:09:45.12,0:09:46.34,ENG,,0,0,0,,But it would be cheating to say
+Dialogue: 0,0:09:45.12,0:09:46.34,CHN,,0,0,0,,但错误而违心的说法就是
+Dialogue: 0,0:09:46.34,0:09:48.64,ENG,,0,0,0,,the Central Limit Theorem implies this result
+Dialogue: 0,0:09:46.34,0:09:48.64,CHN,,0,0,0,,“中心极限定理暗示着这个答案的存在”
+Dialogue: 0,0:09:48.64,0:09:51.50,ENG,,0,0,0,,because this computation we just did is the reason that
+Dialogue: 0,0:09:48.64,0:09:51.50,CHN,,0,0,0,,因为  先有了我们前面的计算  才能解释
+Dialogue: 0,0:09:51.50,0:09:55.67,ENG,,0,0,0,,the function at the heart of the Central Limit Theorem is a Gaussian in the first place
+Dialogue: 0,0:09:51.50,0:09:55.67,CHN,,0,0,0,,为什么中心极限定理的核心函数是高斯函数
+Dialogue: 0,0:09:55.67,0:09:57.24,ENG,,0,0,0,,and not some other function.
+Dialogue: 0,0:09:55.67,0:09:57.24,CHN,,0,0,0,,而不是其他函数
+Dialogue: 0,0:09:57.84,0:10:00.48,ENG,,0,0,0,,We've talked all about the Central Limit Theorem before
+Dialogue: 0,0:09:57.84,0:10:00.48,CHN,,0,0,0,,我们前面讨论过中心极限定理
+Dialogue: 0,0:10:00.48,0:10:05.09,ENG,,0,0,0,,but essentially it says if you repeatedly add copies of a random variable to itself,
+Dialogue: 0,0:10:00.48,0:10:05.09,CHN,,0,0,0,,简而言之  如果你重复相加同一个随机变量
+Dialogue: 0,0:10:05.09,0:10:06.75,ENG,,0,0,0,,which mathematically looks like
+Dialogue: 0,0:10:06.75,0:10:10.34,ENG,,0,0,0,,repeatedly computing convolutions against a given distribution,
+Dialogue: 0,0:10:05.09,0:10:10.34,CHN,,0,0,0,,数学上像是对同一个概率密度函数多次重复求卷积
+Dialogue: 0,0:10:10.34,0:10:12.96,ENG,,0,0,0,,then after appropriate shifting and rescaling,
+Dialogue: 0,0:10:10.34,0:10:12.96,CHN,,0,0,0,,那么经过合适的平移和缩放
+Dialogue: 0,0:10:12.96,0:10:16.86,ENG,,0,0,0,,the tendency is always to approach a normal distribution.
+Dialogue: 0,0:10:12.96,0:10:16.86,CHN,,0,0,0,,结果总会趋近于正态分布
+Dialogue: 0,0:10:16.86,0:10:18.66,ENG,,0,0,0,,Technically, there's a small assumption -
+Dialogue: 0,0:10:16.86,0:10:18.66,CHN,,0,0,0,,严格地说  这里应该有个小假设{\fsp-33}：
+Dialogue: 0,0:10:18.66,0:10:21.54,ENG,,0,0,0,,the distribution you start with can't have infinite variants
+Dialogue: 0,0:10:18.66,0:10:21.54,CHN,,0,0,0,,初始分布的方差不能是无穷大
+Dialogue: 0,0:10:21.54,0:10:23.39,ENG,,0,0,0,,but it's a relatively soft assumption.
+Dialogue: 0,0:10:21.54,0:10:23.39,CHN,,0,0,0,,不过这个假设是挺容易满足的
+Dialogue: 0,0:10:23.39,0:10:27.30,ENG,,0,0,0,,The magic is that for a huge category of initial distributions,
+Dialogue: 0,0:10:23.39,0:10:27.30,CHN,,0,0,0,,神奇的是  对于很大一类的初始分布
+Dialogue: 0,0:10:27.30,0:10:31.65,ENG,,0,0,0,,this process of adding a whole bunch of random variables drawn from that distribution
+Dialogue: 0,0:10:27.30,0:10:31.65,CHN,,0,0,0,,从该分布中取很多随机变量并相加的这个过程
+Dialogue: 0,0:10:31.65,0:10:35.55,ENG,,0,0,0,,always tends towards this one universal shape - a Gaussian.
+Dialogue: 0,0:10:31.65,0:10:35.55,CHN,,0,0,0,,总会趋近于这个万有的形状  高斯函数
+Dialogue: 0,0:10:35.55,0:10:39.52,ENG,,0,0,0,,One common approach to proving this theorem involves two separate steps.
+Dialogue: 0,0:10:35.55,0:10:39.52,CHN,,0,0,0,,证明该定理的一个常用手法是  分两步走
+Dialogue: 0,0:10:39.52,0:10:40.75,ENG,,0,0,0,,The first step is to show that
+Dialogue: 0,0:10:39.52,0:10:40.75,CHN,,0,0,0,,第一步是要证明
+Dialogue: 0,0:10:40.75,0:10:44.26,ENG,,0,0,0,,for all the different finite variants distributions you might start with,
+Dialogue: 0,0:10:40.75,0:10:44.26,CHN,,0,0,0,,对于任意有限方差的初始分布
+Dialogue: 0,0:10:44.26,0:10:46.64,ENG,,0,0,0,,there exists a single universal shape
+Dialogue: 0,0:10:44.26,0:10:46.64,CHN,,0,0,0,,存在某个万有的形状
+Dialogue: 0,0:10:46.64,0:10:50.46,ENG,,0,0,0,,that this process of repeated convolutions tends towards.
+Dialogue: 0,0:10:46.64,0:10:50.46,CHN,,0,0,0,,其为重复卷积的过程的极限
+Dialogue: 0,0:10:50.46,0:10:52.26,ENG,,0,0,0,,This step is actually pretty technical.
+Dialogue: 0,0:10:50.46,0:10:52.26,CHN,,0,0,0,,说实话  这一步需要一些技巧
+Dialogue: 0,0:10:52.26,0:10:54.37,ENG,,0,0,0,,It goes a little beyond what I want to talk about here.
+Dialogue: 0,0:10:52.26,0:10:54.37,CHN,,0,0,0,,有点超出了我想讨论的范围
+Dialogue: 0,0:10:54.37,0:10:57.50,ENG,,0,0,0,,You often use objects called Moment-generating function
+Dialogue: 0,0:10:54.37,0:10:57.50,CHN,,0,0,0,,这通常要用到一个工具  叫做“矩母函数”
+Dialogue: 0,0:10:57.50,0:11:01.47,ENG,,0,0,0,,that gives you a very abstract argument that there must be some universal shape
+Dialogue: 0,0:10:57.50,0:11:01.47,CHN,,0,0,0,,然后很抽象地去论证  必然有这样一个万有形状
+Dialogue: 0,0:11:01.47,0:11:05.06,ENG,,0,0,0,,but it doesn't make any claim about what that particular shape is,
+Dialogue: 0,0:11:01.47,0:11:05.06,CHN,,0,0,0,,不过这并不能说明  这个具体的形状是什么
+Dialogue: 0,0:11:05.06,0:11:06.94,ENG,,0,0,0,,just that everything in this big family
+Dialogue: 0,0:11:05.06,0:11:06.94,CHN,,0,0,0,,只能说明  一大类函数中的每一个
+Dialogue: 0,0:11:06.94,0:11:10.43,ENG,,0,0,0,,is tending towards a single point in the space of distributions.
+Dialogue: 0,0:11:06.94,0:11:10.43,CHN,,0,0,0,,都会收敛到分布空间中唯一的一点
+Dialogue: 0,0:11:10.43,0:11:13.50,ENG,,0,0,0,,So then step number two is what we just showed in this video -
+Dialogue: 0,0:11:10.43,0:11:13.50,CHN,,0,0,0,,因此  接下来的第二步  就是前面视频的部分
+Dialogue: 0,0:11:13.50,0:11:17.66,ENG,,0,0,0,,prove that the convolution of two Gaussians gives another Gaussian.
+Dialogue: 0,0:11:13.50,0:11:17.66,CHN,,0,0,0,,证明两个高斯函数的卷积  依然是高斯函数
+Dialogue: 0,0:11:17.66,0:11:21.57,ENG,,0,0,0,,What that means is that as you apply this process of repeated convolutions,
+Dialogue: 0,0:11:17.66,0:11:21.57,CHN,,0,0,0,,这意味着  当你进行重复卷积的操作
+Dialogue: 0,0:11:21.57,0:11:24.19,ENG,,0,0,0,,a Gaussian doesn't change. It's a fixed point.
+Dialogue: 0,0:11:21.57,0:11:24.19,CHN,,0,0,0,,高斯函数将保持不变  是一个不动点
+Dialogue: 0,0:11:24.19,0:11:27.01,ENG,,0,0,0,,So, the only thing it can approach is itself
+Dialogue: 0,0:11:24.19,0:11:27.01,CHN,,0,0,0,,它就只能逼近自己
+Dialogue: 0,0:11:27.01,0:11:29.89,ENG,,0,0,0,,and since it's one member in this big family of distributions
+Dialogue: 0,0:11:27.01,0:11:29.89,CHN,,0,0,0,,并且  它也是这个分布族中的一员
+Dialogue: 0,0:11:29.89,0:11:33.09,ENG,,0,0,0,,all of which must be tending towards a single universal shape,
+Dialogue: 0,0:11:29.89,0:11:33.09,CHN,,0,0,0,,而每一员都趋近于同一个万有形状
+Dialogue: 0,0:11:33.09,0:11:35.46,ENG,,0,0,0,,it must be that universal shape.
+Dialogue: 0,0:11:33.09,0:11:35.46,CHN,,0,0,0,,因此  高斯函数正是那个万有形状
+Dialogue: 0,0:11:35.46,0:11:36.36,ENG,,0,0,0,,I mentioned at the start
+Dialogue: 0,0:11:35.46,0:11:36.36,CHN,,0,0,0,,我一开始就提到
+Dialogue: 0,0:11:36.36,0:11:39.97,ENG,,0,0,0,,how this calculation, step two, is something that you can do directly
+Dialogue: 0,0:11:36.36,0:11:39.97,CHN,,0,0,0,,第二步的这个计算  是可以直接做的
+Dialogue: 0,0:11:39.97,0:11:42.00,ENG,,0,0,0,,just symbolically with the definitions
+Dialogue: 0,0:11:39.97,0:11:42.00,CHN,,0,0,0,,单纯形式化地用定义就行
+Dialogue: 0,0:11:42.00,0:11:45.25,ENG,,0,0,0,,but one of the reasons I'm so charmed by a geometric argument
+Dialogue: 0,0:11:42.00,0:11:45.25,CHN,,0,0,0,,但我之所以如此着迷于这个几何证明
+Dialogue: 0,0:11:45.25,0:11:48.38,ENG,,0,0,0,,that leverages the rotational symmetry of this graph
+Dialogue: 0,0:11:45.25,0:11:48.38,CHN,,0,0,0,,并妙用图像的旋转对称性
+Dialogue: 0,0:11:48.38,0:11:52.74,ENG,,0,0,0,,is that it directly connects to a few things that we've talked about on this channel before.
+Dialogue: 0,0:11:48.38,0:11:52.74,CHN,,0,0,0,,是因为  它能直接地联系上我们频道前面提到的内容
+Dialogue: 0,0:11:52.74,0:11:56.00,ENG,,0,0,0,,For example, the Herschel-Maxwell derivation of a Gaussian,
+Dialogue: 0,0:11:52.74,0:11:56.00,CHN,,0,0,0,,例如  赫歇尔-麦克斯韦对高斯分布的推导
+Dialogue: 0,0:11:56.00,0:11:59.52,ENG,,0,0,0,,which essentially says that you can view this rotational symmetry
+Dialogue: 0,0:11:56.00,0:11:59.52,CHN,,0,0,0,,说的是  你可以认为旋转对称性
+Dialogue: 0,0:11:59.52,0:12:02.14,ENG,,0,0,0,,as the defining feature of the distribution.
+Dialogue: 0,0:11:59.52,0:12:02.14,CHN,,0,0,0,,恰好刻画了正态分布的
+Dialogue: 0,0:12:02.14,0:12:05.60,ENG,,0,0,0,,That it locks you into this e^(-x²) form.
+Dialogue: 0,0:12:02.14,0:12:05.60,CHN,,0,0,0,,分布函数必须为 e 的 -x² 次方的形式
+Dialogue: 0,0:12:05.60,0:12:07.35,ENG,,0,0,0,,And also as an added bonus,
+Dialogue: 0,0:12:05.60,0:12:07.35,CHN,,0,0,0,,另一个附加的好处是
+Dialogue: 0,0:12:07.35,0:12:10.91,ENG,,0,0,0,,it connects to the classic proof for why π shows up in the formula.
+Dialogue: 0,0:12:07.35,0:12:10.91,CHN,,0,0,0,,这与「为何正态分布公式有 π」的经典证明  存在关联
+Dialogue: 0,0:12:10.91,0:12:12.56,ENG,,0,0,0,,Meaning we now have a direct line
+Dialogue: 0,0:12:10.91,0:12:12.56,CHN,,0,0,0,,我们这条直接线索
+Dialogue: 0,0:12:12.56,0:12:16.93,ENG,,0,0,0,,between the presence and mystery of that π and the Central Limit Theorem.
+Dialogue: 0,0:12:12.56,0:12:16.93,CHN,,0,0,0,,可以把 π 出现之谜  与中心极限定理联系起来
+Dialogue: 0,0:12:16.93,0:12:20.83,ENG,,0,0,0,,Also on a recent patreon post, the channel supporter Daksha Vaid-Kwinter
+Dialogue: 0,0:12:16.93,0:12:20.83,CHN,,0,0,0,,在最近的一条 Patreon 帖子中  资助人达刹·维德-昆特
+Dialogue: 0,0:12:20.83,0:12:23.90,ENG,,0,0,0,,brought my attention to a completely different approach I hadn't seen before
+Dialogue: 0,0:12:20.83,0:12:23.90,CHN,,0,0,0,,向我提到一个我没见过的全新证法
+Dialogue: 0,0:12:23.90,0:12:26.08,ENG,,0,0,0,,which leverages the use of entropy
+Dialogue: 0,0:12:23.90,0:12:26.08,CHN,,0,0,0,,这个证法利用了熵  作为证明工具
+Dialogue: 0,0:12:26.08,0:12:28.26,ENG,,0,0,0,,and again, for the theoretically curious among you,
+Dialogue: 0,0:12:26.08,0:12:28.26,CHN,,0,0,0,,对理论层面有所好奇的观众们
+Dialogue: 0,0:12:28.26,0:12:29.86,ENG,,0,0,0,,I'll leave some links in the description.
+Dialogue: 0,0:12:28.26,0:12:29.86,CHN,,0,0,0,,我会在评论区留下参考链接
+Dialogue: 0,0:12:30.94,0:12:33.31,ENG,,0,0,0,,By the way, if you want to stay up to date with new videos
+Dialogue: 0,0:12:30.94,0:12:33.31,CHN,,0,0,0,,插一句  如果你想追上最新视频
+Dialogue: 0,0:12:33.31,0:12:37.28,ENG,,0,0,0,,and also any other projects that I put out there like the Summer of Math Exposition,
+Dialogue: 0,0:12:33.31,0:12:37.28,CHN,,0,0,0,,以及其他项目  例如夏季数学博览会SoME
+Dialogue: 0,0:12:37.28,0:12:38.62,ENG,,0,0,0,,there is a mailing list.
+Dialogue: 0,0:12:37.28,0:12:38.62,CHN,,0,0,0,,欢迎订阅邮件列表
+Dialogue: 0,0:12:38.62,0:12:39.70,ENG,,0,0,0,,It's relatively new
+Dialogue: 0,0:12:38.62,0:12:39.70,CHN,,0,0,0,,才刚开始弄
+Dialogue: 0,0:12:39.70,0:12:43.23,ENG,,0,0,0,,and I'm pretty sparing about only posting what I think people will enjoy.
+Dialogue: 0,0:12:39.70,0:12:43.23,CHN,,0,0,0,,我会精选我觉得大家会喜欢的内容来发
+Dialogue: 0,0:12:43.23,0:12:46.37,ENG,,0,0,0,,Usually, I try not to be too promotional at the end of videos these days
+Dialogue: 0,0:12:43.23,0:12:46.37,CHN,,0,0,0,,近来我在视频结尾尽量不太会打广告
+Dialogue: 0,0:12:46.37,0:12:48.99,ENG,,0,0,0,,but if you are interested in following the work that I do,
+Dialogue: 0,0:12:46.37,0:12:48.99,CHN,,0,0,0,,但如果你希望关注我在做的工作
+Dialogue: 0,0:12:48.99,0:12:51.94,ENG,,0,0,0,,this is probably one of the most enduring ways to do so.
+Dialogue: 0,0:12:48.99,0:12:51.94,CHN,,0,0,0,,订阅这个邮件列表也许是最持久的方式了

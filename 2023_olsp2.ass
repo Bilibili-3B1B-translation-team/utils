@@ -1,0 +1,801 @@
+[Script Info]
+Title: The origin of light, scattering, and polarization Barber pole, part 2
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1200
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ENG,Inter,50,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0.5,0,1,3,3,2,15,15,3,1
+Style: CHN,MonyharOS Sans SC Medium,66,&H00FFFFFF,&H0055060A,&H0055060A,&H00000000,-1,0,0,0,100,100,1,0,1,4.5,3,2,15,15,60,1
+Style: Staff,MonyharOS Sans SC Medium,50,&H00FFFFFF,&H0055060A,&H00AE9B5F,&H00000000,0,0,0,0,100,100,0,0,1,3,3,8,10,10,30,1
+Style: comment,华文中宋,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.20,0:00:02.72,ENG,,0,0,0,,In the last video, you and I looked at this demo here
+Dialogue: 0,0:00:00.20,0:00:02.72,CHN,,0,0,0,,在上集视频中  我们观看了这个演示
+Dialogue: 0,0:00:02.97,0:00:07.47,ENG,,0,0,0,,where we shine linearly polarized light through a tube full of sugar water
+Dialogue: 0,0:00:02.97,0:00:07.47,CHN,,0,0,0,,我们用线偏振光照射装满糖水的圆筒
+Dialogue: 0,0:00:07.47,0:00:11.70,ENG,,0,0,0,,and we saw how it rather mysteriously results in these coloured diagonal stripes.
+Dialogue: 0,0:00:07.47,0:00:11.70,CHN,,0,0,0,,并看见它会产生这些神秘的彩色斜条纹
+Dialogue: 0,0:00:12.35,0:00:15.50,ENG,,0,0,0,,There I walked through the general outline for an explanation
+Dialogue: 0,0:00:12.35,0:00:15.50,CHN,,0,0,0,,我当时描述了解释这一现象的大致框架
+Dialogue: 0,0:00:15.50,0:00:18.25,ENG,,0,0,0,,keeping track of what questions still need to be answered,
+Dialogue: 0,0:00:15.50,0:00:18.25,CHN,,0,0,0,,并记录了有哪些问题仍然需要解答
+Dialogue: 0,0:00:18.25,0:00:22.90,ENG,,0,0,0,,namely: why does sugar water twist the polarization direction of light?
+Dialogue: 0,0:00:18.25,0:00:22.90,CHN,,0,0,0,,即：为什么糖水会扭曲光的偏振方向？
+Dialogue: 0,0:00:22.90,0:00:26.17,ENG,,0,0,0,,Why does that twisting rate depend on the colour of the light
+Dialogue: 0,0:00:22.90,0:00:26.17,CHN,,0,0,0,,为什么扭曲率取决于光的颜色？
+Dialogue: 0,0:00:26.42,0:00:29.30,ENG,,0,0,0,,and why even if you understand that this twist is happening,
+Dialogue: 0,0:00:26.42,0:00:29.30,CHN,,0,0,0,,还有  即使你知道这种扭曲会发生
+Dialogue: 0,0:00:29.52,0:00:31.14,ENG,,0,0,0,,would you see any evidence of it
+Dialogue: 0,0:00:29.52,0:00:31.14,CHN,,0,0,0,,但为什么从侧面观察糖水管时
+Dialogue: 0,0:00:31.14,0:00:35.22,ENG,,0,0,0,,when viewing the tube from the side with no additional polarizing filters?
+Dialogue: 0,0:00:31.14,0:00:35.22,CHN,,0,0,0,,在没有额外偏振片的情况下  你仍能看到任何扭曲的迹象呢？
+Dialogue: 0,0:00:35.22,0:00:38.85,ENG,,0,0,0,,Here I'd like to begin with the very fundamental idea of what light is
+Dialogue: 0,0:00:35.22,0:00:38.85,CHN,,0,0,0,,在这里  我想先从“光是什么”这个最基本的概念入手
+Dialogue: 0,0:00:38.85,0:00:41.03,ENG,,0,0,0,,and show how the answers to these questions
+Dialogue: 0,0:00:38.85,0:00:41.03,CHN,,0,0,0,,给观众展示  这些问题的答案是如何
+Dialogue: 0,0:00:41.03,0:00:44.42,ENG,,0,0,0,,can emerge from an extremely minimal set of assumptions.
+Dialogue: 0,0:00:41.03,0:00:44.42,CHN,,0,0,0,,从一组极其简单的假设中产生的
+Dialogue: 0,0:00:48.43,0:00:52.10,ENG,,0,0,0,,In some sense, the fundamental question of electricity and magnetism
+Dialogue: 0,0:00:48.43,0:00:52.10,CHN,,0,0,0,,从某种意义上  电学和磁学的基本问题
+Dialogue: 0,0:00:52.10,0:00:55.48,ENG,,0,0,0,,is how the position and motion of one charged particle
+Dialogue: 0,0:00:55.48,0:00:57.52,ENG,,0,0,0,,influences that of another.
+Dialogue: 0,0:00:52.10,0:00:57.52,CHN,,0,0,0,,是一个带电粒子的位置和运动  如何影响另一个带电粒子
+Dialogue: 0,0:00:57.52,0:01:01.28,ENG,,0,0,0,,For example, one of the first things you learn, say in a high school physics class
+Dialogue: 0,0:00:57.52,0:01:01.28,CHN,,0,0,0,,例如  你在高中物理课上学到的第一项知识
+Dialogue: 0,0:01:01.28,0:01:04.62,ENG,,0,0,0,,is that charges with the same sign tend to repel each other.
+Dialogue: 0,0:01:01.28,0:01:04.62,CHN,,0,0,0,,或许就是电荷同性相斥
+Dialogue: 0,0:01:04.62,0:01:08.50,ENG,,0,0,0,,And the strength of this force depends a lot on the distance between them.
+Dialogue: 0,0:01:04.62,0:01:08.50,CHN,,0,0,0,,而这种力的强度  很大程度上取决于两者的间距
+Dialogue: 0,0:01:08.50,0:01:09.68,ENG,,0,0,0,,If your charges are close,
+Dialogue: 0,0:01:08.50,0:01:09.68,CHN,,0,0,0,,如果电荷很近
+Dialogue: 0,0:01:09.68,0:01:12.20,ENG,,0,0,0,,that repulsive force is very strong,
+Dialogue: 0,0:01:09.68,0:01:12.20,CHN,,0,0,0,,相互的排斥力会很强
+Dialogue: 0,0:01:12.20,0:01:15.92,ENG,,0,0,0,,but it decays very rapidly as these particles go away from each other.
+Dialogue: 0,0:01:12.20,0:01:15.92,CHN,,0,0,0,,但是随着这些粒子相互远离  这种排斥力会迅速减弱
+Dialogue: 0,0:01:16.65,0:01:19.85,ENG,,0,0,0,,Specificaly, here's how you might see this written down as an equation
+Dialogue: 0,0:01:16.65,0:01:19.85,CHN,,0,0,0,,具体来说  你可以将这个问题写成公式
+Dialogue: 0,0:01:19.85,0:01:21.42,ENG,,0,0,0,,known as Coulomb's law.
+Dialogue: 0,0:01:19.85,0:01:21.42,CHN,,0,0,0,,它就是库仑定律
+Dialogue: 0,0:01:21.42,0:01:24.81,ENG,,0,0,0,,The force is proportional to the charge of both of the particles
+Dialogue: 0,0:01:24.81,0:01:26.77,ENG,,0,0,0,,where it's common to use the letter Q.
+Dialogue: 0,0:01:21.42,0:01:26.77,CHN,,0,0,0,,力与两个粒子的电荷（一般用q表示）分别成正比
+Dialogue: 0,0:01:26.77,0:01:28.20,ENG,,0,0,0,,There are some constants in there
+Dialogue: 0,0:01:26.77,0:01:28.20,CHN,,0,0,0,,那里有一些常数
+Dialogue: 0,0:01:28.20,0:01:32.00,ENG,,0,0,0,,which for our purposes we can just think of as one big proportionality constant
+Dialogue: 0,0:01:28.20,0:01:32.00,CHN,,0,0,0,,我们可以把它们看作一个大的比例常数
+Dialogue: 0,0:01:32.00,0:01:33.47,ENG,,0,0,0,,and the important fact is that
+Dialogue: 0,0:01:32.00,0:01:33.47,CHN,,0,0,0,,重要的是
+Dialogue: 0,0:01:33.47,0:01:38.20,ENG,,0,0,0,,you've got this 1 divided by r² term where r is the distance between them.
+Dialogue: 0,0:01:33.47,0:01:38.20,CHN,,0,0,0,,这里还有一个 1/r² 的项   其中 r 是两个粒子之间的距离
+Dialogue: 0,0:01:38.60,0:01:43.07,ENG,,0,0,0,,So, for example, if the distance between them increases by a factor of three,
+Dialogue: 0,0:01:38.60,0:01:43.07,CHN,,0,0,0,,因此举例来说  如果粒子之间的距离增加了 3 倍
+Dialogue: 0,0:01:43.07,0:01:46.92,ENG,,0,0,0,,the force that they're applying to each other goes down by a factor of nine.
+Dialogue: 0,0:01:43.07,0:01:46.92,CHN,,0,0,0,,那它们对彼此施加的力  就会减少到原来的1/9
+Dialogue: 0,0:01:47.70,0:01:49.95,ENG,,0,0,0,,Another way you might see a law like this written down
+Dialogue: 0,0:01:47.70,0:01:49.95,CHN,,0,0,0,,另一种对这公式的理解方式
+Dialogue: 0,0:01:49.95,0:01:52.54,ENG,,0,0,0,,is to focus on just one charged particle
+Dialogue: 0,0:01:49.95,0:01:52.54,CHN,,0,0,0,,是只去关注一个带电粒子
+Dialogue: 0,0:01:52.54,0:01:57.20,ENG,,0,0,0,,and then say for every point in space, if there was a second charge there,
+Dialogue: 0,0:01:52.54,0:01:57.20,CHN,,0,0,0,,然后问：对于空间中的每一点  如果那里有第二个电荷
+Dialogue: 0,0:01:57.20,0:02:01.70,ENG,,0,0,0,,what force would this first charge be applying to that second one?
+Dialogue: 0,0:01:57.20,0:02:01.70,CHN,,0,0,0,,那么第一个电荷会对第二个电荷施加什么力呢？
+Dialogue: 0,0:02:02.77,0:02:05.19,ENG,,0,0,0,,And instead of describing a force per se,
+Dialogue: 0,0:02:02.77,0:02:05.19,CHN,,0,0,0,,与其描述这个力本身
+Dialogue: 0,0:02:05.19,0:02:08.57,ENG,,0,0,0,,you might see this written describing what's known as the "Electric Field",
+Dialogue: 0,0:02:05.19,0:02:08.57,CHN,,0,0,0,,你可能会看到这样的写法  描述所谓的“电场”
+Dialogue: 0,0:02:08.77,0:02:12.85,ENG,,0,0,0,,which is just a way of saying what force would be applied to a unit charge
+Dialogue: 0,0:02:08.77,0:02:12.85,CHN,,0,0,0,,这只是一种表达单位电荷受力情况的方式
+Dialogue: 0,0:02:13.22,0:02:15.13,ENG,,0,0,0,,and in this context the word "Field"
+Dialogue: 0,0:02:13.22,0:02:15.13,CHN,,0,0,0,,“场”在这种语境下
+Dialogue: 0,0:02:15.13,0:02:18.72,ENG,,0,0,0,,means there is a value associated with every single point in space.
+Dialogue: 0,0:02:15.13,0:02:18.72,CHN,,0,0,0,,意味着空间中的每一个点都有一个对应的值
+Dialogue: 0,0:02:18.72,0:02:20.40,ENG,,0,0,0,,So, the way I have it written here,
+Dialogue: 0,0:02:18.72,0:02:20.40,CHN,,0,0,0,,因此  按照我这里的写法
+Dialogue: 0,0:02:20.40,0:02:22.56,ENG,,0,0,0,,it depends on a little vector R
+Dialogue: 0,0:02:20.40,0:02:22.56,CHN,,0,0,0,,它取决于一个小向量 r
+Dialogue: 0,0:02:22.56,0:02:26.12,ENG,,0,0,0,,which would be the vector from our charge to a given point in space
+Dialogue: 0,0:02:22.56,0:02:26.12,CHN,,0,0,0,,也就是从我们的电荷到空间给定点的向量
+Dialogue: 0,0:02:26.45,0:02:31.02,ENG,,0,0,0,,and the direction of this field at all points is in the same direction as R.
+Dialogue: 0,0:02:26.45,0:02:31.02,CHN,,0,0,0,,而这个场在所有点的方向都与 r 的方向一致
+Dialogue: 0,0:02:32.10,0:02:35.90,ENG,,0,0,0,,I bring up Coulomb’s law to emphasize that it's not the full story.
+Dialogue: 0,0:02:32.10,0:02:35.90,CHN,,0,0,0,,我提起库仑定律  是为了强调这并不是全部
+Dialogue: 0,0:02:36.00,0:02:38.47,ENG,,0,0,0,,There are other ways that charges influence each other.
+Dialogue: 0,0:02:36.00,0:02:38.47,CHN,,0,0,0,,电荷之间还有其他相互影响的方式
+Dialogue: 0,0:02:38.67,0:02:42.35,ENG,,0,0,0,,For example, here's a phenomenon that this law alone could not explain.
+Dialogue: 0,0:02:38.67,0:02:42.35,CHN,,0,0,0,,例如  库仑定律本身无法解释这样一种现象
+Dialogue: 0,0:02:42.87,0:02:45.10,ENG,,0,0,0,,If you wiggle one charge up and down,
+Dialogue: 0,0:02:42.87,0:02:45.10,CHN,,0,0,0,,如果你上下摆动一个电荷
+Dialogue: 0,0:02:45.17,0:02:46.62,ENG,,0,0,0,,then after a little bit of a delay,
+Dialogue: 0,0:02:45.17,0:02:46.62,CHN,,0,0,0,,在稍微延迟后
+Dialogue: 0,0:02:46.72,0:02:49.02,ENG,,0,0,0,,a second charge some distance to its right
+Dialogue: 0,0:02:46.72,0:02:49.02,CHN,,0,0,0,,在其右侧一定距离处的第二个电荷
+Dialogue: 0,0:02:49.02,0:02:51.97,ENG,,0,0,0,,will be induced to wiggle up and down as well.
+Dialogue: 0,0:02:49.02,0:02:51.97,CHN,,0,0,0,,也会受到感应而上下摆动
+Dialogue: 0,0:02:52.07,0:02:53.82,ENG,,0,0,0,,We can write down a second law,
+Dialogue: 0,0:02:52.07,0:02:53.82,CHN,,0,0,0,,我们可以写下第二条定律
+Dialogue: 0,0:02:53.95,0:02:57.41,ENG,,0,0,0,,which you might think of as a correction term to be added to Coulomb's law
+Dialogue: 0,0:02:53.95,0:02:57.41,CHN,,0,0,0,,你可以把它看作是库仑定律的一个修正项
+Dialogue: 0,0:02:57.41,0:02:59.15,ENG,,0,0,0,,that describes what's going on here.
+Dialogue: 0,0:02:57.41,0:02:59.15,CHN,,0,0,0,,用来描述这里发生的事情
+Dialogue: 0,0:02:59.47,0:03:03.75,ENG,,0,0,0,,Suppose at some point in time, T 0, that first charge is accelerating.
+Dialogue: 0,0:02:59.47,0:03:03.75,CHN,,0,0,0,,假设在某个时间点 t₀  第一个电荷正在加速
+Dialogue: 0,0:03:04.00,0:03:05.89,ENG,,0,0,0,,Then I'll let time play forward
+Dialogue: 0,0:03:04.00,0:03:05.89,CHN,,0,0,0,,然后我会让时间开始流动
+Dialogue: 0,0:03:05.89,0:03:08.57,ENG,,0,0,0,,but leave on the screen a kind of ghost of that particle
+Dialogue: 0,0:03:05.89,0:03:08.57,CHN,,0,0,0,,但在屏幕上留下该粒子的重影
+Dialogue: 0,0:03:08.57,0:03:13.70,ENG,,0,0,0,,indicating where it was and how it was accelerating at this time T 0.
+Dialogue: 0,0:03:08.57,0:03:13.70,CHN,,0,0,0,,去显示它在 t₀ 时的位置和加速情况
+Dialogue: 0,0:03:13.70,0:03:15.20,ENG,,0,0,0,,After a certain delay,
+Dialogue: 0,0:03:13.70,0:03:15.20,CHN,,0,0,0,,经过一定的延迟后
+Dialogue: 0,0:03:15.35,0:03:18.00,ENG,,0,0,0,,this causes a force on the second charge
+Dialogue: 0,0:03:15.35,0:03:18.00,CHN,,0,0,0,,这将对第二个电荷产生一个力
+Dialogue: 0,0:03:18.00,0:03:21.50,ENG,,0,0,0,,and the equation describing force looks something like this...
+Dialogue: 0,0:03:18.00,0:03:21.50,CHN,,0,0,0,,并且描述力的方程是这样的...
+Dialogue: 0,0:03:22.07,0:03:25.67,ENG,,0,0,0,,So again, it's proportional to the charge of both of the particles.
+Dialogue: 0,0:03:22.07,0:03:25.67,CHN,,0,0,0,,所以同样  它与两个粒子的电荷量成正比
+Dialogue: 0,0:03:25.95,0:03:29.77,ENG,,0,0,0,,And once more, a common way to write it involves this pile of constants
+Dialogue: 0,0:03:25.95,0:03:29.77,CHN,,0,0,0,,并且通常的写法还是会涉及到一堆常量
+Dialogue: 0,0:03:29.77,0:03:31.45,ENG,,0,0,0,,that you don't really need to worry about.
+Dialogue: 0,0:03:29.77,0:03:31.45,CHN,,0,0,0,,你并不需要特别担心
+Dialogue: 0,0:03:31.45,0:03:33.54,ENG,,0,0,0,,The important factor I want you to notice
+Dialogue: 0,0:03:31.45,0:03:33.54,CHN,,0,0,0,,需要注意的最重要的一点是
+Dialogue: 0,0:03:33.54,0:03:37.15,ENG,,0,0,0,,is how the force also depends on the distance between the particles.
+Dialogue: 0,0:03:33.54,0:03:37.15,CHN,,0,0,0,,力如何依然取决于粒子之间的距离
+Dialogue: 0,0:03:37.30,0:03:39.87,ENG,,0,0,0,,But instead of decaying in proportion to R squared,
+Dialogue: 0,0:03:37.30,0:03:39.87,CHN,,0,0,0,,但是  它不是按照 r² 的反比例衰减
+Dialogue: 0,0:03:40.10,0:03:42.10,ENG,,0,0,0,,it only decays in proportion to R.
+Dialogue: 0,0:03:40.10,0:03:42.10,CHN,,0,0,0,,而是只按照 r 的反比例衰减
+Dialogue: 0,0:03:42.35,0:03:43.86,ENG,,0,0,0,,So, over long distances,
+Dialogue: 0,0:03:42.35,0:03:43.86,CHN,,0,0,0,,因此  在长距离上
+Dialogue: 0,0:03:43.86,0:03:47.72,ENG,,0,0,0,,this is the force that dominates and Coulomb's law is negligible.
+Dialogue: 0,0:03:43.86,0:03:47.72,CHN,,0,0,0,,这种力占主导地位  而库仑定律可以忽略不计
+Dialogue: 0,0:03:48.27,0:03:52.35,ENG,,0,0,0,,And then finally, it depends on the acceleration of that first particle
+Dialogue: 0,0:03:48.27,0:03:52.35,CHN,,0,0,0,,最后  它取决于第一个粒子的加速度
+Dialogue: 0,0:03:52.52,0:03:55.52,ENG,,0,0,0,,but it's not the acceleration of that particle at the current time,
+Dialogue: 0,0:03:52.52,0:03:55.52,CHN,,0,0,0,,但不是看该粒子在当前时间的加速度
+Dialogue: 0,0:03:55.90,0:04:00.20,ENG,,0,0,0,,it's whatever that acceleration was at some time in the past.
+Dialogue: 0,0:03:55.90,0:04:00.20,CHN,,0,0,0,,而是看过去某个时间的加速度
+Dialogue: 0,0:04:00.20,0:04:01.85,ENG,,0,0,0,,How far in the past depends on
+Dialogue: 0,0:04:01.85,0:04:05.65,ENG,,0,0,0,,he distance between the particles and the speed of light denoted with C.
+Dialogue: 0,0:04:00.20,0:04:05.65,CHN,,0,0,0,,多久前的过去  取决于粒子之间的距离  除以光速 c 
+Dialogue: 0,0:04:05.95,0:04:07.25,ENG,,0,0,0,,The way to think about it is that
+Dialogue: 0,0:04:05.95,0:04:07.25,CHN,,0,0,0,,可以这么理解
+Dialogue: 0,0:04:07.25,0:04:11.70,ENG,,0,0,0,,any form of influence can't propagate any faster than this speed C.
+Dialogue: 0,0:04:07.25,0:04:11.70,CHN,,0,0,0,,任何形式的影响  传播速度都不可能超过光速 c
+Dialogue: 0,0:04:11.70,0:04:14.50,ENG,,0,0,0,,In fact, a more accurate description of Coulomb’s law
+Dialogue: 0,0:04:11.70,0:04:14.50,CHN,,0,0,0,,事实上  库仑定律更准确的描述
+Dialogue: 0,0:04:14.50,0:04:16.55,ENG,,0,0,0,,would also involve a delay term like this...
+Dialogue: 0,0:04:14.50,0:04:16.55,CHN,,0,0,0,,也会包括这样一个延迟项
+Dialogue: 0,0:04:17.05,0:04:19.70,ENG,,0,0,0,,Again, the intuitive way to read this equation is that
+Dialogue: 0,0:04:17.05,0:04:19.70,CHN,,0,0,0,,同样  这个方程的直观读法是
+Dialogue: 0,0:04:19.80,0:04:21.59,ENG,,0,0,0,,wiggling a charge in one location
+Dialogue: 0,0:04:19.80,0:04:21.59,CHN,,0,0,0,,在一个位置摆动一个电荷
+Dialogue: 0,0:04:21.59,0:04:25.95,ENG,,0,0,0,,after some delay causes a wiggle to a second charge in another location.
+Dialogue: 0,0:04:21.59,0:04:25.95,CHN,,0,0,0,,经过一定的延迟后  会引起另一个位置的第二个电荷的摆动
+Dialogue: 0,0:04:26.35,0:04:29.72,ENG,,0,0,0,,And actually the way I have it written right now is a little bit wrong -
+Dialogue: 0,0:04:26.35,0:04:29.72,CHN,,0,0,0,,实际上  我现在的写法有点不对
+Dialogue: 0,0:04:29.95,0:04:34.47,ENG,,0,0,0,,instead of the acceleration vector here, I should really be writing something like a perp
+Dialogue: 0,0:04:29.95,0:04:34.47,CHN,,0,0,0,,这里的加速度向量  其实应该加上垂直符号
+Dialogue: 0,0:04:34.72,0:04:38.27,ENG,,0,0,0,,indicating the component of that acceleration vector
+Dialogue: 0,0:04:38.27,0:04:42.32,ENG,,0,0,0,,which is perpendicular to the line drawn between the two charges.
+Dialogue: 0,0:04:34.72,0:04:42.32,CHN,,0,0,0,,表示加速度向量  与两个电荷连线所垂直的分量
+Dialogue: 0,0:04:42.32,0:04:44.52,ENG,,0,0,0,,In other words, when you wiggle that first charge,
+Dialogue: 0,0:04:42.32,0:04:44.52,CHN,,0,0,0,,换句话说  当你摆动第一个电荷时
+Dialogue: 0,0:04:44.52,0:04:49.32,ENG,,0,0,0,,the direction that the second charge wiggles is always perpendicular to line between them
+Dialogue: 0,0:04:44.52,0:04:49.32,CHN,,0,0,0,,第二个电荷摆动的方向  总是垂直于两者连线
+Dialogue: 0,0:04:49.32,0:04:52.30,ENG,,0,0,0,,and the amount that it wiggles gets weaker and weaker
+Dialogue: 0,0:04:52.30,0:04:56.30,ENG,,0,0,0,,when that line between them is more lined up with the initial acceleration.
+Dialogue: 0,0:04:49.32,0:04:53.44,CHN,,0,0,0,,当两电荷间的连线  与电荷一的加速度更加一致时 电荷二的晃动幅度会越来越小
+Dialogue: 0,0:04:57.07,0:05:00.15,ENG,,0,0,0,,As before, this is something you might see written down in a way
+Dialogue: 0,0:04:57.07,0:05:00.15,CHN,,0,0,0,,和之前一样  你可能会看到这样的写法
+Dialogue: 0,0:05:00.25,0:05:04.37,ENG,,0,0,0,,that describes a component of the electric field caused by just one charge.
+Dialogue: 0,0:05:00.25,0:05:04.37,CHN,,0,0,0,,它描述的是由一个电荷引起的电场分量
+Dialogue: 0,0:05:04.75,0:05:07.90,ENG,,0,0,0,,Again, that means what force would be applied
+Dialogue: 0,0:05:04.75,0:05:07.90,CHN,,0,0,0,,同样  这意味着  在空间所有可能的不同点上
+Dialogue: 0,0:05:07.90,0:05:11.27,ENG,,0,0,0,,to a second charge at all possible different points in space.
+Dialogue: 0,0:05:07.90,0:05:11.27,CHN,,0,0,0,,第二个电荷会受到什么力的作用
+Dialogue: 0,0:05:12.42,0:05:15.02,ENG,,0,0,0,,This component of the field is only ever non zero
+Dialogue: 0,0:05:15.02,0:05:17.17,ENG,,0,0,0,,when our first charge is moving somehow -
+Dialogue: 0,0:05:12.42,0:05:17.17,CHN,,0,0,0,,只有当第一个电荷以某种方式运动时（有加速度向量时）
+Dialogue: 0,0:05:17.22,0:05:19.17,ENG,,0,0,0,,when it has an acceleration vector on it.
+Dialogue: 0,0:05:17.22,0:05:19.17,CHN,,0,0,0,,电场的这个分量才不会为零
+Dialogue: 0,0:05:19.42,0:05:20.90,ENG,,0,0,0,,And because of this delay term,
+Dialogue: 0,0:05:19.42,0:05:20.90,CHN,,0,0,0,,并且由于这个延迟项
+Dialogue: 0,0:05:20.92,0:05:24.80,ENG,,0,0,0,,the effects on this field tend to radiate away from the charge.
+Dialogue: 0,0:05:20.92,0:05:24.80,CHN,,0,0,0,,这个场的效果像是从电荷处辐射开来
+Dialogue: 0,0:05:25.07,0:05:27.57,ENG,,0,0,0,,This is why I'm writing it down with the subscript "rad".
+Dialogue: 0,0:05:25.07,0:05:27.57,CHN,,0,0,0,,这就是为什么我用下标“rad”(辐射)来写它
+Dialogue: 0,0:05:27.82,0:05:32.45,ENG,,0,0,0,,This is the component of the electric field that will radiate away from a given charge.
+Dialogue: 0,0:05:27.82,0:05:32.45,CHN,,0,0,0,,这就是从给定电荷辐射出去的电场分量
+Dialogue: 0,0:05:32.90,0:05:35.67,ENG,,0,0,0,,For instance, when the charge is oscillating up and down,
+Dialogue: 0,0:05:35.67,0:05:37.42,ENG,,0,0,0,,you get these propagating waves
+Dialogue: 0,0:05:32.90,0:05:37.42,CHN,,0,0,0,,例如  当电荷上下摆动时  就会产生这些传播波
+Dialogue: 0,0:05:37.42,0:05:40.77,ENG,,0,0,0,,and for many of the vector fields, I'll be showing the intensity of the field
+Dialogue: 0,0:05:37.42,0:05:40.77,CHN,,0,0,0,,后面当我画出各种向量场时  我会把这些场的强度
+Dialogue: 0,0:05:40.77,0:05:43.72,ENG,,0,0,0,,as illustrated with the opacity of each little vector.
+Dialogue: 0,0:05:40.77,0:05:43.72,CHN,,0,0,0,,用每个小向量的透明度来表示
+Dialogue: 0,0:05:44.00,0:05:47.04,ENG,,0,0,0,,This radiating influence is light.
+Dialogue: 0,0:05:44.00,0:05:47.04,CHN,,0,0,0,,这种辐射性的影响  就是光
+Dialogue: 0,0:05:47.30,0:05:49.92,ENG,,0,0,0,,Or more generally, electromagnetic radiation,
+Dialogue: 0,0:05:47.30,0:05:49.92,CHN,,0,0,0,,或者更广义地说  电磁辐射
+Dialogue: 0,0:05:50.02,0:05:53.42,ENG,,0,0,0,,including things like radio waves and X-rays and all that good stuff.
+Dialogue: 0,0:05:50.02,0:05:53.42,CHN,,0,0,0,,包括无线电波  X 射线等
+Dialogue: 0,0:05:54.57,0:05:55.41,ENG,,0,0,0,,As a side note,
+Dialogue: 0,0:05:54.57,0:05:55.41,CHN,,0,0,0,,顺便提一句
+Dialogue: 0,0:05:55.41,0:05:58.25,ENG,,0,0,0,,you sometimes see this propagation described a very different way
+Dialogue: 0,0:05:55.41,0:05:58.25,CHN,,0,0,0,,有时你会看到这种传播的另一种非常不同的描述方式
+Dialogue: 0,0:05:58.30,0:06:02.65,ENG,,0,0,0,,that puts the fields front and center using what are known as "Maxwell's Equations".
+Dialogue: 0,0:05:58.30,0:06:02.65,CHN,,0,0,0,,把场作为主角和中心  那就是所谓的“麦克斯韦方程”
+Dialogue: 0,0:06:03.07,0:06:04.25,ENG,,0,0,0,,For our purposes,
+Dialogue: 0,0:06:03.07,0:06:04.25,CHN,,0,0,0,,就我们的目的而言
+Dialogue: 0,0:06:04.32,0:06:06.46,ENG,,0,0,0,,I want to focus just on this one law
+Dialogue: 0,0:06:04.32,0:06:06.46,CHN,,0,0,0,,我只想集中讨论前面的这一个定律
+Dialogue: 0,0:06:06.46,0:06:10.10,ENG,,0,0,0,,and show just how far it can take us when it comes to intuitions for light.
+Dialogue: 0,0:06:06.46,0:06:10.10,CHN,,0,0,0,,并说明它对理解光的直觉  已经非常有用了
+Dialogue: 0,0:06:11.35,0:06:13.30,ENG,,0,0,0,,For the animations I'm about to show,
+Dialogue: 0,0:06:11.35,0:06:13.30,CHN,,0,0,0,,我即将展示的动画
+Dialogue: 0,0:06:13.30,0:06:17.24,ENG,,0,0,0,,all I've really done is encoded in this one law which tells us
+Dialogue: 0,0:06:13.30,0:06:17.24,CHN,,0,0,0,,就是根据屏幕右上角的这个公式
+Dialogue: 0,0:06:17.24,0:06:20.85,ENG,,0,0,0,,what should this component of the electric fields be at every point in space
+Dialogue: 0,0:06:17.24,0:06:20.85,CHN,,0,0,0,,绘出空间中任意点处的这种辐射电场分量
+Dialogue: 0,0:06:21.02,0:06:26.05,ENG,,0,0,0,,as determined by the history of accelerations of a particular charge.
+Dialogue: 0,0:06:21.02,0:06:26.05,CHN,,0,0,0,,这是由电荷加速度的历史所决定的
+Dialogue: 0,0:06:26.32,0:06:30.45,ENG,,0,0,0,,For example, if I set that charge oscillating up and down in the Z direction
+Dialogue: 0,0:06:26.32,0:06:30.45,CHN,,0,0,0,,比方说  让电荷在 Z 方向上下振荡
+Dialogue: 0,0:06:30.67,0:06:34.65,ENG,,0,0,0,,and illustrate this component of the electric field everywhere on the XY plane,
+Dialogue: 0,0:06:30.67,0:06:34.65,CHN,,0,0,0,,在 XY 平面上绘出这一电场分量的强度
+Dialogue: 0,0:06:34.70,0:06:38.87,ENG,,0,0,0,,you see these circular propagations of equal strength in all directions.
+Dialogue: 0,0:06:34.70,0:06:38.87,CHN,,0,0,0,,就像这样环状向外扩散  各个方向强度相等
+Dialogue: 0,0:06:40.95,0:06:45.22,ENG,,0,0,0,,It's a little easier to think about if we focus on just one axis like the X axis.
+Dialogue: 0,0:06:40.95,0:06:45.22,CHN,,0,0,0,,盯着一条坐标轴大概会更加清楚  比如 X 轴
+Dialogue: 0,0:06:45.87,0:06:47.70,ENG,,0,0,0,,And at first when I made this animation,
+Dialogue: 0,0:06:45.87,0:06:47.70,CHN,,0,0,0,,一开始我做出这个动画的时候
+Dialogue: 0,0:06:47.80,0:06:49.85,ENG,,0,0,0,,I assumed that there was some kind of bug
+Dialogue: 0,0:06:47.80,0:06:49.85,CHN,,0,0,0,,我觉得是不是代码出错了
+Dialogue: 0,0:06:49.85,0:06:52.65,ENG,,0,0,0,,because near the charge it just looks crooked and wrong.
+Dialogue: 0,0:06:49.85,0:06:52.65,CHN,,0,0,0,,因为电荷附近看起来有些畸形
+Dialogue: 0,0:06:52.85,0:06:54.10,ENG,,0,0,0,,But when you think about it,
+Dialogue: 0,0:06:52.85,0:06:54.10,CHN,,0,0,0,,但是仔细想想
+Dialogue: 0,0:06:54.10,0:06:55.75,ENG,,0,0,0,,this is actually what you should expect.
+Dialogue: 0,0:06:54.10,0:06:55.75,CHN,,0,0,0,,这才是它应该有的样子
+Dialogue: 0,0:06:55.95,0:06:56.89,ENG,,0,0,0,,Because, remember,
+Dialogue: 0,0:06:55.95,0:06:56.89,CHN,,0,0,0,,因为  要记住
+Dialogue: 0,0:06:56.89,0:06:59.77,ENG,,0,0,0,,each one of these vectors is supposed to be perpendicular to
+Dialogue: 0,0:06:56.89,0:06:59.77,CHN,,0,0,0,,每个场强向量都应当垂直于
+Dialogue: 0,0:06:59.77,0:07:02.28,ENG,,0,0,0,,the line drawn between that point
+Dialogue: 0,0:07:02.28,0:07:05.20,ENG,,0,0,0,,and where the charge WAS at some point in the past.
+Dialogue: 0,0:06:59.77,0:07:05.20,CHN,,0,0,0,,它的起点和电荷{\u1}曾经{\u0}所在的位置的连线
+Dialogue: 0,0:07:06.22,0:07:08.75,ENG,,0,0,0,,At points that are far enough away from the charge,
+Dialogue: 0,0:07:06.22,0:07:08.75,CHN,,0,0,0,,在距离电荷充分远的地方
+Dialogue: 0,0:07:08.75,0:07:11.85,ENG,,0,0,0,,which is where this component of the field is what dominates anyway,
+Dialogue: 0,0:07:08.75,0:07:11.85,CHN,,0,0,0,,辐射电场也远大于静电场
+Dialogue: 0,0:07:11.85,0:07:15.95,ENG,,0,0,0,,the wiggling in the field is essentially parallel to the wiggling in the charge.
+Dialogue: 0,0:07:11.85,0:07:15.95,CHN,,0,0,0,,这时电场变化的方向  基本平行于点电荷的摇摆
+Dialogue: 0,0:07:16.22,0:07:18.12,ENG,,0,0,0,,Which is why when we think about light waves,
+Dialogue: 0,0:07:16.22,0:07:18.12,CHN,,0,0,0,,这就是为什么当我们考虑光波时
+Dialogue: 0,0:07:18.22,0:07:19.97,ENG,,0,0,0,,we are safe to think about the wiggling direction
+Dialogue: 0,0:07:19.97,0:07:22.67,ENG,,0,0,0,,as being perpendicular to the propagation direction.
+Dialogue: 0,0:07:18.22,0:07:22.67,CHN,,0,0,0,,完全可以直接认为摆动方向和传播方向垂直
+Dialogue: 0,0:07:23.02,0:07:25.55,ENG,,0,0,0,,Like I said, this propagation for just one charge
+Dialogue: 0,0:07:23.02,0:07:25.55,CHN,,0,0,0,,我已经提过  单个电荷所产生的这种传播
+Dialogue: 0,0:07:25.55,0:07:29.55,ENG,,0,0,0,,is equally strong in all of the directions perpendicular to its wiggling
+Dialogue: 0,0:07:25.55,0:07:29.55,CHN,,0,0,0,,在所有与摆动相垂直的方向上都是等大的
+Dialogue: 0,0:07:29.55,0:07:30.92,ENG,,0,0,0,,and really I should emphasize
+Dialogue: 0,0:07:29.55,0:07:30.92,CHN,,0,0,0,,需要强调的是
+Dialogue: 0,0:07:30.92,0:07:34.85,ENG,,0,0,0,,that the propagation does happen in all directions of three dimensional space.
+Dialogue: 0,0:07:30.92,0:07:34.85,CHN,,0,0,0,,传播事实上发生在三维空间的所有方向上
+Dialogue: 0,0:07:36.97,0:07:39.18,ENG,,0,0,0,,It's maybe a little busy to try to illustrate
+Dialogue: 0,0:07:39.18,0:07:42.12,ENG,,0,0,0,,the full three dimensional vector field on screen like this.
+Dialogue: 0,0:07:36.97,0:07:42.12,CHN,,0,0,0,,在屏幕上展现整个三维空间的向量场非常混乱  就像这样
+Dialogue: 0,0:07:42.12,0:07:45.92,ENG,,0,0,0,,So, it's clarifying if we just focus on say the XZ plane.
+Dialogue: 0,0:07:42.12,0:07:45.92,CHN,,0,0,0,,所以  为简明起见我们关注 XZ 平面
+Dialogue: 0,0:07:46.25,0:07:49.17,ENG,,0,0,0,,Notice how the waves here are strongest in the X direction.
+Dialogue: 0,0:07:46.25,0:07:49.17,CHN,,0,0,0,,注意到这里的波在 X 方向上是最强的
+Dialogue: 0,0:07:49.40,0:07:52.12,ENG,,0,0,0,,But it still does propagate in all other directions.
+Dialogue: 0,0:07:49.40,0:07:52.12,CHN,,0,0,0,,但是它在所有其他方向上也有传播
+Dialogue: 0,0:07:52.35,0:07:54.75,ENG,,0,0,0,,It's just that that propagation gets weaker
+Dialogue: 0,0:07:54.75,0:07:57.65,ENG,,0,0,0,,in directions that are more aligned with the original wiggling.
+Dialogue: 0,0:07:52.35,0:07:57.65,CHN,,0,0,0,,只是在那些更接近原来的摆动方向的方向上  传播不那么明显
+Dialogue: 0,0:07:57.95,0:08:01.75,ENG,,0,0,0,,At the extreme, the only place where there's no propagation is in the Z axis.
+Dialogue: 0,0:07:57.95,0:08:01.75,CHN,,0,0,0,,最极端的情况是在 Z 轴  那是唯一没有波传播的地方
+Dialogue: 0,0:08:04.10,0:08:06.95,ENG,,0,0,0,,Because our law has this 1 divided by R in it,
+Dialogue: 0,0:08:04.10,0:08:06.95,CHN,,0,0,0,,因为我们的公式分母里有个 1 / r
+Dialogue: 0,0:08:07.10,0:08:09.91,ENG,,0,0,0,,the strength of the wave caused by just one particle
+Dialogue: 0,0:08:09.91,0:08:13.65,ENG,,0,0,0,,does decay as you go further away in proportion to 1 over R.
+Dialogue: 0,0:08:07.10,0:08:13.65,CHN,,0,0,0,,单一电荷产生的波强度  随距离反比下降
+Dialogue: 0,0:08:14.12,0:08:17.35,ENG,,0,0,0,,But notice what happens if I take a whole row of charges,
+Dialogue: 0,0:08:14.12,0:08:17.35,CHN,,0,0,0,,但是注意  如果我取的是一整列电荷
+Dialogue: 0,0:08:17.57,0:08:19.66,ENG,,0,0,0,,say oriented along the Y axis
+Dialogue: 0,0:08:19.66,0:08:22.85,ENG,,0,0,0,,and I have them all start wiggling up and down in the Z direction
+Dialogue: 0,0:08:17.57,0:08:22.85,CHN,,0,0,0,,比方说沿 Y 轴分布  在 Z 方向上振荡
+Dialogue: 0,0:08:23.05,0:08:26.41,ENG,,0,0,0,,and I illustrate the combined effects that all of them have
+Dialogue: 0,0:08:26.41,0:08:28.62,ENG,,0,0,0,,on this component of the electric field.
+Dialogue: 0,0:08:23.05,0:08:28.62,CHN,,0,0,0,,我画出它们对辐射电场分量的影响之和
+Dialogue: 0,0:08:29.90,0:08:34.82,ENG,,0,0,0,,The effects of all these charges interfere deconstructively along the Y direction
+Dialogue: 0,0:08:29.90,0:08:34.82,CHN,,0,0,0,,它们在 Y 方向上发生相消干涉
+Dialogue: 0,0:08:35.22,0:08:38.55,ENG,,0,0,0,,but they interfere constructively along the X direction.
+Dialogue: 0,0:08:35.22,0:08:38.55,CHN,,0,0,0,,而在 X 方向上发生相长干涉
+Dialogue: 0,0:08:38.97,0:08:40.10,ENG,,0,0,0,,This is what it looks like
+Dialogue: 0,0:08:40.10,0:08:44.00,ENG,,0,0,0,,for a beam of light to be concentrated along just one dimension.
+Dialogue: 0,0:08:38.97,0:08:44.00,CHN,,0,0,0,,这就是一束光集中在一个方向上时的情形
+Dialogue: 0,0:08:44.32,0:08:47.52,ENG,,0,0,0,,So, if you were to focus on the field just along the X axis,
+Dialogue: 0,0:08:44.32,0:08:47.52,CHN,,0,0,0,,所以  如果你专注于沿 X 轴的电场
+Dialogue: 0,0:08:48.30,0:08:51.12,ENG,,0,0,0,,instead of decaying in proportion to 1 over R,
+Dialogue: 0,0:08:48.30,0:08:51.12,CHN,,0,0,0,,它就不再与距离成反比
+Dialogue: 0,0:08:51.37,0:08:53.97,ENG,,0,0,0,,this combined effect decays much more gently.
+Dialogue: 0,0:08:51.37,0:08:53.97,CHN,,0,0,0,,这种叠加效应的衰减  要缓慢得多
+Dialogue: 0,0:08:55.50,0:08:56.33,ENG,,0,0,0,,In the extreme,
+Dialogue: 0,0:08:55.50,0:08:56.33,CHN,,0,0,0,,在极端情形下
+Dialogue: 0,0:08:56.33,0:08:58.49,ENG,,0,0,0,,you can get something arbitrarily close to those
+Dialogue: 0,0:08:58.49,0:09:01.52,ENG,,0,0,0,,pure sine wave propagations we were illustrating earlier
+Dialogue: 0,0:08:56.33,0:09:01.52,CHN,,0,0,0,,你还可以得到无限趋近于正弦波的曲线
+Dialogue: 0,0:09:01.85,0:09:03.35,ENG,,0,0,0,,if at some distance away
+Dialogue: 0,0:09:01.85,0:09:03.35,CHN,,0,0,0,,做法是  在够远的地方
+Dialogue: 0,0:09:03.35,0:09:04.93,ENG,,0,0,0,,you have a large number of charges
+Dialogue: 0,0:09:04.93,0:09:07.30,ENG,,0,0,0,,oscillating in sync with each other like this.
+Dialogue: 0,0:09:03.35,0:09:07.30,CHN,,0,0,0,,让这样一整片电荷  同步摇摆
+Dialogue: 0,0:09:07.30,0:09:08.69,ENG,,0,0,0,,One thing that's worth emphasizing
+Dialogue: 0,0:09:07.30,0:09:08.69,CHN,,0,0,0,,有一点需要强调
+Dialogue: 0,0:09:08.69,0:09:11.53,ENG,,0,0,0,,when you see light illustrated with a sine wave like this
+Dialogue: 0,0:09:08.69,0:09:11.53,CHN,,0,0,0,,当你看见像这样画成正弦波的光
+Dialogue: 0,0:09:11.53,0:09:15.17,ENG,,0,0,0,,is that even that wave is being drawn in two or three dimensions,
+Dialogue: 0,0:09:11.53,0:09:15.17,CHN,,0,0,0,,即便画的是二维或者三维的图象
+Dialogue: 0,0:09:15.17,0:09:19.77,ENG,,0,0,0,,it's only describing the electric field along a one dimensional line,
+Dialogue: 0,0:09:15.17,0:09:19.77,CHN,,0,0,0,,它也只是在描述沿着一维直线的电场
+Dialogue: 0,0:09:20.00,0:09:22.17,ENG,,0,0,0,,namely the base of all those vectors.
+Dialogue: 0,0:09:20.00,0:09:22.17,CHN,,0,0,0,,即向量的箭尾所在的直线
+Dialogue: 0,0:09:22.57,0:09:24.35,ENG,,0,0,0,,It's just that to draw the vectors,
+Dialogue: 0,0:09:22.57,0:09:24.35,CHN,,0,0,0,,只是为了画出这些向量
+Dialogue: 0,0:09:24.35,0:09:26.22,ENG,,0,0,0,,you have to venture off of that line.
+Dialogue: 0,0:09:24.35,0:09:26.22,CHN,,0,0,0,,不可避免要脱离这条直线
+Dialogue: 0,0:09:26.92,0:09:29.43,ENG,,0,0,0,,Great, so one of the last important things to highlight
+Dialogue: 0,0:09:29.43,0:09:32.87,ENG,,0,0,0,,before we get back to the sugar water is polarization.
+Dialogue: 0,0:09:26.92,0:09:32.87,CHN,,0,0,0,,好  回到糖水实验之前  我们还要谈谈偏振
+Dialogue: 0,0:09:33.10,0:09:34.30,ENG,,0,0,0,,And everything I've been showing,
+Dialogue: 0,0:09:33.10,0:09:34.30,CHN,,0,0,0,,刚刚的演示里面
+Dialogue: 0,0:09:34.37,0:09:37.70,ENG,,0,0,0,,the driving charge is just oscillating along a single direction,
+Dialogue: 0,0:09:34.37,0:09:37.70,CHN,,0,0,0,,源电荷只是沿着一个方向振荡
+Dialogue: 0,0:09:37.70,0:09:38.95,ENG,,0,0,0,,like the Z axis,
+Dialogue: 0,0:09:37.70,0:09:38.95,CHN,,0,0,0,,比方说 Z 方向
+Dialogue: 0,0:09:39.27,0:09:41.42,ENG,,0,0,0,,and this causes linearly polarized light.
+Dialogue: 0,0:09:39.27,0:09:41.42,CHN,,0,0,0,,线偏振光就是这样产生的
+Dialogue: 0,0:09:41.67,0:09:43.22,ENG,,0,0,0,,But it doesn't have to happen like that.
+Dialogue: 0,0:09:41.67,0:09:43.22,CHN,,0,0,0,,但这并非铁律
+Dialogue: 0,0:09:43.35,0:09:48.35,ENG,,0,0,0,,For example, if I set the charge rotating in a little circle along the YZ plane,
+Dialogue: 0,0:09:43.35,0:09:48.35,CHN,,0,0,0,,比方说  让电荷在 YZ 平面的一个小圆上旋转
+Dialogue: 0,0:09:48.50,0:09:52.19,ENG,,0,0,0,,meaning its acceleration vector is also rotating in a little circle,
+Dialogue: 0,0:09:48.50,0:09:52.19,CHN,,0,0,0,,那么加速度向量也同样在圆上旋转
+Dialogue: 0,0:09:52.37,0:09:54.10,ENG,,0,0,0,,notice what the field looks like.
+Dialogue: 0,0:09:52.37,0:09:54.10,CHN,,0,0,0,,注意电场长什么样
+Dialogue: 0,0:09:54.57,0:09:58.50,ENG,,0,0,0,,This is known aptly enough as circularly polarized light.
+Dialogue: 0,0:09:54.57,0:09:58.50,CHN,,0,0,0,,这就叫做圆偏振光  名字很贴切
+Dialogue: 0,0:09:58.86,0:10:02.56,ENG,,0,0,0,,Honestly, it's easiest to think about for just one point of the electric field.
+Dialogue: 0,0:09:58.86,0:10:02.56,CHN,,0,0,0,,坦率地说  只考虑电场的一点会简单不少
+Dialogue: 0,0:10:02.84,0:10:07.10,ENG,,0,0,0,,What it means for light to be circularly polarized is that at that point,
+Dialogue: 0,0:10:02.84,0:10:07.10,CHN,,0,0,0,,在这一点上  圆偏振光
+Dialogue: 0,0:10:07.10,0:10:10.44,ENG,,0,0,0,,the electric field vector is just rotating in a circle.
+Dialogue: 0,0:10:07.10,0:10:10.44,CHN,,0,0,0,,对应的电场强度也在一个圆上旋转
+Dialogue: 0,0:10:10.80,0:10:13.96,ENG,,0,0,0,,People often find circular polarization a little confusing
+Dialogue: 0,0:10:10.80,0:10:13.96,CHN,,0,0,0,,经常有人觉得圆偏振光不好理解
+Dialogue: 0,0:10:14.22,0:10:16.23,ENG,,0,0,0,,and I suspect part of the reason for that is that
+Dialogue: 0,0:10:16.23,0:10:18.96,ENG,,0,0,0,,it's hard to illustrate with static diagram,
+Dialogue: 0,0:10:14.22,0:10:18.96,CHN,,0,0,0,,我觉得原因之一是它很难用静态图示呈现
+Dialogue: 0,0:10:18.96,0:10:22.80,ENG,,0,0,0,,but also it's a little confusing when you try to think about the full electric field.
+Dialogue: 0,0:10:18.96,0:10:22.80,CHN,,0,0,0,,但另一方面  要是考虑整个电场的分布  又容易眼晕
+Dialogue: 0,0:10:23.18,0:10:26.44,ENG,,0,0,0,,For example, here's what the field looks like on the XY plane
+Dialogue: 0,0:10:26.44,0:10:29.04,ENG,,0,0,0,,when I set that little charge rotating in a circle.
+Dialogue: 0,0:10:23.18,0:10:29.04,CHN,,0,0,0,,比方说  让电荷沿圆周旋转  XY 平面上电场长这样
+Dialogue: 0,0:10:31.10,0:10:34.11,ENG,,0,0,0,,It's certainly very beautiful, I could look at this all day
+Dialogue: 0,0:10:31.10,0:10:34.11,CHN,,0,0,0,,非常漂亮  我能盯着它看一天
+Dialogue: 0,0:10:34.11,0:10:36.98,ENG,,0,0,0,,but you can understand why it might feel a little confusing.
+Dialogue: 0,0:10:34.11,0:10:36.98,CHN,,0,0,0,,但你也会发现它确实有点令人迷惑
+Dialogue: 0,0:10:37.40,0:10:39.09,ENG,,0,0,0,,The very last thing I'll mention is that
+Dialogue: 0,0:10:37.40,0:10:39.09,CHN,,0,0,0,,最后要指出的是
+Dialogue: 0,0:10:39.09,0:10:41.78,ENG,,0,0,0,,while everything here is a classical description of light,
+Dialogue: 0,0:10:39.09,0:10:41.78,CHN,,0,0,0,,虽然这里全都是对光的经典描述
+Dialogue: 0,0:10:41.78,0:10:44.82,ENG,,0,0,0,,the important points still hold up in quantum mechanics.
+Dialogue: 0,0:10:41.78,0:10:44.82,CHN,,0,0,0,,但那些要点在量子力学中依然成立
+Dialogue: 0,0:10:44.88,0:10:46.54,ENG,,0,0,0,,You still have propagating waves,
+Dialogue: 0,0:10:44.88,0:10:46.54,CHN,,0,0,0,,波依然在传播
+Dialogue: 0,0:10:46.54,0:10:49.92,ENG,,0,0,0,,there's still polarization that can be either linear or circular.
+Dialogue: 0,0:10:46.54,0:10:49.92,CHN,,0,0,0,,也有线偏振或者圆偏振
+Dialogue: 0,0:10:49.92,0:10:52.18,ENG,,0,0,0,,The main difference with quantum mechanics is that
+Dialogue: 0,0:10:49.92,0:10:52.18,CHN,,0,0,0,,量子力学下的最大不同在于
+Dialogue: 0,0:10:52.18,0:10:53.67,ENG,,0,0,0,,the energy in this wave
+Dialogue: 0,0:10:53.67,0:10:56.80,ENG,,0,0,0,,doesn't scale up and down continuously like you might expect,
+Dialogue: 0,0:10:52.18,0:10:56.80,CHN,,0,0,0,,波中的能量不是连续变化的  有些反常识
+Dialogue: 0,0:10:56.80,0:10:59.06,ENG,,0,0,0,,it comes in discrete little steps.
+Dialogue: 0,0:10:56.80,0:10:59.06,CHN,,0,0,0,,而是离散地阶跃着变化的
+Dialogue: 0,0:10:59.06,0:11:01.66,ENG,,0,0,0,,I have another video goes into more detail
+Dialogue: 0,0:10:59.06,0:11:01.66,CHN,,0,0,0,,我还有另一个视频更清楚地展现这一点
+Dialogue: 0,0:11:01.66,0:11:04.74,ENG,,0,0,0,,but for our purposes, thinking about it classically is fine.
+Dialogue: 0,0:11:01.66,0:11:04.74,CHN,,0,0,0,,但是回答我们的问题  经典的图景就够用了
+Dialogue: 0,0:11:05.44,0:11:07.68,ENG,,0,0,0,,Part of the reason I wanted to go through that is because,
+Dialogue: 0,0:11:05.44,0:11:07.68,CHN,,0,0,0,,我想讲刚才的内容的一个原因在于
+Dialogue: 0,0:11:07.68,0:11:09.48,ENG,,0,0,0,,frankly it's just very fun to animate
+Dialogue: 0,0:11:07.68,0:11:09.48,CHN,,0,0,0,,坦白说  做这些动画很有意思
+Dialogue: 0,0:11:09.48,0:11:12.06,ENG,,0,0,0,,and I like an excuse for a fundamental lesson.
+Dialogue: 0,0:11:09.48,0:11:12.06,CHN,,0,0,0,,我也乐得有借口给观众补补课
+Dialogue: 0,0:11:12.28,0:11:13.89,ENG,,0,0,0,,But now let's turn back to our demo
+Dialogue: 0,0:11:12.28,0:11:13.89,CHN,,0,0,0,,但我们先回到开始的演示实验
+Dialogue: 0,0:11:13.89,0:11:17.32,ENG,,0,0,0,,and see how we can build up an intuition for some of our key questions,
+Dialogue: 0,0:11:13.89,0:11:17.32,CHN,,0,0,0,,看看要如何建立起直觉  来回答这些关键问题
+Dialogue: 0,0:11:17.32,0:11:19.56,ENG,,0,0,0,,starting from this very basic premise that
+Dialogue: 0,0:11:17.32,0:11:19.56,CHN,,0,0,0,,而切入点就是这个很基础的前提：
+Dialogue: 0,0:11:19.56,0:11:21.51,ENG,,0,0,0,,shaking a charge in one location
+Dialogue: 0,0:11:19.56,0:11:21.51,CHN,,0,0,0,,即在一点处晃动一个电荷
+Dialogue: 0,0:11:21.51,0:11:23.94,ENG,,0,0,0,,causes a shake to another charge a little bit later.
+Dialogue: 0,0:11:21.51,0:11:23.94,CHN,,0,0,0,,另一个电荷稍后也会随之晃动
+Dialogue: 0,0:11:23.94,0:11:26.99,ENG,,0,0,0,,And let's start by actually skipping ahead to question number three:
+Dialogue: 0,0:11:23.94,0:11:26.99,CHN,,0,0,0,,我们直接跳到问题 3 来开始吧
+Dialogue: 0,0:11:26.99,0:11:29.20,ENG,,0,0,0,,why do we see the diagonal stripes?
+Dialogue: 0,0:11:26.99,0:11:29.20,CHN,,0,0,0,,为什么会看到斜的条纹呢
+Dialogue: 0,0:11:34.38,0:11:35.23,ENG,,0,0,0,,To think about this,
+Dialogue: 0,0:11:35.23,0:11:37.92,ENG,,0,0,0,,you need to imagine an observer to the side of the tube
+Dialogue: 0,0:11:34.38,0:11:37.92,CHN,,0,0,0,,要分析这个问题  首先设想管子侧面有一个观察者
+Dialogue: 0,0:11:37.92,0:11:41.30,ENG,,0,0,0,,and then for a particular pure colour, say red,
+Dialogue: 0,0:11:37.92,0:11:41.30,CHN,,0,0,0,,然后选定一个纯色  例如红色
+Dialogue: 0,0:11:41.30,0:11:44.06,ENG,,0,0,0,,if the observer looks in the tube and sees that colour,
+Dialogue: 0,0:11:41.30,0:11:44.06,CHN,,0,0,0,,如果这个观察者看向管子  可以看到这个颜色的光
+Dialogue: 0,0:11:44.06,0:11:45.85,ENG,,0,0,0,,it's because light of that colour
+Dialogue: 0,0:11:44.06,0:11:45.85,CHN,,0,0,0,,这是因为这种颜色的光
+Dialogue: 0,0:11:45.85,0:11:48.52,ENG,,0,0,0,,has bounced off something at that point in the tube
+Dialogue: 0,0:11:45.85,0:11:48.52,CHN,,0,0,0,,在管子内的这一点上发生了散射
+Dialogue: 0,0:11:48.52,0:11:51.48,ENG,,0,0,0,,and then propagated towards the eye of the observer.
+Dialogue: 0,0:11:48.52,0:11:51.48,CHN,,0,0,0,,并最终传播到观察者眼中
+Dialogue: 0,0:11:51.48,0:11:54.32,ENG,,0,0,0,,Sometimes when people talk about light bouncing off of things,
+Dialogue: 0,0:11:51.48,0:11:54.32,CHN,,0,0,0,,有时  当人们提及光的散射
+Dialogue: 0,0:11:54.32,0:11:56.25,ENG,,0,0,0,,the implied mental image
+Dialogue: 0,0:11:54.32,0:11:56.25,CHN,,0,0,0,,他们脑海中的画面
+Dialogue: 0,0:11:56.25,0:11:59.73,ENG,,0,0,0,,is something like a projectile ricocheting off of some object
+Dialogue: 0,0:11:56.25,0:11:59.73,CHN,,0,0,0,,是一个子弹之类的物体  撞上某些东西
+Dialogue: 0,0:11:59.73,0:12:01.72,ENG,,0,0,0,,heading off in some random direction.
+Dialogue: 0,0:11:59.73,0:12:01.72,CHN,,0,0,0,,并向某个随机的方向反弹
+Dialogue: 0,0:12:02.18,0:12:04.76,ENG,,0,0,0,,But the better mental image to hold in your mind is that
+Dialogue: 0,0:12:02.18,0:12:04.76,CHN,,0,0,0,,但一种更好的想象方式是
+Dialogue: 0,0:12:04.76,0:12:08.16,ENG,,0,0,0,,when the propagating light waves caused by some wiggling charge
+Dialogue: 0,0:12:04.76,0:12:08.16,CHN,,0,0,0,,当电荷振荡产生的光波在传播中
+Dialogue: 0,0:12:08.16,0:12:10.42,ENG,,0,0,0,,reach some second charge causing it to wiggle,
+Dialogue: 0,0:12:08.16,0:12:10.42,CHN,,0,0,0,,碰到了另一个电荷  使其振荡时
+Dialogue: 0,0:12:10.42,0:12:13.58,ENG,,0,0,0,,that secondary wiggle results in its own propagation.
+Dialogue: 0,0:12:10.42,0:12:13.58,CHN,,0,0,0,,次生的振荡又产生了新的光波
+Dialogue: 0,0:12:14.08,0:12:15.66,ENG,,0,0,0,,And for the animation on screen,
+Dialogue: 0,0:12:14.08,0:12:15.66,CHN,,0,0,0,,屏幕上的动画演示了
+Dialogue: 0,0:12:15.66,0:12:17.95,ENG,,0,0,0,,that propagation goes back to the first charge
+Dialogue: 0,0:12:15.66,0:12:17.95,CHN,,0,0,0,,新的光波回到第一个电荷的地方
+Dialogue: 0,0:12:17.95,0:12:20.68,ENG,,0,0,0,,which itself causes a propagation towards the second
+Dialogue: 0,0:12:17.95,0:12:20.68,CHN,,0,0,0,,并引发了向第二个电荷的光波
+Dialogue: 0,0:12:20.68,0:12:23.82,ENG,,0,0,0,,and this is what it looks like in a very simplified situation
+Dialogue: 0,0:12:20.68,0:12:23.82,CHN,,0,0,0,,在这种高度简化的情形下  这看起来
+Dialogue: 0,0:12:23.82,0:12:26.46,ENG,,0,0,0,,for light to bounce back and forth between 2 charges.
+Dialogue: 0,0:12:23.82,0:12:26.46,CHN,,0,0,0,,像光在两个电荷之间往返
+Dialogue: 0,0:12:27.22,0:12:30.25,ENG,,0,0,0,,If you have some concentrated beam of polarized light
+Dialogue: 0,0:12:27.22,0:12:30.25,CHN,,0,0,0,,如果让一束集中的偏振光
+Dialogue: 0,0:12:30.25,0:12:33.50,ENG,,0,0,0,,interacting with some charge causing it to wiggle up and down,
+Dialogue: 0,0:12:30.25,0:12:33.50,CHN,,0,0,0,,与电荷相互作用  使之上下振荡
+Dialogue: 0,0:12:33.92,0:12:37.28,ENG,,0,0,0,,then these resulting second order propagations are most strong
+Dialogue: 0,0:12:33.92,0:12:37.28,CHN,,0,0,0,,那么引发出的光波最强的方向
+Dialogue: 0,0:12:37.28,0:12:41.18,ENG,,0,0,0,,in the directions perpendicular to the direction of polarization.
+Dialogue: 0,0:12:37.28,0:12:41.18,CHN,,0,0,0,,会与偏振方向垂直
+Dialogue: 0,0:12:41.38,0:12:44.40,ENG,,0,0,0,,In some sense, you could think of light as bouncing off of that charge
+Dialogue: 0,0:12:41.38,0:12:44.40,CHN,,0,0,0,,在某种意义上  你可以认为光在那个电荷上发生了反弹
+Dialogue: 0,0:12:44.40,0:12:47.96,ENG,,0,0,0,,but the important point is that it doesn't bounce in all directions equally.
+Dialogue: 0,0:12:44.40,0:12:47.96,CHN,,0,0,0,,但关键在于  它反弹的方向是不均匀的
+Dialogue: 0,0:12:47.96,0:12:50.92,ENG,,0,0,0,,It's strongest perpendicular to the wiggle direction
+Dialogue: 0,0:12:47.96,0:12:50.92,CHN,,0,0,0,,其在与振荡方向垂直的方向上最强
+Dialogue: 0,0:12:50.92,0:12:53.46,ENG,,0,0,0,,but gets weaker in all of the other directions.
+Dialogue: 0,0:12:50.92,0:12:53.46,CHN,,0,0,0,,在其它方向上都相对弱
+Dialogue: 0,0:12:54.64,0:12:56.20,ENG,,0,0,0,,So, think about our setup.
+Dialogue: 0,0:12:54.64,0:12:56.20,CHN,,0,0,0,,因此  联系到我们的问题
+Dialogue: 0,0:12:56.20,0:12:58.20,ENG,,0,0,0,,And for a particular frequency of light,
+Dialogue: 0,0:12:56.20,0:12:58.20,CHN,,0,0,0,,对于某个特定频率的光
+Dialogue: 0,0:12:58.46,0:13:00.38,ENG,,0,0,0,,how likely it is that an observer
+Dialogue: 0,0:13:00.38,0:13:03.36,ENG,,0,0,0,,looking at a particular point in the tube will see that light.
+Dialogue: 0,0:12:58.46,0:13:03.36,CHN,,0,0,0,,看向管中某一个特定点的观察者  有多大概率能够看见光呢
+Dialogue: 0,0:13:04.10,0:13:07.80,ENG,,0,0,0,,Again, the key phenomenon with sugar water, which we have yet to explain,
+Dialogue: 0,0:13:04.10,0:13:07.80,CHN,,0,0,0,,请回想  我们还没解释的关于糖水的那个关键现象：
+Dialogue: 0,0:13:07.80,0:13:09.68,ENG,,0,0,0,,is that the polarization direction
+Dialogue: 0,0:13:07.80,0:13:09.68,CHN,,0,0,0,,光波偏振的方向
+Dialogue: 0,0:13:09.68,0:13:12.70,ENG,,0,0,0,,is slowly getting twisted as it goes down the tube.
+Dialogue: 0,0:13:09.68,0:13:12.70,CHN,,0,0,0,,在沿管子传播的时候  是逐渐扭转的
+Dialogue: 0,0:13:13.30,0:13:16.02,ENG,,0,0,0,,So, suppose the observer was looking at a point like this one
+Dialogue: 0,0:13:13.30,0:13:16.02,CHN,,0,0,0,,因此  假定观察者正在看向某个点  比如这里
+Dialogue: 0,0:13:16.26,0:13:19.30,ENG,,0,0,0,,where the polarization direction happens to be straight up and down,
+Dialogue: 0,0:13:16.26,0:13:19.30,CHN,,0,0,0,,此时偏振方向刚好直上直下
+Dialogue: 0,0:13:19.68,0:13:23.42,ENG,,0,0,0,,then the second order propagations resulting from wiggling charges at that point
+Dialogue: 0,0:13:19.68,0:13:23.42,CHN,,0,0,0,,那个点处的电荷振荡  带来的二阶的光波
+Dialogue: 0,0:13:23.54,0:13:26.82,ENG,,0,0,0,,are most strong along the plane where the observer is.
+Dialogue: 0,0:13:23.54,0:13:26.82,CHN,,0,0,0,,刚好在观察者所在的平面处达到峰值
+Dialogue: 0,0:13:27.04,0:13:30.44,ENG,,0,0,0,,So the amount of red that they see at that point would look stronger.
+Dialogue: 0,0:13:27.04,0:13:30.44,CHN,,0,0,0,,因此在那个点  他们能看到最强的红光
+Dialogue: 0,0:13:30.44,0:13:31.94,ENG,,0,0,0,,By contrast,
+Dialogue: 0,0:13:30.44,0:13:31.94,CHN,,0,0,0,,但反言之
+Dialogue: 0,0:13:31.94,0:13:34.70,ENG,,0,0,0,,if they were looking at a different point in the tube like this one
+Dialogue: 0,0:13:31.94,0:13:34.70,CHN,,0,0,0,,如果他看向另一个点  例如这个点
+Dialogue: 0,0:13:34.92,0:13:38.66,ENG,,0,0,0,,where the wiggling direction is closer to being parallel to the line of sight,
+Dialogue: 0,0:13:34.92,0:13:38.66,CHN,,0,0,0,,振荡方向和视线几乎平行
+Dialogue: 0,0:13:38.66,0:13:40.72,ENG,,0,0,0,,then the direction where the scattering is strongest
+Dialogue: 0,0:13:38.66,0:13:40.72,CHN,,0,0,0,,那么光强最大的散射方向
+Dialogue: 0,0:13:40.72,0:13:42.64,ENG,,0,0,0,,is not at all aligned with the observer
+Dialogue: 0,0:13:40.72,0:13:42.64,CHN,,0,0,0,,与观察者根本没有对齐
+Dialogue: 0,0:13:42.64,0:13:45.38,ENG,,0,0,0,,and the amount of red they see is only going to be very weak.
+Dialogue: 0,0:13:42.64,0:13:45.38,CHN,,0,0,0,,他所见的红光将会非常微弱
+Dialogue: 0,0:13:46.64,0:13:49.04,ENG,,0,0,0,,And looking at our actual physical setup,
+Dialogue: 0,0:13:46.64,0:13:49.04,CHN,,0,0,0,,在实际实验中
+Dialogue: 0,0:13:49.04,0:13:52.30,ENG,,0,0,0,,if we first pass the light through a filter showing only the red,
+Dialogue: 0,0:13:49.04,0:13:52.30,CHN,,0,0,0,,如果我们先让光线通过红色的滤光片
+Dialogue: 0,0:13:52.30,0:13:54.80,ENG,,0,0,0,,we see exactly this effect in action.
+Dialogue: 0,0:13:52.30,0:13:54.80,CHN,,0,0,0,,就能清晰地看到这种现象
+Dialogue: 0,0:13:55.00,0:13:57.56,ENG,,0,0,0,,As you scan your eyes along the tube,
+Dialogue: 0,0:13:55.00,0:13:57.56,CHN,,0,0,0,,当视线沿着管子移动时
+Dialogue: 0,0:13:57.56,0:13:59.47,ENG,,0,0,0,,the intensity of red that you see
+Dialogue: 0,0:13:59.47,0:14:02.92,ENG,,0,0,0,,goes from being high to being low where it's almost black,
+Dialogue: 0,0:13:57.56,0:14:02.92,CHN,,0,0,0,,你会看到红色逐渐变弱  直至消失
+Dialogue: 0,0:14:02.92,0:14:04.92,ENG,,0,0,0,,back to being high again.
+Dialogue: 0,0:14:02.92,0:14:04.92,CHN,,0,0,0,,然后又重新亮起来
+Dialogue: 0,0:14:06.34,0:14:07.16,ENG,,0,0,0,,As an analogy,
+Dialogue: 0,0:14:06.34,0:14:07.16,CHN,,0,0,0,,打个比方
+Dialogue: 0,0:14:07.16,0:14:09.37,ENG,,0,0,0,,imagine there was a ribbon going down the tube
+Dialogue: 0,0:14:07.16,0:14:09.37,CHN,,0,0,0,,如果有一条丝带沿着管道延伸
+Dialogue: 0,0:14:09.37,0:14:12.88,ENG,,0,0,0,,always aligned with the polarization direction for this color,
+Dialogue: 0,0:14:09.37,0:14:12.88,CHN,,0,0,0,,始终与这一颜色的偏振方向平齐
+Dialogue: 0,0:14:13.30,0:14:15.52,ENG,,0,0,0,,then putting yourself in the shoes of the observer,
+Dialogue: 0,0:14:13.30,0:14:15.52,CHN,,0,0,0,,可以想象一下作为观测者
+Dialogue: 0,0:14:15.52,0:14:18.18,ENG,,0,0,0,,when you look at points where the ribbon appears very thin,
+Dialogue: 0,0:14:15.52,0:14:18.18,CHN,,0,0,0,,丝带看起来细的位置
+Dialogue: 0,0:14:18.18,0:14:20.12,ENG,,0,0,0,,you're going to see very little red light.
+Dialogue: 0,0:14:18.18,0:14:20.12,CHN,,0,0,0,,就是红光微弱的地方
+Dialogue: 0,0:14:20.12,0:14:23.78,ENG,,0,0,0,,Whereas if you scan your eyes over the points where the ribbon appears thicker,
+Dialogue: 0,0:14:20.12,0:14:23.78,CHN,,0,0,0,,而丝带看上去宽的位置
+Dialogue: 0,0:14:23.78,0:14:25.34,ENG,,0,0,0,,you're going to see more red light.
+Dialogue: 0,0:14:23.78,0:14:25.34,CHN,,0,0,0,,就是红光更亮的地方
+Dialogue: 0,0:14:25.84,0:14:27.07,ENG,,0,0,0,,One thing that's nice about this
+Dialogue: 0,0:14:25.84,0:14:27.07,CHN,,0,0,0,,有趣的是
+Dialogue: 0,0:14:27.07,0:14:29.40,ENG,,0,0,0,,is that if we try it for various different colors,
+Dialogue: 0,0:14:27.07,0:14:29.40,CHN,,0,0,0,,如果对不同颜色的光作以上的分析
+Dialogue: 0,0:14:29.40,0:14:30.91,ENG,,0,0,0,,you can actually see
+Dialogue: 0,0:14:29.40,0:14:30.91,CHN,,0,0,0,,可以发现
+Dialogue: 0,0:14:30.91,0:14:33.76,ENG,,0,0,0,,how the twisting rates are different for each one of the colors.
+Dialogue: 0,0:14:30.91,0:14:33.76,CHN,,0,0,0,,不同色光扭转率有所不同
+Dialogue: 0,0:14:34.26,0:14:35.30,ENG,,0,0,0,,Notice with red light,
+Dialogue: 0,0:14:34.26,0:14:35.30,CHN,,0,0,0,,对于红光来说
+Dialogue: 0,0:14:35.30,0:14:37.33,ENG,,0,0,0,,the distance between where it appears brightest
+Dialogue: 0,0:14:37.33,0:14:39.82,ENG,,0,0,0,,and where it appears darkest is relatively long.
+Dialogue: 0,0:14:35.30,0:14:39.82,CHN,,0,0,0,,它看起来最亮和最暗的地方  间隔相对长
+Dialogue: 0,0:14:40.10,0:14:42.68,ENG,,0,0,0,,Whereas if you look down the colours of the rainbow,
+Dialogue: 0,0:14:40.10,0:14:42.68,CHN,,0,0,0,,如果按照彩虹的顺序看下去
+Dialogue: 0,0:14:42.80,0:14:45.91,ENG,,0,0,0,,that distance between the brightest point and the darkest point
+Dialogue: 0,0:14:45.91,0:14:47.26,ENG,,0,0,0,,gets lower and lower.
+Dialogue: 0,0:14:42.80,0:14:47.26,CHN,,0,0,0,,那么最亮和最暗处之间的距离会越来越短
+Dialogue: 0,0:14:48.86,0:14:53.10,ENG,,0,0,0,,So, what you're seeing in effect is how red light twists slowly
+Dialogue: 0,0:14:48.86,0:14:53.10,CHN,,0,0,0,,这里看到的现象  反映了红光扭转得比较慢
+Dialogue: 0,0:14:53.32,0:14:57.34,ENG,,0,0,0,,whereas light waves with higher frequencies get twisted more aggressively.
+Dialogue: 0,0:14:53.32,0:14:57.34,CHN,,0,0,0,,而更高频的光扭转得更为明显
+Dialogue: 0,0:15:01.56,0:15:02.66,ENG,,0,0,0,,But still, you might wonder
+Dialogue: 0,0:15:01.56,0:15:02.66,CHN,,0,0,0,,但你可能还是想知道
+Dialogue: 0,0:15:02.66,0:15:05.92,ENG,,0,0,0,,why the boundaries between light and dark points appear diagonal.
+Dialogue: 0,0:15:02.66,0:15:05.92,CHN,,0,0,0,,为什么亮区和暗区之间的分界线看起来是斜的
+Dialogue: 0,0:15:06.18,0:15:08.68,ENG,,0,0,0,,Why is it that in addition to having variation
+Dialogue: 0,0:15:06.18,0:15:08.68,CHN,,0,0,0,,为什么不仅在视线左右移动时
+Dialogue: 0,0:15:08.68,0:15:10.76,ENG,,0,0,0,,as you scan your eyes from left to right,
+Dialogue: 0,0:15:08.68,0:15:10.76,CHN,,0,0,0,,看到的亮度会发生变化
+Dialogue: 0,0:15:10.76,0:15:13.24,ENG,,0,0,0,,there's also variation as you scan your eyes
+Dialogue: 0,0:15:13.24,0:15:15.08,ENG,,0,0,0,,from the top of the tube to the bottom.
+Dialogue: 0,0:15:10.76,0:15:15.08,CHN,,0,0,0,,在视线上下移动时  亮度也会有变化呢
+Dialogue: 0,0:15:15.78,0:15:18.60,ENG,,0,0,0,,This has less to do with what's going on in the tube
+Dialogue: 0,0:15:15.78,0:15:18.60,CHN,,0,0,0,,这就和管子里的事情关系不大了
+Dialogue: 0,0:15:18.60,0:15:20.80,ENG,,0,0,0,,and more to do with a matter of perspective.
+Dialogue: 0,0:15:18.60,0:15:20.80,CHN,,0,0,0,,这是视角的问题
+Dialogue: 0,0:15:21.36,0:15:22.50,ENG,,0,0,0,,Take a moment to think about
+Dialogue: 0,0:15:21.36,0:15:22.50,CHN,,0,0,0,,想象一下
+Dialogue: 0,0:15:22.50,0:15:24.56,ENG,,0,0,0,,many different parallel beams of light
+Dialogue: 0,0:15:24.56,0:15:26.74,ENG,,0,0,0,,ranging from the top of the tube to the bottom.
+Dialogue: 0,0:15:22.50,0:15:26.74,CHN,,0,0,0,,许多束平行的光  从上到下布满整个管子
+Dialogue: 0,0:15:27.08,0:15:30.15,ENG,,0,0,0,,At the beginning, all of these light waves are wiggling up and down
+Dialogue: 0,0:15:27.08,0:15:30.15,CHN,,0,0,0,,一开始  所有光线都在上下振荡
+Dialogue: 0,0:15:30.15,0:15:31.72,ENG,,0,0,0,,and as you pass through the tube
+Dialogue: 0,0:15:30.15,0:15:31.72,CHN,,0,0,0,,在光线穿过管道时
+Dialogue: 0,0:15:31.72,0:15:35.08,ENG,,0,0,0,,and the effects of the sugar water somehow twists these directions
+Dialogue: 0,0:15:31.72,0:15:35.08,CHN,,0,0,0,,糖水以某种方式将它们的振荡方向扭转
+Dialogue: 0,0:15:35.08,0:15:37.66,ENG,,0,0,0,,because they are all passing through the same amount of sugar,
+Dialogue: 0,0:15:35.08,0:15:37.66,CHN,,0,0,0,,因为它们通过的糖水的量相同
+Dialogue: 0,0:15:37.66,0:15:39.66,ENG,,0,0,0,,they are getting twisted by the same amounts.
+Dialogue: 0,0:15:37.66,0:15:39.66,CHN,,0,0,0,,所以扭转的幅度也相同
+Dialogue: 0,0:15:39.66,0:15:43.96,ENG,,0,0,0,,So, at all points, the polarization of these waves are parallel to each other.
+Dialogue: 0,0:15:39.66,0:15:43.96,CHN,,0,0,0,,于是  在每一点上  这些波的偏振方向相互平行
+Dialogue: 0,0:15:44.54,0:15:47.44,ENG,,0,0,0,,If you are the observer and you look at the top most point here,
+Dialogue: 0,0:15:44.54,0:15:47.44,CHN,,0,0,0,,如果你是观察者  当你看到最上面
+Dialogue: 0,0:15:47.44,0:15:50.86,ENG,,0,0,0,,its wiggling direction is essentially parallel to the line of sight.
+Dialogue: 0,0:15:47.44,0:15:50.86,CHN,,0,0,0,,这一点处光的振荡方向与视线平行
+Dialogue: 0,0:15:51.16,0:15:53.13,ENG,,0,0,0,,So the light scattering from that point
+Dialogue: 0,0:15:51.16,0:15:53.13,CHN,,0,0,0,,因此那一点散射出的光线
+Dialogue: 0,0:15:53.13,0:15:55.10,ENG,,0,0,0,,is basically not going to reach your eyes at all.
+Dialogue: 0,0:15:53.13,0:15:55.10,CHN,,0,0,0,,基本就不会到达你的眼中
+Dialogue: 0,0:15:55.10,0:15:56.34,ENG,,0,0,0,,It should appear black.
+Dialogue: 0,0:15:55.10,0:15:56.34,CHN,,0,0,0,,那么看起来就是黑的
+Dialogue: 0,0:15:56.64,0:15:58.68,ENG,,0,0,0,,But if you scan your eyes down the tube,
+Dialogue: 0,0:15:56.64,0:15:58.68,CHN,,0,0,0,,但当你逐渐向下看
+Dialogue: 0,0:15:58.68,0:16:02.22,ENG,,0,0,0,,the angle between the line of sight and the wiggling direction changes
+Dialogue: 0,0:15:58.68,0:16:02.22,CHN,,0,0,0,,视线和振荡方向的夹角发生改变
+Dialogue: 0,0:16:02.22,0:16:04.80,ENG,,0,0,0,,and so there will be at least some component of red light
+Dialogue: 0,0:16:04.80,0:16:06.12,ENG,,0,0,0,,scattering towards the eye.
+Dialogue: 0,0:16:02.22,0:16:06.12,CHN,,0,0,0,,至少有一部分红光能散射入你的眼睛
+Dialogue: 0,0:16:06.40,0:16:08.72,ENG,,0,0,0,,So, as you scan your eyes from top to bottom,
+Dialogue: 0,0:16:06.40,0:16:08.72,CHN,,0,0,0,,因此  当你从上往下扫视的时候
+Dialogue: 0,0:16:08.72,0:16:11.82,ENG,,0,0,0,,the amount of a particular color you see might vary,
+Dialogue: 0,0:16:08.72,0:16:11.82,CHN,,0,0,0,,你看到的颜色的光强也在变化
+Dialogue: 0,0:16:11.82,0:16:13.14,ENG,,0,0,0,,say from dark to light.
+Dialogue: 0,0:16:11.82,0:16:13.14,CHN,,0,0,0,,例如这样从暗到亮
+Dialogue: 0,0:16:14.88,0:16:16.64,ENG,,0,0,0,,The full demo that has white light
+Dialogue: 0,0:16:14.88,0:16:16.64,CHN,,0,0,0,,实验用白光进行展示
+Dialogue: 0,0:16:16.64,0:16:19.78,ENG,,0,0,0,,is basically a combination of all these pure colour patterns
+Dialogue: 0,0:16:16.64,0:16:19.78,CHN,,0,0,0,,也就是所有色光的混合
+Dialogue: 0,0:16:19.92,0:16:21.45,ENG,,0,0,0,,that go from light to dark to light
+Dialogue: 0,0:16:19.92,0:16:21.45,CHN,,0,0,0,,因此从亮到暗再到亮
+Dialogue: 0,0:16:21.45,0:16:25.00,ENG,,0,0,0,,with diagonal boundaries between the intense points and the weak points.
+Dialogue: 0,0:16:21.45,0:16:25.00,CHN,,0,0,0,,亮暗之间分界线是斜的
+Dialogue: 0,0:16:25.12,0:16:29.44,ENG,,0,0,0,,Hence why you see diagonal boundaries between the colours inside the tube.
+Dialogue: 0,0:16:25.12,0:16:29.44,CHN,,0,0,0,,所以你才会在不同颜色之间  看到斜的分界线
+Dialogue: 0,0:16:31.28,0:16:33.88,ENG,,0,0,0,,And now at last let's turn to the heart of the matter
+Dialogue: 0,0:16:31.28,0:16:33.88,CHN,,0,0,0,,最后我们回到核心问题
+Dialogue: 0,0:16:33.88,0:16:36.87,ENG,,0,0,0,,and try to explain why interactions with sugar
+Dialogue: 0,0:16:36.87,0:16:39.58,ENG,,0,0,0,,would make light twist like this in the first place.
+Dialogue: 0,0:16:33.88,0:16:39.58,CHN,,0,0,0,,为什么偏振光遇上了糖  会发生这样的扭转
+Dialogue: 0,0:16:39.90,0:16:41.13,ENG,,0,0,0,,It's related to the idea that
+Dialogue: 0,0:16:41.13,0:16:44.64,ENG,,0,0,0,,light seems to slow down as it passes through a given medium.
+Dialogue: 0,0:16:39.90,0:16:44.64,CHN,,0,0,0,,这与光在介质中传播时速度看似变慢有关
+Dialogue: 0,0:16:44.64,0:16:48.42,ENG,,0,0,0,,For example, if you look at the crests of a light wave as it goes into water,
+Dialogue: 0,0:16:44.64,0:16:48.42,CHN,,0,0,0,,如果你仔细观察光的波峰
+Dialogue: 0,0:16:48.42,0:16:53.36,ENG,,0,0,0,,the crests through the water are travelling about 1.33 times slower
+Dialogue: 0,0:16:53.36,0:16:55.96,ENG,,0,0,0,,than the crest of that wave would travel in a vacuum.
+Dialogue: 0,0:16:48.42,0:16:55.96,CHN,,0,0,0,,波峰在水中传播时会比在真空中时慢大约1.33倍
+Dialogue: 0,0:16:56.14,0:16:59.16,ENG,,0,0,0,,This number is what's called the "Index of Refraction" for water.
+Dialogue: 0,0:16:56.14,0:16:59.16,CHN,,0,0,0,,这个比例就是水的折射率
+Dialogue: 0,0:16:59.56,0:17:03.66,ENG,,0,0,0,,In a bit, what I'd like to show is how this index of refraction can be explained
+Dialogue: 0,0:16:59.56,0:17:03.66,CHN,,0,0,0,,以后我会介绍  解释折射率这一概念的一个方法是
+Dialogue: 0,0:17:03.66,0:17:08.26,ENG,,0,0,0,,by analyzing how the initial light wave shakes all the charges in the material
+Dialogue: 0,0:17:03.66,0:17:08.26,CHN,,0,0,0,,去分析入射光波对材料中电荷的振荡
+Dialogue: 0,0:17:08.26,0:17:10.93,ENG,,0,0,0,,and how the resulting second order propagations
+Dialogue: 0,0:17:10.93,0:17:13.70,ENG,,0,0,0,,super impose with that original light wave.
+Dialogue: 0,0:17:08.26,0:17:13.70,CHN,,0,0,0,,以及由此产生的二阶的传播  是怎样与原始光波叠加的
+Dialogue: 0,0:17:14.12,0:17:18.20,ENG,,0,0,0,,For right now I'll just say that the interactions with each layer of the material
+Dialogue: 0,0:17:14.12,0:17:18.20,CHN,,0,0,0,,但眼下我们只需要知道  与每层介质的作用
+Dialogue: 0,0:17:18.20,0:17:22.60,ENG,,0,0,0,,ends up having the effect of slightly shifting back the phase of the wave.
+Dialogue: 0,0:17:18.20,0:17:22.60,CHN,,0,0,0,,会使光的相位略微滞后
+Dialogue: 0,0:17:22.60,0:17:25.34,ENG,,0,0,0,,And on the whole, this gives the overall appearance
+Dialogue: 0,0:17:22.60,0:17:25.34,CHN,,0,0,0,,整体而言  看起来就像
+Dialogue: 0,0:17:25.34,0:17:28.78,ENG,,0,0,0,,that that wave moves slower as it passes through the material.
+Dialogue: 0,0:17:25.34,0:17:28.78,CHN,,0,0,0,,光波在材料中传播时变慢了
+Dialogue: 0,0:17:30.76,0:17:33.24,ENG,,0,0,0,,Skipping ahead to what's going on with sugar,
+Dialogue: 0,0:17:30.76,0:17:33.24,CHN,,0,0,0,,我们先去讲讲糖的事
+Dialogue: 0,0:17:33.24,0:17:35.67,ENG,,0,0,0,,the relevant property of sucrose here is that
+Dialogue: 0,0:17:33.24,0:17:35.67,CHN,,0,0,0,,蔗糖在这个过程中起作用的性质
+Dialogue: 0,0:17:35.67,0:17:37.86,ENG,,0,0,0,,it's what's called a chiral molecule.
+Dialogue: 0,0:17:35.67,0:17:37.86,CHN,,0,0,0,,是蔗糖分子的手性
+Dialogue: 0,0:17:37.86,0:17:40.94,ENG,,0,0,0,,Meaning it's fundamentally different from its mirror image.
+Dialogue: 0,0:17:37.86,0:17:40.94,CHN,,0,0,0,,手性指的是一个分子和它的镜像截然不同
+Dialogue: 0,0:17:40.94,0:17:44.74,ENG,,0,0,0,,You could never reorient it in space to become identical to its mirror image.
+Dialogue: 0,0:17:40.94,0:17:44.74,CHN,,0,0,0,,不管你再怎么进行平移与旋转  都不会相同
+Dialogue: 0,0:17:44.74,0:17:46.90,ENG,,0,0,0,,It's like a left hand or a right hand.
+Dialogue: 0,0:17:44.74,0:17:46.90,CHN,,0,0,0,,就像你的左手和右手
+Dialogue: 0,0:17:47.28,0:17:50.90,ENG,,0,0,0,,Or another much simpler example of a chiral shape is a spiral.
+Dialogue: 0,0:17:47.28,0:17:50.90,CHN,,0,0,0,,另一个更简单明了的例子是这个螺旋形状
+Dialogue: 0,0:17:51.18,0:17:53.28,ENG,,0,0,0,,If I take this right handed spiral,
+Dialogue: 0,0:17:51.18,0:17:53.28,CHN,,0,0,0,,这里有一个右手螺旋
+Dialogue: 0,0:17:53.28,0:17:56.21,ENG,,0,0,0,,then its mirror image is a left handed spiral
+Dialogue: 0,0:17:53.28,0:17:56.21,CHN,,0,0,0,,它的镜像  是左手螺旋
+Dialogue: 0,0:17:56.21,0:17:59.12,ENG,,0,0,0,,and no matter how you try to rotate and reorient that first one,
+Dialogue: 0,0:17:56.21,0:17:59.12,CHN,,0,0,0,,不论你怎样旋转和翻转第一个螺旋
+Dialogue: 0,0:17:59.12,0:18:01.30,ENG,,0,0,0,,it will never become identical to the second.
+Dialogue: 0,0:17:59.12,0:18:01.30,CHN,,0,0,0,,它都不可能变得和第二个一样
+Dialogue: 0,0:18:03.80,0:18:08.12,ENG,,0,0,0,,What's going on then is that the presence of a chiral molecule in the water like this
+Dialogue: 0,0:18:03.80,0:18:08.12,CHN,,0,0,0,,我们在水中加入蔗糖这种手性分子时
+Dialogue: 0,0:18:08.26,0:18:11.64,ENG,,0,0,0,,introduces an asymmetry when it comes to interactions with light,
+Dialogue: 0,0:18:08.26,0:18:11.64,CHN,,0,0,0,,就在与光的作用中引入了非对称性
+Dialogue: 0,0:18:11.92,0:18:14.44,ENG,,0,0,0,,specifically circularly polarized light.
+Dialogue: 0,0:18:11.92,0:18:14.44,CHN,,0,0,0,,特别是对圆偏振光而言
+Dialogue: 0,0:18:15.00,0:18:18.40,ENG,,0,0,0,,It turns out that the amount this chiral molecule slows down,
+Dialogue: 0,0:18:15.00,0:18:18.40,CHN,,0,0,0,,这种手性分子会让圆偏振光变慢
+Dialogue: 0,0:18:18.40,0:18:21.02,ENG,,0,0,0,,say left handed circularly polarized light,
+Dialogue: 0,0:18:18.40,0:18:21.02,CHN,,0,0,0,,但左旋圆偏振光变慢的程度
+Dialogue: 0,0:18:21.34,0:18:25.70,ENG,,0,0,0,,is different from the amount that it slows down right handed circularly polarized light.
+Dialogue: 0,0:18:21.34,0:18:25.70,CHN,,0,0,0,,和右旋圆偏振光变慢的程度是不同的
+Dialogue: 0,0:18:26.08,0:18:29.46,ENG,,0,0,0,,Effectively, there is not one index of refraction but two.
+Dialogue: 0,0:18:26.08,0:18:29.46,CHN,,0,0,0,,可以说  折射率不只有一个  而是有两个
+Dialogue: 0,0:18:30.50,0:18:33.08,ENG,,0,0,0,,Now, you might say that seems irrelevant to our setup.
+Dialogue: 0,0:18:30.50,0:18:33.08,CHN,,0,0,0,,你可能会觉得  这与我们的实验不相关啊
+Dialogue: 0,0:18:33.08,0:18:36.68,ENG,,0,0,0,,Since we are very deliberately shining in linearly polarized light,
+Dialogue: 0,0:18:33.08,0:18:36.68,CHN,,0,0,0,,因为我们照明时有意使用了线偏振光
+Dialogue: 0,0:18:36.68,0:18:39.30,ENG,,0,0,0,,there is no circularly polarized light
+Dialogue: 0,0:18:36.68,0:18:39.30,CHN,,0,0,0,,而不是圆偏振光
+Dialogue: 0,0:18:39.30,0:18:42.23,ENG,,0,0,0,,but actually there is a sense in which linearly polarized light
+Dialogue: 0,0:18:39.30,0:18:42.23,CHN,,0,0,0,,但其实  在某种意义下  线偏振光就是
+Dialogue: 0,0:18:42.23,0:18:46.20,ENG,,0,0,0,,is equal parts left handed and right handed circularly polarized light.
+Dialogue: 0,0:18:42.23,0:18:46.20,CHN,,0,0,0,,由等量的左旋和右旋的圆偏振光组成的
+Dialogue: 0,0:18:47.44,0:18:48.77,ENG,,0,0,0,,Here, focus your attention on
+Dialogue: 0,0:18:48.77,0:18:52.30,ENG,,0,0,0,,just one vector in this wave wiggling straight up and down,
+Dialogue: 0,0:18:47.44,0:18:52.30,CHN,,0,0,0,,注意观察在波中直上直下的这一个向量
+Dialogue: 0,0:18:52.30,0:18:55.16,ENG,,0,0,0,,which is to say polarized in the Z direction.
+Dialogue: 0,0:18:52.30,0:18:55.16,CHN,,0,0,0,,它在沿Z方向偏振
+Dialogue: 0,0:18:56.06,0:19:00.92,ENG,,0,0,0,,Notice how it's possible to express this vector as a sum of two rotating vectors.
+Dialogue: 0,0:18:56.06,0:19:00.92,CHN,,0,0,0,,这个向量可以表示为两个正在旋转的向量之和
+Dialogue: 0,0:19:01.22,0:19:04.43,ENG,,0,0,0,,One of them rotating at a constant rate counterclockwise
+Dialogue: 0,0:19:01.22,0:19:04.43,CHN,,0,0,0,,它们以固定的速率  一个顺时针转
+Dialogue: 0,0:19:04.43,0:19:06.64,ENG,,0,0,0,,and the other one rotating clockwise.
+Dialogue: 0,0:19:04.43,0:19:06.64,CHN,,0,0,0,,一个逆时针转
+Dialogue: 0,0:19:07.86,0:19:09.64,ENG,,0,0,0,,Adding them together, tip to tail,
+Dialogue: 0,0:19:07.86,0:19:09.64,CHN,,0,0,0,,首尾相接向量相加
+Dialogue: 0,0:19:09.64,0:19:11.96,ENG,,0,0,0,,results in a vector oscillating on a line.
+Dialogue: 0,0:19:09.64,0:19:11.96,CHN,,0,0,0,,得到的就是沿一条线振荡的向量
+Dialogue: 0,0:19:13.86,0:19:15.58,ENG,,0,0,0,,In this case, it's a vertical line
+Dialogue: 0,0:19:13.86,0:19:15.58,CHN,,0,0,0,,这里我们展示了垂直方向的线
+Dialogue: 0,0:19:15.58,0:19:17.20,ENG,,0,0,0,,but that direction can change
+Dialogue: 0,0:19:17.20,0:19:19.92,ENG,,0,0,0,,based on the phase of the two vectors we're adding together.
+Dialogue: 0,0:19:15.58,0:19:19.92,CHN,,0,0,0,,但振荡方向可以根据两个旋转向量的相位而变化
+Dialogue: 0,0:19:20.32,0:19:22.04,ENG,,0,0,0,,Here, let me throw up a couple labels
+Dialogue: 0,0:19:22.04,0:19:25.84,ENG,,0,0,0,,to keep track of how much each one of those two vectors has rotated in total
+Dialogue: 0,0:19:20.32,0:19:25.84,CHN,,0,0,0,,现在我们来记录一下  两个向量分别转了多少
+Dialogue: 0,0:19:25.84,0:19:30.16,ENG,,0,0,0,,and then every now and then, I'm going to slow down that first vector a little bit
+Dialogue: 0,0:19:25.84,0:19:30.16,CHN,,0,0,0,,并且时不时  我会把第一个向量的转速调慢一点
+Dialogue: 0,0:19:30.16,0:19:32.16,ENG,,0,0,0,,and I want you to notice what happens to their sum.
+Dialogue: 0,0:19:30.16,0:19:32.16,CHN,,0,0,0,,来看看它们的和会怎样变化
+Dialogue: 0,0:19:36.54,0:19:38.14,ENG,,0,0,0,,Well, every time I slow it down,
+Dialogue: 0,0:19:36.54,0:19:38.14,CHN,,0,0,0,,每次减慢向量的转速
+Dialogue: 0,0:19:38.14,0:19:40.80,ENG,,0,0,0,,effectively knocking back its phase a little bit,
+Dialogue: 0,0:19:38.14,0:19:40.80,CHN,,0,0,0,,也等效于滞后其相位
+Dialogue: 0,0:19:41.18,0:19:45.58,ENG,,0,0,0,,it causes the linearly wiggling sum to wiggle in a slightly different direction.
+Dialogue: 0,0:19:41.18,0:19:45.58,CHN,,0,0,0,,都会让这个线性振荡的和向量  方向稍微改变
+Dialogue: 0,0:19:46.28,0:19:51.18,ENG,,0,0,0,,So, if the circularly polarized light wave represented by that left vector
+Dialogue: 0,0:19:46.28,0:19:51.18,CHN,,0,0,0,,所以当一种圆偏振光  也就是画在左侧的向量
+Dialogue: 0,0:19:51.32,0:19:54.84,ENG,,0,0,0,,gets slowed down a little bit every time it runs across a sugar molecule
+Dialogue: 0,0:19:51.32,0:19:54.84,CHN,,0,0,0,,被每个它经过的糖分子减速后
+Dialogue: 0,0:19:55.10,0:19:59.12,ENG,,0,0,0,,or at least slow down more than its oppositely rotating counterpart would,
+Dialogue: 0,0:19:55.10,0:19:59.12,CHN,,0,0,0,,或者说  相对于反向旋转的偏振光  减速更多时
+Dialogue: 0,0:19:59.36,0:20:03.70,ENG,,0,0,0,,the effect on the sum is to slowly rotate the direction of linear polarization.
+Dialogue: 0,0:19:59.36,0:20:03.70,CHN,,0,0,0,,两种圆偏振光之和形成的线偏振光  就会跟着缓慢旋转
+Dialogue: 0,0:20:04.08,0:20:07.08,ENG,,0,0,0,,And hence, as you look at slices further and further down the tube,
+Dialogue: 0,0:20:04.08,0:20:07.08,CHN,,0,0,0,,因此  我们在更靠后的截面上观察这束光时
+Dialogue: 0,0:20:07.32,0:20:09.96,ENG,,0,0,0,,the polarization direction does indeed get twisted
+Dialogue: 0,0:20:09.96,0:20:11.68,ENG,,0,0,0,,the way we were describing earlier
+Dialogue: 0,0:20:07.32,0:20:11.68,CHN,,0,0,0,,就发现偏振方向果然以我们所描述的方式  发生了偏转
+Dialogue: 0,0:20:11.68,0:20:13.57,ENG,,0,0,0,,representing how the composite effects with
+Dialogue: 0,0:20:13.57,0:20:15.50,ENG,,0,0,0,,many many many different sugar molecules
+Dialogue: 0,0:20:11.68,0:20:15.50,CHN,,0,0,0,,这说明许许多多糖分子的叠加效应
+Dialogue: 0,0:20:15.50,0:20:19.30,ENG,,0,0,0,,are slightly different for left handed light than they are for right handed light.
+Dialogue: 0,0:20:15.50,0:20:19.30,CHN,,0,0,0,,对左旋和右旋的圆偏振光  确实略有区别
+Dialogue: 0,0:20:20.16,0:20:23.38,ENG,,0,0,0,,As a nice way to test whether you understood everything up to this point,
+Dialogue: 0,0:20:20.16,0:20:23.38,CHN,,0,0,0,,作为一个测试你理解程度的小例子
+Dialogue: 0,0:20:23.38,0:20:27.70,ENG,,0,0,0,,see if just by looking at the direction of the diagonal slices on our tube,
+Dialogue: 0,0:20:23.38,0:20:27.70,CHN,,0,0,0,,你能通过观察我们管子的斜面
+Dialogue: 0,0:20:27.70,0:20:31.00,ENG,,0,0,0,,you can deduce which kind of light the sugar is slowing down more.
+Dialogue: 0,0:20:27.70,0:20:31.00,CHN,,0,0,0,,来判断对糖水而言  哪种光更慢吗
+Dialogue: 0,0:20:31.00,0:20:33.00,ENG,,0,0,0,,Left handed light or right handed light.
+Dialogue: 0,0:20:31.00,0:20:33.00,CHN,,0,0,0,,是左旋  还是右旋  的圆偏振光呢
+Dialogue: 0,0:20:36.00,0:20:39.12,ENG,,0,0,0,,I'll call this a partial answer to our question number one
+Dialogue: 0,0:20:36.00,0:20:39.12,CHN,,0,0,0,,我想这算是对问题 1 的部分解答
+Dialogue: 0,0:20:39.12,0:20:40.96,ENG,,0,0,0,,because it still leaves us wondering
+Dialogue: 0,0:20:39.12,0:20:40.96,CHN,,0,0,0,,毕竟我们还没有说清楚
+Dialogue: 0,0:20:40.96,0:20:43.38,ENG,,0,0,0,,why there is an index of refraction in the first place
+Dialogue: 0,0:20:40.96,0:20:43.38,CHN,,0,0,0,,首先为什么会有折射率这回事
+Dialogue: 0,0:20:43.38,0:20:46.83,ENG,,0,0,0,,and how exactly it might depend on the polarization of the light
+Dialogue: 0,0:20:43.38,0:20:46.83,CHN,,0,0,0,,也没有解释  为什么折射率与偏振有关
+Dialogue: 0,0:20:46.83,0:20:48.88,ENG,,0,0,0,,not just the material it's passing through.
+Dialogue: 0,0:20:46.83,0:20:48.88,CHN,,0,0,0,,而不只是跟介质的材料有关
+Dialogue: 0,0:20:49.26,0:20:50.76,ENG,,0,0,0,,Also, like I said at the start,
+Dialogue: 0,0:20:49.26,0:20:50.76,CHN,,0,0,0,,以及我开头时也说过
+Dialogue: 0,0:20:50.76,0:20:54.46,ENG,,0,0,0,,a robust enough intuition here should also answer for us
+Dialogue: 0,0:20:50.76,0:20:54.46,CHN,,0,0,0,,一个足够好的直觉猜测  应当包含
+Dialogue: 0,0:20:54.46,0:20:58.28,ENG,,0,0,0,,why the strength of this effect would depend on the frequency of the light.
+Dialogue: 0,0:20:54.46,0:20:58.28,CHN,,0,0,0,,为什么这种效应  还和光的频率有关
+Dialogue: 0,0:20:58.56,0:21:01.48,ENG,,0,0,0,,At this point, I think we've covered quite enough for one video,
+Dialogue: 0,0:20:58.56,0:21:01.48,CHN,,0,0,0,,但就一期视频而言  我们已经讲得足够多了
+Dialogue: 0,0:21:01.48,0:21:05.29,ENG,,0,0,0,,so I'll pull out a discussion covering the origins of the index of refraction
+Dialogue: 0,0:21:05.29,0:21:06.52,ENG,,0,0,0,,to a separate video.
+Dialogue: 0,0:21:01.48,0:21:06.52,CHN,,0,0,0,,所以我们将在另一期视频中  讨论折射率的来源

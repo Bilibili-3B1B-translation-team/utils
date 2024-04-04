@@ -1,0 +1,1093 @@
+[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.601
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ENG,Inter,50,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0.5,0,1,3,3,2,15,15,3,1
+Style: ZH,MonyharOS Sans SC Medium,66,&H00FFFFFF,&H0055060A,&H0055060A,&H00000000,-1,0,0,0,100,100,1,0,1,4.5,3,2,15,15,60,1
+Style: Staff,MonyharOS Sans SC Medium,50,&H00FFFFFF,&H0055060A,&H00AE9B5F,&H00000000,0,0,0,0,100,100,0,0,1,3,3,8,10,10,30,1
+Style: comment,华文中宋,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,ENG,,0,0,0,,[Part 1, 0:00 - 6:25]
+Dialogue: 0,0:00:00.00,0:00:10.00,Staff,,0,0,0,,{\fad(1000,1000)}{\an8\fs56\3c&H1063A4&}翻译   {\3c&HB0965A&} Saniac, Ling, ZSC   {\3c&H1063A4&}校对   {\3c&HB0965A&} ksyx  \N{\3c&H1063A4&}   时间轴   {\3c&HB0965A&} 博美子   {\3c&H1063A4&}
+Dialogue: 0,0:00:00.00,0:00:03.88,ENG,,0,0,0,,I realized recently that I didn't really understand how a prism works,
+Dialogue: 0,0:00:00.00,0:00:03.88,ZH,,0,0,0,,最近我发现自己并没有真正理解棱镜是怎么工作的
+Dialogue: 0,0:00:03.88,0:00:06.46,ENG,,0,0,0,,and I suspect most people out there don't either.
+Dialogue: 0,0:00:03.88,0:00:06.46,ZH,,0,0,0,,我猜大多数人也不大理解
+Dialogue: 0,0:00:11.34,0:00:15.55,ENG,,0,0,0,,Arguably this is one of the most widely recognized physics experiments ever.
+Dialogue: 0,0:00:11.34,0:00:15.55,ZH,,0,0,0,,从某种意义上来说 这是最广为人知的物理实验之一
+Dialogue: 0,0:00:15.55,0:00:19.43,ENG,,0,0,0,,After all, how many others have earned a place as an iconic album cover?
+Dialogue: 0,0:00:15.55,0:00:19.43,ZH,,0,0,0,,毕竟 有多少实验能成为专辑封面呢？
+Dialogue: 0,0:00:19.71,0:00:24.12,ENG,,0,0,0,,Sure, some of Pink Floyd's design choices run completely contrary to the actual physics.
+Dialogue: 0,0:00:19.71,0:00:24.12,ZH,,0,0,0,,当然 Pink Floyd 的一些设计是违背物理学规律的
+Dialogue: 0,0:00:24.12,0:00:27.51,ENG,,0,0,0,,Like why did they make the light inside the prism white?
+Dialogue: 0,0:00:24.12,0:00:27.51,ZH,,0,0,0,,比如说 为什么要把棱镜里的光设计成白色呢？
+Dialogue: 0,0:00:27.51,0:00:31.13,ENG,,0,0,0,,And bafflingly, why would you draw all the colors as a discrete set,
+Dialogue: 0,0:00:27.51,0:00:31.13,ZH,,0,0,0,,更令人费解的是 为什么要像小孩子画彩虹一样
+Dialogue: 0,0:00:31.13,0:00:33.13,ENG,,0,0,0,,like a child making a rainbow,
+Dialogue: 0,0:00:31.13,0:00:33.13,ZH,,0,0,0,,把所有颜色画成离散的呢
+Dialogue: 0,0:00:33.13,0:00:37.15,ENG,,0,0,0,,despite the fact that one of the key points in Newton's original experiment involving prisms
+Dialogue: 0,0:00:33.13,0:00:37.15,ZH,,0,0,0,,要知道牛顿棱镜实验的一个关键点
+Dialogue: 0,0:00:37.15,0:00:40.38,ENG,,0,0,0,,was that sunlight contains a continuous spectrum of colors?
+Dialogue: 0,0:00:37.15,0:00:40.38,ZH,,0,0,0,,就是太阳光包含了连续的光谱
+Dialogue: 0,0:00:40.92,0:00:44.67,ENG,,0,0,0,,Still, setting that aside, it's cool that it's in pop culture at all,
+Dialogue: 0,0:00:40.92,0:00:44.67,ZH,,0,0,0,,但不管怎样 这个实验能在流行文化中出现就已经很酷了
+Dialogue: 0,0:00:44.67,0:00:48.56,ENG,,0,0,0,,and any self-respecting physics enthusiast should know how it works,
+Dialogue: 0,0:00:44.67,0:00:48.56,ZH,,0,0,0,,而且每个合格的物理爱好者  都应该知道它是怎么工作的
+Dialogue: 0,0:00:48.56,0:00:53.18,ENG,,0,0,0,,but the thing I realized is that my understanding hit a wall pretty quickly if pressed.
+Dialogue: 0,0:00:48.56,0:00:53.18,ZH,,0,0,0,,但我发现  如果深究起来  我的理解很快就会遇到瓶颈
+Dialogue: 0,0:00:53.18,0:00:54.98,ENG,,0,0,0,,You see, the standard explanation,
+Dialogue: 0,0:00:53.18,0:00:54.98,ZH,,0,0,0,,你想  常规的解释
+Dialogue: 0,0:00:54.98,0:00:59.66,ENG,,0,0,0,,what you might hear in a high school physics class for example, goes something like this.
+Dialogue: 0,0:00:54.98,0:00:59.66,ZH,,0,0,0,,例如高中物理课上教的  可能会说
+Dialogue: 0,0:01:00.26,0:01:04.18,ENG,,0,0,0,,When light enters a medium, like glass, it slows down,
+Dialogue: 0,0:01:00.26,0:01:04.18,ZH,,0,0,0,,光在进入诸如玻璃的介质时会减速
+Dialogue: 0,0:01:04.18,0:01:06.88,ENG,,0,0,0,,in the sense that if you look at the crests of the wave,
+Dialogue: 0,0:01:04.18,0:01:06.88,ZH,,0,0,0,,也就是说  这些光波的波峰
+Dialogue: 0,0:01:06.88,0:01:10.24,ENG,,0,0,0,,in a vacuum those crests are traveling at c, the speed of light,
+Dialogue: 0,0:01:06.88,0:01:10.24,ZH,,0,0,0,,在真空中会以光速 c 传播
+Dialogue: 0,0:01:10.64,0:01:14.16,ENG,,0,0,0,,but inside the glass those crests will be traveling a little bit slower.
+Dialogue: 0,0:01:10.64,0:01:14.16,ZH,,0,0,0,,而在玻璃中则会传播得稍微慢一点
+Dialogue: 0,0:01:14.65,0:01:16.33,ENG,,0,0,0,,And the specific ratio
+Dialogue: 0,0:01:16.33,0:01:20.38,ENG,,0,0,0,,between the speed of light in a vacuum and the speed inside a medium like this
+Dialogue: 0,0:01:14.65,0:01:20.38,ZH,,0,0,0,,而真空中的光速和介质中的光速的比值
+Dialogue: 0,0:01:20.38,0:01:23.54,ENG,,0,0,0,,is called the index of refraction for that medium.
+Dialogue: 0,0:01:20.38,0:01:23.54,ZH,,0,0,0,,就是这个介质的折射率
+Dialogue: 0,0:01:24.13,0:01:27.98,ENG,,0,0,0,,The reason we use the word refraction instead of the index of slowing
+Dialogue: 0,0:01:24.13,0:01:27.98,ZH,,0,0,0,,我们采用“折射率”而不是“减速率”这个词
+Dialogue: 0,0:01:28.32,0:01:31.46,ENG,,0,0,0,,is that if a beam of light enters this glass at an angle,
+Dialogue: 0,0:01:28.32,0:01:31.46,ZH,,0,0,0,,是因为当一束光斜着进入玻璃
+Dialogue: 0,0:01:31.46,0:01:35.46,ENG,,0,0,0,,then a consequence of this slowdown is that it bends a little bit,
+Dialogue: 0,0:01:31.46,0:01:35.46,ZH,,0,0,0,,这种减速会使这束光被略微偏折
+Dialogue: 0,0:01:35.86,0:01:38.07,ENG,,0,0,0,,or using the lingo, it refracts.
+Dialogue: 0,0:01:35.86,0:01:38.07,ZH,,0,0,0,,用专业术语说就是 它发生了折射
+Dialogue: 0,0:01:38.57,0:01:41.10,ENG,,0,0,0,,The way my high school physics teacher always explained this
+Dialogue: 0,0:01:38.57,0:01:41.10,ZH,,0,0,0,,我的高中老师通常这样解释
+Dialogue: 0,0:01:41.10,0:01:42.63,ENG,,0,0,0,,was to imagine a tank
+Dialogue: 0,0:01:41.10,0:01:42.63,ZH,,0,0,0,,想象一辆坦克
+Dialogue: 0,0:01:42.63,0:01:46.15,ENG,,0,0,0,,going from some region where it can travel relatively quickly, like concrete,
+Dialogue: 0,0:01:42.63,0:01:46.15,ZH,,0,0,0,,从一个它可以相对快速行驶的区域  比如混凝土路面
+Dialogue: 0,0:01:46.15,0:01:48.10,ENG,,0,0,0,,into something slower, like mud,
+Dialogue: 0,0:01:46.15,0:01:48.10,ZH,,0,0,0,,进到一个走起来更慢的区域  比如泥土路
+Dialogue: 0,0:01:48.39,0:01:50.42,ENG,,0,0,0,,where if it's coming in at an angle,
+Dialogue: 0,0:01:48.39,0:01:50.42,ZH,,0,0,0,,如果它斜着开进去
+Dialogue: 0,0:01:50.42,0:01:53.77,ENG,,0,0,0,,then as one of its treads hits the slow region first,
+Dialogue: 0,0:01:50.42,0:01:53.77,ZH,,0,0,0,,那么当它的一条履带先进入慢区域时
+Dialogue: 0,0:01:53.77,0:01:55.18,ENG,,0,0,0,,that tread will be going slower
+Dialogue: 0,0:01:53.77,0:01:55.18,ZH,,0,0,0,,那条履带就会变慢
+Dialogue: 0,0:01:55.18,0:01:58.64,ENG,,0,0,0,,while the other one is faster, causing the whole tank to steer a little bit
+Dialogue: 0,0:01:55.18,0:01:58.64,ZH,,0,0,0,,这样一来另一条履带就会相对较快  导致整个坦克转向
+Dialogue: 0,0:01:58.64,0:02:01.36,ENG,,0,0,0,,until that second tread also enters the mud, then it continues straight
+Dialogue: 0,0:01:58.64,0:02:01.36,ZH,,0,0,0,,直到另一边的履带进入泥地以后  坦克才会继续直行
+Dialogue: 0,0:02:01.36,0:02:04.19,ENG,,0,0,0,,just traveling a little slower.
+Dialogue: 0,0:02:01.36,0:02:04.19,ZH,,0,0,0,,只是行驶速度变慢了一点
+Dialogue: 0,0:02:04.76,0:02:07.34,ENG,,0,0,0,,We'll get back to the actual reason for bending in a bit,
+Dialogue: 0,0:02:04.76,0:02:07.34,ZH,,0,0,0,,而折射的实际原因我们稍后会说到
+Dialogue: 0,0:02:07.34,0:02:10.82,ENG,,0,0,0,,but at this point the high school physics students typically learn a law
+Dialogue: 0,0:02:07.34,0:02:10.82,ZH,,0,0,0,,在教这个的时候  高中物理学生通常会学到一个定律
+Dialogue: 0,0:02:10.82,0:02:12.32,ENG,,0,0,0,,known as Snell's law
+Dialogue: 0,0:02:10.82,0:02:12.32,ZH,,0,0,0,,叫做斯涅尔定律
+Dialogue: 0,0:02:12.32,0:02:14.92,ENG,,0,0,0,,which specifies exactly how much things bend.
+Dialogue: 0,0:02:12.32,0:02:14.92,ZH,,0,0,0,,可以准确算出光束会有多大角度偏折
+Dialogue: 0,0:02:15.38,0:02:19.14,ENG,,0,0,0,,If you draw a line perpendicular to the boundary between the glass and water,
+Dialogue: 0,0:02:15.38,0:02:19.14,ZH,,0,0,0,,如果画一条垂直于玻璃和水界面的线
+Dialogue: 0,0:02:19.14,0:02:23.12,ENG,,0,0,0,,and consider the angle between that perpendicular line and the beam of light,
+Dialogue: 0,0:02:19.14,0:02:23.12,ZH,,0,0,0,,对于光束和这条垂线的夹角大小
+Dialogue: 0,0:02:23.12,0:02:24.73,ENG,,0,0,0,,Snell's law tells us that
+Dialogue: 0,0:02:23.12,0:02:24.73,ZH,,0,0,0,,斯涅尔定律指出
+Dialogue: 0,0:02:24.73,0:02:29.25,ENG,,0,0,0,,the sine of this angle divided by the speed of the light is always a constant.
+Dialogue: 0,0:02:24.73,0:02:29.25,ZH,,0,0,0,,这个角度的正弦值除以光速始终是一个常数
+Dialogue: 0,0:02:29.80,0:02:32.82,ENG,,0,0,0,,So the slower the light, the lower that angle will be,
+Dialogue: 0,0:02:29.80,0:02:32.82,ZH,,0,0,0,,所以光速越慢  这个角度就越小
+Dialogue: 0,0:02:32.82,0:02:35.44,ENG,,0,0,0,,and that lets you calculate how much things refract.
+Dialogue: 0,0:02:32.82,0:02:35.44,ZH,,0,0,0,,也就由此可以算出光束会发生多大的折射
+Dialogue: 0,0:02:36.15,0:02:38.06,ENG,,0,0,0,,What's going on with a prism, then,
+Dialogue: 0,0:02:36.15,0:02:38.06,ZH,,0,0,0,,而棱镜的原理通常是这样解释的
+Dialogue: 0,0:02:38.06,0:02:43.36,ENG,,0,0,0,,is that the specific amount that light slows down depends a little bit on its frequency.
+Dialogue: 0,0:02:38.06,0:02:43.36,ZH,,0,0,0,,光减速的程度部分取决于它的频率
+Dialogue: 0,0:02:43.85,0:02:47.35,ENG,,0,0,0,,For example, blue light, which has a relatively high frequency,
+Dialogue: 0,0:02:43.85,0:02:47.35,ZH,,0,0,0,,例如  频率相对较高的蓝光
+Dialogue: 0,0:02:47.35,0:02:50.45,ENG,,0,0,0,,would get slowed down more aggressively than red light,
+Dialogue: 0,0:02:47.35,0:02:50.45,ZH,,0,0,0,,会比频率相对较低的红光
+Dialogue: 0,0:02:50.45,0:02:52.45,ENG,,0,0,0,,which has a relatively low frequency.
+Dialogue: 0,0:02:50.45,0:02:52.45,ZH,,0,0,0,,被更大幅地减速
+Dialogue: 0,0:02:52.91,0:02:56.15,ENG,,0,0,0,,Most of the light you see is not a clean pure sine wave,
+Dialogue: 0,0:02:52.91,0:02:56.15,ZH,,0,0,0,,你看到的大部分光不是纯净的正弦波
+Dialogue: 0,0:02:56.15,0:02:59.93,ENG,,0,0,0,,in particular the white light coming from the sun is not a clean sine wave,
+Dialogue: 0,0:02:56.15,0:02:59.93,ZH,,0,0,0,,来自太阳的白光也不是
+Dialogue: 0,0:02:59.93,0:03:01.47,ENG,,0,0,0,,it's something much messier,
+Dialogue: 0,0:02:59.93,0:03:01.47,ZH,,0,0,0,,它的波形更为复杂
+Dialogue: 0,0:03:01.47,0:03:05.02,ENG,,0,0,0,,but it can be expressed as a sum of a bunch of clean sine waves,
+Dialogue: 0,0:03:01.47,0:03:05.02,ZH,,0,0,0,,但可以表示为一系列光谱颜色
+Dialogue: 0,0:03:05.02,0:03:07.85,ENG,,0,0,0,,each one corresponding to a pure spectral color.
+Dialogue: 0,0:03:05.02,0:03:07.85,ZH,,0,0,0,,所对应的纯净正弦波的叠加
+Dialogue: 0,0:03:08.27,0:03:10.75,ENG,,0,0,0,,So when you shine white light into a prism like this,
+Dialogue: 0,0:03:08.27,0:03:10.75,ZH,,0,0,0,,当你像这样把白光照射到棱镜中时
+Dialogue: 0,0:03:10.75,0:03:14.68,ENG,,0,0,0,,all those different components get refracted by slightly different amounts,
+Dialogue: 0,0:03:10.75,0:03:14.68,ZH,,0,0,0,,它的不同光成分被折射的程度会有略微差异
+Dialogue: 0,0:03:14.68,0:03:18.12,ENG,,0,0,0,,causing this iconic separation of the pure rainbow colors.
+Dialogue: 0,0:03:14.68,0:03:18.12,ZH,,0,0,0,,从而形成彩虹色的分离
+Dialogue: 0,0:03:18.53,0:03:22.48,ENG,,0,0,0,,So that is the standard explanation, and it's not wrong per se,
+Dialogue: 0,0:03:18.53,0:03:22.48,ZH,,0,0,0,,这是常规的解释  它本身并没有错
+Dialogue: 0,0:03:22.48,0:03:26.49,ENG,,0,0,0,,it's just that all of the key components are handed down from on high.
+Dialogue: 0,0:03:22.48,0:03:26.49,ZH,,0,0,0,,只是所有的关键部分都是突然从天而降的
+Dialogue: 0,0:03:26.49,0:03:28.92,ENG,,0,0,0,,Why would light slow down like this?
+Dialogue: 0,0:03:26.49,0:03:28.92,ZH,,0,0,0,,比如 为什么光会减速呢
+Dialogue: 0,0:03:28.92,0:03:31.60,ENG,,0,0,0,,And what exactly do we mean by slowing down?
+Dialogue: 0,0:03:28.92,0:03:31.60,ZH,,0,0,0,,我们说的减速到底是什么意思呢
+Dialogue: 0,0:03:31.60,0:03:33.11,ENG,,0,0,0,,And even if you understand that,
+Dialogue: 0,0:03:31.60,0:03:33.11,ZH,,0,0,0,,即便你知道这些
+Dialogue: 0,0:03:33.11,0:03:37.14,ENG,,0,0,0,,why would the amount that it slows down have anything to do with the color of the light?
+Dialogue: 0,0:03:33.11,0:03:37.14,ZH,,0,0,0,,那么为什么光减速的程度和光的颜色有关呢？
+Dialogue: 0,0:03:37.14,0:03:39.68,ENG,,0,0,0,,Is that just a coincidence or is it necessary?
+Dialogue: 0,0:03:37.14,0:03:39.68,ZH,,0,0,0,,这是巧合还是必然呢？
+Dialogue: 0,0:03:39.68,0:03:42.65,ENG,,0,0,0,,If you have a sufficiently high standard for explanations,
+Dialogue: 0,0:03:39.68,0:03:42.65,ZH,,0,0,0,,如果你追求的是高标准的解释
+Dialogue: 0,0:03:42.65,0:03:45.33,ENG,,0,0,0,,you want both of these facts to feel discovered,
+Dialogue: 0,0:03:42.65,0:03:45.33,ZH,,0,0,0,,会想把这两个问题变得有迹可循
+Dialogue: 0,0:03:45.33,0:03:47.49,ENG,,0,0,0,,rather than feeling like they were handed down.
+Dialogue: 0,0:03:45.33,0:03:47.49,ZH,,0,0,0,,而不是像借用别人的结论
+Dialogue: 0,0:03:47.84,0:03:50.34,ENG,,0,0,0,,The first explanation I saw that started to give this feeling
+Dialogue: 0,0:03:47.84,0:03:50.34,ZH,,0,0,0,,我看到的第一个给人这种感觉的解释
+Dialogue: 0,0:03:50.34,0:03:52.74,ENG,,0,0,0,,came from the Feynman lectures on the matter,
+Dialogue: 0,0:03:50.34,0:03:52.74,ZH,,0,0,0,,来自费曼的物理学讲义
+Dialogue: 0,0:03:52.74,0:03:55.30,ENG,,0,0,0,,and a lot of what I'd like to do with this video is simply
+Dialogue: 0,0:03:52.74,0:03:55.30,ZH,,0,0,0,,而我希望在这个视频中
+Dialogue: 0,0:03:55.30,0:03:57.77,ENG,,0,0,0,,animate a lot of the key points that he makes there.
+Dialogue: 0,0:03:55.30,0:03:57.77,ZH,,0,0,0,,可以用动画的方式展示他提出的许多重点
+Dialogue: 0,0:03:58.13,0:04:02.98,ENG,,0,0,0,,It involves really digging in to think about each individual wiggling charge in the material
+Dialogue: 0,0:03:58.13,0:04:02.98,ZH,,0,0,0,,整个流程需要深入思考每一个震荡的电荷
+Dialogue: 0,0:04:02.98,0:04:06.30,ENG,,0,0,0,,and the propagating light waves caused by each one of those charges
+Dialogue: 0,0:04:02.98,0:04:06.30,ZH,,0,0,0,,以及这些电荷引起的光波传播
+Dialogue: 0,0:04:06.30,0:04:09.25,ENG,,0,0,0,,and how all of them superimpose on top of each other,
+Dialogue: 0,0:04:06.30,0:04:09.25,ZH,,0,0,0,,以及这些波全部是如何叠加的
+Dialogue: 0,0:04:09.25,0:04:11.60,ENG,,0,0,0,,which feels like it should be a complete mess,
+Dialogue: 0,0:04:09.25,0:04:11.60,ZH,,0,0,0,,乍一看理应会杂乱无章
+Dialogue: 0,0:04:11.60,0:04:16.79,ENG,,0,0,0,,but it actually works out to be not only understandable, but satisfyingly explanatory.
+Dialogue: 0,0:04:11.60,0:04:16.79,ZH,,0,0,0,,但实际这不仅可以理解  而且相当合理
+Dialogue: 0,0:04:16.79,0:04:19.88,ENG,,0,0,0,,For example, it explains why it has to depend on color,
+Dialogue: 0,0:04:16.79,0:04:19.88,ZH,,0,0,0,,比如 它可以解释为什么折射率与颜色有关
+Dialogue: 0,0:04:19.88,0:04:21.87,ENG,,0,0,0,,and the key intuition there really comes down to
+Dialogue: 0,0:04:19.88,0:04:21.87,ZH,,0,0,0,,而其中关键的直觉解释
+Dialogue: 0,0:04:21.87,0:04:25.37,ENG,,0,0,0,,what happens if you're bad at pushing a child on a swing.
+Dialogue: 0,0:04:21.87,0:04:25.37,ZH,,0,0,0,,可以类比为  用错误方式给孩子荡秋千会怎么
+Dialogue: 0,0:04:25.37,0:04:27.86,ENG,,0,0,0,,Bear with me, I promise that'll make sense later.
+Dialogue: 0,0:04:25.37,0:04:27.86,ZH,,0,0,0,,我保证稍后会讲清楚  敬请期待
+Dialogue: 0,0:04:28.52,0:04:31.55,ENG,,0,0,0,,Also, when I mentioned on Patreon the intention to cover this topic,
+Dialogue: 0,0:04:28.52,0:04:31.55,ZH,,0,0,0,,另外  当我在 Patreon 上提到打算讲这个话题时
+Dialogue: 0,0:04:31.55,0:04:35.08,ENG,,0,0,0,,a lot of people had a lot of questions about the index of refraction.
+Dialogue: 0,0:04:31.55,0:04:35.08,ZH,,0,0,0,,很多人对折射率有许多疑问
+Dialogue: 0,0:04:35.37,0:04:37.11,ENG,,0,0,0,,For example, numerous people asked about
+Dialogue: 0,0:04:35.37,0:04:37.11,ZH,,0,0,0,,例如很多人会问
+Dialogue: 0,0:04:37.11,0:04:40.12,ENG,,0,0,0,,how it's possible for this number to be lower than 1,
+Dialogue: 0,0:04:37.11,0:04:40.12,ZH,,0,0,0,,怎么可能出现折射率小于 1 的情况
+Dialogue: 0,0:04:40.12,0:04:41.47,ENG,,0,0,0,,which really does happen,
+Dialogue: 0,0:04:40.12,0:04:41.47,ZH,,0,0,0,,这确实会发生
+Dialogue: 0,0:04:41.47,0:04:44.67,ENG,,0,0,0,,despite that seeming to imply the impossibility of
+Dialogue: 0,0:04:44.67,0:04:46.93,ENG,,0,0,0,,something traveling faster than the speed of light.
+Dialogue: 0,0:04:41.47,0:04:46.93,ZH,,0,0,0,,尽管这似乎意味着事物以超光速运动
+Dialogue: 0,0:04:47.32,0:04:49.48,ENG,,0,0,0,,There was also a question about birefringence,
+Dialogue: 0,0:04:47.32,0:04:49.48,ZH,,0,0,0,,还有一个关于双折射的问题
+Dialogue: 0,0:04:49.48,0:04:52.69,ENG,,0,0,0,,which is where a material can have two different indices of refraction
+Dialogue: 0,0:04:49.48,0:04:52.69,ZH,,0,0,0,,即材料可以同时具有两个不同的折射率
+Dialogue: 0,0:04:52.69,0:04:55.25,ENG,,0,0,0,,causing you to see double when you look through it.
+Dialogue: 0,0:04:52.69,0:04:55.25,ZH,,0,0,0,,导致你透过材料看时会看到重影
+Dialogue: 0,0:04:55.25,0:04:58.56,ENG,,0,0,0,,And that actually ties in really nicely to putting in the final puzzle piece
+Dialogue: 0,0:04:55.25,0:04:58.56,ZH,,0,0,0,,这视频实际上恰好也是
+Dialogue: 0,0:04:58.56,0:05:01.91,ENG,,0,0,0,,from the last two videos about the barber pole phenomenon.
+Dialogue: 0,0:04:58.56,0:05:01.91,ZH,,0,0,0,,解开前两个视频里彩虹灯柱谜题的最后一环
+Dialogue: 0,0:05:02.46,0:05:04.29,ENG,,0,0,0,,And a couple people also asked about
+Dialogue: 0,0:05:02.46,0:05:04.29,ZH,,0,0,0,,还有一些人问
+Dialogue: 0,0:05:04.29,0:05:08.13,ENG,,0,0,0,,why light slowing down would imply a bending like this.
+Dialogue: 0,0:05:04.29,0:05:08.13,ZH,,0,0,0,,光减速为什么会导致光束这样弯折
+Dialogue: 0,0:05:08.13,0:05:11.66,ENG,,0,0,0,,And I agree, that deserves a better explanation than the tank analogy.
+Dialogue: 0,0:05:08.13,0:05:11.66,ZH,,0,0,0,,我也觉得这确实需要比类比坦克更好的解释
+Dialogue: 0,0:05:11.66,0:05:14.18,ENG,,0,0,0,,I promise we'll get to all of these questions later,
+Dialogue: 0,0:05:11.66,0:05:14.18,ZH,,0,0,0,,我保证以后会解答这些问题
+Dialogue: 0,0:05:14.18,0:05:16.71,ENG,,0,0,0,,but it makes sense to first lay down some groundwork
+Dialogue: 0,0:05:14.18,0:05:16.71,ZH,,0,0,0,,但是首先我们需要学习一些基础知识
+Dialogue: 0,0:05:16.71,0:05:19.81,ENG,,0,0,0,,by spending the bulk of our time on the key question of
+Dialogue: 0,0:05:16.71,0:05:19.81,ZH,,0,0,0,,为了理解为什么光波
+Dialogue: 0,0:05:19.81,0:05:24.10,ENG,,0,0,0,,why passing through a medium would change the speed of a light wave at all.
+Dialogue: 0,0:05:19.81,0:05:24.10,ZH,,0,0,0,,在通过介质时会改变速度
+Dialogue: 0,0:05:24.50,0:05:27.76,ENG,,0,0,0,,And for this, I want you to think of your material, like glass,
+Dialogue: 0,0:05:24.50,0:05:27.76,ZH,,0,0,0,,我希望你将比如玻璃的这些材料
+Dialogue: 0,0:05:27.76,0:05:30.95,ENG,,0,0,0,,as being broken up into a bunch of distinct layers,
+Dialogue: 0,0:05:27.76,0:05:30.95,ZH,,0,0,0,,想象成由许多层组成
+Dialogue: 0,0:05:30.95,0:05:34.00,ENG,,0,0,0,,all perpendicular to the direction the light is traveling.
+Dialogue: 0,0:05:30.95,0:05:34.00,ZH,,0,0,0,,每一层都垂直于光的传播方向
+Dialogue: 0,0:05:34.00,0:05:35.71,ENG,,0,0,0,,And we'll start by focusing our attention
+Dialogue: 0,0:05:34.00,0:05:35.71,ZH,,0,0,0,,我们首先把目光放在
+Dialogue: 0,0:05:35.71,0:05:38.89,ENG,,0,0,0,,on the effect of just one of those layers on the light wave.
+Dialogue: 0,0:05:35.71,0:05:38.89,ZH,,0,0,0,,其中一层材料对光波的影响
+Dialogue: 0,0:05:39.32,0:05:41.06,ENG,,0,0,0,,The true effect would be miniscule,
+Dialogue: 0,0:05:39.32,0:05:41.06,ZH,,0,0,0,,它的实际影响非常微小
+Dialogue: 0,0:05:41.06,0:05:43.06,ENG,,0,0,0,,but if you'll let me exaggerate it for a moment,
+Dialogue: 0,0:05:41.06,0:05:43.06,ZH,,0,0,0,,但是如果我稍微夸张一点
+Dialogue: 0,0:05:43.06,0:05:46.74,ENG,,0,0,0,,what it does is kick back the phase of the wave.
+Dialogue: 0,0:05:43.06,0:05:46.74,ZH,,0,0,0,,它确实使光波的相位滞后了
+Dialogue: 0,0:05:47.34,0:05:48.75,ENG,,0,0,0,,And maybe it's worth a brief aside
+Dialogue: 0,0:05:47.34,0:05:48.75,ZH,,0,0,0,,这里也许有必要插进来一些简单解释
+Dialogue: 0,0:05:48.75,0:05:51.96,ENG,,0,0,0,,to make sure we're all on the same page when it comes to wave terminology.
+Dialogue: 0,0:05:48.75,0:05:51.96,ZH,,0,0,0,,来确保我们对有关波的术语有相同的认识
+Dialogue: 0,0:05:51.96,0:05:54.40,ENG,,0,0,0,,If you go and graph the function sine of x,
+Dialogue: 0,0:05:51.96,0:05:54.40,ZH,,0,0,0,,假设有一个正弦函数 sin(x) 的图像
+Dialogue: 0,0:05:54.40,0:05:55.98,ENG,,0,0,0,,when you put some term in front of it,
+Dialogue: 0,0:05:54.40,0:05:55.98,ZH,,0,0,0,,在它前面乘一个项
+Dialogue: 0,0:05:55.98,0:05:58.48,ENG,,0,0,0,,affecting how high that wave oscillates up and down,
+Dialogue: 0,0:05:55.98,0:05:58.48,ZH,,0,0,0,,影响的是它上下波动的幅度
+Dialogue: 0,0:05:58.48,0:06:00.14,ENG,,0,0,0,,that's what we call the amplitude,
+Dialogue: 0,0:05:58.48,0:06:00.14,ZH,,0,0,0,,我们称之为振幅
+Dialogue: 0,0:06:00.14,0:06:04.81,ENG,,0,0,0,,when you put a term in front of x, this will affect how rapidly it oscillates.
+Dialogue: 0,0:06:00.14,0:06:04.81,ZH,,0,0,0,,如果在 x 前面乘以一个项 这将影响它振动的快慢
+Dialogue: 0,0:06:04.81,0:06:07.33,ENG,,0,0,0,,If this is meant to describe a wave over time,
+Dialogue: 0,0:06:04.81,0:06:07.33,ZH,,0,0,0,,如果它是用来描述随时间变化的波
+Dialogue: 0,0:06:07.33,0:06:09.76,ENG,,0,0,0,,that term would be called the angular frequency,
+Dialogue: 0,0:06:07.33,0:06:09.76,ZH,,0,0,0,,这个数称为角频率
+Dialogue: 0,0:06:09.76,0:06:12.67,ENG,,0,0,0,,whereas if it's meant to describe a wave over space,
+Dialogue: 0,0:06:09.76,0:06:12.67,ZH,,0,0,0,,如果它是用来描述随空间变化的波
+Dialogue: 0,0:06:12.67,0:06:14.66,ENG,,0,0,0,,that constant would be called the wave number.
+Dialogue: 0,0:06:12.67,0:06:14.66,ZH,,0,0,0,,这个数称为  波数
+Dialogue: 0,0:06:14.93,0:06:18.26,ENG,,0,0,0,,Then if you were to add some other constant inside that sine function,
+Dialogue: 0,0:06:14.93,0:06:18.26,ZH,,0,0,0,,如果在正弦函数里面  加上另一个常数
+Dialogue: 0,0:06:18.57,0:06:20.92,ENG,,0,0,0,,and notice how as you change what that constant is,
+Dialogue: 0,0:06:18.57,0:06:20.92,ZH,,0,0,0,,会观察到当改变这个常数时
+Dialogue: 0,0:06:20.92,0:06:23.01,ENG,,0,0,0,,it sort of slides the wave left and right,
+Dialogue: 0,0:06:20.92,0:06:23.01,ZH,,0,0,0,,波会左右平移
+Dialogue: 0,0:06:23.36,0:06:25.82,ENG,,0,0,0,,that term describes the phase of the wave.
+Dialogue: 0,0:06:23.36,0:06:25.82,ZH,,0,0,0,,这一项就代表了波的相位
+Comment: 0,0:06:25.82,0:06:27.82,ENG,,0,0,0,,[Part 2: 6:26-13:20]
+Dialogue: 0,0:06:26.44,0:06:27.55,ENG,,0,0,0,,So when I say that
+Dialogue: 0,0:06:26.44,0:06:27.55,ZH,,0,0,0,,所以我所说的
+Dialogue: 0,0:06:27.55,0:06:31.29,ENG,,0,0,0,,our light wave hitting a layer of glass causes its phase to get kicked back,
+Dialogue: 0,0:06:27.55,0:06:31.29,ZH,,0,0,0,,光波碰到一层玻璃会引起其相位的滞后
+Dialogue: 0,0:06:31.29,0:06:34.73,ENG,,0,0,0,,I mean if you take whatever function describes it before it hits the glass,
+Dialogue: 0,0:06:31.29,0:06:34.73,ZH,,0,0,0,,意思是  如果取一个函数来描述打到玻璃之前的波
+Dialogue: 0,0:06:34.73,0:06:38.11,ENG,,0,0,0,,then the function describing it after that looks almost the same,
+Dialogue: 0,0:06:34.73,0:06:38.11,ZH,,0,0,0,,那么之后的函数看起来几乎没有变化
+Dialogue: 0,0:06:38.11,0:06:41.89,ENG,,0,0,0,,just with a little extra something added to the input of that sine function.
+Dialogue: 0,0:06:38.11,0:06:41.89,ZH,,0,0,0,,只是在那个正弦函数的括号里加了一个数
+Dialogue: 0,0:06:42.22,0:06:44.90,ENG,,0,0,0,,Like I said, in reality that'll be a very small number,
+Dialogue: 0,0:06:42.22,0:06:44.90,ZH,,0,0,0,,就像刚才说的  在现实中这是一个非常小的数值
+Dialogue: 0,0:06:44.90,0:06:48.35,ENG,,0,0,0,,something proportional to the infinitesimal thickness of that layer,
+Dialogue: 0,0:06:44.90,0:06:48.35,ZH,,0,0,0,,它和那层玻璃微小的厚度成比例
+Dialogue: 0,0:06:48.35,0:06:50.39,ENG,,0,0,0,,but I'll keep drawing it as something exaggerated
+Dialogue: 0,0:06:48.35,0:06:50.39,ZH,,0,0,0,,但我会继续以夸张的程度把它画出来
+Dialogue: 0,0:06:50.39,0:06:54.14,ENG,,0,0,0,,and keep track of the value of that phase kick over here on the left.
+Dialogue: 0,0:06:50.39,0:06:54.14,ZH,,0,0,0,,并在左上角显示这个相位滞后的值
+Dialogue: 0,0:06:54.71,0:06:57.56,ENG,,0,0,0,,Let's say you go and add a bunch of other layers of the glass,
+Dialogue: 0,0:06:54.71,0:06:57.56,ZH,,0,0,0,,假设继续一层层地添加玻璃
+Dialogue: 0,0:06:57.56,0:07:01.24,ENG,,0,0,0,,each one also applying their own kickback to the phase of the wave.
+Dialogue: 0,0:06:57.56,0:07:01.24,ZH,,0,0,0,,而每一层都把波的相位滞后
+Dialogue: 0,0:07:01.24,0:07:03.90,ENG,,0,0,0,,The question for you is what does that new wave look like?
+Dialogue: 0,0:07:01.24,0:07:03.90,ZH,,0,0,0,,那么问题来了  新的波应该长什么样呢？
+Dialogue: 0,0:07:04.38,0:07:08.37,ENG,,0,0,0,,If the value of that phase kick applied by each layer is something really close to zero,
+Dialogue: 0,0:07:04.38,0:07:08.37,ZH,,0,0,0,,如果每一层产生的相位滞后都非常接近零
+Dialogue: 0,0:07:08.37,0:07:10.28,ENG,,0,0,0,,then the wave is hardly affected at all.
+Dialogue: 0,0:07:08.37,0:07:10.28,ZH,,0,0,0,,那么光波几乎不受影响
+Dialogue: 0,0:07:10.62,0:07:12.17,ENG,,0,0,0,,But the larger that phase kick,
+Dialogue: 0,0:07:10.62,0:07:12.17,ZH,,0,0,0,,但相位滞后作用越大
+Dialogue: 0,0:07:12.17,0:07:15.94,ENG,,0,0,0,,the more the wave kind of gets squished together among all those layers.
+Dialogue: 0,0:07:12.17,0:07:15.94,ZH,,0,0,0,,光波在这些层中就越像是被挤在一起
+Dialogue: 0,0:07:16.72,0:07:20.30,ENG,,0,0,0,,Admittedly right here it looks all kaleidoscopic and weird,
+Dialogue: 0,0:07:16.72,0:07:20.30,ZH,,0,0,0,,坦白说右边看起来让人眼花缭乱
+Dialogue: 0,0:07:20.30,0:07:23.16,ENG,,0,0,0,,but that's really just because I have a discrete set of layers,
+Dialogue: 0,0:07:20.30,0:07:23.16,ZH,,0,0,0,,但这实际上只是因为我用了一层层离散的玻璃
+Dialogue: 0,0:07:23.16,0:07:25.48,ENG,,0,0,0,,each applying an unrealistically large kick.
+Dialogue: 0,0:07:23.16,0:07:25.48,ZH,,0,0,0,,且每一层的滞后都离谱地大
+Dialogue: 0,0:07:25.80,0:07:30.12,ENG,,0,0,0,,Notice what happens if I smooth it out by doubling the density of layers,
+Dialogue: 0,0:07:25.80,0:07:30.12,ZH,,0,0,0,,注意当我通过翻倍层的密度而减半每层滞后来平滑它时
+Dialogue: 0,0:07:30.12,0:07:32.69,ENG,,0,0,0,,but having each one only apply half the phase kick.
+Dialogue: 0,0:07:30.12,0:07:32.69,ZH,,0,0,0,,会有怎么样的变化
+Dialogue: 0,0:07:33.21,0:07:36.27,ENG,,0,0,0,,And then I do that again, I double the density of the layers,
+Dialogue: 0,0:07:33.21,0:07:36.27,ZH,,0,0,0,,然后我再来一次  层的密度再次翻倍
+Dialogue: 0,0:07:36.27,0:07:38.61,ENG,,0,0,0,,but have each one only apply half the phase kick.
+Dialogue: 0,0:07:36.27,0:07:38.61,ZH,,0,0,0,,每一层的相位滞后再次减半
+Dialogue: 0,0:07:39.55,0:07:41.56,ENG,,0,0,0,,As I continue this over and over,
+Dialogue: 0,0:07:39.55,0:07:41.56,ZH,,0,0,0,,随着我一次次地重复这个过程
+Dialogue: 0,0:07:41.56,0:07:45.18,ENG,,0,0,0,,approaching a situation where you have a continuum of glass,
+Dialogue: 0,0:07:41.56,0:07:45.18,ZH,,0,0,0,,它逐渐接近连续玻璃的情况
+Dialogue: 0,0:07:45.18,0:07:48.62,ENG,,0,0,0,,each layer applying just a tiny infinitesimal phase kick,
+Dialogue: 0,0:07:45.18,0:07:48.62,ZH,,0,0,0,,每一层只施加一个微小的相位滞后
+Dialogue: 0,0:07:49.04,0:07:50.18,ENG,,0,0,0,,what you end up with is
+Dialogue: 0,0:07:49.04,0:07:50.18,ZH,,0,0,0,,最终得到的结果
+Dialogue: 0,0:07:50.18,0:07:55.48,ENG,,0,0,0,,identical to, indistinguishable from, a wave that's simply traveling slower,
+Dialogue: 0,0:07:50.18,0:07:55.48,ZH,,0,0,0,,完全就等价于一个跑得更慢的波
+Dialogue: 0,0:07:55.48,0:07:57.99,ENG,,0,0,0,,oscillating up and down with the same frequency,
+Dialogue: 0,0:07:55.48,0:07:57.99,ZH,,0,0,0,,它上下振荡的频率不变
+Dialogue: 0,0:07:57.99,0:08:00.42,ENG,,0,0,0,,but with a wavelength that's been kind of scrunched up.
+Dialogue: 0,0:07:57.99,0:08:00.42,ZH,,0,0,0,,但波长已经被压缩了一些
+Dialogue: 0,0:08:00.91,0:08:04.44,ENG,,0,0,0,,This right here is the first key idea with the index of refraction.
+Dialogue: 0,0:08:00.91,0:08:04.44,ZH,,0,0,0,,这就是折射率的第一个关键点
+Dialogue: 0,0:08:04.44,0:08:07.52,ENG,,0,0,0,,Instead of asking why does light slow down in glass,
+Dialogue: 0,0:08:04.44,0:08:07.52,ZH,,0,0,0,,与其问光为什么在玻璃中减速
+Dialogue: 0,0:08:07.82,0:08:09.31,ENG,,0,0,0,,what we really need to ask is
+Dialogue: 0,0:08:07.82,0:08:09.31,ZH,,0,0,0,,我们真正需要问的是
+Dialogue: 0,0:08:09.31,0:08:13.11,ENG,,0,0,0,,why does its interaction with a single layer of that glass
+Dialogue: 0,0:08:09.31,0:08:13.11,ZH,,0,0,0,,为什么它与一层玻璃的相互作用
+Dialogue: 0,0:08:13.11,0:08:15.48,ENG,,0,0,0,,cause a kickback to the phase of the wave.
+Dialogue: 0,0:08:13.11,0:08:15.48,ZH,,0,0,0,,会引起波的相位的滞后
+Dialogue: 0,0:08:16.11,0:08:17.92,ENG,,0,0,0,,And then when we want to get quantitative
+Dialogue: 0,0:08:16.11,0:08:17.92,ZH,,0,0,0,,在此之上我们想要量化
+Dialogue: 0,0:08:17.92,0:08:21.04,ENG,,0,0,0,,and understand exactly how much the light slows down,
+Dialogue: 0,0:08:17.92,0:08:21.04,ZH,,0,0,0,,弄清楚  具体减速了多少
+Dialogue: 0,0:08:21.04,0:08:23.89,ENG,,0,0,0,,which is critical for understanding why it depends on color,
+Dialogue: 0,0:08:21.04,0:08:23.89,ZH,,0,0,0,,毕竟这问题  关乎折射与色彩的关系
+Dialogue: 0,0:08:23.89,0:08:25.56,ENG,,0,0,0,,instead the real question is
+Dialogue: 0,0:08:23.89,0:08:25.56,ZH,,0,0,0,,于是  问题就变成了
+Dialogue: 0,0:08:25.56,0:08:28.12,ENG,,0,0,0,,how strong is that phase kick?
+Dialogue: 0,0:08:25.56,0:08:28.12,ZH,,0,0,0,,这个相位滞后有多大呢？
+Dialogue: 0,0:08:29.02,0:08:33.18,ENG,,0,0,0,,From here it's helpful to turn back to the fundamentals of what light even is.
+Dialogue: 0,0:08:29.02,0:08:33.18,ZH,,0,0,0,,这里回顾一下光的底层本质会很有帮助
+Dialogue: 0,0:08:33.18,0:08:35.44,ENG,,0,0,0,,This is something we talked a lot about in the last video,
+Dialogue: 0,0:08:33.18,0:08:35.44,ZH,,0,0,0,,这个内容在上期视频中说了很多
+Dialogue: 0,0:08:35.44,0:08:38.53,ENG,,0,0,0,,but a little review never hurts so let me go over the essentials.
+Dialogue: 0,0:08:35.44,0:08:38.53,ZH,,0,0,0,,但回顾一下总没坏处  所以让我简要介绍一下基本概念
+Dialogue: 0,0:08:38.97,0:08:42.32,ENG,,0,0,0,,As many of you know, light is a wave in the electromagnetic field,
+Dialogue: 0,0:08:38.97,0:08:42.32,ZH,,0,0,0,,很多观众都知道  光是电磁场中的一种波
+Dialogue: 0,0:08:42.32,0:08:44.82,ENG,,0,0,0,,but here we'll just be drawing the electric field.
+Dialogue: 0,0:08:42.32,0:08:44.82,ZH,,0,0,0,,但在这里我们只画出电场
+Dialogue: 0,0:08:45.26,0:08:50.17,ENG,,0,0,0,,The electric field associates each point in 3D space with a little 3-dimensional vector
+Dialogue: 0,0:08:45.26,0:08:50.17,ZH,,0,0,0,,电场将三维空间中每一点与一个小三维向量对应
+Dialogue: 0,0:08:50.17,0:08:53.16,ENG,,0,0,0,,telling you what force would be applied
+Dialogue: 0,0:08:50.17,0:08:53.16,ZH,,0,0,0,,这个向量告诉你
+Dialogue: 0,0:08:53.16,0:08:56.76,ENG,,0,0,0,,to a hypothetical unit charge sitting at that point in space.
+Dialogue: 0,0:08:53.16,0:08:56.76,ZH,,0,0,0,,这个点上的单位电荷会被施加什么力
+Dialogue: 0,0:08:58.03,0:09:01.50,ENG,,0,0,0,,The key thing going on with light is that if you have a charged particle
+Dialogue: 0,0:08:58.03,0:09:01.50,ZH,,0,0,0,,重点是  如果有一个带电粒子
+Dialogue: 0,0:09:01.50,0:09:03.94,ENG,,0,0,0,,and something causes it to wiggle up and down,
+Dialogue: 0,0:09:01.50,0:09:03.94,ZH,,0,0,0,,被某些原因驱使上下振动
+Dialogue: 0,0:09:04.12,0:09:07.54,ENG,,0,0,0,,that results in these propagating ripples in the electric field,
+Dialogue: 0,0:09:04.12,0:09:07.54,ZH,,0,0,0,,这会在电场中产生涟漪
+Dialogue: 0,0:09:07.54,0:09:13.26,ENG,,0,0,0,,away from the charge and that propagation is traveling at the speed c, the speed of light.
+Dialogue: 0,0:09:07.54,0:09:13.26,ZH,,0,0,0,,并沿远离电荷方向以速度 c 即光速传播
+Dialogue: 0,0:09:13.73,0:09:16.67,ENG,,0,0,0,,Whenever those ripples happen to reach another charged particle,
+Dialogue: 0,0:09:13.73,0:09:16.67,ZH,,0,0,0,,当这些涟漪遇到另一个带电粒子时
+Dialogue: 0,0:09:16.67,0:09:21.02,ENG,,0,0,0,,they cause it to wiggle up and down, albeit a little more weakly than the initial wiggle,
+Dialogue: 0,0:09:16.67,0:09:21.02,ZH,,0,0,0,,会造成那个粒子上下摆动  但程度比初始摆动稍弱
+Dialogue: 0,0:09:21.02,0:09:23.84,ENG,,0,0,0,,and that in turn causes its own propagations.
+Dialogue: 0,0:09:21.02,0:09:23.84,ZH,,0,0,0,,波传回来  又将带动自身振动
+Dialogue: 0,0:09:24.42,0:09:26.70,ENG,,0,0,0,,The way we described this in the last video was that
+Dialogue: 0,0:09:24.42,0:09:26.70,ZH,,0,0,0,,我们在上期视频中是这样描述这一点的
+Dialogue: 0,0:09:26.70,0:09:29.80,ENG,,0,0,0,,if at some point in time a charge is accelerating,
+Dialogue: 0,0:09:26.70,0:09:29.80,ZH,,0,0,0,,如果某刻一个电荷正在加速
+Dialogue: 0,0:09:29.80,0:09:32.62,ENG,,0,0,0,,then after a little delay, which depends on this speed c,
+Dialogue: 0,0:09:29.80,0:09:32.62,ZH,,0,0,0,,那么在经过一小段取决于速度 c 的延迟之后
+Dialogue: 0,0:09:33.06,0:09:38.15,ENG,,0,0,0,,the existence of that acceleration induces a force on another charge.
+Dialogue: 0,0:09:33.06,0:09:38.15,ZH,,0,0,0,,这个加速度的存在会在另一个电荷上产生力
+Dialogue: 0,0:09:38.56,0:09:41.09,ENG,,0,0,0,,We went over the specific force law describing this,
+Dialogue: 0,0:09:38.56,0:09:41.09,ZH,,0,0,0,,我们讨论过描述这一现象的具体力学定律
+Dialogue: 0,0:09:41.09,0:09:44.23,ENG,,0,0,0,,it's something that can be derived downstream of Maxwell's equations,
+Dialogue: 0,0:09:41.09,0:09:44.23,ZH,,0,0,0,,它可以用麦克斯韦方程组推导出来
+Dialogue: 0,0:09:44.23,0:09:47.18,ENG,,0,0,0,,but for our purposes here, the main thing to take away in your mind is that
+Dialogue: 0,0:09:44.23,0:09:47.18,ZH,,0,0,0,,不过对于我们现在的讨论来说  你要了解的重点是
+Dialogue: 0,0:09:47.18,0:09:50.32,ENG,,0,0,0,,the amount of time it takes that initial acceleration
+Dialogue: 0,0:09:50.32,0:09:55.20,ENG,,0,0,0,,to cause any kind of influence elsewhere travels at exactly the speed c.
+Dialogue: 0,0:09:47.18,0:09:55.20,ZH,,0,0,0,,最初的加速度  对其它位置产生的影响  传播速度恰好是 c
+Dialogue: 0,0:09:55.20,0:09:58.96,ENG,,0,0,0,,And really, you should think of c not so much as the speed of light per se,
+Dialogue: 0,0:09:55.20,0:09:58.96,ZH,,0,0,0,,实际上  你应该不仅仅把 c 当作是光速本身
+Dialogue: 0,0:09:58.96,0:10:00.99,ENG,,0,0,0,,but as the speed of causality.
+Dialogue: 0,0:09:58.96,0:10:00.99,ZH,,0,0,0,,它更是因果关系的速度
+Dialogue: 0,0:10:00.99,0:10:04.02,ENG,,0,0,0,,It determines how fast any kind of influence travels,
+Dialogue: 0,0:10:00.99,0:10:04.02,ZH,,0,0,0,,c 决定了任何影响所传播的速度
+Dialogue: 0,0:10:04.02,0:10:08.50,ENG,,0,0,0,,it's just that one of multiple consequences of that is that it's the speed of light.
+Dialogue: 0,0:10:04.02,0:10:08.50,ZH,,0,0,0,,而光的速度  只是其结果之一
+Dialogue: 0,0:10:08.50,0:10:11.56,ENG,,0,0,0,,In particular, when you get a charge oscillating up and down
+Dialogue: 0,0:10:08.50,0:10:11.56,ZH,,0,0,0,,特别地  当一个电荷
+Dialogue: 0,0:10:11.56,0:10:13.70,ENG,,0,0,0,,in a nice clean sinusoidal motion,
+Dialogue: 0,0:10:11.56,0:10:13.70,ZH,,0,0,0,,以纯净的正弦运动上下振荡时
+Dialogue: 0,0:10:13.70,0:10:16.54,ENG,,0,0,0,,you can think of these rippling effects in the electric field
+Dialogue: 0,0:10:13.70,0:10:16.54,ZH,,0,0,0,,你可以把它在电场中产生的涟漪
+Dialogue: 0,0:10:16.54,0:10:20.83,ENG,,0,0,0,,as describing the force that would be applied to another charge sitting there
+Dialogue: 0,0:10:16.54,0:10:20.83,ZH,,0,0,0,,看作是在描述处于其它位置的电荷
+Dialogue: 0,0:10:21.18,0:10:23.86,ENG,,0,0,0,,as a result of that past acceleration.
+Dialogue: 0,0:10:21.18,0:10:23.86,ZH,,0,0,0,,由于过去的加速度所受到的力
+Dialogue: 0,0:10:24.37,0:10:26.96,ENG,,0,0,0,,I will freely admit that I had a bit too much fun in that video
+Dialogue: 0,0:10:24.37,0:10:26.96,ZH,,0,0,0,,实话说我在上期视频里有点过于炫技
+Dialogue: 0,0:10:26.96,0:10:30.80,ENG,,0,0,0,,just simulating how the electric field responds to accelerating charges,
+Dialogue: 0,0:10:26.96,0:10:30.80,ZH,,0,0,0,,尽兴地模拟了电场如何响应加速的电荷
+Dialogue: 0,0:10:30.80,0:10:32.80,ENG,,0,0,0,,and that I'm kind of doing the same thing here,
+Dialogue: 0,0:10:30.80,0:10:32.80,ZH,,0,0,0,,而且我在这也还是在重复这个操作
+Dialogue: 0,0:10:32.80,0:10:36.56,ENG,,0,0,0,,but there are two important facts for our pursuit of the index of refraction.
+Dialogue: 0,0:10:32.80,0:10:36.56,ZH,,0,0,0,,但想弄清楚折射率  需要知道两个重要的事实
+Dialogue: 0,0:10:36.87,0:10:40.81,ENG,,0,0,0,,The first is that when you have multiple different charges oscillating up and down,
+Dialogue: 0,0:10:36.87,0:10:40.81,ZH,,0,0,0,,第一  当有多个电荷上下振荡时
+Dialogue: 0,0:10:40.81,0:10:42.96,ENG,,0,0,0,,the net effect on the electric field
+Dialogue: 0,0:10:40.81,0:10:42.96,ZH,,0,0,0,,它们对电场的净效应
+Dialogue: 0,0:10:42.96,0:10:46.64,ENG,,0,0,0,,is just the sum of what it would be for each individual charge,
+Dialogue: 0,0:10:42.96,0:10:46.64,ZH,,0,0,0,,是每一个电荷的效应之和
+Dialogue: 0,0:10:46.64,0:10:48.49,ENG,,0,0,0,,which is kind of what you would expect.
+Dialogue: 0,0:10:46.64,0:10:48.49,ZH,,0,0,0,,这大概是意料之中的
+Dialogue: 0,0:10:48.49,0:10:50.24,ENG,,0,0,0,,The way that it shakes out is that
+Dialogue: 0,0:10:48.49,0:10:50.24,ZH,,0,0,0,,但是如果考虑
+Dialogue: 0,0:10:50.24,0:10:53.74,ENG,,0,0,0,,if you have a row of charges oscillating in sync with each other,
+Dialogue: 0,0:10:50.24,0:10:53.74,ZH,,0,0,0,,有一排电荷同步振荡
+Dialogue: 0,0:10:53.74,0:10:55.28,ENG,,0,0,0,,or for our purposes today,
+Dialogue: 0,0:10:53.74,0:10:55.28,ZH,,0,0,0,,或者放到当下的讨论里
+Dialogue: 0,0:10:55.28,0:11:00.02,ENG,,0,0,0,,a plane of charges, all wiggling up and down in sync within that plane,
+Dialogue: 0,0:10:55.28,0:11:00.02,ZH,,0,0,0,,考虑一层电荷在一个平面内同步上下振荡
+Dialogue: 0,0:11:00.56,0:11:02.72,ENG,,0,0,0,,then the effects of each individual charge
+Dialogue: 0,0:11:00.56,0:11:02.72,ZH,,0,0,0,,那么每个电荷单独的效应
+Dialogue: 0,0:11:02.72,0:11:05.60,ENG,,0,0,0,,tend to cancel each other out in most directions,
+Dialogue: 0,0:11:02.72,0:11:05.60,ZH,,0,0,0,,会在大多数方向上相互抵消
+Dialogue: 0,0:11:05.60,0:11:10.01,ENG,,0,0,0,,except perpendicular to that plane, they actually constructively interfere.
+Dialogue: 0,0:11:05.60,0:11:10.01,ZH,,0,0,0,,而在垂直于平面的方向上形成相长干涉
+Dialogue: 0,0:11:10.01,0:11:12.77,ENG,,0,0,0,,This is how you can get a concentrated beam of light.
+Dialogue: 0,0:11:10.01,0:11:12.77,ZH,,0,0,0,,从而获得集中的光束
+Dialogue: 0,0:11:12.77,0:11:14.02,ENG,,0,0,0,,That's the important thing.
+Dialogue: 0,0:11:12.77,0:11:14.02,ZH,,0,0,0,,这才是重点
+Dialogue: 0,0:11:14.02,0:11:17.93,ENG,,0,0,0,,If you have a layer of charges wiggling up and down in sync with each other,
+Dialogue: 0,0:11:14.02,0:11:17.93,ZH,,0,0,0,,假设有一层电荷同步上下振荡
+Dialogue: 0,0:11:17.93,0:11:20.04,ENG,,0,0,0,,then even far away from that layer,
+Dialogue: 0,0:11:17.93,0:11:20.04,ZH,,0,0,0,,那么即使在离它很远的地方
+Dialogue: 0,0:11:20.04,0:11:23.40,ENG,,0,0,0,,it produces this nice sinusoidal wave in the electric field
+Dialogue: 0,0:11:20.04,0:11:23.40,ZH,,0,0,0,,电场中也会产生这种
+Dialogue: 0,0:11:23.40,0:11:26.10,ENG,,0,0,0,,that we're so fond of drawing to represent light.
+Dialogue: 0,0:11:23.40,0:11:26.10,ZH,,0,0,0,,我们喜欢用来表示光波形的  漂亮的正弦波
+Dialogue: 0,0:11:27.66,0:11:29.41,ENG,,0,0,0,,When I draw a light wave like this,
+Dialogue: 0,0:11:27.66,0:11:29.41,ZH,,0,0,0,,当我画这样一个光波的时候
+Dialogue: 0,0:11:29.41,0:11:33.34,ENG,,0,0,0,,it's really only depicting the electric field on a single one-dimensional line.
+Dialogue: 0,0:11:29.41,0:11:33.34,ZH,,0,0,0,,它实际上只展现了一条一维直线上的电场
+Dialogue: 0,0:11:33.34,0:11:38.00,ENG,,0,0,0,,A more full picture of light in three dimensions would look something more like this.
+Dialogue: 0,0:11:33.34,0:11:38.00,ZH,,0,0,0,,而更完整的三维空间中的图像更像是这样的
+Dialogue: 0,0:11:38.00,0:11:41.56,ENG,,0,0,0,,That tends to be a little bit busier, so usually we just draw the sine wave.
+Dialogue: 0,0:11:38.00,0:11:41.56,ZH,,0,0,0,,不过这显得太繁杂了  所以通常我们只画正弦波
+Dialogue: 0,0:11:42.77,0:11:45.06,ENG,,0,0,0,,So, thinking back to the question of
+Dialogue: 0,0:11:42.77,0:11:45.06,ZH,,0,0,0,,所以回归正题
+Dialogue: 0,0:11:45.06,0:11:50.38,ENG,,0,0,0,,why interactions with a layer of material would cause a kickback to the phase of the wave,
+Dialogue: 0,0:11:45.06,0:11:50.38,ZH,,0,0,0,,为什么与一层材料的相互作用会引起波的相位滞后
+Dialogue: 0,0:11:50.38,0:11:51.64,ENG,,0,0,0,,let's start thinking it through.
+Dialogue: 0,0:11:50.38,0:11:51.64,ZH,,0,0,0,,让我们理清一遍思路
+Dialogue: 0,0:11:52.06,0:11:55.08,ENG,,0,0,0,,When a light beam enters a material, like glass,
+Dialogue: 0,0:11:52.06,0:11:55.08,ZH,,0,0,0,,当光束进入像玻璃这样的材料时
+Dialogue: 0,0:11:55.08,0:11:58.40,ENG,,0,0,0,,then it causes all of the charges inside that material,
+Dialogue: 0,0:11:55.08,0:11:58.40,ZH,,0,0,0,,会引起材料内的各种电荷
+Dialogue: 0,0:11:58.40,0:12:01.08,ENG,,0,0,0,,you know, electrons, or maybe the occasional ion,
+Dialogue: 0,0:11:58.40,0:12:01.08,ZH,,0,0,0,,包括电子  或离子
+Dialogue: 0,0:12:01.08,0:12:04.08,ENG,,0,0,0,,to wiggle up and down in response to that light wave.
+Dialogue: 0,0:12:01.08,0:12:04.08,ZH,,0,0,0,,受到光波影响  开始上下振荡
+Dialogue: 0,0:12:04.46,0:12:06.88,ENG,,0,0,0,,You might think that adding together all the propagations
+Dialogue: 0,0:12:04.46,0:12:06.88,ZH,,0,0,0,,你可能会想  把所有电荷的传播全加在一起
+Dialogue: 0,0:12:06.88,0:12:09.26,ENG,,0,0,0,,from all those charges is a complete nightmare,
+Dialogue: 0,0:12:06.88,0:12:09.26,ZH,,0,0,0,,那将会是彻底的噩梦
+Dialogue: 0,0:12:09.26,0:12:11.72,ENG,,0,0,0,,but we can think about it one layer at a time.
+Dialogue: 0,0:12:09.26,0:12:11.72,ZH,,0,0,0,,但我们可以一层一层地考虑
+Dialogue: 0,0:12:12.90,0:12:15.75,ENG,,0,0,0,,As the light wave causes this layer to wiggle up and down,
+Dialogue: 0,0:12:12.90,0:12:15.75,ZH,,0,0,0,,当光波使这一层上下振荡时
+Dialogue: 0,0:12:15.75,0:12:20.45,ENG,,0,0,0,,that wiggling produces its own second-order light wave at the same frequency,
+Dialogue: 0,0:12:15.75,0:12:20.45,ZH,,0,0,0,,会产生一个相同频率的二阶光波
+Dialogue: 0,0:12:21.09,0:12:24.40,ENG,,0,0,0,,and it propagates in both directions perpendicular to that layer.
+Dialogue: 0,0:12:21.09,0:12:24.40,ZH,,0,0,0,,并在垂直于这层的前后两个方向上传播
+Dialogue: 0,0:12:24.68,0:12:26.67,ENG,,0,0,0,,The overall electric field, then,
+Dialogue: 0,0:12:24.68,0:12:26.67,ZH,,0,0,0,,此时整体的电场
+Dialogue: 0,0:12:26.67,0:12:31.28,ENG,,0,0,0,,looks like the initial incoming light wave added together with the second-order wave.
+Dialogue: 0,0:12:26.67,0:12:31.28,ZH,,0,0,0,,看起来就像是初始光波与二阶光波的叠加
+Dialogue: 0,0:12:32.50,0:12:36.78,ENG,,0,0,0,,By far the most distracting part of what's going on here is everything on the left,
+Dialogue: 0,0:12:32.50,0:12:36.78,ZH,,0,0,0,,目前看上去最碍眼的是  左半边的波形
+Dialogue: 0,0:12:36.78,0:12:40.00,ENG,,0,0,0,,and this actually corresponds to the light being reflected back.
+Dialogue: 0,0:12:36.78,0:12:40.00,ZH,,0,0,0,,但这实际上对应的是光被反射的部分
+Dialogue: 0,0:12:40.00,0:12:43.76,ENG,,0,0,0,,And from experience, you all know that when you look at water or you look at glass,
+Dialogue: 0,0:12:40.00,0:12:43.76,ZH,,0,0,0,,众所周知  当你看水或看玻璃时
+Dialogue: 0,0:12:43.76,0:12:47.11,ENG,,0,0,0,,light not only goes through it, but some of it gets reflected back.
+Dialogue: 0,0:12:43.76,0:12:47.11,ZH,,0,0,0,,光不只是穿过它  还会有一部分被反射回来
+Dialogue: 0,0:12:47.11,0:12:51.40,ENG,,0,0,0,,And we could have a whole interesting discussion on quantifying exactly how much,
+Dialogue: 0,0:12:47.11,0:12:51.40,ZH,,0,0,0,,单单量化反射率这个问题  已经是另一个有趣的讨论
+Dialogue: 0,0:12:51.40,0:12:55.10,ENG,,0,0,0,,but in the spirit of staying focused, we will completely ignore that for today,
+Dialogue: 0,0:12:51.40,0:12:55.10,ZH,,0,0,0,,但为了避免跑题  我们今天先完全忽略它
+Dialogue: 0,0:12:55.10,0:12:57.95,ENG,,0,0,0,,and only focus on what's happening to the right of that layer.
+Dialogue: 0,0:12:55.10,0:12:57.95,ZH,,0,0,0,,只关注光穿过那层后发生的情况
+Dialogue: 0,0:12:58.35,0:13:00.30,ENG,,0,0,0,,You can probably predict what I'm going to say.
+Dialogue: 0,0:12:58.35,0:13:00.30,ZH,,0,0,0,,你大概已经知道我要说什么了
+Dialogue: 0,0:13:00.76,0:13:03.83,ENG,,0,0,0,,It turns out that when you add that second-order oscillation,
+Dialogue: 0,0:13:00.76,0:13:03.83,ZH,,0,0,0,,事实证明  加上那个二阶振荡以后
+Dialogue: 0,0:13:03.83,0:13:07.29,ENG,,0,0,0,,the overall effect is almost identical to the incoming light,
+Dialogue: 0,0:13:03.83,0:13:07.29,ZH,,0,0,0,,它看上去和入射光的波形几乎一样
+Dialogue: 0,0:13:07.29,0:13:09.86,ENG,,0,0,0,,but just shifted back in phase by a little bit.
+Dialogue: 0,0:13:07.29,0:13:09.86,ZH,,0,0,0,,只是相位稍微往后移动了一点
+Dialogue: 0,0:13:10.14,0:13:13.60,ENG,,0,0,0,,And then because many successive shifts to the phase like this
+Dialogue: 0,0:13:10.14,0:13:13.60,ZH,,0,0,0,,而相位多次连续地像这样滞后
+Dialogue: 0,0:13:13.60,0:13:16.09,ENG,,0,0,0,,are the same thing as light slowing down,
+Dialogue: 0,0:13:13.60,0:13:16.09,ZH,,0,0,0,,也就等同于光减速了
+Dialogue: 0,0:13:16.09,0:13:18.67,ENG,,0,0,0,,this will ultimately explain the index of refraction.
+Dialogue: 0,0:13:16.09,0:13:18.67,ZH,,0,0,0,,这也就最终解释了折射率
+Comment: 0,0:13:18.67,0:13:20.67,ENG,,0,0,0,,[Part 3, 13:21 - 20:59]
+Dialogue: 0,0:13:19.36,0:13:23.39,ENG,,0,0,0,,But of course, the sufficiently curious viewers will now be raising their hands and asking,
+Dialogue: 0,0:13:19.36,0:13:23.39,ZH,,0,0,0,,当然了  很好奇的观众这时就会举起手问
+Dialogue: 0,0:13:23.39,0:13:25.64,ENG,,0,0,0,,why is that the effect when you add them together?
+Dialogue: 0,0:13:23.39,0:13:25.64,ZH,,0,0,0,,为什么叠加之后  效应是这样的呢？
+Dialogue: 0,0:13:26.19,0:13:28.03,ENG,,0,0,0,,And so here it might be worth a little sidebar
+Dialogue: 0,0:13:26.19,0:13:28.03,ZH,,0,0,0,,那么我们还是补充说明一下
+Dialogue: 0,0:13:28.03,0:13:30.42,ENG,,0,0,0,,on how to think about adding two waves together.
+Dialogue: 0,0:13:28.03,0:13:30.42,ZH,,0,0,0,,怎么考虑两个波的叠加
+Dialogue: 0,0:13:31.00,0:13:33.73,ENG,,0,0,0,,If you draw some sine wave with some particular amplitude,
+Dialogue: 0,0:13:31.00,0:13:33.73,ZH,,0,0,0,,要是画出一个正弦波  振幅给定
+Dialogue: 0,0:13:33.73,0:13:36.76,ENG,,0,0,0,,some specific frequency, and some specific phase,
+Dialogue: 0,0:13:33.73,0:13:36.76,ZH,,0,0,0,,频率给定  相位也给定
+Dialogue: 0,0:13:37.17,0:13:41.38,ENG,,0,0,0,,and then you draw another sine wave, also with its own amplitude, frequency, and phase,
+Dialogue: 0,0:13:37.17,0:13:41.38,ZH,,0,0,0,,然后再画另一个正弦波  另外给出振幅  频率  相位
+Dialogue: 0,0:13:41.76,0:13:43.89,ENG,,0,0,0,,in general, it's very hard to think about
+Dialogue: 0,0:13:41.76,0:13:43.89,ZH,,0,0,0,,那通常挺难回答
+Dialogue: 0,0:13:43.89,0:13:47.70,ENG,,0,0,0,,what the sum of those two waves should look like as you tweak those initial parameters.
+Dialogue: 0,0:13:43.89,0:13:47.70,ZH,,0,0,0,,要是调整以上6个参数  两波之和会变得怎样
+Dialogue: 0,0:13:52.50,0:13:55.18,ENG,,0,0,0,,In the specific case where the frequencies are the same,
+Dialogue: 0,0:13:52.50,0:13:55.18,ZH,,0,0,0,,如果对于我们的情形
+Dialogue: 0,0:13:55.18,0:13:56.96,ENG,,0,0,0,,which is true for our example,
+Dialogue: 0,0:13:55.18,0:13:56.96,ZH,,0,0,0,,假设频率是相同的
+Dialogue: 0,0:13:56.96,0:14:00.72,ENG,,0,0,0,,the result will also look like a sine wave with that same frequency.
+Dialogue: 0,0:13:56.96,0:14:00.72,ZH,,0,0,0,,那么结果也是同一频率的正弦波
+Dialogue: 0,0:14:01.34,0:14:05.18,ENG,,0,0,0,,But even then, it's a little tricky to think about exactly how to describe that wave.
+Dialogue: 0,0:14:01.34,0:14:05.18,ZH,,0,0,0,,但即便如此  想要准确描述这个波  也不太好办
+Dialogue: 0,0:14:05.18,0:14:08.18,ENG,,0,0,0,,It has some amplitude and some phase,
+Dialogue: 0,0:14:05.18,0:14:08.18,ZH,,0,0,0,,答案有一个振幅与相位
+Dialogue: 0,0:14:08.18,0:14:11.39,ENG,,0,0,0,,and if I ask you to concretely compute both of those numbers,
+Dialogue: 0,0:14:08.18,0:14:11.39,ZH,,0,0,0,,而如果我要你根据初始两波的振幅与相位
+Dialogue: 0,0:14:11.39,0:14:14.38,ENG,,0,0,0,,based on the amplitudes and phases of the initial waves,
+Dialogue: 0,0:14:11.39,0:14:14.38,ZH,,0,0,0,,具体计算叠加后的这两个参数
+Dialogue: 0,0:14:14.38,0:14:16.66,ENG,,0,0,0,,it's not immediately clear how you would do that
+Dialogue: 0,0:14:14.38,0:14:16.66,ZH,,0,0,0,,那答案与过程并不显然
+Dialogue: 0,0:14:16.66,0:14:19.71,ENG,,0,0,0,,without maybe throwing a bunch of trig identities at the problem.
+Dialogue: 0,0:14:16.66,0:14:19.71,ZH,,0,0,0,,除非你甩出一堆三角恒等式
+Dialogue: 0,0:14:20.14,0:14:22.22,ENG,,0,0,0,,But here's a really nice way to think about it.
+Dialogue: 0,0:14:20.14,0:14:22.22,ZH,,0,0,0,,不过有这样一种好思路
+Dialogue: 0,0:14:22.22,0:14:27.24,ENG,,0,0,0,,Imagine that first wave describes the y-component of some rotating vector.
+Dialogue: 0,0:14:22.22,0:14:27.24,ZH,,0,0,0,,首先想象第一个波描述的是一个旋转向量的y分量
+Dialogue: 0,0:14:28.37,0:14:31.94,ENG,,0,0,0,,The length of that vector corresponds with the amplitude of our wave,
+Dialogue: 0,0:14:28.37,0:14:31.94,ZH,,0,0,0,,向量的长度对应波的振幅
+Dialogue: 0,0:14:32.35,0:14:37.20,ENG,,0,0,0,,and then the initial rotation of that vector corresponds with the phase of our wave.
+Dialogue: 0,0:14:32.35,0:14:37.20,ZH,,0,0,0,,向量的初始角度对应波的相位
+Dialogue: 0,0:14:37.56,0:14:39.72,ENG,,0,0,0,,And then similarly think of that second wave
+Dialogue: 0,0:14:37.56,0:14:39.72,ZH,,0,0,0,,然后同样地把第二个波
+Dialogue: 0,0:14:39.72,0:14:43.18,ENG,,0,0,0,,as describing the y-component of another rotating vector,
+Dialogue: 0,0:14:39.72,0:14:43.18,ZH,,0,0,0,,当作另一个旋转向量的y分量
+Dialogue: 0,0:14:43.18,0:14:46.67,ENG,,0,0,0,,where again the amplitude corresponds with the length of that vector,
+Dialogue: 0,0:14:43.18,0:14:46.67,ZH,,0,0,0,,波的振幅还是向量的长度
+Dialogue: 0,0:14:46.67,0:14:50.66,ENG,,0,0,0,,and the phase of the wave tells us the initial angle of that vector.
+Dialogue: 0,0:14:46.67,0:14:50.66,ZH,,0,0,0,,波的相位还是向量的初始角度
+Dialogue: 0,0:14:52.72,0:14:55.03,ENG,,0,0,0,,Now to think about the sum of the two waves,
+Dialogue: 0,0:14:52.72,0:14:55.03,ZH,,0,0,0,,这时  想考虑两波之和
+Dialogue: 0,0:14:55.03,0:14:58.12,ENG,,0,0,0,,just think about adding those two vectors tip to tail.
+Dialogue: 0,0:14:55.03,0:14:58.12,ZH,,0,0,0,,只需把这两个向量首尾相连
+Dialogue: 0,0:14:58.12,0:15:01.93,ENG,,0,0,0,,And because they both have the same frequency as both of them rotate,
+Dialogue: 0,0:14:58.12,0:15:01.93,ZH,,0,0,0,,因为两者转动的频率都是相同的
+Dialogue: 0,0:15:01.93,0:15:04.92,ENG,,0,0,0,,their sum kind of rotates in lockstep with them.
+Dialogue: 0,0:15:01.93,0:15:04.92,ZH,,0,0,0,,它们的和也会跟着同步转动
+Dialogue: 0,0:15:07.30,0:15:10.65,ENG,,0,0,0,,So if you want to think about the amplitude of our resulting wave,
+Dialogue: 0,0:15:07.30,0:15:10.65,ZH,,0,0,0,,所以叠加的波的振幅
+Dialogue: 0,0:15:10.65,0:15:13.00,ENG,,0,0,0,,it comes down to the length of this vector sum,
+Dialogue: 0,0:15:10.65,0:15:13.00,ZH,,0,0,0,,就是向量之和的长度
+Dialogue: 0,0:15:13.00,0:15:16.54,ENG,,0,0,0,,and similarly the phase corresponds to the angle of that vector sum.
+Dialogue: 0,0:15:13.00,0:15:16.54,ZH,,0,0,0,,而叠加的波的相位  就对应向量值和的角度
+Dialogue: 0,0:15:17.03,0:15:20.13,ENG,,0,0,0,,In some cases this tells you things that you probably already knew,
+Dialogue: 0,0:15:17.03,0:15:20.13,ZH,,0,0,0,,对于特殊的情况  这会给出一些熟悉的结论
+Dialogue: 0,0:15:20.13,0:15:24.47,ENG,,0,0,0,,like if the two phases happen to be the same, then you get constructive interference
+Dialogue: 0,0:15:20.13,0:15:24.47,ZH,,0,0,0,,例如  如果初始相位刚好相同  就会发生相长干涉
+Dialogue: 0,0:15:24.47,0:15:26.11,ENG,,0,0,0,,and you have a bigger wave that results.
+Dialogue: 0,0:15:24.47,0:15:26.11,ZH,,0,0,0,,得到更大的波
+Dialogue: 0,0:15:26.39,0:15:31.65,ENG,,0,0,0,,And if the phases were 180 degrees out of sync, then you get deconstructive interference
+Dialogue: 0,0:15:26.39,0:15:31.65,ZH,,0,0,0,,而如果相位相差了 180 度  则会发生相消干涉
+Dialogue: 0,0:15:31.65,0:15:33.69,ENG,,0,0,0,,with a relatively small resulting wave.
+Dialogue: 0,0:15:31.65,0:15:33.69,ZH,,0,0,0,,得到更小的波
+Dialogue: 0,0:15:34.26,0:15:37.82,ENG,,0,0,0,,What's a little bit less obvious, but what's crucial for our discussion here,
+Dialogue: 0,0:15:34.26,0:15:37.82,ZH,,0,0,0,,上面的情况有点显然  但我们需要知道的关键是
+Dialogue: 0,0:15:38.21,0:15:41.09,ENG,,0,0,0,,is that if the phase of that second wave happens to be
+Dialogue: 0,0:15:38.21,0:15:41.09,ZH,,0,0,0,,如果第二个波的相位
+Dialogue: 0,0:15:41.09,0:15:44.33,ENG,,0,0,0,,exactly 90 degrees behind the phase of the first,
+Dialogue: 0,0:15:41.09,0:15:44.33,ZH,,0,0,0,,刚好比第一个波滞后了90度
+Dialogue: 0,0:15:44.33,0:15:46.33,ENG,,0,0,0,,so kind of a quarter cycle out of sync,
+Dialogue: 0,0:15:44.33,0:15:46.33,ZH,,0,0,0,,也就是1/4周期的不同步
+Dialogue: 0,0:15:46.64,0:15:50.03,ENG,,0,0,0,,and if that second wave is also very small compared to the first,
+Dialogue: 0,0:15:46.64,0:15:50.03,ZH,,0,0,0,,而且第二个波远小于第一个波
+Dialogue: 0,0:15:50.03,0:15:52.86,ENG,,0,0,0,,then if you look at the little vector sum on the lower left,
+Dialogue: 0,0:15:50.03,0:15:52.86,ZH,,0,0,0,,那么注意看左下角的向量和
+Dialogue: 0,0:15:52.86,0:15:58.05,ENG,,0,0,0,,you'll notice how this means that the resulting wave is almost identical to the initial wave,
+Dialogue: 0,0:15:52.86,0:15:58.05,ZH,,0,0,0,,就会发现  所得的波形  跟第一个波几乎相同
+Dialogue: 0,0:15:58.05,0:16:01.03,ENG,,0,0,0,,but just shifted back in its phase by a tiny bit.
+Dialogue: 0,0:15:58.05,0:16:01.03,ZH,,0,0,0,,只是相位后移了一丁点
+Dialogue: 0,0:16:01.43,0:16:04.12,ENG,,0,0,0,,Moreover, the size of that phase shift
+Dialogue: 0,0:16:01.43,0:16:04.12,ZH,,0,0,0,,而且  这个相位滞后的值
+Dialogue: 0,0:16:04.12,0:16:07.58,ENG,,0,0,0,,depends on the specific amplitude of that second wave.
+Dialogue: 0,0:16:04.12,0:16:07.58,ZH,,0,0,0,,正比于第二个波的振幅
+Dialogue: 0,0:16:08.45,0:16:10.85,ENG,,0,0,0,,So looking back at our previous animation,
+Dialogue: 0,0:16:08.45,0:16:10.85,ZH,,0,0,0,,于是  回去看前面的动画
+Dialogue: 0,0:16:10.85,0:16:13.80,ENG,,0,0,0,,where we have some wiggling charges in a layer of glass
+Dialogue: 0,0:16:10.85,0:16:13.80,ZH,,0,0,0,,一层玻璃中有一些振动的电子
+Dialogue: 0,0:16:13.80,0:16:15.94,ENG,,0,0,0,,causing these second order propagations
+Dialogue: 0,0:16:13.80,0:16:15.94,ZH,,0,0,0,,导致二阶震荡传播
+Dialogue: 0,0:16:15.94,0:16:18.52,ENG,,0,0,0,,that need to be added together with the incoming light,
+Dialogue: 0,0:16:15.94,0:16:18.52,ZH,,0,0,0,,需要与入射光线相叠加
+Dialogue: 0,0:16:18.52,0:16:21.90,ENG,,0,0,0,,the way it works out is that the phase of that second wave
+Dialogue: 0,0:16:18.52,0:16:21.90,ZH,,0,0,0,,这时发生的是  第二个波的相位
+Dialogue: 0,0:16:21.90,0:16:26.00,ENG,,0,0,0,,is exactly a quarter of a cycle behind the phase of the first.
+Dialogue: 0,0:16:21.90,0:16:26.00,ZH,,0,0,0,,恰好比第一个波滞后了1/4个周期
+Dialogue: 0,0:16:26.00,0:16:29.10,ENG,,0,0,0,,So when you add them together, you get this little phase shift.
+Dialogue: 0,0:16:26.00,0:16:29.10,ZH,,0,0,0,,因此叠加以后  就会出现相位的后移
+Dialogue: 0,0:16:29.10,0:16:30.63,ENG,,0,0,0,,And then, critically,
+Dialogue: 0,0:16:29.10,0:16:30.63,ZH,,0,0,0,,而且  关键是
+Dialogue: 0,0:16:30.63,0:16:35.27,ENG,,0,0,0,,the size of that phase shift is bigger when that second order wave is larger,
+Dialogue: 0,0:16:30.63,0:16:35.27,ZH,,0,0,0,,二阶的波越大  相位滞后也越大
+Dialogue: 0,0:16:35.27,0:16:38.35,ENG,,0,0,0,,and then smaller when that second order wave is smaller.
+Dialogue: 0,0:16:35.27,0:16:38.35,ZH,,0,0,0,,二阶的波越小  相位滞后也越小
+Dialogue: 0,0:16:39.16,0:16:42.34,ENG,,0,0,0,,Again, the very curious viewers will be raising their hands and saying,
+Dialogue: 0,0:16:39.16,0:16:42.34,ZH,,0,0,0,,当然了  很好奇的观众又会举起手来说
+Dialogue: 0,0:16:42.34,0:16:45.68,ENG,,0,0,0,,why does it work out to be exactly a quarter of a cycle behind?
+Dialogue: 0,0:16:42.34,0:16:45.68,ZH,,0,0,0,,为什么刚好滞后了1/4个周期啊
+Dialogue: 0,0:16:46.04,0:16:50.04,ENG,,0,0,0,,There is a very nice reason, but it's just a little too much detail for us today.
+Dialogue: 0,0:16:46.04,0:16:50.04,ZH,,0,0,0,,这背后有个道理  但细节太多  不适合今天讲
+Dialogue: 0,0:16:50.04,0:16:50.75,ENG,,0,0,0,,If you're curious,
+Dialogue: 0,0:16:50.04,0:16:50.75,ZH,,0,0,0,,感兴趣的话
+Dialogue: 0,0:16:50.75,0:16:53.96,ENG,,0,0,0,,I highly encourage you to take a look at the Feynman lectures on the matter.
+Dialogue: 0,0:16:50.75,0:16:53.96,ZH,,0,0,0,,我强烈推荐你去看费曼讲义的解释
+Dialogue: 0,0:16:54.57,0:16:56.70,ENG,,0,0,0,,For our purposes, step back for a second
+Dialogue: 0,0:16:54.57,0:16:56.70,ZH,,0,0,0,,我们还是退一步  回到正题
+Dialogue: 0,0:16:56.70,0:17:00.47,ENG,,0,0,0,,and think about what you need to explain the key question of prisms,
+Dialogue: 0,0:16:56.70,0:17:00.47,ZH,,0,0,0,,想想需要用什么来解释棱镜的关键问题：
+Dialogue: 0,0:17:00.47,0:17:04.44,ENG,,0,0,0,,which is why the index of refraction would depend on color at all.
+Dialogue: 0,0:17:00.47,0:17:04.44,ZH,,0,0,0,,究竟为什么折射率会跟色彩有关呢
+Dialogue: 0,0:17:04.92,0:17:08.46,ENG,,0,0,0,,As you now know, that index depends on how much each layer of glass
+Dialogue: 0,0:17:04.92,0:17:08.46,ZH,,0,0,0,,我们现在知道  折射率取决于每一层玻璃
+Dialogue: 0,0:17:08.46,0:17:10.44,ENG,,0,0,0,,kicks back the phase of the wave,
+Dialogue: 0,0:17:08.46,0:17:10.44,ZH,,0,0,0,,把波的相位滞后了多少
+Dialogue: 0,0:17:10.44,0:17:14.42,ENG,,0,0,0,,and that phase kick depends on the strength of the second order wave
+Dialogue: 0,0:17:10.44,0:17:14.42,ZH,,0,0,0,,而相位的滞后  取决于二阶波的强度
+Dialogue: 0,0:17:14.42,0:17:17.68,ENG,,0,0,0,,resulting from charge oscillations in a layer of that glass.
+Dialogue: 0,0:17:14.42,0:17:17.68,ZH,,0,0,0,,而二阶波来源于每层玻璃中的电荷振荡
+Dialogue: 0,0:17:18.06,0:17:20.35,ENG,,0,0,0,,So you need to drill in and understand
+Dialogue: 0,0:17:18.06,0:17:20.35,ZH,,0,0,0,,所以我们要刨根问底  去搞懂
+Dialogue: 0,0:17:20.35,0:17:25.12,ENG,,0,0,0,,exactly how much those charges wiggle in response to an incoming light wave.
+Dialogue: 0,0:17:20.35,0:17:25.12,ZH,,0,0,0,,入射光波激起的电荷振荡  准确值是多大
+Dialogue: 0,0:17:25.56,0:17:29.88,ENG,,0,0,0,,So let's zoom in on that layer and think of each one of those charged particles,
+Dialogue: 0,0:17:25.56,0:17:29.88,ZH,,0,0,0,,我们放大到那一层  考虑每一个带电粒子
+Dialogue: 0,0:17:29.88,0:17:33.70,ENG,,0,0,0,,and even though the specific molecular structure is going to be something very complicated
+Dialogue: 0,0:17:29.88,0:17:33.70,ZH,,0,0,0,,虽然具体的分子结构将会十分复杂
+Dialogue: 0,0:17:33.70,0:17:35.86,ENG,,0,0,0,,we're going to model each one of those charges
+Dialogue: 0,0:17:33.70,0:17:35.86,ZH,,0,0,0,,但我们用简单的模型来表示电荷
+Dialogue: 0,0:17:35.86,0:17:39.82,ENG,,0,0,0,,as if it was bound to some equilibrium position by a spring,
+Dialogue: 0,0:17:35.86,0:17:39.82,ZH,,0,0,0,,把它们看作由一个或一组弹簧
+Dialogue: 0,0:17:39.82,0:17:41.20,ENG,,0,0,0,,or maybe a set of springs.
+Dialogue: 0,0:17:39.82,0:17:41.20,ZH,,0,0,0,,限制到平衡位置
+Dialogue: 0,0:17:41.62,0:17:43.44,ENG,,0,0,0,,I don't mean this literally, of course,
+Dialogue: 0,0:17:41.62,0:17:43.44,ZH,,0,0,0,,当然我不是说真有弹簧
+Dialogue: 0,0:17:43.44,0:17:47.93,ENG,,0,0,0,,I just mean if we describe the displacement of this charge from its equilibrium
+Dialogue: 0,0:17:43.44,0:17:47.93,ZH,,0,0,0,,而是说  如果我们把电荷离平衡点的位移
+Dialogue: 0,0:17:47.93,0:17:50.93,ENG,,0,0,0,,with a little vector x that's going to depend on time,
+Dialogue: 0,0:17:47.93,0:17:50.93,ZH,,0,0,0,,记作向量 x  会随时间变化
+Dialogue: 0,0:17:51.35,0:17:54.75,ENG,,0,0,0,,then in our model, the force applied to the charge,
+Dialogue: 0,0:17:51.35,0:17:54.75,ZH,,0,0,0,,那么在模型中  电荷所受的
+Dialogue: 0,0:17:54.75,0:17:56.50,ENG,,0,0,0,,pulling it back to that equilibrium,
+Dialogue: 0,0:17:54.75,0:17:56.50,ZH,,0,0,0,,指向平衡点的力
+Dialogue: 0,0:17:56.85,0:18:00.68,ENG,,0,0,0,,is going to be something proportional to the size of that displacement,
+Dialogue: 0,0:17:56.85,0:18:00.68,ZH,,0,0,0,,将跟位移向量的大小成正比
+Dialogue: 0,0:18:00.68,0:18:03.19,ENG,,0,0,0,,with a little proportionality constant k.
+Dialogue: 0,0:18:00.68,0:18:03.19,ZH,,0,0,0,,比例系数记作k
+Dialogue: 0,0:18:03.19,0:18:05.44,ENG,,0,0,0,,This is the same law that governs how springs work.
+Dialogue: 0,0:18:03.19,0:18:05.44,ZH,,0,0,0,,这跟弹簧所满足的胡克定律是一样的
+Dialogue: 0,0:18:05.80,0:18:07.56,ENG,,0,0,0,,You might ask if that's accurate,
+Dialogue: 0,0:18:05.80,0:18:07.56,ZH,,0,0,0,,你也许会问  这准确吗
+Dialogue: 0,0:18:07.56,0:18:09.99,ENG,,0,0,0,,and the idea is that for very small displacements,
+Dialogue: 0,0:18:07.56,0:18:09.99,ZH,,0,0,0,,道理是  对于很小的位移
+Dialogue: 0,0:18:09.99,0:18:12.14,ENG,,0,0,0,,it's actually a really good approximation.
+Dialogue: 0,0:18:09.99,0:18:12.14,ZH,,0,0,0,,这是非常好的近似
+Dialogue: 0,0:18:12.14,0:18:14.34,ENG,,0,0,0,,This is a very common thing to do throughout physics,
+Dialogue: 0,0:18:12.14,0:18:14.34,ZH,,0,0,0,,这在物理中很常用
+Dialogue: 0,0:18:14.34,0:18:16.40,ENG,,0,0,0,,we would call it a linear restoring force.
+Dialogue: 0,0:18:14.34,0:18:16.40,ZH,,0,0,0,,叫做  线性回复力
+Dialogue: 0,0:18:16.40,0:18:19.76,ENG,,0,0,0,,The idea is that maybe the actual force law depends on the position
+Dialogue: 0,0:18:16.40,0:18:19.76,ZH,,0,0,0,,想法是  虽然实际的力随位置的变化
+Dialogue: 0,0:18:19.76,0:18:21.32,ENG,,0,0,0,,in a much more complicated way,
+Dialogue: 0,0:18:19.76,0:18:21.32,ZH,,0,0,0,,可能会复杂得多
+Dialogue: 0,0:18:21.32,0:18:25.14,ENG,,0,0,0,,but we're basically taking a low order approximation near the equilibrium.
+Dialogue: 0,0:18:21.32,0:18:25.14,ZH,,0,0,0,,但是我们这里只是在取平衡附近的低阶近似
+Dialogue: 0,0:18:25.74,0:18:29.14,ENG,,0,0,0,,If I just run this as a simulation, plugging in this force law,
+Dialogue: 0,0:18:25.74,0:18:29.14,ZH,,0,0,0,,我来跑一个仿真程序  代入这个力的表达式
+Dialogue: 0,0:18:29.14,0:18:32.06,ENG,,0,0,0,,here's what that displacement looks like as a function of time.
+Dialogue: 0,0:18:29.14,0:18:32.06,ZH,,0,0,0,,这就是位移对时间的函数
+Dialogue: 0,0:18:32.51,0:18:35.95,ENG,,0,0,0,,What you get looks like a sine wave, this is called simple harmonic motion,
+Dialogue: 0,0:18:32.51,0:18:35.95,ZH,,0,0,0,,得到的这种正弦波  叫做简谐运动
+Dialogue: 0,0:18:36.30,0:18:39.67,ENG,,0,0,0,,and the frequency of this wave is going to matter a lot for you and me,
+Dialogue: 0,0:18:36.30,0:18:39.67,ZH,,0,0,0,,这个波的频率  是我们最为关心的
+Dialogue: 0,0:18:39.67,0:18:42.96,ENG,,0,0,0,,and finding that comes down to solving a certain differential equation,
+Dialogue: 0,0:18:39.67,0:18:42.96,ZH,,0,0,0,,而想要求这个频率  就要解某个微分方程
+Dialogue: 0,0:18:42.96,0:18:46.94,ENG,,0,0,0,,because the force is really the same thing as mass times acceleration,
+Dialogue: 0,0:18:42.96,0:18:46.94,ZH,,0,0,0,,因为力  等于质量乘以加速度
+Dialogue: 0,0:18:47.36,0:18:52.20,ENG,,0,0,0,,and the acceleration is the same thing as the second derivative of that displacement.
+Dialogue: 0,0:18:47.36,0:18:52.20,ZH,,0,0,0,,而加速度  就是位移的二阶导数
+Dialogue: 0,0:18:52.20,0:18:54.49,ENG,,0,0,0,,So what we're saying is we want some function
+Dialogue: 0,0:18:52.20,0:18:54.49,ZH,,0,0,0,,所以我们想要找的函数满足
+Dialogue: 0,0:18:54.49,0:18:58.72,ENG,,0,0,0,,whose second derivative looks like a certain constant times that function itself.
+Dialogue: 0,0:18:54.49,0:18:58.72,ZH,,0,0,0,,二阶导等于自身的某个负的常数倍
+Dialogue: 0,0:18:59.29,0:19:01.12,ENG,,0,0,0,,Many differential equations students among you
+Dialogue: 0,0:18:59.29,0:19:01.12,ZH,,0,0,0,,在学习微分方程的同学们
+Dialogue: 0,0:19:01.12,0:19:03.19,ENG,,0,0,0,,might enjoy thinking about how you solve this.
+Dialogue: 0,0:19:01.12,0:19:03.19,ZH,,0,0,0,,也许要想想这得怎么解
+Dialogue: 0,0:19:03.19,0:19:06.77,ENG,,0,0,0,,I won't go over the full details, but the answer is reasonably intuitive,
+Dialogue: 0,0:19:03.19,0:19:06.77,ZH,,0,0,0,,我就不展开讲细节了  不过答案挺直观
+Dialogue: 0,0:19:06.77,0:19:09.88,ENG,,0,0,0,,and anyone who knows a little calculus can just check it for themselves.
+Dialogue: 0,0:19:06.77,0:19:09.88,ZH,,0,0,0,,懂一点微积分就可以自己检查一下
+Dialogue: 0,0:19:10.33,0:19:11.58,ENG,,0,0,0,,The way it shakes out is that
+Dialogue: 0,0:19:10.33,0:19:11.58,ZH,,0,0,0,,这个方程的结果是
+Dialogue: 0,0:19:11.58,0:19:15.44,ENG,,0,0,0,,if the initial condition is that our little charge has a velocity of zero,
+Dialogue: 0,0:19:11.58,0:19:15.44,ZH,,0,0,0,,如果初始条件是  小电荷初始速度为0
+Dialogue: 0,0:19:15.44,0:19:19.13,ENG,,0,0,0,,but it's offset from the equilibrium by a little vector x₀,
+Dialogue: 0,0:19:15.44,0:19:19.13,ZH,,0,0,0,,而离平衡点的位移是小向量x₀
+Dialogue: 0,0:19:19.13,0:19:24.46,ENG,,0,0,0,,then the way it evolves over time looks like x₀ multiplied by a cosine expression.
+Dialogue: 0,0:19:19.13,0:19:24.46,ZH,,0,0,0,,那么其位移随时间的函数是  x₀乘以一个余弦
+Dialogue: 0,0:19:25.28,0:19:27.95,ENG,,0,0,0,,So the amplitude of this wave is kind of uninteresting,
+Dialogue: 0,0:19:25.28,0:19:27.95,ZH,,0,0,0,,这个波的振幅不大有趣
+Dialogue: 0,0:19:27.95,0:19:30.72,ENG,,0,0,0,,it just depends on how far we pull things back originally,
+Dialogue: 0,0:19:27.95,0:19:30.72,ZH,,0,0,0,,只是取决于一开始电荷移了多远
+Dialogue: 0,0:19:30.72,0:19:34.69,ENG,,0,0,0,,but the meat is this frequency term, square root of k divided by m.
+Dialogue: 0,0:19:30.72,0:19:34.69,ZH,,0,0,0,,但精华所在是这个频率  根号下 k/m
+Dialogue: 0,0:19:35.26,0:19:38.76,ENG,,0,0,0,,And if you think about it, this should hopefully be at least a little intuitive.
+Dialogue: 0,0:19:35.26,0:19:38.76,ZH,,0,0,0,,你想一想  这其实还挺符合直觉的
+Dialogue: 0,0:19:39.10,0:19:44.18,ENG,,0,0,0,,For example, if you increase k, which is kind of like increasing the strength of that spring,
+Dialogue: 0,0:19:39.10,0:19:44.18,ZH,,0,0,0,,例如  增加 k  就好比把弹簧变硬
+Dialogue: 0,0:19:44.18,0:19:46.49,ENG,,0,0,0,,then it results in a faster oscillation.
+Dialogue: 0,0:19:44.18,0:19:46.49,ZH,,0,0,0,,那么振荡会变快
+Dialogue: 0,0:19:47.01,0:19:49.98,ENG,,0,0,0,,Whereas if you increase m, the mass of the particle,
+Dialogue: 0,0:19:47.01,0:19:49.98,ZH,,0,0,0,,而增加 m  粒子的质量
+Dialogue: 0,0:19:49.98,0:19:53.46,ENG,,0,0,0,,there's a lot more inertia, and it results in a slower oscillation.
+Dialogue: 0,0:19:49.98,0:19:53.46,ZH,,0,0,0,,那惯性会更大  振荡会变慢
+Dialogue: 0,0:19:54.07,0:19:57.22,ENG,,0,0,0,,This term, square root of k divided by m, has a special name,
+Dialogue: 0,0:19:54.07,0:19:57.22,ZH,,0,0,0,,这一项  根号下 k/m  有一个术语
+Dialogue: 0,0:19:57.22,0:20:00.90,ENG,,0,0,0,,it's called the resonant frequency for our simple harmonic oscillator.
+Dialogue: 0,0:19:57.22,0:20:00.90,ZH,,0,0,0,,叫做简谐振子的共振频率
+Dialogue: 0,0:20:00.90,0:20:05.02,ENG,,0,0,0,,And being a little more precise, I should call this the resonant angular frequency.
+Dialogue: 0,0:20:00.90,0:20:05.02,ZH,,0,0,0,,更准确一点  应该叫共振角频率
+Dialogue: 0,0:20:05.02,0:20:07.46,ENG,,0,0,0,,This is always a little bit of an awkwardness with physics,
+Dialogue: 0,0:20:05.02,0:20:07.46,ZH,,0,0,0,,物理中总是有这种小麻烦
+Dialogue: 0,0:20:07.46,0:20:10.16,ENG,,0,0,0,,where whenever you have some kind of cyclic process,
+Dialogue: 0,0:20:07.46,0:20:10.16,ZH,,0,0,0,,每当你碰到周期性的过程
+Dialogue: 0,0:20:10.16,0:20:11.85,ENG,,0,0,0,,when you give an intuitive description,
+Dialogue: 0,0:20:10.16,0:20:11.85,ZH,,0,0,0,,想要直观地描述时
+Dialogue: 0,0:20:11.85,0:20:14.41,ENG,,0,0,0,,it's natural to phrase things in terms of the frequency,
+Dialogue: 0,0:20:11.85,0:20:14.41,ZH,,0,0,0,,自然会提到频率
+Dialogue: 0,0:20:14.41,0:20:17.65,ENG,,0,0,0,,the number of cycles that this process makes per unit time.
+Dialogue: 0,0:20:14.41,0:20:17.65,ZH,,0,0,0,,也就是单位时间中  这个过程所经历的周期数
+Dialogue: 0,0:20:17.65,0:20:21.42,ENG,,0,0,0,,But when doing math, it's often more natural to talk about the angular frequency,
+Dialogue: 0,0:20:17.65,0:20:21.42,ZH,,0,0,0,,但做数学推导时  往往更为自然的是角频率
+Dialogue: 0,0:20:21.42,0:20:26.16,ENG,,0,0,0,,which you could think of as describing how much angle this process covers in radians per unit time.
+Dialogue: 0,0:20:21.42,0:20:26.16,ZH,,0,0,0,,那就是单位时间中  这个过程所扫过的弧度
+Dialogue: 0,0:20:26.16,0:20:29.24,ENG,,0,0,0,,So the term is the same as the frequency but multiplied by 2π.
+Dialogue: 0,0:20:26.16,0:20:29.24,ZH,,0,0,0,,所以角频率  等于频率再乘以 2π 倍
+Dialogue: 0,0:20:29.24,0:20:32.39,ENG,,0,0,0,,So for example, if you have something like a cosine expression,
+Dialogue: 0,0:20:29.24,0:20:32.39,ZH,,0,0,0,,例如  对于这样一个余弦表达式
+Dialogue: 0,0:20:32.39,0:20:36.42,ENG,,0,0,0,,which you might think of as describing the x-component of a cycling vector like this,
+Dialogue: 0,0:20:32.39,0:20:36.42,ZH,,0,0,0,,可以看作描述的是  旋转向量的x分量
+Dialogue: 0,0:20:36.42,0:20:41.37,ENG,,0,0,0,,then the term sitting right in front of the t in that cosine is the angular frequency.
+Dialogue: 0,0:20:36.42,0:20:41.37,ZH,,0,0,0,,那么在余弦中  t 前面的系数  就是角频率
+Dialogue: 0,0:20:41.37,0:20:44.15,ENG,,0,0,0,,This is why angular frequency makes the math a little cleaner.
+Dialogue: 0,0:20:41.37,0:20:44.15,ZH,,0,0,0,,因此用角频率  数学式子看着更简洁
+Dialogue: 0,0:20:44.15,0:20:46.15,ENG,,0,0,0,,For example, in our simple harmonic motion,
+Dialogue: 0,0:20:44.15,0:20:46.15,ZH,,0,0,0,,例如  回到我们的简谐运动
+Dialogue: 0,0:20:46.15,0:20:49.72,ENG,,0,0,0,,the term sitting in front of t looks like the square root of k divided by m,
+Dialogue: 0,0:20:46.15,0:20:49.72,ZH,,0,0,0,,t 前面的项  是根号下 k/m
+Dialogue: 0,0:20:49.72,0:20:51.82,ENG,,0,0,0,,which I'm writing as ωᵣ.
+Dialogue: 0,0:20:49.72,0:20:51.82,ZH,,0,0,0,,我记作 ωᵣ
+Dialogue: 0,0:20:52.32,0:20:56.10,ENG,,0,0,0,,Let's package all of that up and call that our solution in the simple case,
+Dialogue: 0,0:20:52.32,0:20:56.10,ZH,,0,0,0,,总结起来  这就是简单情形的方程的解
+Dialogue: 0,0:20:56.10,0:20:59.24,ENG,,0,0,0,,where there's no external force acting on our charged particle.
+Dialogue: 0,0:20:56.10,0:20:59.24,ZH,,0,0,0,,这里假设带电粒子没有受到外力
+Comment: 0,0:20:59.89,0:21:01.24,ENG,,0,0,0,,[Part 4, 21:00 - 29:23]
+Dialogue: 0,0:20:59.89,0:21:01.83,ENG,,0,0,0,,But of course, what we're interested in
+Dialogue: 0,0:20:59.89,0:21:01.83,ZH,,0,0,0,,但当然了  我们关心的是
+Dialogue: 0,0:21:01.83,0:21:05.50,ENG,,0,0,0,,is what happens when you shine a beam of light on this material,
+Dialogue: 0,0:21:01.83,0:21:05.50,ZH,,0,0,0,,当光束入射到材料时的情形
+Dialogue: 0,0:21:05.50,0:21:08.36,ENG,,0,0,0,,which intuitively causes this charge to jiggle,
+Dialogue: 0,0:21:05.50,0:21:08.36,ZH,,0,0,0,,直觉上  电荷会因此振动
+Dialogue: 0,0:21:08.36,0:21:09.92,ENG,,0,0,0,,but the question is how much.
+Dialogue: 0,0:21:08.36,0:21:09.92,ZH,,0,0,0,,但问题是振幅的大小
+Dialogue: 0,0:21:10.45,0:21:15.00,ENG,,0,0,0,,In our equation, this looks like adding a new force term corresponding to the light wave.
+Dialogue: 0,0:21:10.45,0:21:15.00,ZH,,0,0,0,,这就像在方程右侧  加一项新的力  代表入射光
+Dialogue: 0,0:21:15.34,0:21:20.06,ENG,,0,0,0,,That force oscillates up and down also according to some kind of cosine function,
+Dialogue: 0,0:21:15.34,0:21:20.06,ZH,,0,0,0,,这个力的上下振荡  也遵循余弦函数
+Dialogue: 0,0:21:20.06,0:21:24.58,ENG,,0,0,0,,but this time with a distinct angular frequency that I'm going to call ωₗ.
+Dialogue: 0,0:21:20.06,0:21:24.58,ZH,,0,0,0,,但它另外有一个角频率  就叫 ωₗ 吧
+Dialogue: 0,0:21:25.24,0:21:28.05,ENG,,0,0,0,,E₀ here describes the strength of the wave,
+Dialogue: 0,0:21:25.24,0:21:28.05,ZH,,0,0,0,,这里的 E₀ 代表光波的强度
+Dialogue: 0,0:21:28.05,0:21:31.50,ENG,,0,0,0,,and then q describes the charge of whatever particle we're modeling.
+Dialogue: 0,0:21:28.05,0:21:31.50,ZH,,0,0,0,,q 代表我们关心的粒子的电荷
+Dialogue: 0,0:21:31.93,0:21:36.24,ENG,,0,0,0,,As usual, it's a lot easier to think about when we only draw a subset of that light wave,
+Dialogue: 0,0:21:31.93,0:21:36.24,ZH,,0,0,0,,我们依旧只画出一部分光波  这样会比较清晰
+Dialogue: 0,0:21:36.24,0:21:40.97,ENG,,0,0,0,,and in this case we're going to draw it on the plane of the layer of material we care about.
+Dialogue: 0,0:21:36.24,0:21:40.97,ZH,,0,0,0,,这里显示的平面  是我们所关注的一层材料
+Dialogue: 0,0:21:40.97,0:21:44.62,ENG,,0,0,0,,You might think of gusts of wind blowing our little ball on the spring
+Dialogue: 0,0:21:40.97,0:21:44.62,ZH,,0,0,0,,可以想象成  对弹簧上的小球  吹一股风
+Dialogue: 0,0:21:44.62,0:21:47.36,ENG,,0,0,0,,up and down in a clean sinusoidal pattern.
+Dialogue: 0,0:21:44.62,0:21:47.36,ZH,,0,0,0,,风力一上一下  是正弦的样子
+Dialogue: 0,0:21:47.72,0:21:51.40,ENG,,0,0,0,,Or as another analogy, it's similar to pushing a child on a swing.
+Dialogue: 0,0:21:47.72,0:21:51.40,ZH,,0,0,0,,或者换一个比喻  像是推秋千上的孩子
+Dialogue: 0,0:21:51.40,0:21:54.83,ENG,,0,0,0,,The swing would oscillate on its own due to the force of gravity,
+Dialogue: 0,0:21:51.40,0:21:54.83,ZH,,0,0,0,,秋千本身也会因为重力  自己摇动
+Dialogue: 0,0:21:54.83,0:22:00.52,ENG,,0,0,0,,but you as the pusher are applying an external force which itself is oscillating over time.
+Dialogue: 0,0:21:54.83,0:22:00.52,ZH,,0,0,0,,但你对它施加的外力  也是周期振荡的
+Dialogue: 0,0:22:01.07,0:22:05.20,ENG,,0,0,0,,Although a key difference here is that the frequency of that external force
+Dialogue: 0,0:22:01.07,0:22:05.20,ZH,,0,0,0,,关键的区别是  外力的频率
+Dialogue: 0,0:22:05.20,0:22:10.32,ENG,,0,0,0,,in general has nothing to do with the resonant frequency of that little oscillator.
+Dialogue: 0,0:22:05.20,0:22:10.32,ZH,,0,0,0,,通常跟振子固有的共振频率  没有什么关系
+Dialogue: 0,0:22:10.90,0:22:15.22,ENG,,0,0,0,,The better analogy would be if you're pushing the child on the swing with a cyclic force
+Dialogue: 0,0:22:10.90,0:22:15.22,ZH,,0,0,0,,更好的比喻是  你推的秋千  外力的周期
+Dialogue: 0,0:22:15.22,0:22:18.46,ENG,,0,0,0,,that has nothing to do with what the swing naturally wants to do.
+Dialogue: 0,0:22:15.22,0:22:18.46,ZH,,0,0,0,,跟秋千本身想要的振荡  毫无关系
+Dialogue: 0,0:22:19.13,0:22:22.42,ENG,,0,0,0,,And my favorite part in literally trying to do this with my niece
+Dialogue: 0,0:22:19.13,0:22:22.42,ZH,,0,0,0,,说件趣事  我真的这样跟小侄女玩的时候
+Dialogue: 0,0:22:22.42,0:22:24.98,ENG,,0,0,0,,is that at some point she gently murmurs to herself,
+Dialogue: 0,0:22:22.42,0:22:24.98,ZH,,0,0,0,,她暗暗说了一句
+Dialogue: 0,0:22:25.30,0:22:26.92,ENG,,0,0,0,,this isn't how mom does it.
+Dialogue: 0,0:22:25.30,0:22:26.92,ZH,,0,0,0,,妈妈不是这样推的
+Dialogue: 0,0:22:27.46,0:22:30.95,ENG,,0,0,0,,Now, in trying to understand how much our charge is oscillating
+Dialogue: 0,0:22:27.46,0:22:30.95,ZH,,0,0,0,,那么  想要理解这里的电荷  由于入射光
+Dialogue: 0,0:22:30.95,0:22:32.74,ENG,,0,0,0,,in response to the incoming light,
+Dialogue: 0,0:22:30.95,0:22:32.74,ZH,,0,0,0,,而造成的振幅
+Dialogue: 0,0:22:32.74,0:22:36.06,ENG,,0,0,0,,let me start by just simulating it and plotting the result.
+Dialogue: 0,0:22:32.74,0:22:36.06,ZH,,0,0,0,,让我先仿真一下  画出结论
+Dialogue: 0,0:22:36.94,0:22:39.00,ENG,,0,0,0,,You'll notice that there's a little start-up period
+Dialogue: 0,0:22:36.94,0:22:39.00,ZH,,0,0,0,,注意到开始有一段启动期
+Dialogue: 0,0:22:39.00,0:22:40.44,ENG,,0,0,0,,where it kind of has to get going,
+Dialogue: 0,0:22:39.00,0:22:40.44,ZH,,0,0,0,,从零开始被带动起来
+Dialogue: 0,0:22:40.76,0:22:43.04,ENG,,0,0,0,,but then after that, mercifully,
+Dialogue: 0,0:22:40.76,0:22:43.04,ZH,,0,0,0,,但还好  在此之后
+Dialogue: 0,0:22:43.04,0:22:46.40,ENG,,0,0,0,,it looks nice and clean, just like another sine wave.
+Dialogue: 0,0:22:43.04,0:22:46.40,ZH,,0,0,0,,结果干净又漂亮  就像一个正弦波
+Dialogue: 0,0:22:46.40,0:22:49.22,ENG,,0,0,0,,Now you might be thinking, yeah yeah, everything is sine waves,
+Dialogue: 0,0:22:46.40,0:22:49.22,ZH,,0,0,0,,这时你也许想  对对  一切都是正弦波
+Dialogue: 0,0:22:49.22,0:22:50.91,ENG,,0,0,0,,but it's important to understand that
+Dialogue: 0,0:22:49.22,0:22:50.91,ZH,,0,0,0,,不过重要的是
+Dialogue: 0,0:22:50.91,0:22:54.47,ENG,,0,0,0,,this one has a very different character from the sine wave we saw earlier.
+Dialogue: 0,0:22:50.91,0:22:54.47,ZH,,0,0,0,,这跟我们之前看到的正弦波还是很不一样的
+Dialogue: 0,0:22:54.77,0:22:57.18,ENG,,0,0,0,,Earlier, without any external forces,
+Dialogue: 0,0:22:54.77,0:22:57.18,ZH,,0,0,0,,之前  没有外力时
+Dialogue: 0,0:22:57.18,0:23:02.24,ENG,,0,0,0,,the frequency of that wave came down to the spring constant and the mass,
+Dialogue: 0,0:22:57.18,0:23:02.24,ZH,,0,0,0,,波的频率取决于弹簧常数与振子质量
+Dialogue: 0,0:23:02.24,0:23:07.02,ENG,,0,0,0,,which is to say, it depends exclusively on material properties of the glass.
+Dialogue: 0,0:23:02.24,0:23:07.02,ZH,,0,0,0,,或者说  只跟玻璃的材料性质有关
+Dialogue: 0,0:23:07.02,0:23:10.30,ENG,,0,0,0,,By contrast, with this external cycling driving force,
+Dialogue: 0,0:23:07.02,0:23:10.30,ZH,,0,0,0,,而这里  有周期性外力时
+Dialogue: 0,0:23:10.30,0:23:14.84,ENG,,0,0,0,,the frequency in that steady state is the same as the frequency of the light.
+Dialogue: 0,0:23:10.30,0:23:14.84,ZH,,0,0,0,,稳态波的频率  等于入射光的频率
+Dialogue: 0,0:23:15.31,0:23:19.18,ENG,,0,0,0,,And then in our first case, the amplitude of the wave was kind of uninteresting,
+Dialogue: 0,0:23:15.31,0:23:19.18,ZH,,0,0,0,,在简单的情形  波的振幅无关紧要
+Dialogue: 0,0:23:19.18,0:23:22.52,ENG,,0,0,0,,it just depends on how far you pulled the spring out to begin with.
+Dialogue: 0,0:23:19.18,0:23:22.52,ZH,,0,0,0,,只取决于弹簧被拉了多远
+Dialogue: 0,0:23:22.52,0:23:23.76,ENG,,0,0,0,,But in the second case,
+Dialogue: 0,0:23:22.52,0:23:23.76,ZH,,0,0,0,,但有外力时
+Dialogue: 0,0:23:23.76,0:23:27.96,ENG,,0,0,0,,the amplitude of this wave is actually where all the interesting stuff happens.
+Dialogue: 0,0:23:23.76,0:23:27.96,ZH,,0,0,0,,稳态波的振幅  才是最值得关注的信息
+Dialogue: 0,0:23:27.96,0:23:32.68,ENG,,0,0,0,,Exactly how much will this charge be oscillating in response to the light wave?
+Dialogue: 0,0:23:27.96,0:23:32.68,ZH,,0,0,0,,由于入射光  电荷的振荡有多大呢？
+Dialogue: 0,0:23:33.34,0:23:36.30,ENG,,0,0,0,,Again, I won't go over the full details of solving this,
+Dialogue: 0,0:23:33.34,0:23:36.30,ZH,,0,0,0,,我依旧跳过解方程的过程
+Dialogue: 0,0:23:36.30,0:23:40.50,ENG,,0,0,0,,but any eager calculus students among you might enjoy going through the exercise
+Dialogue: 0,0:23:36.30,0:23:40.50,ZH,,0,0,0,,喜欢微积分的同学们欢迎做做这个习题
+Dialogue: 0,0:23:40.50,0:23:44.20,ENG,,0,0,0,,where if you just guess that a solution looks like a cosine wave
+Dialogue: 0,0:23:40.50,0:23:44.20,ZH,,0,0,0,,先猜解的形式是余弦波
+Dialogue: 0,0:23:44.20,0:23:45.77,ENG,,0,0,0,,with the same frequency as the light,
+Dialogue: 0,0:23:44.20,0:23:45.77,ZH,,0,0,0,,频率跟入射光相同
+Dialogue: 0,0:23:45.77,0:23:47.30,ENG,,0,0,0,,and you solve for the amplitude,
+Dialogue: 0,0:23:45.77,0:23:47.30,ZH,,0,0,0,,然后去求解振幅
+Dialogue: 0,0:23:47.79,0:23:51.97,ENG,,0,0,0,,you can get a concrete solution to this equation that looks like this.
+Dialogue: 0,0:23:47.79,0:23:51.97,ZH,,0,0,0,,方程具体的解  长这个样子
+Dialogue: 0,0:23:52.55,0:23:55.45,ENG,,0,0,0,,This is worth unpacking for a bit, and just to be clear,
+Dialogue: 0,0:23:52.55,0:23:55.45,ZH,,0,0,0,,我们来慢慢消化一下  不过首先强调一下
+Dialogue: 0,0:23:55.45,0:23:58.39,ENG,,0,0,0,,this is only describing things in the steady state,
+Dialogue: 0,0:23:55.45,0:23:58.39,ZH,,0,0,0,,这只是在描述稳态的解
+Dialogue: 0,0:23:58.39,0:24:00.72,ENG,,0,0,0,,after things have gotten up and going.
+Dialogue: 0,0:23:58.39,0:24:00.72,ZH,,0,0,0,,而不包括前期的部分
+Dialogue: 0,0:24:00.72,0:24:04.40,ENG,,0,0,0,,A fully descriptive solution would be notably more complicated.
+Dialogue: 0,0:24:00.72,0:24:04.40,ZH,,0,0,0,,完整的解看着会复杂得多
+Dialogue: 0,0:24:04.40,0:24:08.19,ENG,,0,0,0,,As I said, everything interesting here comes down to the amplitude,
+Dialogue: 0,0:24:04.40,0:24:08.19,ZH,,0,0,0,,我也说过  最重要的信息是这个振幅
+Dialogue: 0,0:24:08.19,0:24:10.75,ENG,,0,0,0,,which here looks like a large collection of constants,
+Dialogue: 0,0:24:08.19,0:24:10.75,ZH,,0,0,0,,它看着包含了许多的参数
+Dialogue: 0,0:24:10.75,0:24:14.22,ENG,,0,0,0,,most of which should be pretty intuitive if you take a moment to think about it.
+Dialogue: 0,0:24:10.75,0:24:14.22,ZH,,0,0,0,,想一想的话  基本还是挺直观的
+Dialogue: 0,0:24:14.22,0:24:17.81,ENG,,0,0,0,,For example, it is proportional to the strength of that incoming light wave,
+Dialogue: 0,0:24:14.22,0:24:17.81,ZH,,0,0,0,,例如  振幅正比于入射的光强
+Dialogue: 0,0:24:17.81,0:24:20.41,ENG,,0,0,0,,so the stronger the light the more the oscillations.
+Dialogue: 0,0:24:17.81,0:24:20.41,ZH,,0,0,0,,入射光越强  振荡也越大
+Dialogue: 0,0:24:20.41,0:24:23.92,ENG,,0,0,0,,It's also proportional to the charge, which again makes sense.
+Dialogue: 0,0:24:20.41,0:24:23.92,ZH,,0,0,0,,振幅也正比于电荷  很合理
+Dialogue: 0,0:24:23.92,0:24:27.84,ENG,,0,0,0,,And the real heart of the matter comes down to what's sitting in the denominator here,
+Dialogue: 0,0:24:23.92,0:24:27.84,ZH,,0,0,0,,而真正的核心在于分母的这部分：
+Dialogue: 0,0:24:27.84,0:24:31.19,ENG,,0,0,0,,the difference between the square of the resonant frequency
+Dialogue: 0,0:24:27.84,0:24:31.19,ZH,,0,0,0,,共振频率的平方  减去
+Dialogue: 0,0:24:31.19,0:24:33.24,ENG,,0,0,0,,and the square of the light frequency.
+Dialogue: 0,0:24:31.19,0:24:33.24,ZH,,0,0,0,,光波频率的平方
+Dialogue: 0,0:24:33.54,0:24:35.24,ENG,,0,0,0,,And to build a little intuition,
+Dialogue: 0,0:24:33.54,0:24:35.24,ZH,,0,0,0,,为了培养一下直觉
+Dialogue: 0,0:24:35.24,0:24:39.11,ENG,,0,0,0,,take a moment to think about what would happen if the frequency of the incoming light
+Dialogue: 0,0:24:35.24,0:24:39.11,ZH,,0,0,0,,我们稍微想一想  如果入射光的频率
+Dialogue: 0,0:24:39.11,0:24:43.20,ENG,,0,0,0,,was something very close to the resonant frequency of this oscillator.
+Dialogue: 0,0:24:39.11,0:24:43.20,ZH,,0,0,0,,跟振子的共振频率很接近时  会怎样
+Dialogue: 0,0:24:44.03,0:24:47.78,ENG,,0,0,0,,This is analogous to the normal situation pushing a child on a swing,
+Dialogue: 0,0:24:44.03,0:24:47.78,ZH,,0,0,0,,这就像秋千上推小孩时
+Dialogue: 0,0:24:47.78,0:24:52.82,ENG,,0,0,0,,where the frequency of your force lines up quite closely with what the swing wants to do.
+Dialogue: 0,0:24:47.78,0:24:52.82,ZH,,0,0,0,,你推动的频率  跟秋千本身的节奏  相一致
+Dialogue: 0,0:24:53.60,0:24:55.35,ENG,,0,0,0,,In this case, running the simulation,
+Dialogue: 0,0:24:53.60,0:24:55.35,ZH,,0,0,0,,这时  跑一跑程序
+Dialogue: 0,0:24:56.02,0:25:00.10,ENG,,0,0,0,,notice how the oscillations of that particle will grow and grow and grow,
+Dialogue: 0,0:24:56.02,0:25:00.10,ZH,,0,0,0,,注意到粒子的振动会不断不断增大
+Dialogue: 0,0:25:00.10,0:25:02.10,ENG,,0,0,0,,becoming quite large over time.
+Dialogue: 0,0:25:00.10,0:25:02.10,ZH,,0,0,0,,长时间后会变得很大
+Dialogue: 0,0:25:03.64,0:25:07.19,ENG,,0,0,0,,Some of you may know the famous example of the Millennium Bridge in London,
+Dialogue: 0,0:25:03.64,0:25:07.19,ZH,,0,0,0,,你们也许知道  伦敦千禧桥这个有名的例子
+Dialogue: 0,0:25:07.19,0:25:12.34,ENG,,0,0,0,,where on its opening day it started oscillating way more than the engineers expected it to.
+Dialogue: 0,0:25:07.19,0:25:12.34,ZH,,0,0,0,,在正式开放时  桥的振动远超出工程师的预期
+Dialogue: 0,0:25:12.34,0:25:13.86,ENG,,0,0,0,,And what was going on is that
+Dialogue: 0,0:25:12.34,0:25:13.86,ZH,,0,0,0,,原因是这样的
+Dialogue: 0,0:25:13.86,0:25:19.32,ENG,,0,0,0,,the frequency of the steps of the crowd lined up very closely with a resonant frequency,
+Dialogue: 0,0:25:13.86,0:25:19.32,ZH,,0,0,0,,人群的步频  非常接近桥的共振频率
+Dialogue: 0,0:25:19.32,0:25:21.92,ENG,,0,0,0,,causing this worryingly high amplitude.
+Dialogue: 0,0:25:19.32,0:25:21.92,ZH,,0,0,0,,因此振幅变得太大
+Dialogue: 0,0:25:23.23,0:25:25.90,ENG,,0,0,0,,By contrast, notice what happens in the simulation
+Dialogue: 0,0:25:23.23,0:25:25.90,ZH,,0,0,0,,作为对比  我们看看另一个演示
+Dialogue: 0,0:25:25.90,0:25:28.76,ENG,,0,0,0,,if the frequency of the light, ωₗ,
+Dialogue: 0,0:25:25.90,0:25:28.76,ZH,,0,0,0,,这时光的频率 ωₗ
+Dialogue: 0,0:25:28.76,0:25:31.50,ENG,,0,0,0,,is something much smaller than the resonant frequency.
+Dialogue: 0,0:25:28.76,0:25:31.50,ZH,,0,0,0,,比材料的共振频率要小得多
+Dialogue: 0,0:25:33.60,0:25:36.02,ENG,,0,0,0,,For this particular simulation it takes a little bit of a moment
+Dialogue: 0,0:25:33.60,0:25:36.02,ZH,,0,0,0,,对这个例子  要过好一阵子
+Dialogue: 0,0:25:36.02,0:25:37.73,ENG,,0,0,0,,before things get into their full swing.
+Dialogue: 0,0:25:36.02,0:25:37.73,ZH,,0,0,0,,振动才慢慢稳定下来
+Dialogue: 0,0:25:38.08,0:25:40.46,ENG,,0,0,0,,Eventually it finds a nice sinusoidal motion,
+Dialogue: 0,0:25:38.08,0:25:40.46,ZH,,0,0,0,,还是能接近正弦的波形
+Dialogue: 0,0:25:40.83,0:25:44.41,ENG,,0,0,0,,but the amplitude of that motion is much more modest in comparison.
+Dialogue: 0,0:25:40.83,0:25:44.41,ZH,,0,0,0,,只是这个振幅  相对就小得多
+Dialogue: 0,0:25:44.77,0:25:46.66,ENG,,0,0,0,,So what our equation is telling us
+Dialogue: 0,0:25:44.77,0:25:46.66,ZH,,0,0,0,,因此  方程告诉我们的是
+Dialogue: 0,0:25:46.66,0:25:49.66,ENG,,0,0,0,,is that the larger the difference between those frequencies,
+Dialogue: 0,0:25:46.66,0:25:49.66,ZH,,0,0,0,,这两个频率之间的差别越大
+Dialogue: 0,0:25:49.66,0:25:51.30,ENG,,0,0,0,,then the bigger the denominator,
+Dialogue: 0,0:25:49.66,0:25:51.30,ZH,,0,0,0,,分母也越大
+Dialogue: 0,0:25:51.30,0:25:54.50,ENG,,0,0,0,,so the smaller the overall wiggle to that charge.
+Dialogue: 0,0:25:51.30,0:25:54.50,ZH,,0,0,0,,最后电荷的振幅也就越小
+Dialogue: 0,0:25:54.50,0:25:57.94,ENG,,0,0,0,,And again, this is something you can see in the footage with my niece.
+Dialogue: 0,0:25:54.50,0:25:57.94,ZH,,0,0,0,,在小侄女的录像中你也能看到这个现象
+Dialogue: 0,0:25:57.94,0:26:00.09,ENG,,0,0,0,,As I'm applying a force with a frequency
+Dialogue: 0,0:25:57.94,0:26:00.09,ZH,,0,0,0,,当我施加的外力频率
+Dialogue: 0,0:26:00.09,0:26:02.61,ENG,,0,0,0,,that's very different from what the swing wants to do,
+Dialogue: 0,0:26:00.09,0:26:02.61,ZH,,0,0,0,,跟秋千的固有频率相差甚大的时候
+Dialogue: 0,0:26:02.61,0:26:06.53,ENG,,0,0,0,,she ends up oscillating at the same frequency as my force,
+Dialogue: 0,0:26:02.61,0:26:06.53,ZH,,0,0,0,,侄女的摇动频率跟外力一样
+Dialogue: 0,0:26:06.53,0:26:09.49,ENG,,0,0,0,,but she's going at a relatively low amplitude.
+Dialogue: 0,0:26:06.53,0:26:09.49,ZH,,0,0,0,,但振幅就比较小了
+Dialogue: 0,0:26:10.52,0:26:15.51,ENG,,0,0,0,,Stepping back, what this means is that as you shine light into a material, like glass,
+Dialogue: 0,0:26:10.52,0:26:15.51,ZH,,0,0,0,,回过头来  这说明  当你对着玻璃照进一束光
+Dialogue: 0,0:26:15.51,0:26:19.09,ENG,,0,0,0,,it's not just that it induces wiggles in the charges of that material,
+Dialogue: 0,0:26:15.51,0:26:19.09,ZH,,0,0,0,,不仅会激起材料中电荷的振荡
+Dialogue: 0,0:26:19.09,0:26:24.52,ENG,,0,0,0,,but the specific size of those wiggles depends on the frequency of the light,
+Dialogue: 0,0:26:19.09,0:26:24.52,ZH,,0,0,0,,而且这个具体的振幅  也取决于入射光的频率
+Dialogue: 0,0:26:24.52,0:26:26.94,ENG,,0,0,0,,as a consequence of this denominator term.
+Dialogue: 0,0:26:24.52,0:26:26.94,ZH,,0,0,0,,因为有分母这一项
+Dialogue: 0,0:26:26.94,0:26:28.36,ENG,,0,0,0,,And the more those wiggle,
+Dialogue: 0,0:26:26.94,0:26:28.36,ZH,,0,0,0,,而这个振荡越大
+Dialogue: 0,0:26:28.36,0:26:31.95,ENG,,0,0,0,,the bigger the size of this second order wave caused by that layer,
+Dialogue: 0,0:26:28.36,0:26:31.95,ZH,,0,0,0,,那层材料带来的二阶波动也越大
+Dialogue: 0,0:26:31.95,0:26:36.30,ENG,,0,0,0,,which in turn causes a bigger shift to the phase of the overall wave.
+Dialogue: 0,0:26:31.95,0:26:36.30,ZH,,0,0,0,,于是叠加后的波  相位的滞后也越大
+Dialogue: 0,0:26:36.30,0:26:38.63,ENG,,0,0,0,,Because a lot of different shifts to the phase
+Dialogue: 0,0:26:36.30,0:26:38.63,ZH,,0,0,0,,而因为相位的许多小滞后
+Dialogue: 0,0:26:38.63,0:26:41.39,ENG,,0,0,0,,are what causes this apparent slowdown to the light,
+Dialogue: 0,0:26:38.63,0:26:41.39,ZH,,0,0,0,,会使得光速看上去变慢
+Dialogue: 0,0:26:41.39,0:26:44.03,ENG,,0,0,0,,it means that the amount that it will slow down
+Dialogue: 0,0:26:41.39,0:26:44.03,ZH,,0,0,0,,这意味着  折射率  即光速的减慢
+Dialogue: 0,0:26:44.03,0:26:46.83,ENG,,0,0,0,,ultimately depends on the frequency of the light.
+Dialogue: 0,0:26:44.03,0:26:46.83,ZH,,0,0,0,,最后归结于入射光的频率
+Dialogue: 0,0:26:47.37,0:26:50.02,ENG,,0,0,0,,So that is the real reason why prisms work.
+Dialogue: 0,0:26:47.37,0:26:50.02,ZH,,0,0,0,,这也就是棱镜的真正原理
+Dialogue: 0,0:26:50.02,0:26:52.76,ENG,,0,0,0,,You cannot truly explain the light separation
+Dialogue: 0,0:26:50.02,0:26:52.76,ZH,,0,0,0,,想要真正解释白光的色散
+Dialogue: 0,0:26:52.76,0:26:55.57,ENG,,0,0,0,,until you get down to the driven harmonic oscillator.
+Dialogue: 0,0:26:52.76,0:26:55.57,ZH,,0,0,0,,必须要深入到  谐振子的受迫振动
+Dialogue: 0,0:26:57.31,0:26:59.64,ENG,,0,0,0,,Now, I have left out a number of details,
+Dialogue: 0,0:26:57.31,0:26:59.64,ZH,,0,0,0,,这里我跳过了几个细节
+Dialogue: 0,0:26:59.64,0:27:03.14,ENG,,0,0,0,,and again, I encourage the curious viewers to take a look at the Feynman lectures
+Dialogue: 0,0:26:59.64,0:27:03.14,ZH,,0,0,0,,我再次鼓励好奇的观众去看一看费曼讲义
+Dialogue: 0,0:27:03.14,0:27:04.56,ENG,,0,0,0,,that a lot of this is based on.
+Dialogue: 0,0:27:03.14,0:27:04.56,ZH,,0,0,0,,那是本期视频的主要参考
+Dialogue: 0,0:27:04.92,0:27:08.22,ENG,,0,0,0,,One quite important detail that would be a little criminal not to mention
+Dialogue: 0,0:27:04.92,0:27:08.22,ZH,,0,0,0,,有一个不得不提的重要细节
+Dialogue: 0,0:27:08.22,0:27:09.96,ENG,,0,0,0,,is that when we're modeling our charge
+Dialogue: 0,0:27:08.22,0:27:09.96,ZH,,0,0,0,,就是当我们把电荷建模为
+Dialogue: 0,0:27:09.96,0:27:13.15,ENG,,0,0,0,,as a little harmonic oscillator with this linear restoring force,
+Dialogue: 0,0:27:09.96,0:27:13.15,ZH,,0,0,0,,带线性回复力的简谐振子时
+Dialogue: 0,0:27:13.15,0:27:17.36,ENG,,0,0,0,,there should really also be a term that depends on the velocity of that charge.
+Dialogue: 0,0:27:13.15,0:27:17.36,ZH,,0,0,0,,其实应该有关于电荷速度的一项
+Dialogue: 0,0:27:17.36,0:27:19.90,ENG,,0,0,0,,You might think of this as a kind of drag force.
+Dialogue: 0,0:27:17.36,0:27:19.90,ZH,,0,0,0,,可以看作是一种阻力
+Dialogue: 0,0:27:19.90,0:27:23.10,ENG,,0,0,0,,This term accounts for the fact that energy from the incoming light wave
+Dialogue: 0,0:27:19.90,0:27:23.10,ZH,,0,0,0,,它考虑到的是  入射光波的能量
+Dialogue: 0,0:27:23.10,0:27:25.01,ENG,,0,0,0,,is absorbed by the material.
+Dialogue: 0,0:27:23.10,0:27:25.01,ZH,,0,0,0,,会被材料所吸收
+Dialogue: 0,0:27:25.41,0:27:28.24,ENG,,0,0,0,,Without it, this whole explanation would seem to imply that
+Dialogue: 0,0:27:25.41,0:27:28.24,ZH,,0,0,0,,少了这一项  我们的解释似乎会说
+Dialogue: 0,0:27:28.24,0:27:32.02,ENG,,0,0,0,,light always passes through every material, not just glass and water,
+Dialogue: 0,0:27:28.24,0:27:32.02,ZH,,0,0,0,,光总会透过所有材料  而不只是玻璃和水
+Dialogue: 0,0:27:32.02,0:27:34.17,ENG,,0,0,0,,when as you can tell just by looking around,
+Dialogue: 0,0:27:32.02,0:27:34.17,ZH,,0,0,0,,但你到处看看就知道
+Dialogue: 0,0:27:34.17,0:27:38.25,ENG,,0,0,0,,there's all sorts of materials for which light is mostly reflected and absorbed.
+Dialogue: 0,0:27:34.17,0:27:38.25,ZH,,0,0,0,,有许多材料  主要会反射和吸收光
+Dialogue: 0,0:27:38.85,0:27:40.10,ENG,,0,0,0,,As I mentioned at the start,
+Dialogue: 0,0:27:38.85,0:27:40.10,ZH,,0,0,0,,我最开始就提到
+Dialogue: 0,0:27:40.10,0:27:43.62,ENG,,0,0,0,,folks on Patreon had numerous questions about the index of refraction,
+Dialogue: 0,0:27:40.10,0:27:43.62,ZH,,0,0,0,,Patreon 资助者们对折射率提出了许多问题
+Dialogue: 0,0:27:43.62,0:27:47.42,ENG,,0,0,0,,like how it can be less than one, and why slowing implies bending,
+Dialogue: 0,0:27:43.62,0:27:47.42,ZH,,0,0,0,,例如  为什么可以小于一  为什么变慢会导致偏折
+Dialogue: 0,0:27:47.42,0:27:50.78,ENG,,0,0,0,,so I made a supplemental video answering a handful of those questions,
+Dialogue: 0,0:27:47.42,0:27:50.78,ZH,,0,0,0,,所以我做了一期补充视频  来解答其中一些疑问
+Dialogue: 0,0:27:50.78,0:27:52.95,ENG,,0,0,0,,which should be published in just a few days.
+Dialogue: 0,0:27:50.78,0:27:52.95,ZH,,0,0,0,,会晚一点再发
+Dialogue: 0,0:27:53.49,0:27:57.30,ENG,,0,0,0,,In the meantime, my friend Mythina from the channel Looking Glass Universe
+Dialogue: 0,0:27:53.49,0:27:57.30,ZH,,0,0,0,,在此之前  我的朋友 Mythina 在另一个频道
+Dialogue: 0,0:27:57.30,0:28:02.10,ENG,,0,0,0,,just put out a pair of videos on the related but definitely distinct question
+Dialogue: 0,0:27:57.30,0:28:02.10,ZH,,0,0,0,,发了两期视频  讲的是另一个很相关的问题
+Dialogue: 0,0:28:02.10,0:28:04.10,ENG,,0,0,0,,of whether light slows down in a medium,
+Dialogue: 0,0:28:02.10,0:28:04.10,ZH,,0,0,0,,就是  介质中  光所谓的减速
+Dialogue: 0,0:28:04.10,0:28:08.25,ENG,,0,0,0,,not in the sense of following the crests of a clean pure sine wave in a steady state,
+Dialogue: 0,0:28:04.10,0:28:08.25,ZH,,0,0,0,,除了表示  稳态正弦波峰之间距离的变小
+Dialogue: 0,0:28:08.25,0:28:11.26,ENG,,0,0,0,,but in the sense of trying to send information through that medium,
+Dialogue: 0,0:28:08.25,0:28:11.26,ZH,,0,0,0,,是否也表示  在介质中信息传播的速度变慢了呢？
+Dialogue: 0,0:28:11.26,0:28:12.91,ENG,,0,0,0,,like with a little wave packet.
+Dialogue: 0,0:28:11.26,0:28:12.91,ZH,,0,0,0,,例如小波包会怎样传播？
+Dialogue: 0,0:28:12.91,0:28:15.13,ENG,,0,0,0,,I definitely owe the existence of this video
+Dialogue: 0,0:28:12.91,0:28:15.13,ZH,,0,0,0,,我可以说  没有跟 Mythina 的讨论
+Dialogue: 0,0:28:15.13,0:28:17.75,ENG,,0,0,0,,to many conversations with her about this topic,
+Dialogue: 0,0:28:15.13,0:28:17.75,ZH,,0,0,0,,就没有这一期视频
+Dialogue: 0,0:28:17.75,0:28:22.12,ENG,,0,0,0,,and viewers here will definitely enjoy taking a look, especially at the second one.
+Dialogue: 0,0:28:17.75,0:28:22.12,ZH,,0,0,0,,我相信观众们会喜欢她的视频  尤其第二个
+Dialogue: 0,0:28:23.56,0:28:26.23,ENG,,0,0,0,,By the way, some collaborators and I made this notebook
+Dialogue: 0,0:28:23.56,0:28:26.23,ZH,,0,0,0,,最后一提  我跟合作者设计了这个笔记本
+Dialogue: 0,0:28:26.23,0:28:28.12,ENG,,0,0,0,,that I think a lot of viewers might enjoy,
+Dialogue: 0,0:28:26.23,0:28:28.12,ZH,,0,0,0,,我想你们会喜欢的
+Dialogue: 0,0:28:28.38,0:28:31.41,ENG,,0,0,0,,and given that it's the holiday season it seems worth a quick mention.
+Dialogue: 0,0:28:28.38,0:28:31.41,ZH,,0,0,0,,所以我在年底节假日打个广告
+Dialogue: 0,0:28:31.41,0:28:35.28,ENG,,0,0,0,,The premise is that every one of the pages has a quote that's related to math,
+Dialogue: 0,0:28:31.41,0:28:35.28,ZH,,0,0,0,,卖点是  每一页都有数学相关的名人名言
+Dialogue: 0,0:28:35.28,0:28:37.35,ENG,,0,0,0,,and I had a lot of fun curating them all,
+Dialogue: 0,0:28:35.28,0:28:37.35,ZH,,0,0,0,,这些都是我精心挑选的
+Dialogue: 0,0:28:37.35,0:28:41.67,ENG,,0,0,0,,trying to constrain myself to quotes conveying some genuinely thought-provoking idea.
+Dialogue: 0,0:28:37.35,0:28:41.67,ZH,,0,0,0,,我的标准是  要表达真正引人深思的想法
+Dialogue: 0,0:28:42.01,0:28:43.54,ENG,,0,0,0,,And then aside from the content,
+Dialogue: 0,0:28:42.01,0:28:43.54,ZH,,0,0,0,,除了内容本身
+Dialogue: 0,0:28:43.54,0:28:47.14,ENG,,0,0,0,,I basically made the kind of notebook that I most enjoy taking notes in,
+Dialogue: 0,0:28:43.54,0:28:47.14,ZH,,0,0,0,,我是按照自己喜欢写笔记的样子  来设计的
+Dialogue: 0,0:28:47.14,0:28:51.51,ENG,,0,0,0,,something that's readily portable with very faint gridlines helpful for diagrams,
+Dialogue: 0,0:28:47.14,0:28:51.51,ZH,,0,0,0,,要小巧好带  要有浅色的网格方便画图
+Dialogue: 0,0:28:51.51,0:28:53.22,ENG,,0,0,0,,but otherwise unobtrusive,
+Dialogue: 0,0:28:51.51,0:28:53.22,ZH,,0,0,0,,但不影响写字和阅读
+Dialogue: 0,0:28:53.22,0:28:55.66,ENG,,0,0,0,,all bound in this nice soft faux leather.
+Dialogue: 0,0:28:53.22,0:28:55.66,ZH,,0,0,0,,封皮是柔软的人造皮
+Dialogue: 0,0:28:55.66,0:28:56.92,ENG,,0,0,0,,If that seems up your alley,
+Dialogue: 0,0:28:55.66,0:28:56.92,ZH,,0,0,0,,喜欢的话
+Dialogue: 0,0:28:56.92,0:28:58.85,ENG,,0,0,0,,you can find them in the 3blue1brown store
+Dialogue: 0,0:28:56.92,0:28:58.85,ZH,,0,0,0,,可以去 3blue1brown 网店选购
+Dialogue: 0,0:28:58.85,0:29:01.24,ENG,,0,0,0,,next to a lot of other mathematical merchandise.
+Dialogue: 0,0:28:58.85,0:29:01.24,ZH,,0,0,0,,还有很多其他数学周边商品
+Dialogue: 0,0:29:01.24,0:29:01.24,ENG,,0,0,0,,
